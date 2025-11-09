@@ -83,19 +83,35 @@
             </section>
 
             <section class="policy-section">
+                <h2>Third-Party Services</h2>
+                <h3>ExtensionPay (Payment Processing)</h3>
+                <p>The Extension uses ExtensionPay (<a href="https://extensionpay.com/" target="_blank">https://extensionpay.com/</a>) for subscription management and payment processing. When you subscribe to the PLUS plan, ExtensionPay collects:</p>
+                <ul>
+                    <li>Your email address for account management and receipts</li>
+                    <li>Payment information (processed securely by Stripe, not stored by the Extension)</li>
+                    <li>Subscription status and billing information</li>
+                </ul>
+                <p><strong>ExtensionPay Privacy Policy:</strong> <a href="https://extensionpay.com/privacy" target="_blank">https://extensionpay.com/privacy</a></p>
+                <p><strong>Important:</strong> Payment data is handled entirely by ExtensionPay and Stripe. The Extension never receives or stores your credit card information.</p>
+
+                <h3>InboxSDK (Gmail Integration)</h3>
+                <p>The Extension uses InboxSDK (<a href="https://www.inboxsdk.com/" target="_blank">https://www.inboxsdk.com/</a>) to integrate with Gmail's interface. InboxSDK is a library that helps the Extension interact with Gmail's UI to display the sidebar and detect email contacts. InboxSDK does not collect, transmit, or store your email data.</p>
+            </section>
+
+            <section class="policy-section">
                 <h2>Third-Party Data Sharing</h2>
-                <p><strong>We do NOT share your data with any third parties.</strong></p>
+                <p><strong>We do NOT share your data with any third parties for advertising, analytics, or data brokering purposes.</strong></p>
                 <p>The Extension only communicates with:</p>
                 <ul>
-                    <li><strong>Your Odoo Instance:</strong> The Extension sends API requests to the Odoo instance URL you configure</li>
-                    <li><strong>InboxSDK:</strong> A Gmail integration library (https://www.inboxsdk.com/) that helps the Extension interact with Gmail's interface. InboxSDK does not collect or store your email data.</li>
+                    <li><strong>Your Odoo Instance:</strong> The Extension sends API requests to the Odoo instance URL you configure to retrieve and create records</li>
+                    <li><strong>ExtensionPay:</strong> Only for subscription management (email, subscription status, payment processing)</li>
                 </ul>
                 <p>The Extension does NOT:</p>
                 <ul>
                     <li>Sell your data to data brokers</li>
                     <li>Share data for advertising purposes</li>
-                    <li>Transmit data to analytics services</li>
-                    <li>Send data to the extension developer's servers</li>
+                    <li>Transmit data to analytics or tracking services</li>
+                    <li>Send Gmail or Odoo data to the extension developer's servers</li>
                 </ul>
             </section>
 
@@ -115,11 +131,38 @@
             <section class="policy-section">
                 <h2>Permissions Explained</h2>
                 <p>The Extension requests the following Chrome permissions:</p>
+
+                <h3>Required Permissions (Granted at Installation)</h3>
                 <ul>
                     <li><strong>scripting:</strong> Required to inject the sidebar interface into Gmail</li>
                     <li><strong>storage:</strong> Required to save your Odoo configuration and cache API responses locally</li>
                     <li><strong>host_permissions (mail.google.com):</strong> Required to access Gmail's interface and display the sidebar</li>
-                    <li><strong>host_permissions (*.odoo.com):</strong> Required to communicate with Odoo cloud instances</li>
+                    <li><strong>host_permissions (*.odoo.com):</strong> Required to communicate with Odoo Online cloud instances (e.g., yourcompany.odoo.com)</li>
+                    <li><strong>host_permissions (extensionpay.com):</strong> Required for subscription management and payment processing</li>
+                </ul>
+
+                <h3>Optional Permissions (Requested When Needed)</h3>
+                <p>The Extension requests optional permissions for custom Odoo instances:</p>
+                <ul>
+                    <li><strong>optional_host_permissions (https://*/*):</strong> Used ONLY if you connect to a self-hosted Odoo instance on a custom domain (e.g., odoo.yourcompany.com or erp.example.com). This permission is only requested when you explicitly configure a custom Odoo URL.</li>
+                </ul>
+                <p><strong>Note:</strong> The Extension only supports HTTPS connections for security. HTTP connections are not allowed.</p>
+
+                <h3>When Optional Permissions Are Requested</h3>
+                <p>Chrome will prompt you to grant optional permissions when:</p>
+                <ul>
+                    <li>You configure a custom Odoo URL that is not an *.odoo.com domain</li>
+                    <li>You explicitly choose to connect to a self-hosted Odoo instance</li>
+                </ul>
+                <p><strong>You can deny these permissions</strong> if you only use Odoo Online (*.odoo.com). The Extension will work normally with Odoo Online without granting optional permissions.</p>
+
+                <h3>Why These Optional Permissions?</h3>
+                <p>Many organizations host Odoo on their own servers with custom domains (e.g., erp.acme.com, odoo.mycompany.net). To support these users, the Extension requests optional broad permissions. However:</p>
+                <ul>
+                    <li>These permissions are ONLY used to communicate with YOUR configured Odoo instance</li>
+                    <li>They are NEVER used to access other websites</li>
+                    <li>You can revoke them at any time in Chrome settings</li>
+                    <li>The Extension will only request them if you enter a custom Odoo URL</li>
                 </ul>
             </section>
 
