@@ -88,21 +88,93 @@
         </div>
     </section>
 
-    <!-- Screenshots Section -->
-    <section class="screenshots">
+    <!-- Interactive Demos Section -->
+    <section class="demos" id="demo">
         <div class="container">
             <h2>See It In Action</h2>
-            <p class="section-subtitle">Experience seamless Odoo integration right in your Gmail inbox</p>
-            <div class="screenshot-grid">
-                <div class="screenshot-placeholder">
-                    <p>Screenshot: Contact sidebar view</p>
+            <p class="section-subtitle">Hover over each demo to see the extension in action</p>
+
+            <!-- Carousel Container -->
+            <div class="demo-carousel">
+                <!-- Previous Button -->
+                <button class="carousel-btn carousel-prev" aria-label="Previous demos">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+
+                <!-- Carousel Track Container -->
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+
+                        <!-- Demo 1: Real-time Search -->
+                        <div class="demo-card">
+                            <div class="demo-media">
+                                <img
+                                    class="demo-still"
+                                    src="assets/demos/search-and-log-thumb.jpg"
+                                    alt="Real-time search demo"
+                                    loading="eager">
+                                <img
+                                    class="demo-gif"
+                                    data-gif="assets/demos/search-and-log.gif"
+                                    alt="Real-time search animation"
+                                    loading="lazy">
+                            </div>
+                            <div class="demo-info">
+                                <h3><span class="material-symbols-outlined">search</span> Real-time Search</h3>
+                                <p>Filter opportunities, tasks, and tickets instantly as you type. Find what you need in milliseconds.</p>
+                                <span class="demo-badge plus">PLUS Feature</span>
+                            </div>
+                        </div>
+
+                        <!-- Demo 2: Create Contact -->
+                        <div class="demo-card">
+                            <div class="demo-media">
+                                <img
+                                    class="demo-still"
+                                    src="assets/demos/create-contact-thumb.jpg"
+                                    alt="Create contact demo"
+                                    loading="lazy">
+                                <img
+                                    class="demo-gif"
+                                    data-gif="assets/demos/create-contact.gif"
+                                    alt="Create contact animation"
+                                    loading="lazy">
+                            </div>
+                            <div class="demo-info">
+                                <h3><span class="material-symbols-outlined">person_add</span> Create Contact</h3>
+                                <p>Add new contacts to Odoo directly from Gmail. Context automatically captured from emails.</p>
+                                <span class="demo-badge">Core Feature</span>
+                            </div>
+                        </div>
+
+                        <!-- Demo 3: Initial Setup -->
+                        <div class="demo-card">
+                            <div class="demo-media">
+                                <img
+                                    class="demo-still"
+                                    src="assets/demos/setup-initial-thumb.jpg"
+                                    alt="Initial setup demo"
+                                    loading="lazy">
+                                <img
+                                    class="demo-gif"
+                                    data-gif="assets/demos/setup-initial.gif"
+                                    alt="Initial setup animation"
+                                    loading="lazy">
+                            </div>
+                            <div class="demo-info">
+                                <h3><span class="material-symbols-outlined">settings</span> Quick Setup</h3>
+                                <p>Connect to your Odoo instance in seconds. Simple configuration, powerful results.</p>
+                                <span class="demo-badge">Quick Start</span>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="screenshot-placeholder">
-                    <p>Screenshot: Create opportunity from email</p>
-                </div>
-                <div class="screenshot-placeholder">
-                    <p>Screenshot: Task and ticket management</p>
-                </div>
+
+                <!-- Next Button -->
+                <button class="carousel-btn carousel-next" aria-label="Next demos">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
             </div>
         </div>
     </section>
@@ -177,5 +249,16 @@
             </div>
         </div>
     </footer>
+
+    <!-- Demo Lightbox -->
+    <div id="demo-lightbox" class="demo-lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="demo-lightbox-backdrop"></div>
+        <div class="demo-lightbox-content">
+            <img class="demo-lightbox-image" src="" alt="Demo preview">
+        </div>
+    </div>
+
+    <!-- Demo Carousel Script -->
+    <script src="carousel.js"></script>
 </body>
 </html>
