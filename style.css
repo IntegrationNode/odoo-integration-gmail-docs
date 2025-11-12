@@ -1282,3 +1282,67 @@ a:hover {
         font-size: 0.875rem;
     }
 }
+
+/* ==========================================================================
+   Demo Lightbox
+   ========================================================================== */
+
+.demo-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-base), visibility 0s var(--transition-base);
+}
+
+.demo-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity var(--transition-base), visibility 0s 0s;
+}
+
+.demo-lightbox-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.demo-lightbox-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    cursor: pointer;
+}
+
+.demo-lightbox-image {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-2xl);
+    cursor: pointer;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .demo-lightbox-content {
+        padding: var(--spacing-sm);
+    }
+
+    .demo-lightbox-image {
+        max-width: 95%;
+        max-height: 95vh;
+    }
+}
