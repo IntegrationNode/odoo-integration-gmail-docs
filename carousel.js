@@ -132,7 +132,25 @@
             // Show GIF on hover
             media.addEventListener('mouseenter', function() {
                 if (state.sectionVisible) {
-                    loadGif(gifImg, gifUrl);
+                    // Force reload GIF to restart from frame 1
+                    const wasLoaded = state.loadedGifs.has(gifUrl);
+                    if (wasLoaded) {
+                        // Reset src to force browser to reload and restart animation
+                        gifImg.src = '';
+                        // Brief delay before setting src again
+                        setTimeout(() => {
+                            gifImg.src = gifUrl;
+                            // Fade in the GIF
+                            gifImg.style.opacity = '1';
+                            stillImg.style.opacity = '0';
+                        }, 10);
+                    } else {
+                        // First time loading
+                        loadGif(gifImg, gifUrl);
+                        // Fade in the GIF
+                        gifImg.style.opacity = '1';
+                        stillImg.style.opacity = '0';
+                    }
                 }
             });
 
@@ -141,18 +159,6 @@
                 // Fade back to thumbnail
                 gifImg.style.opacity = '0';
                 stillImg.style.opacity = '1';
-
-                // Reset GIF to first frame after fade completes
-                setTimeout(() => {
-                    if (gifImg.src && state.loadedGifs.has(gifUrl)) {
-                        const currentSrc = gifImg.src;
-                        gifImg.src = '';
-                        // Force reload after a brief delay
-                        setTimeout(() => {
-                            gifImg.src = currentSrc;
-                        }, 10);
-                    }
-                }, 400); // Match CSS transition duration
             });
         });
     }
