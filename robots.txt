@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://integrationnode.github.io/odoo-integration-gmail-docs/sitemap.xml
