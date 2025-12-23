@@ -1356,8 +1356,8 @@ a:hover {
 .lang-toggle {
     display: inline-flex;
     align-items: center;
-    gap: 0.25rem;
-    padding: 0.35rem 0.5rem;
+    gap: 0.35rem;
+    padding: 0.4rem 0.6rem;
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -1365,7 +1365,7 @@ a:hover {
     border: 2px solid var(--color-primary);
     border-radius: var(--radius-md);
     cursor: pointer;
-    transition: all var(--transition-base);
+    transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .lang-toggle:hover {
@@ -1375,11 +1375,18 @@ a:hover {
 
 .lang-toggle .material-symbols-outlined {
     font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.lang-toggle .lang-current {
+    min-width: 1.5em;
+    text-align: center;
 }
 
 .lang-toggle .arrow {
-    font-size: 1rem;
-    transition: transform var(--transition-base);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
 }
 
 .lang-dropdown.open .arrow {
@@ -1388,17 +1395,17 @@ a:hover {
 
 .lang-menu {
     position: absolute;
-    top: calc(100% + 0.25rem);
+    top: calc(100% + 0.35rem);
     right: 0;
-    min-width: 120px;
+    min-width: 130px;
     background: white;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-8px);
-    transition: all var(--transition-base);
+    transform: translateY(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
     z-index: 1000;
 }
 
@@ -1410,11 +1417,11 @@ a:hover {
 
 .lang-menu a {
     display: block;
-    padding: 0.5rem 0.75rem;
+    padding: 0.6rem 0.85rem;
     color: var(--color-text);
     text-decoration: none;
     font-size: 0.85rem;
-    transition: background var(--transition-base);
+    transition: background-color 0.1s ease, color 0.1s ease;
 }
 
 .lang-menu a:hover {
@@ -1432,8 +1439,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .lang-toggle {
-        padding: 0.25rem 0.4rem;
-        font-size: 0.75rem;
+        padding: 0.35rem 0.5rem;
     }
     .lang-current {
         display: none;
