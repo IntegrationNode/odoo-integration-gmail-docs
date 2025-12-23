@@ -1,8 +1,10 @@
 {
   "meta": {
+    "lang": "en",
     "index": {
       "title": "Odoo Integration for Gmail",
       "description": "Odoo Integration for Gmail - View contacts, create opportunities, tasks, and tickets directly in your Gmail inbox. Chrome extension for seamless CRM integration.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/",
       "ogTitle": "Odoo Integration for Gmail",
       "ogDescription": "Transform your Gmail into a powerful CRM interface with seamless Odoo integration. View contacts, create opportunities, tasks, and tickets.",
       "twitterTitle": "Odoo Integration for Gmail",
@@ -11,6 +13,7 @@
     "pricing": {
       "title": "Pricing - Odoo Integration for Gmail",
       "description": "Odoo Integration for Gmail pricing - Free and PLUS plans. Start free, upgrade when you need advanced search, financial insights, and more.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/pricing.html",
       "ogTitle": "Pricing - Odoo Integration for Gmail",
       "ogDescription": "Free and PLUS plans available. Start free, upgrade when you need advanced features.",
       "twitterTitle": "Pricing - Odoo Integration for Gmail",
@@ -19,6 +22,7 @@
     "userGuide": {
       "title": "User Guide - Odoo Integration for Gmail",
       "description": "Complete user guide for Odoo Integration for Gmail - Learn how to install, configure, and use all features including email logging, CRM opportunities, tasks, and tickets.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html",
       "ogTitle": "User Guide - Odoo Integration for Gmail",
       "ogDescription": "Complete guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM, tasks, and more.",
       "twitterTitle": "User Guide - Odoo Integration for Gmail",
@@ -27,6 +31,7 @@
     "changelog": {
       "title": "Changelog - Odoo Integration for Gmail",
       "description": "Release history and updates for Odoo Integration for Gmail extension. Track new features, improvements, and bug fixes.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/changelog.html",
       "ogTitle": "Changelog - Odoo Integration for Gmail",
       "ogDescription": "Release history and updates. Track new features, improvements, and bug fixes.",
       "twitterTitle": "Changelog - Odoo Integration for Gmail",
@@ -35,6 +40,7 @@
     "privacy": {
       "title": "Privacy Policy - Odoo Integration for Gmail",
       "description": "Privacy Policy for Odoo Integration for Gmail. Learn how we handle your data, what permissions we request, and your privacy rights.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/privacy.html",
       "ogTitle": "Privacy Policy - Odoo Integration for Gmail",
       "ogDescription": "Learn how we handle your data, what permissions we request, and your privacy rights.",
       "twitterTitle": "Privacy Policy - Odoo Integration for Gmail",
