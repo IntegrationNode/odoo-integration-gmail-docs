@@ -1,0 +1,13 @@
+{
+  "name": "odoo-gmail-docs",
+  "version": "1.0.0",
+  "description": "Documentation website for Odoo Integration for Gmail",
+  "scripts": {
+    "build:i18n": "static-i18n -l en -i en -i es -o dist --localesPath locales src",
+    "build": "npm run build:i18n && cp -r dist/* .",
+    "watch": "static-i18n -l en -i en -i es -o dist src --watch"
+  },
+  "devDependencies": {
+    "static-i18n": "^0.2.10"
+  }
+}

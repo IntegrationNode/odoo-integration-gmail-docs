@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Release history and updates for Odoo Integration for Gmail extension. Track new features, improvements, and bug fixes.">
+    <meta name="description" data-attr-t content-t="meta.changelog.description">
     <meta name="robots" content="index, follow">
 
     <!-- Canonical URL -->
@@ -17,18 +17,18 @@
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://integrationnode.github.io/odoo-integration-gmail-docs/changelog.html">
-    <meta property="og:title" content="Changelog - Odoo Integration for Gmail">
-    <meta property="og:description" content="Release history and updates. Track new features, improvements, and bug fixes.">
+    <meta property="og:title" data-attr-t content-t="meta.changelog.ogTitle">
+    <meta property="og:description" data-attr-t content-t="meta.changelog.ogDescription">
     <meta property="og:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
     <meta property="og:site_name" content="Odoo Integration for Gmail">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Changelog - Odoo Integration for Gmail">
-    <meta name="twitter:description" content="Release history and updates. Track new features, improvements, and bug fixes.">
+    <meta name="twitter:title" data-attr-t content-t="meta.changelog.twitterTitle">
+    <meta name="twitter:description" data-attr-t content-t="meta.changelog.twitterDescription">
     <meta name="twitter:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
 
-    <title>Changelog - Odoo Integration for Gmail</title>
+    <title data-t="meta.changelog.title"></title>
     <link rel="stylesheet" href="fonts/outlined.css">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -212,13 +212,13 @@
     <header class="pricing-header">
         <div class="container">
             <nav class="nav">
-                <a href="index.html" class="logo">Odoo Integration for Gmail</a>
+                <a href="index.html" class="logo" data-t="nav.logo"></a>
                 <div class="nav-links">
-                    <a href="index.html#features">Features</a>
-                    <a href="pricing.html">Pricing</a>
-                    <a href="user-guide.html">User Guide</a>
-                    <a href="changelog.html" class="active">Changelog</a>
-                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary">Get Extension</a>
+                    <a href="index.html#features" data-t="nav.features"></a>
+                    <a href="pricing.html" data-t="nav.pricing"></a>
+                    <a href="user-guide.html" data-t="nav.userGuide"></a>
+                    <a href="changelog.html" class="active" data-t="changelogPage.navChangelog"></a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary" data-t="nav.getExtension"></a>
                 </div>
             </nav>
         </div>
@@ -228,8 +228,8 @@
     <section class="changelog-page">
         <div class="container">
             <div class="changelog-header">
-                <h1>Release History</h1>
-                <p>Track new features, improvements, and fixes in each version</p>
+                <h1 data-t="changelogPage.header.title"></h1>
+                <p data-t="changelogPage.header.subtitle"></p>
             </div>
 
             <div class="release-list">
@@ -238,27 +238,27 @@
                     <div class="release-header">
                         <div class="version-badge">
                             <span class="material-symbols-outlined">new_releases</span>
-                            <span>Version</span> 0.1.0.0
+                            <span data-t="changelogPage.version"></span> 0.1.0.0
                         </div>
                         <div class="release-date">December 6, 2025</div>
                     </div>
                     <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span>New Features</span></h3>
+                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
                         <ul>
-                            <li><strong>Multi-language Support</strong> - <span>Full interface translation (English, Spanish, French, German)</span></li>
+                            <li><strong data-t="changelogPage.v0100.multiLanguage"></strong> - <span data-t="changelogPage.v0100.multiLanguageDesc"></span></li>
                         </ul>
 
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span>Improvements</span></h3>
+                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
                         <ul>
-                            <li><strong>Accessibility</strong> - <span>WCAG AA compliant colors and keyboard navigation</span></li>
-                            <li><strong>Toast Notifications</strong> - <span>Modern non-blocking feedback for actions</span></li>
-                            <li><strong>Rate Limiting</strong> - <span>Prevents HTTP 429 errors with request throttling</span></li>
+                            <li><strong data-t="changelogPage.v0100.accessibility"></strong> - <span data-t="changelogPage.v0100.accessibilityDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0100.toastNotifications"></strong> - <span data-t="changelogPage.v0100.toastNotificationsDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0100.rateLimiting"></strong> - <span data-t="changelogPage.v0100.rateLimitingDesc"></span></li>
                         </ul>
 
-                        <h3><span class="material-symbols-outlined">code</span> <span>Technical</span></h3>
+                        <h3><span class="material-symbols-outlined">code</span> <span data-t="changelogPage.sections.technical"></span></h3>
                         <ul>
-                            <li>Architecture refactored to TypeScript with service layer</li>
-                            <li>Jest testing infrastructure</li>
+                            <li data-t="changelogPage.v0100.typescript"></li>
+                            <li data-t="changelogPage.v0100.jest"></li>
                         </ul>
                     </div>
                 </div>
@@ -268,19 +268,19 @@
                     <div class="release-header">
                         <div class="version-badge">
                             <span class="material-symbols-outlined">new_releases</span>
-                            <span>Version</span> 0.0.0.6
+                            <span data-t="changelogPage.version"></span> 0.0.0.6
                         </div>
                         <div class="release-date">November 30, 2025</div>
                     </div>
                     <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span>Bug Fixes</span></h3>
+                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
                         <ul>
-                            <li><strong>Gmail Compatibility Fix</strong> - <span>Resolved "threadID element not found" error caused by Gmail UI changes</span></li>
+                            <li><strong data-t="changelogPage.v0006.gmailFix"></strong> - <span data-t="changelogPage.v0006.gmailFixDesc"></span></li>
                         </ul>
 
-                        <h3><span class="material-symbols-outlined">update</span> <span>Dependencies</span></h3>
+                        <h3><span class="material-symbols-outlined">update</span> <span data-t="changelogPage.sections.dependencies"></span></h3>
                         <ul>
-                            <li>Updated InboxSDK from 2.2.8 to 2.2.11</li>
+                            <li data-t="changelogPage.v0006.inboxsdk"></li>
                         </ul>
                     </div>
                 </div>
@@ -290,22 +290,22 @@
                     <div class="release-header">
                         <div class="version-badge">
                             <span class="material-symbols-outlined">new_releases</span>
-                            <span>Version</span> 0.0.0.5
+                            <span data-t="changelogPage.version"></span> 0.0.0.5
                         </div>
                         <div class="release-date">November 16, 2025</div>
                     </div>
                     <div class="release-content">
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span>Improvements</span></h3>
+                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
                         <ul>
-                            <li><strong>Gmail-Style Email Log Headers</strong> - <span>Email logs now display structured headers (from/to/date/subject) for better readability</span></li>
-                            <li><strong>Duplicate Email Detection</strong> - <span>Prevents accidentally logging the same email multiple times to a record</span></li>
-                            <li><strong>Enhanced Related Contacts</strong><span class="badge-new">PLUS</span> - <span>Now displays job titles and improved layout with icons for email and phone</span></li>
-                            <li><strong>Conditional Tooltips</strong> - <span>Tooltips only appear when text is truncated, reducing UI clutter</span></li>
+                            <li><strong data-t="changelogPage.v0005.emailHeaders"></strong> - <span data-t="changelogPage.v0005.emailHeadersDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0005.duplicateDetection"></strong> - <span data-t="changelogPage.v0005.duplicateDetectionDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0005.relatedContacts"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0005.relatedContactsDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0005.conditionalTooltips"></strong> - <span data-t="changelogPage.v0005.conditionalTooltipsDesc"></span></li>
                         </ul>
 
-                        <h3><span class="material-symbols-outlined">build</span> <span>Bug Fixes</span></h3>
+                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
                         <ul>
-                            <li><strong>Fixed Header Accessibility</strong> - <span>Settings and logout menu now always accessible during error states, preventing users from being stuck</span></li>
+                            <li><strong data-t="changelogPage.v0005.headerFix"></strong> - <span data-t="changelogPage.v0005.headerFixDesc"></span></li>
                         </ul>
                     </div>
                 </div>
@@ -315,17 +315,17 @@
                     <div class="release-header">
                         <div class="version-badge">
                             <span class="material-symbols-outlined">new_releases</span>
-                            <span>Version</span> 0.0.0.4
+                            <span data-t="changelogPage.version"></span> 0.0.0.4
                         </div>
                         <div class="release-date">November 12, 2025</div>
                     </div>
                     <div class="release-content">
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span>Improvements</span></h3>
+                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
                         <ul>
-                            <li><strong>Odoo v19 Support</strong> - <span>Full compatibility with the latest Odoo version</span></li>
-                            <li><strong>Better Settings Experience</strong> - <span>Redesigned settings with easier navigation</span></li>
-                            <li><strong>Improved Search Behavior</strong><span class="badge-new">PLUS</span> - <span>Clearing search now properly resets to initial view</span></li>
-                            <li><strong>Clearer Setup Instructions</strong> - <span>Enhanced guidance for API key configuration</span></li>
+                            <li><strong data-t="changelogPage.v0004.odoo19"></strong> - <span data-t="changelogPage.v0004.odoo19Desc"></span></li>
+                            <li><strong data-t="changelogPage.v0004.settingsExp"></strong> - <span data-t="changelogPage.v0004.settingsExpDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0004.searchBehavior"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0004.searchBehaviorDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0004.setupInstructions"></strong> - <span data-t="changelogPage.v0004.setupInstructionsDesc"></span></li>
                         </ul>
                     </div>
                 </div>
@@ -335,14 +335,14 @@
                     <div class="release-header">
                         <div class="version-badge">
                             <span class="material-symbols-outlined">new_releases</span>
-                            <span>Version</span> 0.0.0.3
+                            <span data-t="changelogPage.version"></span> 0.0.0.3
                         </div>
                         <div class="release-date">November 10, 2025</div>
                     </div>
                     <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span>Bug Fixes</span></h3>
+                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
                         <ul>
-                            <li>Minor fixes and improvements to configuration setup</li>
+                            <li data-t="changelogPage.v0003.minorFixes"></li>
                         </ul>
                     </div>
                 </div>
@@ -352,19 +352,19 @@
                     <div class="release-header">
                         <div class="version-badge">
                             <span class="material-symbols-outlined">new_releases</span>
-                            <span>Version</span> 0.0.0.2
+                            <span data-t="changelogPage.version"></span> 0.0.0.2
                         </div>
                         <div class="release-date">November 6, 2025</div>
                     </div>
                     <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span>New Features</span></h3>
+                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
                         <ul>
-                            <li><strong>Financial Insights</strong><span class="badge-new">PLUS</span> - <span>View financial metrics for your customers and suppliers directly in Gmail</span></li>
+                            <li><strong data-t="changelogPage.v0002.financialInsights"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0002.financialInsightsDesc"></span></li>
                         </ul>
 
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span>Improvements</span></h3>
+                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
                         <ul>
-                            <li><strong>Visual & Design Enhancements</strong> - <span>Improved interface design and user experience</span></li>
+                            <li><strong data-t="changelogPage.v0002.visualEnhancements"></strong> - <span data-t="changelogPage.v0002.visualEnhancementsDesc"></span></li>
                         </ul>
                     </div>
                 </div>
@@ -374,29 +374,29 @@
                     <div class="release-header">
                         <div class="version-badge">
                             <span class="material-symbols-outlined">rocket_launch</span>
-                            <span>Version</span> 0.0.0.1
+                            <span data-t="changelogPage.version"></span> 0.0.0.1
                         </div>
                         <div class="release-date">November 2, 2025</div>
                     </div>
                     <div class="release-content">
-                        <h3><span class="material-symbols-outlined">celebration</span> <span>Initial Release</span></h3>
+                        <h3><span class="material-symbols-outlined">celebration</span> <span data-t="changelogPage.sections.initialRelease"></span></h3>
                         <ul>
-                            <li><strong>Contact & Company Information</strong> - <span>View Odoo contact and company details directly in Gmail</span></li>
-                            <li><strong>CRM Opportunities</strong> - <span>View and create sales opportunities from your inbox</span></li>
-                            <li><strong>Project Tasks</strong> - <span>View and create tasks associated with contacts</span></li>
-                            <li><strong>Helpdesk Tickets</strong> - <span>View and create support tickets from emails</span></li>
-                            <li><strong>Email Logging</strong> - <span>Save emails to Odoo records with one click, including attachments</span></li>
+                            <li><strong data-t="changelogPage.v0001.contactCompany"></strong> - <span data-t="changelogPage.v0001.contactCompanyDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0001.crmOpportunities"></strong> - <span data-t="changelogPage.v0001.crmOpportunitiesDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0001.projectTasks"></strong> - <span data-t="changelogPage.v0001.projectTasksDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0001.helpdeskTickets"></strong> - <span data-t="changelogPage.v0001.helpdeskTicketsDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0001.emailLogging"></strong> - <span data-t="changelogPage.v0001.emailLoggingDesc"></span></li>
                         </ul>
 
-                        <h3><span class="material-symbols-outlined">workspace_premium</span> <span>PLUS Features</span></h3>
+                        <h3><span class="material-symbols-outlined">workspace_premium</span> <span data-t="changelogPage.sections.plusFeatures"></span></h3>
                         <ul>
-                            <li><strong>Advanced Search</strong> - <span>Search across all your opportunities, tasks, and tickets</span></li>
-                            <li><strong>Extended Views</strong> - <span>View up to 50 records per section (vs 5 in Free plan)</span></li>
-                            <li><strong>Related Contacts</strong> - <span>See other contacts from the same company</span></li>
-                            <li><strong>Customization</strong> - <span>Choose which sections to display</span></li>
+                            <li><strong data-t="changelogPage.v0001.advancedSearch"></strong> - <span data-t="changelogPage.v0001.advancedSearchDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0001.extendedViews"></strong> - <span data-t="changelogPage.v0001.extendedViewsDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0001.relatedContacts"></strong> - <span data-t="changelogPage.v0001.relatedContactsDesc"></span></li>
+                            <li><strong data-t="changelogPage.v0001.customization"></strong> - <span data-t="changelogPage.v0001.customizationDesc"></span></li>
                         </ul>
                         <div class="subscription-notice">
-                            <strong>PLUS subscription required:</strong> <span>Advanced features are available with a PLUS subscription ($19/month or $182/year).</span>
+                            <strong data-t="changelogPage.subscriptionRequired"></strong> <span data-t="changelogPage.subscriptionRequiredDesc"></span>
                         </div>
                     </div>
                 </div>
@@ -405,11 +405,11 @@
             <!-- CTA Section -->
             <div class="pricing-cta" style="margin-top: var(--spacing-xl); border-radius: var(--radius-lg);">
                 <div class="container">
-                    <h2>Ready to try the latest version?</h2>
-                    <p>Get started with our Free plan or upgrade to PLUS for advanced features.</p>
+                    <h2 data-t="changelogPage.cta.title"></h2>
+                    <p data-t="changelogPage.cta.subtitle"></p>
                     <div class="cta-buttons">
-                        <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-primary btn-lg">Install Extension</a>
-                        <a href="pricing.html" class="btn btn-secondary btn-lg">View Pricing</a>
+                        <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-primary btn-lg" data-t="changelogPage.cta.install"></a>
+                        <a href="pricing.html" class="btn btn-secondary btn-lg" data-t="changelogPage.cta.viewPricing"></a>
                     </div>
                 </div>
             </div>
@@ -421,28 +421,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Odoo Integration for Gmail</h4>
-                    <p><span>Built by</span> <strong>OdooIntegrations Team</strong></p>
+                    <h4 data-t="footer.title"></h4>
+                    <p><span data-t="footer.builtBy"></span> <strong>OdooIntegrations Team</strong></p>
                 </div>
                 <div class="footer-section">
-                    <h4>Resources</h4>
+                    <h4 data-t="footer.resources"></h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="user-guide.html">User Guide</a></li>
-                        <li><a href="changelog.html">Changelog</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="mailto:odoointegrations.team@gmail.com">Support</a></li>
+                        <li><a href="index.html" data-t="footer.home"></a></li>
+                        <li><a href="pricing.html" data-t="footer.pricing"></a></li>
+                        <li><a href="user-guide.html" data-t="footer.userGuide"></a></li>
+                        <li><a href="changelog.html" data-t="footer.changelog"></a></li>
+                        <li><a href="privacy.html" data-t="footer.privacy"></a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com" data-t="footer.support"></a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Legal</h4>
-                    <p class="small-text">Not affiliated with Odoo S.A. or Google LLC.</p>
-                    <p class="small-text">Odoo is a trademark of Odoo S.A.</p>
+                    <h4 data-t="footer.legal"></h4>
+                    <p class="small-text" data-t="footer.notAffiliated"></p>
+                    <p class="small-text" data-t="footer.odooTrademark"></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>2025 IntegrationNode. All rights reserved.</p>
+                <p data-t="footer.copyright"></p>
             </div>
         </div>
     </footer>

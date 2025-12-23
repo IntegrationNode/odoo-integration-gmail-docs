@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" data-attr-t content-t="meta.userGuide.description">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/user-guide.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html">
+    <meta property="og:title" data-attr-t content-t="meta.userGuide.ogTitle">
+    <meta property="og:description" data-attr-t content-t="meta.userGuide.ogDescription">
+    <meta property="og:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-attr-t content-t="meta.userGuide.twitterTitle">
+    <meta name="twitter:description" data-attr-t content-t="meta.userGuide.twitterDescription">
+    <meta name="twitter:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+
+    <title data-t="meta.userGuide.title"></title>
+    <link rel="stylesheet" href="fonts/outlined.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .guide-page { padding: var(--spacing-xl) 0; background: var(--color-bg); min-height: 70vh; }
+        .guide-header { text-align: center; margin-bottom: var(--spacing-lg); }
+        .guide-header h1 { margin-bottom: var(--spacing-xs); }
+        .guide-header p { color: var(--color-text-light); font-size: 1.125rem; }
+        .guide-content { max-width: 900px; margin: 0 auto; }
+        .guide-nav { background: white; border-radius: var(--radius-lg); padding: var(--spacing-md); margin-bottom: var(--spacing-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); }
+        .guide-nav h2 { font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary); }
+        .guide-nav ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-xs); list-style: none; padding: 0; margin: 0; }
+        .guide-nav a { color: var(--color-text); text-decoration: none; padding: 0.5rem; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 0.5rem; transition: all var(--transition-base); }
+        .guide-nav a:hover { background: var(--color-bg-highlight); color: var(--color-primary); }
+        .guide-nav .material-symbols-outlined { font-size: 18px; color: var(--color-primary); }
+        .guide-section { background: white; border-radius: var(--radius-lg); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); }
+        .guide-section h2 { color: var(--color-primary); font-size: 1.5rem; margin-bottom: var(--spacing-md); padding-bottom: var(--spacing-sm); border-bottom: 2px solid var(--color-border); display: flex; align-items: center; gap: 0.5rem; }
+        .guide-section h3 { color: var(--color-text); font-size: 1.25rem; margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+        .guide-section h4 { color: var(--color-text); font-size: 1rem; margin-top: var(--spacing-sm); margin-bottom: var(--spacing-xs); }
+        .guide-section p { margin-bottom: var(--spacing-sm); line-height: 1.7; }
+        .guide-section ul, .guide-section ol { margin-left: 1.5rem; margin-bottom: var(--spacing-sm); }
+        .guide-section li { margin-bottom: 0.5rem; line-height: 1.6; }
+        .guide-section code { background: var(--color-bg-highlight); padding: 0.125rem 0.375rem; border-radius: var(--radius-sm); font-family: monospace; font-size: 0.875rem; }
+        .feature-badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        .badge-free { background: #DCFCE7; color: #166534; }
+        .badge-plus { background: var(--color-badge); color: var(--color-badge-text); }
+        .info-box { background: var(--color-bg-highlight); border-left: 4px solid var(--color-primary); padding: var(--spacing-sm); border-radius: var(--radius-sm); margin: var(--spacing-sm) 0; }
+        .info-box.warning { border-left-color: #F59E0B; background: #FEF3C7; }
+        .info-box strong { color: var(--color-primary); }
+        .info-box.warning strong { color: #92400E; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: var(--spacing-sm) 0; }
+        .comparison-table th, .comparison-table td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--color-border); }
+        .comparison-table th { background: var(--color-bg-highlight); font-weight: 600; }
+        .steps-list { counter-reset: step-counter; list-style: none; padding: 0; }
+        .steps-list li { counter-increment: step-counter; padding-left: 2.5rem; position: relative; margin-bottom: var(--spacing-sm); }
+        .steps-list li::before { content: counter(step-counter); position: absolute; left: 0; top: 0; width: 1.75rem; height: 1.75rem; background: var(--color-primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 600; }
+        .faq-item { margin-bottom: var(--spacing-sm); }
+        .faq-item h4 { color: var(--color-primary); margin-bottom: 0.25rem; }
+        @media (max-width: 768px) { .guide-header h1 { font-size: 2rem; } .guide-section { padding: var(--spacing-md); } .guide-nav ul { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo" data-t="nav.logo"></a>
+                <div class="nav-links">
+                    <a href="index.html#features" data-t="nav.features"></a>
+                    <a href="pricing.html" data-t="nav.pricing"></a>
+                    <a href="user-guide.html" class="active" data-t="nav.userGuide"></a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary" data-t="nav.getExtension"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Guide Content -->
+    <section class="guide-page">
+        <div class="container">
+            <div class="guide-header">
+                <h1 data-t="userGuide.header.title"></h1>
+                <p data-t="userGuide.header.subtitle"></p>
+            </div>
+
+            <div class="guide-content">
+                <!-- Table of Contents -->
+                <nav class="guide-nav">
+                    <h2 data-t="userGuide.quickNav"></h2>
+                    <ul>
+                        <li><a href="#installation"><span class="material-symbols-outlined">download</span> <span data-t="userGuide.nav.installation"></span></a></li>
+                        <li><a href="#configuration"><span class="material-symbols-outlined">settings</span> <span data-t="userGuide.nav.configuration"></span></a></li>
+                        <li><a href="#features"><span class="material-symbols-outlined">star</span> <span data-t="userGuide.nav.features"></span></a></li>
+                        <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span data-t="userGuide.nav.emailLogging"></span></a></li>
+                        <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span data-t="userGuide.nav.opportunities"></span></a></li>
+                        <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span data-t="userGuide.nav.tasksTickets"></span></a></li>
+                        <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span data-t="userGuide.nav.troubleshooting"></span></a></li>
+                        <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span data-t="userGuide.nav.faq"></span></a></li>
+                    </ul>
+                </nav>
+
+                <!-- Installation Section -->
+                <section id="installation" class="guide-section">
+                    <h2><span class="material-symbols-outlined">download</span> <span data-t="userGuide.installation.title"></span></h2>
+                    <h3 data-t="userGuide.installation.prerequisites"></h3>
+                    <ul>
+                        <li><strong data-t="userGuide.installation.chromeLabel"></strong>: <span data-t="userGuide.installation.chromeVersion"></span></li>
+                        <li><strong data-t="userGuide.installation.odooLabel"></strong>: <span data-t="userGuide.installation.odooVersion"></span></li>
+                    </ul>
+                    <h3 data-t="userGuide.installation.stepsTitle"></h3>
+                    <ol class="steps-list">
+                        <li><strong data-t="userGuide.installation.step1Title"></strong><br><span data-t="userGuide.installation.step1Desc"></span></li>
+                        <li><strong data-t="userGuide.installation.step2Title"></strong><br><span data-t="userGuide.installation.step2Desc"></span></li>
+                        <li><strong data-t="userGuide.installation.step3Title"></strong><br><span data-t="userGuide.installation.step3Desc"></span></li>
+                        <li><strong data-t="userGuide.installation.step4Title"></strong><br><span data-t="userGuide.installation.step4Desc"></span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong data-t="userGuide.installation.noteTitle"></strong> <span data-t="userGuide.installation.noteDesc"></span>
+                    </div>
+                </section>
+
+                <!-- Configuration Section -->
+                <section id="configuration" class="guide-section">
+                    <h2><span class="material-symbols-outlined">settings</span> <span data-t="userGuide.configuration.title"></span></h2>
+                    <h3 data-t="userGuide.configuration.firstTimeSetup"></h3>
+                    <ol class="steps-list">
+                        <li><strong data-t="userGuide.configuration.step1Title"></strong><br><span data-t="userGuide.configuration.step1Desc"></span></li>
+                        <li><strong data-t="userGuide.configuration.step2Title"></strong><br><span data-t="userGuide.configuration.step2Desc"></span></li>
+                        <li><strong data-t="userGuide.configuration.step3Title"></strong><br><span data-t="userGuide.configuration.step3Desc"></span></li>
+                        <li><strong data-t="userGuide.configuration.step4Title"></strong><br><span data-t="userGuide.configuration.step4Desc"></span></li>
+                    </ol>
+                    <h3 data-t="userGuide.configuration.updateTitle"></h3>
+                    <p data-t="userGuide.configuration.updateDesc"></p>
+                    <ol>
+                        <li data-t="userGuide.configuration.updateStep1"></li>
+                        <li data-t="userGuide.configuration.updateStep2"></li>
+                        <li data-t="userGuide.configuration.updateStep3"></li>
+                    </ol>
+                </section>
+
+                <!-- Features Overview Section -->
+                <section id="features" class="guide-section">
+                    <h2><span class="material-symbols-outlined">star</span> <span data-t="userGuide.features.title"></span></h2>
+                    <h3><span data-t="userGuide.features.freePlanTitle"></span> <span class="feature-badge badge-free" data-t="userGuide.features.freeBadge"></span></h3>
+                    <ul>
+                        <li><strong data-t="userGuide.features.free.contactViewing"></strong>: <span data-t="userGuide.features.free.contactViewingDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.smartDetection"></strong>: <span data-t="userGuide.features.free.smartDetectionDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.emailLogging"></strong>: <span data-t="userGuide.features.free.emailLoggingDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.recordCreation"></strong>: <span data-t="userGuide.features.free.recordCreationDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.limitedRecords"></strong>: <span data-t="userGuide.features.free.limitedRecordsDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.refresh"></strong>: <span data-t="userGuide.features.free.refreshDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.loadTime"></strong>: <span data-t="userGuide.features.free.loadTimeDesc"></span></li>
+                    </ul>
+                    <h3><span data-t="userGuide.features.plusPlanTitle"></span> <span class="feature-badge badge-plus" data-t="userGuide.features.plusBadge"></span></h3>
+                    <p data-t="userGuide.features.plusIntro"></p>
+                    <ul>
+                        <li><strong data-t="userGuide.features.plus.advancedSearch"></strong>: <span data-t="userGuide.features.plus.advancedSearchDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.tabs"></strong>: <span data-t="userGuide.features.plus.tabsDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.relatedContacts"></strong>: <span data-t="userGuide.features.plus.relatedContactsDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.financial"></strong>: <span data-t="userGuide.features.plus.financialDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.settings"></strong>: <span data-t="userGuide.features.plus.settingsDesc"></span></li>
+                    </ul>
+                </section>
+
+                <!-- Email Logging Section -->
+                <section id="email-logging" class="guide-section">
+                    <h2><span class="material-symbols-outlined">mail</span> <span data-t="userGuide.emailLogging.title"></span></h2>
+                    <h3 data-t="userGuide.emailLogging.howToLog"></h3>
+                    <ol class="steps-list">
+                        <li data-t="userGuide.emailLogging.step1"></li>
+                        <li data-t="userGuide.emailLogging.step2"></li>
+                        <li data-t="userGuide.emailLogging.step3"></li>
+                        <li data-t="userGuide.emailLogging.step4"></li>
+                        <li data-t="userGuide.emailLogging.step5"></li>
+                    </ol>
+                    <h3 data-t="userGuide.emailLogging.whatGetsLogged"></h3>
+                    <ul>
+                        <li data-t="userGuide.emailLogging.logged1"></li>
+                        <li data-t="userGuide.emailLogging.logged2"></li>
+                        <li data-t="userGuide.emailLogging.logged3"></li>
+                        <li data-t="userGuide.emailLogging.logged4"></li>
+                        <li data-t="userGuide.emailLogging.logged5"></li>
+                        <li data-t="userGuide.emailLogging.logged6"></li>
+                    </ul>
+                    <h3 data-t="userGuide.emailLogging.duplicateTitle"></h3>
+                    <p data-t="userGuide.emailLogging.duplicateIntro"></p>
+                    <ol>
+                        <li><strong data-t="userGuide.emailLogging.visualIndicator"></strong>: <span data-t="userGuide.emailLogging.visualIndicatorDesc"></span></li>
+                        <li><strong data-t="userGuide.emailLogging.serverSide"></strong>: <span data-t="userGuide.emailLogging.serverSideDesc"></span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong data-t="userGuide.emailLogging.importantTitle"></strong> <span data-t="userGuide.emailLogging.importantDesc"></span>
+                    </div>
+                </section>
+
+                <!-- Opportunities Section -->
+                <section id="opportunities" class="guide-section">
+                    <h2><span class="material-symbols-outlined">handshake</span> <span data-t="userGuide.opportunities.title"></span></h2>
+                    <h3 data-t="userGuide.opportunities.creatingLeads"></h3>
+                    <p data-t="userGuide.opportunities.creatingLeadsIntro"></p>
+                    <ol class="steps-list">
+                        <li data-t="userGuide.opportunities.step1"></li>
+                        <li data-t="userGuide.opportunities.step2"></li>
+                        <li data-t="userGuide.opportunities.step3"></li>
+                        <li data-t="userGuide.opportunities.step4"></li>
+                    </ol>
+                    <h4 data-t="userGuide.opportunities.whatHappens"></h4>
+                    <ul>
+                        <li data-t="userGuide.opportunities.happens1"></li>
+                        <li data-t="userGuide.opportunities.happens2"></li>
+                        <li data-t="userGuide.opportunities.happens3"></li>
+                        <li data-t="userGuide.opportunities.happens4"></li>
+                    </ul>
+                    <div class="info-box warning">
+                        <strong data-t="userGuide.opportunities.importantTitle"></strong> <span data-t="userGuide.opportunities.importantDesc"></span>
+                    </div>
+                </section>
+
+                <!-- Tasks & Tickets Section -->
+                <section id="tasks-tickets" class="guide-section">
+                    <h2><span class="material-symbols-outlined">task</span> <span data-t="userGuide.tasksTickets.title"></span></h2>
+                    <h3 data-t="userGuide.tasksTickets.managingTasks"></h3>
+                    <p><strong data-t="userGuide.tasksTickets.requirementsLabel"></strong> <span data-t="userGuide.tasksTickets.taskRequirements"></span></p>
+                    <h4 data-t="userGuide.tasksTickets.whatRecordsShown"></h4>
+                    <ul>
+                        <li data-t="userGuide.tasksTickets.taskRecords1"></li>
+                        <li data-t="userGuide.tasksTickets.taskRecords2"></li>
+                        <li data-t="userGuide.tasksTickets.taskRecords3"></li>
+                    </ul>
+                    <h3 data-t="userGuide.tasksTickets.managingTickets"></h3>
+                    <p><strong data-t="userGuide.tasksTickets.requirementsLabel"></strong> <span data-t="userGuide.tasksTickets.ticketRequirements"></span></p>
+                </section>
+
+                <!-- Troubleshooting Section -->
+                <section id="troubleshooting" class="guide-section">
+                    <h2><span class="material-symbols-outlined">help</span> <span data-t="userGuide.troubleshooting.title"></span></h2>
+                    <h3 data-t="userGuide.troubleshooting.notAppearing"></h3>
+                    <ol>
+                        <li><strong data-t="userGuide.troubleshooting.checkEnabled"></strong>: <span data-t="userGuide.troubleshooting.checkEnabledDesc"></span></li>
+                        <li><strong data-t="userGuide.troubleshooting.refreshGmail"></strong>: <span data-t="userGuide.troubleshooting.refreshGmailDesc"></span></li>
+                        <li><strong data-t="userGuide.troubleshooting.reloadExtension"></strong>: <span data-t="userGuide.troubleshooting.reloadExtensionDesc"></span></li>
+                    </ol>
+                    <h3 data-t="userGuide.troubleshooting.contactNotFound"></h3>
+                    <ul>
+                        <li><strong data-t="userGuide.troubleshooting.emailNotInOdoo"></strong>: <span data-t="userGuide.troubleshooting.emailNotInOdooDesc"></span></li>
+                        <li><strong data-t="userGuide.troubleshooting.emailMismatch"></strong>: <span data-t="userGuide.troubleshooting.emailMismatchDesc"></span></li>
+                    </ul>
+                    <h3 data-t="userGuide.troubleshooting.authFailed"></h3>
+                    <ol>
+                        <li data-t="userGuide.troubleshooting.authStep1"></li>
+                        <li data-t="userGuide.troubleshooting.authStep2"></li>
+                        <li data-t="userGuide.troubleshooting.authStep3"></li>
+                    </ol>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="guide-section">
+                    <h2><span class="material-symbols-outlined">quiz</span> <span data-t="userGuide.faq.title"></span></h2>
+                    <h3 data-t="userGuide.faq.generalTitle"></h3>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q1"></h4>
+                        <p data-t="userGuide.faq.a1"></p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q2"></h4>
+                        <p data-t="userGuide.faq.a2"></p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q3"></h4>
+                        <p data-t="userGuide.faq.a3"></p>
+                    </div>
+                    <h3 data-t="userGuide.faq.subscriptionTitle"></h3>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q4"></h4>
+                        <p data-t="userGuide.faq.a4"></p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q5"></h4>
+                        <p data-t="userGuide.faq.a5"></p>
+                    </div>
+                    <h3 data-t="userGuide.faq.privacyTitle"></h3>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q6"></h4>
+                        <p data-t="userGuide.faq.a6"></p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q7"></h4>
+                        <p data-t="userGuide.faq.a7"></p>
+                    </div>
+                </section>
+
+                <!-- Getting Help Section -->
+                <section class="guide-section">
+                    <h2><span class="material-symbols-outlined">support</span> <span data-t="userGuide.help.title"></span></h2>
+                    <h3 data-t="userGuide.help.contactSupport"></h3>
+                    <p data-t="userGuide.help.contactDesc"></p>
+                    <ul>
+                        <li><strong data-t="userGuide.help.emailLabel"></strong>: <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a></li>
+                        <li data-t="userGuide.help.includeVersion"></li>
+                        <li data-t="userGuide.help.includeScreenshots"></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-t="footer.title"></h4>
+                    <p><span data-t="footer.builtBy"></span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.resources"></h4>
+                    <ul>
+                        <li><a href="index.html" data-t="footer.home"></a></li>
+                        <li><a href="pricing.html" data-t="footer.pricing"></a></li>
+                        <li><a href="user-guide.html" data-t="footer.userGuide"></a></li>
+                        <li><a href="changelog.html" data-t="footer.changelog"></a></li>
+                        <li><a href="privacy.html" data-t="footer.privacy"></a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com" data-t="footer.support"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.legal"></h4>
+                    <p class="small-text" data-t="footer.notAffiliated"></p>
+                    <p class="small-text" data-t="footer.odooTrademark"></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-t="footer.copyright"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
