@@ -69,6 +69,7 @@
                     <a href="pricing.html">Pricing</a>
                     <a href="user-guide.html">User Guide</a>
                     <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary">Get Extension</a>
+                    <a href="#" class="lang-switch" id="lang-switch">ES</a>
                 </div>
             </nav>
         </div>
@@ -288,5 +289,20 @@
 
     <!-- Demo Carousel Script -->
     <script src="carousel.js"></script>
+
+    <!-- Language Switcher Script -->
+    <script>
+    document.getElementById('lang-switch').addEventListener('click', function(e) {
+        e.preventDefault();
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+        if (path.includes('/es/')) {
+            window.location.href = '../' + page;
+        } else {
+            window.location.href = 'es/' + page;
+        }
+    });
+    </script>
 </body>
 </html>

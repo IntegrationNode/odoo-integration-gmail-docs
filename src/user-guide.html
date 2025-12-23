@@ -80,6 +80,7 @@
                     <a href="pricing.html" data-t="nav.pricing"></a>
                     <a href="user-guide.html" class="active" data-t="nav.userGuide"></a>
                     <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary" data-t="nav.getExtension"></a>
+                    <a href="#" class="lang-switch" id="lang-switch" data-t="nav.langSwitch"></a>
                 </div>
             </nav>
         </div>
@@ -344,5 +345,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- Language Switcher Script -->
+    <script>
+    document.getElementById('lang-switch').addEventListener('click', function(e) {
+        e.preventDefault();
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+        if (path.includes('/es/')) {
+            window.location.href = '../' + page;
+        } else {
+            window.location.href = 'es/' + page;
+        }
+    });
+    </script>
 </body>
 </html>
