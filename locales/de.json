@@ -1,0 +1,662 @@
+{
+  "meta": {
+    "lang": "de",
+    "index": {
+      "title": "Odoo Integration für Gmail",
+      "description": "Odoo Integration für Gmail - Kontakte anzeigen, Chancen, Aufgaben und Tickets direkt in Ihrem Gmail-Posteingang erstellen. Chrome-Erweiterung für nahtlose CRM-Integration.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/de/",
+      "ogTitle": "Odoo Integration für Gmail",
+      "ogDescription": "Verwandeln Sie Ihr Gmail in eine leistungsstarke CRM-Oberfläche mit nahtloser Odoo-Integration. Kontakte anzeigen, Chancen, Aufgaben und Tickets erstellen.",
+      "twitterTitle": "Odoo Integration für Gmail",
+      "twitterDescription": "Verwandeln Sie Ihr Gmail in eine leistungsstarke CRM-Oberfläche mit nahtloser Odoo-Integration."
+    },
+    "pricing": {
+      "title": "Preise - Odoo Integration für Gmail",
+      "description": "Preise für Odoo Integration für Gmail - Kostenlose und PLUS-Pläne. Starten Sie kostenlos, upgraden Sie für erweiterte Suche und mehr.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/de/pricing.html",
+      "ogTitle": "Preise - Odoo Integration für Gmail",
+      "ogDescription": "Kostenlose und PLUS-Pläne verfügbar. Starten Sie kostenlos, upgraden Sie für erweiterte Funktionen.",
+      "twitterTitle": "Preise - Odoo Integration für Gmail",
+      "twitterDescription": "Kostenlose und PLUS-Pläne verfügbar. Starten Sie kostenlos, upgraden Sie für erweiterte Funktionen."
+    },
+    "userGuide": {
+      "title": "Benutzerhandbuch - Odoo Integration für Gmail",
+      "description": "Vollständiges Benutzerhandbuch für Odoo Integration für Gmail - Erfahren Sie, wie Sie alle Funktionen installieren, konfigurieren und nutzen, einschließlich E-Mail-Protokollierung, CRM-Chancen, Aufgaben und Tickets.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/de/user-guide.html",
+      "ogTitle": "Benutzerhandbuch - Odoo Integration für Gmail",
+      "ogDescription": "Vollständige Anleitung zur Installation, Konfiguration und Nutzung von Odoo Integration für Gmail. E-Mail-Protokollierung, CRM, Aufgaben und mehr.",
+      "twitterTitle": "Benutzerhandbuch - Odoo Integration für Gmail",
+      "twitterDescription": "Vollständige Anleitung zur Installation, Konfiguration und Nutzung von Odoo Integration für Gmail."
+    },
+    "changelog": {
+      "title": "Versionshistorie - Odoo Integration für Gmail",
+      "description": "Versionshistorie und Updates der Odoo Integration für Gmail-Erweiterung. Verfolgen Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/de/changelog.html",
+      "ogTitle": "Versionshistorie - Odoo Integration für Gmail",
+      "ogDescription": "Versionshistorie und Updates. Verfolgen Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.",
+      "twitterTitle": "Versionshistorie - Odoo Integration für Gmail",
+      "twitterDescription": "Versionshistorie und Updates. Verfolgen Sie neue Funktionen, Verbesserungen und Fehlerbehebungen."
+    },
+    "privacy": {
+      "title": "Datenschutzrichtlinie - Odoo Integration für Gmail",
+      "description": "Datenschutzrichtlinie für Odoo Integration für Gmail. Erfahren Sie, wie wir mit Ihren Daten umgehen, welche Berechtigungen wir anfordern und Ihre Datenschutzrechte.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/de/privacy.html",
+      "ogTitle": "Datenschutzrichtlinie - Odoo Integration für Gmail",
+      "ogDescription": "Erfahren Sie, wie wir mit Ihren Daten umgehen, welche Berechtigungen wir anfordern und Ihre Datenschutzrechte.",
+      "twitterTitle": "Datenschutzrichtlinie - Odoo Integration für Gmail",
+      "twitterDescription": "Erfahren Sie, wie wir mit Ihren Daten umgehen und Ihre Datenschutzrechte."
+    }
+  },
+  "userGuide": {
+    "header": {
+      "title": "Benutzerhandbuch",
+      "subtitle": "Alles, was Sie wissen müssen, um das Beste aus Odoo Integration für Gmail herauszuholen"
+    },
+    "quickNav": "Schnellnavigation",
+    "nav": {
+      "installation": "Installation",
+      "configuration": "Konfiguration",
+      "features": "Funktionsübersicht",
+      "emailLogging": "E-Mail-Protokollierung",
+      "opportunities": "Chancen",
+      "tasksTickets": "Aufgaben & Tickets",
+      "troubleshooting": "Fehlerbehebung",
+      "faq": "FAQ"
+    },
+    "installation": {
+      "title": "Installation",
+      "prerequisites": "Voraussetzungen",
+      "chromeLabel": "Chrome-Browser",
+      "chromeVersion": "Version 88 oder höher",
+      "odooLabel": "Odoo-Instanz",
+      "odooVersion": "Version 14.0 oder höher (Community, Enterprise oder Odoo Online)",
+      "stepsTitle": "Schritt-für-Schritt-Installation",
+      "step1Title": "Chrome Web Store besuchen",
+      "step1Desc": "Gehen Sie zu Odoo Integration für Gmail oder suchen Sie nach \"Odoo Integration for Gmail\" im Chrome Web Store.",
+      "step2Title": "Zu Chrome hinzufügen",
+      "step2Desc": "Klicken Sie auf \"Zu Chrome hinzufügen\" und überprüfen Sie die angeforderten Berechtigungen.",
+      "step3Title": "Installation überprüfen",
+      "step3Desc": "Sie sehen eine Bestätigungsmeldung und das Erweiterungssymbol erscheint in Ihrer Chrome-Symbolleiste.",
+      "step4Title": "Erweiterung anheften (Empfohlen)",
+      "step4Desc": "Klicken Sie auf das Puzzle-Symbol in der Chrome-Symbolleiste, finden Sie \"Odoo Integration for Gmail\" und klicken Sie auf das Anheften-Symbol.",
+      "noteTitle": "Hinweis zu \"Erweitertem Safe Browsing\":",
+      "noteDesc": "Wenn Sie eine Meldung sehen, dass \"Diese Erweiterung nicht von erweitertem Safe Browsing vertraut wird\", ist das normal für neu veröffentlichte Erweiterungen. Die Erweiterung wurde vom Chrome Web Store geprüft und genehmigt."
+    },
+    "configuration": {
+      "title": "Konfiguration",
+      "firstTimeSetup": "Ersteinrichtung",
+      "step1Title": "Gmail öffnen",
+      "step1Desc": "Navigieren Sie zu mail.google.com und öffnen Sie eine beliebige E-Mail, um die Seitenleiste zu sehen.",
+      "step2Title": "Odoo-URL eingeben",
+      "step2Desc": "Geben Sie Ihre Odoo-Instanz-URL ein (z.B. https://ihrefirma.odoo.com). Verwenden Sie HTTPS und keinen abschließenden Schrägstrich.",
+      "step3Title": "API-Schlüssel eingeben",
+      "step3Desc": "Melden Sie sich bei Odoo an, gehen Sie zu Einstellungen, klicken Sie auf Kontosicherheit, unter API-Schlüssel klicken Sie auf Neuer API-Schlüssel, geben Sie einen Namen ein, wählen Sie Persistenter Schlüssel und kopieren Sie den Schlüssel.",
+      "step4Title": "Verbinden",
+      "step4Desc": "Klicken Sie auf Verbinden und die Erweiterung überprüft Ihre Anmeldedaten.",
+      "updateTitle": "Konfiguration aktualisieren",
+      "updateDesc": "Um Ihre Odoo-URL oder API-Schlüssel zu ändern:",
+      "updateStep1": "Klicken Sie auf die Menütaste (drei vertikale Punkte ⋮) in der Seitenleiste",
+      "updateStep2": "Wählen Sie Abmelden",
+      "updateStep3": "Geben Sie Ihre neuen Anmeldedaten ein"
+    },
+    "features": {
+      "title": "Funktionsübersicht",
+      "freePlanTitle": "KOSTENLOS-Plan",
+      "freeBadge": "Kostenlos",
+      "plusPlanTitle": "PLUS-Plan",
+      "plusBadge": "Plus",
+      "plusIntro": "Alles im KOSTENLOS-Plan, plus:",
+      "free": {
+        "contactViewing": "Kontaktanzeige",
+        "contactViewingDesc": "Odoo-Partnerinformationen direkt in Gmail anzeigen",
+        "smartDetection": "Intelligente Kontakterkennung",
+        "smartDetectionDesc": "Erkennt automatisch Absender oder Empfänger",
+        "emailLogging": "E-Mail-Protokollierung",
+        "emailLoggingDesc": "E-Mails mit Anhängen in Odoo protokollieren",
+        "recordCreation": "Datensatzerstellung",
+        "recordCreationDesc": "Leads, Partner, Aufgaben und Tickets erstellen",
+        "limitedRecords": "Begrenzte Datensatzanzeige",
+        "limitedRecordsDesc": "Die ersten 5 Chancen, Aufgaben und Tickets anzeigen",
+        "refresh": "Aktualisieren",
+        "refreshDesc": "Kontaktdaten manuell aktualisieren",
+        "loadTime": "Ladezeit-Indikator",
+        "loadTimeDesc": "Sehen Sie, wie schnell die Seitenleiste geladen wurde"
+      },
+      "plus": {
+        "advancedSearch": "Erweiterte Suche",
+        "advancedSearchDesc": "Suche über alle Chancen, Aufgaben und Tickets (bis zu 50 Ergebnisse)",
+        "tabs": "Kontakt/Firma-Tabs",
+        "tabsDesc": "Zwischen Kontakt- und Firmeninformationen wechseln",
+        "relatedContacts": "Zugehörige Kontakte",
+        "relatedContactsDesc": "Kollegen aus derselben Firma finden",
+        "financial": "Finanzielle Einblicke",
+        "financialDesc": "Rechnungsstellung, Forderungen und Verbindlichkeiten anzeigen",
+        "settings": "Einstellungspanel",
+        "settingsDesc": "Sichtbare Abschnitte anpassen"
+      }
+    },
+    "emailLogging": {
+      "title": "E-Mail-Protokollierung",
+      "howToLog": "So protokollieren Sie eine E-Mail",
+      "step1": "Öffnen Sie die E-Mail, die Sie protokollieren möchten",
+      "step2": "Zeigen Sie den Kontakt in der Seitenleiste an",
+      "step3": "Finden Sie den Datensatz, dem Sie die E-Mail zuordnen möchten (Chance, Aufgabe oder Ticket)",
+      "step4": "Klicken Sie auf das Briefumschlag-Symbol neben dem Datensatz",
+      "step5": "Die Schaltfläche wird zu einem grünen Häkchen, wenn protokolliert",
+      "whatGetsLogged": "Was protokolliert wird",
+      "logged1": "E-Mail-Betreff (im Header)",
+      "logged2": "E-Mail-Text (HTML-formatiert)",
+      "logged3": "Absender/Empfänger-Informationen",
+      "logged4": "Datum und Uhrzeit",
+      "logged5": "Alle Anhänge (Dateien, Bilder, PDFs)",
+      "logged6": "\"Aus Gmail Inbox protokolliert\"-Fußzeile",
+      "duplicateTitle": "Duplikaterkennung",
+      "duplicateIntro": "Die Erweiterung hat zwei Ebenen der Duplikaterkennung:",
+      "visualIndicator": "Visueller Indikator (0-6 Stunden)",
+      "visualIndicatorDesc": "Hilft Ihnen, auf einen Blick zu erkennen, welche Datensätze diese E-Mail bereits enthalten",
+      "serverSide": "Serverseitige Validierung (immer)",
+      "serverSideDesc": "Odoo verhindert Duplikate, auch wenn der visuelle Indikator abgelaufen ist",
+      "importantTitle": "Wichtig:",
+      "importantDesc": "Auch ohne den visuellen Indikator können Sie nicht versehentlich Duplikate erstellen. Odoos Server validiert jede Protokollierungsanfrage und lehnt Duplikate ab."
+    },
+    "opportunities": {
+      "title": "Chancen verwalten",
+      "creatingLeads": "Leads aus E-Mails erstellen",
+      "creatingLeadsIntro": "Wandeln Sie eine E-Mail-Konversation mit einem Klick in eine Odoo-Chance um:",
+      "step1": "Öffnen Sie die E-Mail, die Sie in einen Lead umwandeln möchten",
+      "step2": "Zeigen Sie den Kontakt in der Seitenleiste an",
+      "step3": "Scrollen Sie zum Abschnitt Chancen",
+      "step4": "Klicken Sie auf \"Erstellen\"",
+      "whatHappens": "Was automatisch passiert:",
+      "happens1": "Der Lead wird mit dem E-Mail-Betreff als Name erstellt",
+      "happens2": "Der E-Mail-Inhalt wird als Beschreibung hinzugefügt",
+      "happens3": "Der Kontakt aus der Seitenleiste wird verknüpft",
+      "happens4": "Der Lead öffnet sich in Odoo in einem neuen Tab zur Bearbeitung",
+      "importantTitle": "Wichtig:",
+      "importantDesc": "Die E-Mail wird NICHT automatisch protokolliert. Um die E-Mail mit dem neuen Lead zu verknüpfen, kehren Sie zu Gmail zurück und klicken Sie auf das Briefumschlag-Symbol neben der Chance."
+    },
+    "tasksTickets": {
+      "title": "Aufgaben & Tickets",
+      "managingTasks": "Aufgaben verwalten",
+      "requirementsLabel": "Voraussetzungen:",
+      "taskRequirements": "Odoo Projekt-Modul installiert",
+      "whatRecordsShown": "Welche Datensätze werden angezeigt:",
+      "taskRecords1": "Aufgaben, die mit dem Kontakt verknüpft sind (über partner_id)",
+      "taskRecords2": "Schließt abgeschlossene oder abgebrochene Aufgaben aus",
+      "taskRecords3": "Sortiert nach neuester Aktivität",
+      "managingTickets": "Helpdesk-Tickets verwalten",
+      "ticketRequirements": "Odoo Helpdesk-Modul (nur Enterprise)"
+    },
+    "troubleshooting": {
+      "title": "Fehlerbehebung",
+      "notAppearing": "Erweiterung erscheint nicht in Gmail",
+      "checkEnabled": "Überprüfen Sie, ob die Erweiterung aktiviert ist",
+      "checkEnabledDesc": "Gehen Sie zu chrome://extensions/ und stellen Sie sicher, dass der Schalter auf AN steht",
+      "refreshGmail": "Gmail aktualisieren",
+      "refreshGmailDesc": "Drücken Sie Strg+Umschalt+R (Windows/Linux) oder Cmd+Umschalt+R (Mac)",
+      "reloadExtension": "Erweiterung neu laden",
+      "reloadExtensionDesc": "Klicken Sie auf \"Neu laden\" auf der Erweiterungskarte",
+      "contactNotFound": "\"Kontakt nicht gefunden\"-Meldung",
+      "emailNotInOdoo": "E-Mail nicht in Odoo",
+      "emailNotInOdooDesc": "Klicken Sie auf \"Kontakt erstellen\", um ihn hinzuzufügen",
+      "emailMismatch": "E-Mail-Schreibweisen-Unterschied",
+      "emailMismatchDesc": "Aktualisieren Sie die E-Mail in Odoo oder erstellen Sie einen neuen Kontakt",
+      "authFailed": "\"Authentifizierung fehlgeschlagen\"-Fehler",
+      "authStep1": "Überprüfen Sie, ob Ihr API-Schlüssel in Odoo → Einstellungen → Kontosicherheit korrekt ist",
+      "authStep2": "Generieren Sie den API-Schlüssel bei Bedarf neu",
+      "authStep3": "Überprüfen Sie, ob Ihre Odoo-URL korrekt ist (einschließlich HTTPS)"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "generalTitle": "Allgemein",
+      "q1": "F: Welche Odoo-Versionen werden unterstützt?",
+      "a1": "Odoo 14.0 und höher werden unterstützt, einschließlich Community, Enterprise und Odoo Online (odoo.com).",
+      "q2": "F: Funktioniert es mit anderen Browsern?",
+      "a2": "Derzeit unterstützt die Erweiterung nur Google Chrome. Unterstützung für andere Browser könnte in Zukunft hinzugefügt werden.",
+      "q3": "F: Sind meine Daten sicher?",
+      "a3": "Ja. Die Erweiterung greift nur auf E-Mails zu, die Sie aktiv anzeigen, und kommuniziert sicher mit Ihrer Odoo-Instanz über HTTPS. Ihr API-Schlüssel wird im sicheren Chrome-Speicher gespeichert.",
+      "subscriptionTitle": "Abonnement",
+      "q4": "F: Was ist der Unterschied zwischen KOSTENLOS und PLUS?",
+      "a4": "KOSTENLOS enthält grundlegende Funktionen (Kontaktanzeige, E-Mail-Protokollierung, begrenzte Datensätze). PLUS fügt erweiterte Suche, Finanzeinblicke, zugehörige Kontakte und Anpassungsoptionen hinzu.",
+      "q5": "F: Kann ich mein PLUS-Abonnement jederzeit kündigen?",
+      "a5": "Ja, Sie können jederzeit ohne Strafe kündigen. Ihr Abonnement bleibt bis zum Ende Ihres Abrechnungszeitraums aktiv.",
+      "privacyTitle": "Datenschutz",
+      "q6": "F: Liest die Erweiterung alle meine E-Mails?",
+      "a6": "Nein, die Erweiterung greift nur auf E-Mails zu, die Sie aktiv anzeigen. Sie scannt nicht Ihr gesamtes Postfach und liest keine E-Mails im Hintergrund.",
+      "q7": "F: Wird mein API-Schlüssel sicher gespeichert?",
+      "a7": "Ja, Ihr API-Schlüssel wird im sicheren Chrome-Speicher (chrome.storage.sync) gespeichert, den Chrome mit den Anmeldedaten Ihres Betriebssystem-Benutzerkontos verschlüsselt."
+    },
+    "help": {
+      "title": "Hilfe erhalten",
+      "contactSupport": "Support kontaktieren",
+      "contactDesc": "Bei Fragen oder Problemen, die in diesem Handbuch nicht behandelt werden:",
+      "emailLabel": "E-Mail",
+      "includeVersion": "Geben Sie Ihre Odoo-Version und Erweiterungsversion an",
+      "includeScreenshots": "Beschreiben Sie das Problem möglichst mit Screenshots"
+    }
+  },
+  "nav": {
+    "logo": "Odoo Integration für Gmail",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "userGuide": "Handbuch",
+    "getExtension": "Installieren",
+    "currentLang": "DE"
+  },
+  "hero": {
+    "title": "Odoo Integration für Gmail",
+    "subtitle": "Verwandeln Sie Ihr Gmail in eine leistungsstarke CRM-Oberfläche mit nahtloser Odoo-Integration",
+    "getExtension": "Erweiterung installieren",
+    "learnMore": "Mehr erfahren"
+  },
+  "features": {
+    "title": "Hauptfunktionen",
+    "instant": {
+      "title": "Sofortige Kontaktinfo",
+      "description": "Odoo-Kontaktdetails direkt in der Gmail-Seitenleiste anzeigen. 22x schneller als Google Apps Script."
+    },
+    "crm": {
+      "title": "CRM-Chancen",
+      "description": "Bestehende Chancen anzeigen und neue erstellen, ohne Ihren Posteingang zu verlassen. Inklusive Suche und Filterung."
+    },
+    "tasks": {
+      "title": "Aufgabenverwaltung",
+      "description": "Projektaufgaben anzeigen und erstellen, die mit Kontakten verknüpft sind. Alles an einem Ort."
+    },
+    "helpdesk": {
+      "title": "Helpdesk-Tickets",
+      "description": "Support-Tickets anzeigen und direkt aus E-Mail-Konversationen neue erstellen."
+    },
+    "emailLogging": {
+      "title": "E-Mail-Protokollierung",
+      "description": "E-Mails mit einem Klick in Odoo-Datensätzen protokollieren. Automatische Formatierung und Verlaufserhaltung."
+    },
+    "fast": {
+      "title": "Blitzschnell",
+      "description": "100-300ms Antwortzeit mit intelligenter Zwischenspeicherung. Keine Wartezeit mehr bei langsamen Integrationen."
+    }
+  },
+  "demos": {
+    "title": "In Aktion sehen",
+    "subtitle": "Fahren Sie mit der Maus über jede Demo, um die Erweiterung in Aktion zu sehen",
+    "search": {
+      "title": "Echtzeit-Suche",
+      "description": "Chancen, Aufgaben und Tickets sofort beim Tippen filtern. Finden Sie, was Sie brauchen, in Millisekunden.",
+      "badge": "PLUS-Funktion"
+    },
+    "createContact": {
+      "title": "Kontakt erstellen",
+      "description": "Neue Kontakte direkt von Gmail zu Odoo hinzufügen. Kontext wird automatisch aus E-Mails erfasst.",
+      "badge": "Kernfunktion"
+    },
+    "setup": {
+      "title": "Schnelle Einrichtung",
+      "description": "In Sekunden mit Ihrer Odoo-Instanz verbinden. Einfache Konfiguration, leistungsstarke Ergebnisse.",
+      "badge": "Schnellstart"
+    }
+  },
+  "pricing": {
+    "title": "Wählen Sie Ihren Plan",
+    "subtitle": "Starten Sie kostenlos, upgraden Sie, wenn Sie erweiterte Funktionen benötigen",
+    "perMonth": "/Monat",
+    "free": {
+      "name": "Kostenlos",
+      "feature1": "Kontakte und Firmeninfo anzeigen",
+      "feature2": "Chancen, Aufgaben und Tickets erstellen",
+      "feature3": "E-Mails in Odoo protokollieren",
+      "feature4": "5 Datensätze pro Abschnitt anzeigen",
+      "feature5": "Intelligente Kontakterkennung",
+      "cta": "Loslegen"
+    },
+    "plus": {
+      "name": "PLUS",
+      "badge": "Am beliebtesten",
+      "annual": "oder 182€/Jahr",
+      "save": "20% sparen",
+      "feature1": "Alles im kostenlosen Plan",
+      "feature2": "<strong>Echtzeit-Suche</strong> in allen Listen",
+      "feature3": "Bis zu <strong>50 Datensätze</strong> anzeigen (vs. 5 im Kostenlos)",
+      "feature4": "Kontakt/Firma-Tabs",
+      "feature5": "Zugehörige Kontakte nach Domain",
+      "feature6": "Sichtbare Abschnitte anpassen",
+      "feature7": "Leistungseinblicke",
+      "cta": "Auf PLUS upgraden"
+    },
+    "teamQuestion": "Team-Preise benötigt?",
+    "viewPlans": "Alle Pläne anzeigen",
+    "or": "oder",
+    "contactUs": "kontaktieren Sie uns"
+  },
+  "pricingPage": {
+    "hero": {
+      "title": "Einfache, transparente Preise",
+      "subtitle": "Starten Sie kostenlos, upgraden Sie für leistungsstarke Funktionen. Keine Kreditkarte erforderlich."
+    },
+    "perMonth": "/Monat",
+    "featuresIncluded": "Enthaltene Funktionen:",
+    "free": {
+      "name": "Kostenlos",
+      "description": "Perfekt für Einzelnutzer zum Einstieg",
+      "feature1": "Kontakte und Firmeninfo anzeigen",
+      "feature2": "Chancen, Aufgaben und Tickets erstellen",
+      "feature3": "E-Mails in Odoo protokollieren",
+      "feature4": "5 Datensätze pro Abschnitt anzeigen",
+      "feature5": "Intelligente Kontakterkennung",
+      "feature6": "E-Mail-Support",
+      "cta": "Kostenlos starten"
+    },
+    "plus": {
+      "name": "PLUS",
+      "badge": "Am beliebtesten",
+      "description": "Für Power-User, die erweiterte Suche und Funktionen benötigen",
+      "everythingInFree": "Alles im kostenlosen Plan, plus:",
+      "or": "oder",
+      "perYear": "/Jahr",
+      "save": "20% sparen",
+      "feature1": "<strong>Echtzeit-Suche</strong> in Chancen, Aufgaben und Tickets",
+      "feature2": "Bis zu <strong>50 Datensätze</strong> pro Abschnitt (vs. 5 im Kostenlos)",
+      "feature3": "Kontakt/Firma-Tabs für mehr Kontext",
+      "feature4": "Zugehörige Kontakte nach Domain",
+      "feature5": "Sichtbare Abschnitte anpassen",
+      "feature6": "Leistungseinblicke und Metriken",
+      "feature7": "Prioritäts-E-Mail-Support",
+      "cta": "Auf PLUS upgraden"
+    },
+    "comparison": {
+      "title": "Detaillierter Funktionsvergleich",
+      "feature": "Funktion",
+      "coreFeatures": "Kernfunktionen",
+      "viewContacts": "Kontakte und Firmeninfo anzeigen",
+      "createRecords": "Chancen, Aufgaben und Tickets erstellen",
+      "logEmails": "E-Mails in Odoo protokollieren",
+      "smartDetection": "Intelligente Kontakterkennung",
+      "dataSearch": "Daten und Suche",
+      "recordsPerSection": "Datensätze pro Abschnitt",
+      "realtimeSearch": "Echtzeit-Suche",
+      "contactCompanyTabs": "Kontakt/Firma-Tabs",
+      "relatedContacts": "Zugehörige Kontakte mit Berufsbezeichnung",
+      "customization": "Anpassung und Einblicke",
+      "financialInsights": "Finanzielle Einblicke",
+      "customizeSections": "Sichtbare Abschnitte anpassen"
+    },
+    "cta": {
+      "title": "Bereit, Ihren Gmail-Odoo-Workflow zu verbessern?",
+      "subtitle": "Starten Sie mit unserem kostenlosen Plan und upgraden Sie, wenn Sie erweiterte Funktionen benötigen.",
+      "getStarted": "Kostenlos starten",
+      "upgrade": "Auf PLUS upgraden"
+    }
+  },
+  "privacyPage": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "backToHome": "Zurück zur Startseite",
+    "overview": {
+      "title": "Überblick",
+      "intro": "Odoo Integration für Gmail (\"die Erweiterung\") ist dem Schutz Ihrer Privatsphäre verpflichtet. Diese Datenschutzrichtlinie erklärt, wie die Erweiterung Ihre Informationen sammelt, verwendet und schützt.",
+      "developer": "Entwickler:"
+    },
+    "infoCollect": {
+      "title": "Informationen, die wir sammeln",
+      "gmailData": "Zugriff auf Gmail-Daten",
+      "gmailDataDesc": "Die Erweiterung greift auf folgende Informationen aus Gmail zu, wenn Sie explizit eine E-Mail öffnen:",
+      "senderRecipient": "Absender- und Empfänger-E-Mail-Adressen:",
+      "senderRecipientDesc": "Verwendet, um übereinstimmende Kontakte in Ihrer Odoo-Instanz zu suchen",
+      "emailSubject": "E-Mail-Betreff und -Text:",
+      "emailSubjectDesc": "Verwendet, wenn Sie Chancen, Aufgaben oder Tickets in Odoo erstellen",
+      "emailDate": "E-Mail-Datum und Metadaten:",
+      "emailDateDesc": "Verwendet für die Protokollierung von E-Mails in Odoo-Datensätzen",
+      "odooData": "Zugriff auf Odoo-Daten",
+      "odooDataDesc": "Die Erweiterung ruft folgende Informationen aus Ihrer Odoo-Instanz ab:",
+      "odooData1": "Kontaktinformationen (Namen, E-Mails, Telefonnummern, Firmen)",
+      "odooData2": "CRM-Chancen, die mit Kontakten verknüpft sind",
+      "odooData3": "Projektaufgaben, die mit Kontakten verknüpft sind",
+      "odooData4": "Helpdesk-Tickets, die mit Kontakten verknüpft sind",
+      "odooData5": "Firmeninformationen und zugehörige Kontakte",
+      "configData": "Konfigurationsdaten",
+      "configDataDesc": "Die Erweiterung speichert Ihre Odoo-Instanzkonfiguration lokal:",
+      "configData1": "Odoo-Instanz-URL",
+      "configData2": "Datenbankname",
+      "configData3": "Authentifizierungsdaten",
+      "configData4": "Benutzereinstellungen (Einstellungen für sichtbare Abschnitte)"
+    },
+    "howWeUse": {
+      "title": "Wie wir Ihre Informationen verwenden",
+      "intro": "Die Erweiterung verwendet Ihre Informationen ausschließlich für folgende Zwecke:",
+      "displayContact": "Kontaktinformationen anzeigen:",
+      "displayContactDesc": "Relevante Odoo-Kontaktdetails in der Gmail-Seitenleiste anzeigen",
+      "createRecords": "Odoo-Datensätze erstellen:",
+      "createRecordsDesc": "Wenn Sie auf \"Erstellen\"-Schaltflächen klicken, wird der E-Mail-Inhalt an Ihre Odoo-Instanz gesendet, um Chancen, Aufgaben oder Tickets zu erstellen",
+      "logEmails": "E-Mails protokollieren:",
+      "logEmailsDesc": "Wenn Sie auf \"E-Mail protokollieren\"-Schaltflächen klicken, wird der E-Mail-Inhalt im Chatter Ihrer Odoo-Instanz gespeichert",
+      "searchFilter": "Suchen und filtern:",
+      "searchFilterDesc": "Durch Chancen, Aufgaben und Tickets suchen, die mit Kontakten verknüpft sind",
+      "caching": "Zwischenspeicherung:",
+      "cachingDesc": "Odoo-API-Antworten vorübergehend lokal zwischenspeichern, um die Leistung zu verbessern"
+    },
+    "storage": {
+      "title": "Datenspeicherung und Sicherheit",
+      "localOnly": "Nur lokale Speicherung:",
+      "localOnlyDesc": "Alle Daten werden lokal auf Ihrem Gerät über Chrome-Speicher-APIs gespeichert. Keine Daten werden an Drittserver übertragen, außer an Ihre eigene Odoo-Instanz.",
+      "transmission": "Datenübertragung:",
+      "transmissionDesc": "Die Erweiterung kommuniziert direkt mit IHRER Odoo-Instanz über HTTPS. Ihre Odoo-Anmeldedaten und Daten werden niemals an den Erweiterungsentwickler oder Dritte gesendet.",
+      "cache": "Cache-Verwaltung:",
+      "cacheDesc": "Zwischengespeicherte Daten werden automatisch nach 5 Minuten gelöscht oder wenn Sie auf die Aktualisierungsschaltfläche klicken. Sie können auch alle zwischengespeicherten Daten löschen, indem Sie die Erweiterung entfernen."
+    },
+    "thirdParty": {
+      "title": "Drittanbieter-Dienste",
+      "paymentProcessing": "Zahlungsabwicklung",
+      "extpayIntro": "Die Erweiterung verwendet ExtensionPay (https://extensionpay.com/) für die Abonnementverwaltung und Zahlungsabwicklung. Wenn Sie den PLUS-Plan abonnieren, erfasst ExtensionPay:",
+      "extpay1": "Ihre E-Mail-Adresse für die Kontoverwaltung und Belege",
+      "extpay2": "Zahlungsinformationen (sicher über Stripe verarbeitet, nicht von der Erweiterung gespeichert)",
+      "extpay3": "Abonnementstatus und Rechnungsinformationen",
+      "extpayPolicy": "ExtensionPay-Datenschutzrichtlinie:",
+      "important": "Wichtig:",
+      "importantDesc": "Zahlungsdaten werden vollständig von ExtensionPay und Stripe verarbeitet. Die Erweiterung erhält oder speichert niemals Ihre Kreditkarteninformationen.",
+      "gmailIntegration": "Gmail-Integration",
+      "inboxsdkDesc": "Die Erweiterung verwendet InboxSDK (https://www.inboxsdk.com/), um sich in die Gmail-Oberfläche zu integrieren. InboxSDK ist eine Bibliothek, die der Erweiterung hilft, mit der Gmail-UI zu interagieren, um die Seitenleiste anzuzeigen und E-Mail-Kontakte zu erkennen. InboxSDK sammelt, überträgt oder speichert Ihre E-Mail-Daten nicht."
+    },
+    "dataSharing": {
+      "title": "Datenweitergabe an Dritte",
+      "noShare": "Wir teilen Ihre Daten NICHT mit Dritten für Werbe-, Analyse- oder Datenvermittlungszwecke.",
+      "onlyWith": "Die Erweiterung kommuniziert nur mit:",
+      "yourOdoo": "Ihrer Odoo-Instanz:",
+      "yourOdooDesc": "Die Erweiterung sendet API-Anfragen an die von Ihnen konfigurierte Odoo-URL, um Datensätze abzurufen und zu erstellen",
+      "extpayDesc": "Nur für die Abonnementverwaltung (E-Mail, Abonnementstatus, Zahlungsabwicklung)",
+      "doesNot": "Die Erweiterung tut NICHT:",
+      "notSell": "Ihre Daten an Datenhändler verkaufen",
+      "notAdvertising": "Daten für Werbezwecke teilen",
+      "notAnalytics": "Daten an Analyse- oder Tracking-Dienste übermitteln",
+      "notDeveloper": "Gmail- oder Odoo-Daten an die Server des Erweiterungsentwicklers senden"
+    },
+    "googleApi": {
+      "title": "Google API-Dienste Nutzerdatenrichtlinie",
+      "intro": "Die Nutzung und Übertragung von Informationen durch Odoo Integration für Gmail, die von Google-APIs erhalten wurden, entspricht",
+      "limitedUse": "einschließlich der Anforderungen für eingeschränkte Nutzung.",
+      "compliance": "Einhaltung der eingeschränkten Nutzung:",
+      "compliance1": "Die Erweiterung greift nur auf Gmail-Daten zu, wenn Sie explizit eine E-Mail öffnen",
+      "compliance2": "E-Mail-Daten werden ausschließlich für den offengelegten Zweck verwendet: Integration mit Ihrem Odoo-CRM",
+      "compliance3": "Keine Gmail-Daten werden für Werbung verwendet",
+      "compliance4": "Gmail-Daten werden nicht an Dritte übertragen (außer an Ihre eigene Odoo-Instanz)",
+      "compliance5": "Gmail-Daten werden nicht zur Bestimmung der Kreditwürdigkeit oder für Kreditzwecke verwendet"
+    },
+    "permissions": {
+      "title": "Erklärung der Berechtigungen",
+      "intro": "Die Erweiterung fordert folgende Chrome-Berechtigungen an:",
+      "required": "Erforderliche Berechtigungen (bei der Installation gewährt)",
+      "scripting": "Erforderlich, um die Seitenleisten-Oberfläche in Gmail einzufügen",
+      "storage": "Erforderlich, um Ihre Odoo-Konfiguration zu speichern und API-Antworten lokal zwischenzuspeichern",
+      "hostGmail": "Erforderlich, um auf die Gmail-Oberfläche zuzugreifen und die Seitenleiste anzuzeigen",
+      "hostOdoo": "Erforderlich, um mit Odoo Online Cloud-Instanzen zu kommunizieren (z.B. ihrefirma.odoo.com)",
+      "hostExtpay": "Erforderlich für die Abonnementverwaltung und Zahlungsabwicklung",
+      "optional": "Optionale Berechtigungen (bei Bedarf angefordert)",
+      "optionalIntro": "Die Erweiterung fordert optionale Berechtigungen für benutzerdefinierte Odoo-Instanzen an:",
+      "optionalDesc": "Wird NUR verwendet, wenn Sie sich mit einer selbst gehosteten Odoo-Instanz auf einer benutzerdefinierten Domain verbinden (z.B. odoo.ihrefirma.com oder erp.beispiel.com). Diese Berechtigung wird nur angefordert, wenn Sie explizit eine benutzerdefinierte Odoo-URL konfigurieren.",
+      "note": "Hinweis:",
+      "noteDesc": "Die Erweiterung unterstützt nur HTTPS-Verbindungen aus Sicherheitsgründen. HTTP-Verbindungen sind nicht erlaubt.",
+      "whenRequested": "Wann optionale Berechtigungen angefordert werden",
+      "whenRequestedIntro": "Chrome fordert Sie auf, optionale Berechtigungen zu gewähren, wenn:",
+      "whenRequested1": "Sie eine benutzerdefinierte Odoo-URL konfigurieren, die keine *.odoo.com-Domain ist",
+      "whenRequested2": "Sie sich explizit für eine selbst gehostete Odoo-Instanz entscheiden",
+      "canDeny": "Sie können diese Berechtigungen ablehnen",
+      "canDenyDesc": "wenn Sie nur Odoo Online (*.odoo.com) verwenden. Die Erweiterung funktioniert normal mit Odoo Online, ohne optionale Berechtigungen zu gewähren.",
+      "why": "Warum diese optionalen Berechtigungen?",
+      "whyIntro": "Viele Organisationen hosten Odoo auf eigenen Servern mit benutzerdefinierten Domains (z.B. erp.acme.com, odoo.meinefirma.net). Um diese Benutzer zu unterstützen, fordert die Erweiterung optionale breite Berechtigungen an. Jedoch:",
+      "why1": "Diese Berechtigungen werden NUR verwendet, um mit IHRER konfigurierten Odoo-Instanz zu kommunizieren",
+      "why2": "Sie werden NIEMALS verwendet, um auf andere Websites zuzugreifen",
+      "why3": "Sie können sie jederzeit in den Chrome-Einstellungen widerrufen",
+      "why4": "Die Erweiterung fordert sie nur an, wenn Sie eine benutzerdefinierte Odoo-URL eingeben"
+    },
+    "rights": {
+      "title": "Ihre Datenschutzrechte",
+      "intro": "Sie haben folgende Rechte bezüglich Ihrer Daten:",
+      "access": "Zugriff:",
+      "accessDesc": "Alle Ihre Daten werden lokal und in Ihrer Odoo-Instanz gespeichert, die Sie kontrollieren",
+      "deletion": "Löschung:",
+      "deletionDesc": "Sie können alle Erweiterungsdaten löschen, indem Sie:",
+      "deletion1": "Auf die Aktualisierungsschaltfläche klicken (löscht den Cache)",
+      "deletion2": "Die Erweiterung aus Chrome entfernen (löscht alle lokalen Daten)",
+      "portability": "Portabilität:",
+      "portabilityDesc": "Ihre Daten bleiben in Ihrer Odoo-Instanz und sind über die Export-Funktionen von Odoo zugänglich",
+      "control": "Kontrolle:",
+      "controlDesc": "Sie können den Zugriff der Erweiterung jederzeit widerrufen, indem Sie sie entfernen"
+    },
+    "retention": {
+      "title": "Datenspeicherung",
+      "intro": "Die Erweiterung speichert Daten wie folgt:",
+      "configData": "Konfigurationsdaten:",
+      "configDataDesc": "Gespeichert, bis Sie die Erweiterung entfernen",
+      "cachedData": "Zwischengespeicherte API-Antworten:",
+      "cachedDataDesc": "Automatisch nach 5 Minuten gelöscht",
+      "preferences": "Benutzereinstellungen:",
+      "preferencesDesc": "Gespeichert, bis Sie die Erweiterung entfernen",
+      "uninstall": "Wenn Sie die Erweiterung deinstallieren, werden alle lokal gespeicherten Daten automatisch von Chrome entfernt."
+    },
+    "children": {
+      "title": "Datenschutz für Kinder",
+      "desc": "Die Erweiterung ist nicht für die Nutzung durch Kinder unter 13 Jahren bestimmt. Wir sammeln nicht wissentlich personenbezogene Daten von Kindern unter 13 Jahren."
+    },
+    "changes": {
+      "title": "Änderungen dieser Datenschutzrichtlinie",
+      "desc1": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Benutzer über wesentliche Änderungen informieren, indem wir das Datum \"Zuletzt aktualisiert\" oben auf dieser Richtlinie aktualisieren und, falls erforderlich, durch die Update-Benachrichtigungen der Erweiterung.",
+      "desc2": "Die weitere Nutzung der Erweiterung nach Änderungen gilt als Akzeptanz der aktualisierten Datenschutzrichtlinie."
+    },
+    "contact": {
+      "title": "Kontaktinformationen",
+      "desc": "Bei Fragen oder Bedenken bezüglich dieser Datenschutzrichtlinie oder der Datenpraktiken der Erweiterung kontaktieren Sie bitte:"
+    },
+    "legal": {
+      "title": "Rechtlicher Hinweis",
+      "desc1": "Odoo Integration für Gmail ist eine unabhängige Erweiterung und ist nicht mit Odoo S.A. oder Google LLC verbunden, wird nicht von diesen unterstützt oder gesponsert.",
+      "desc2": "Odoo ist eine Marke von Odoo S.A.",
+      "desc3": "Gmail und Chrome sind Marken von Google LLC."
+    }
+  },
+  "changelogPage": {
+    "navChangelog": "Verlauf",
+    "header": {
+      "title": "Versionshistorie",
+      "subtitle": "Verfolgen Sie neue Funktionen, Verbesserungen und Fehlerbehebungen in jeder Version"
+    },
+    "version": "Version",
+    "sections": {
+      "newFeatures": "Neue Funktionen",
+      "improvements": "Verbesserungen",
+      "technical": "Technisch",
+      "bugFixes": "Fehlerbehebungen",
+      "dependencies": "Abhängigkeiten",
+      "initialRelease": "Erstveröffentlichung",
+      "plusFeatures": "PLUS-Funktionen"
+    },
+    "v0100": {
+      "multiLanguage": "Mehrsprachige Unterstützung",
+      "multiLanguageDesc": "Vollständige Oberflächenübersetzung (Englisch, Spanisch, Französisch, Deutsch)",
+      "accessibility": "Barrierefreiheit",
+      "accessibilityDesc": "WCAG AA-konforme Farben und Tastaturnavigation",
+      "toastNotifications": "Toast-Benachrichtigungen",
+      "toastNotificationsDesc": "Moderne, nicht blockierende Rückmeldung für Aktionen",
+      "rateLimiting": "Ratenbegrenzung",
+      "rateLimitingDesc": "Verhindert HTTP 429-Fehler durch Anfragedrosselung",
+      "typescript": "Architektur auf TypeScript mit Service-Layer umgestellt",
+      "jest": "Jest-Test-Infrastruktur"
+    },
+    "v0006": {
+      "gmailFix": "Gmail-Kompatibilitätsfix",
+      "gmailFixDesc": "\"threadID element not found\"-Fehler behoben, verursacht durch Gmail-UI-Änderungen",
+      "inboxsdk": "InboxSDK von 2.2.8 auf 2.2.11 aktualisiert"
+    },
+    "v0005": {
+      "emailHeaders": "Gmail-ähnliche E-Mail-Log-Header",
+      "emailHeadersDesc": "E-Mail-Logs zeigen jetzt strukturierte Header (von/an/datum/betreff) für bessere Lesbarkeit",
+      "duplicateDetection": "E-Mail-Duplikaterkennung",
+      "duplicateDetectionDesc": "Verhindert versehentliches mehrfaches Protokollieren derselben E-Mail in einem Datensatz",
+      "relatedContacts": "Verbesserte zugehörige Kontakte",
+      "relatedContactsDesc": "Zeigt jetzt Berufsbezeichnungen und verbessertes Layout mit Symbolen für E-Mail und Telefon",
+      "conditionalTooltips": "Bedingte Tooltips",
+      "conditionalTooltipsDesc": "Tooltips erscheinen nur, wenn Text abgeschnitten ist, reduziert UI-Unordnung",
+      "headerFix": "Header-Barrierefreiheit behoben",
+      "headerFixDesc": "Einstellungen und Abmelde-Menü sind jetzt auch bei Fehlerzuständen immer zugänglich, verhindert, dass Benutzer feststecken"
+    },
+    "v0004": {
+      "odoo19": "Odoo v19-Unterstützung",
+      "odoo19Desc": "Volle Kompatibilität mit der neuesten Odoo-Version",
+      "settingsExp": "Bessere Einstellungserfahrung",
+      "settingsExpDesc": "Neu gestaltete Einstellungen mit einfacherer Navigation",
+      "searchBehavior": "Verbessertes Suchverhalten",
+      "searchBehaviorDesc": "Löschen der Suche setzt jetzt korrekt zur Anfangsansicht zurück",
+      "setupInstructions": "Klarere Einrichtungsanweisungen",
+      "setupInstructionsDesc": "Verbesserte Anleitung für API-Schlüssel-Konfiguration"
+    },
+    "v0003": {
+      "minorFixes": "Kleinere Korrekturen und Verbesserungen am Konfigurationssetup"
+    },
+    "v0002": {
+      "financialInsights": "Finanzielle Einblicke",
+      "financialInsightsDesc": "Finanzmetriken für Ihre Kunden und Lieferanten direkt in Gmail anzeigen",
+      "visualEnhancements": "Visuelle und Design-Verbesserungen",
+      "visualEnhancementsDesc": "Verbessertes Interface-Design und Benutzererfahrung"
+    },
+    "v0001": {
+      "contactCompany": "Kontakt- und Firmeninformationen",
+      "contactCompanyDesc": "Odoo-Kontakt- und Firmendetails direkt in Gmail anzeigen",
+      "crmOpportunities": "CRM-Chancen",
+      "crmOpportunitiesDesc": "Verkaufschancen aus Ihrem Posteingang anzeigen und erstellen",
+      "projectTasks": "Projektaufgaben",
+      "projectTasksDesc": "Aufgaben anzeigen und erstellen, die mit Kontakten verknüpft sind",
+      "helpdeskTickets": "Helpdesk-Tickets",
+      "helpdeskTicketsDesc": "Support-Tickets aus E-Mails anzeigen und erstellen",
+      "emailLogging": "E-Mail-Protokollierung",
+      "emailLoggingDesc": "E-Mails mit einem Klick in Odoo-Datensätzen speichern, einschließlich Anhänge",
+      "advancedSearch": "Erweiterte Suche",
+      "advancedSearchDesc": "Über alle Ihre Chancen, Aufgaben und Tickets suchen",
+      "extendedViews": "Erweiterte Ansichten",
+      "extendedViewsDesc": "Bis zu 50 Datensätze pro Abschnitt anzeigen (vs. 5 im Kostenlos-Plan)",
+      "relatedContacts": "Zugehörige Kontakte",
+      "relatedContactsDesc": "Andere Kontakte aus derselben Firma sehen",
+      "customization": "Anpassung",
+      "customizationDesc": "Anzuzeigende Abschnitte auswählen"
+    },
+    "subscriptionRequired": "PLUS-Abonnement erforderlich:",
+    "subscriptionRequiredDesc": "Erweiterte Funktionen sind mit einem PLUS-Abonnement verfügbar (19€/Monat oder 182€/Jahr).",
+    "cta": {
+      "title": "Bereit, die neueste Version auszuprobieren?",
+      "subtitle": "Starten Sie mit unserem kostenlosen Plan oder upgraden Sie auf PLUS für erweiterte Funktionen.",
+      "install": "Erweiterung installieren",
+      "viewPricing": "Preise anzeigen"
+    }
+  },
+  "footer": {
+    "title": "Odoo Integration für Gmail",
+    "builtBy": "Entwickelt von",
+    "resources": "Ressourcen",
+    "home": "Startseite",
+    "pricing": "Preise",
+    "userGuide": "Handbuch",
+    "changelog": "Verlauf",
+    "privacy": "Datenschutz",
+    "support": "Support",
+    "legal": "Rechtliches",
+    "notAffiliated": "Nicht mit Odoo S.A. oder Google LLC verbunden.",
+    "odooTrademark": "Odoo ist eine Marke von Odoo S.A.",
+    "copyright": "2025 IntegrationNode. Alle Rechte vorbehalten."
+  }
+}
