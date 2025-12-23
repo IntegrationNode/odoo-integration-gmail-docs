@@ -235,7 +235,7 @@
     "pricing": "Pricing",
     "userGuide": "User Guide",
     "getExtension": "Get Extension",
-    "langSwitch": "ES"
+    "currentLang": "EN"
   },
   "hero": {
     "title": "Odoo Integration for Gmail",

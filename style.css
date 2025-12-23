@@ -1347,31 +1347,95 @@ a:hover {
     }
 }
 
-/* Language Switcher */
-.lang-switch {
+/* Language Dropdown */
+.lang-dropdown {
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+.lang-toggle {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 0.35rem 0.75rem;
+    gap: 0.25rem;
+    padding: 0.35rem 0.5rem;
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--color-primary);
     background: transparent;
     border: 2px solid var(--color-primary);
     border-radius: var(--radius-md);
-    text-decoration: none;
+    cursor: pointer;
     transition: all var(--transition-base);
-    margin-left: 0.5rem;
 }
 
-.lang-switch:hover {
+.lang-toggle:hover {
     background: var(--color-primary);
     color: white;
 }
 
+.lang-toggle .material-symbols-outlined {
+    font-size: 1.1rem;
+}
+
+.lang-toggle .arrow {
+    font-size: 1rem;
+    transition: transform var(--transition-base);
+}
+
+.lang-dropdown.open .arrow {
+    transform: rotate(180deg);
+}
+
+.lang-menu {
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    right: 0;
+    min-width: 120px;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all var(--transition-base);
+    z-index: 1000;
+}
+
+.lang-dropdown.open .lang-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-menu a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background var(--transition-base);
+}
+
+.lang-menu a:hover {
+    background: var(--color-bg-alt);
+    color: var(--color-primary);
+}
+
+.lang-menu a:first-child {
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.lang-menu a:last-child {
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+}
+
 @media (max-width: 768px) {
-    .lang-switch {
-        padding: 0.25rem 0.5rem;
+    .lang-toggle {
+        padding: 0.25rem 0.4rem;
         font-size: 0.75rem;
+    }
+    .lang-current {
+        display: none;
     }
 }

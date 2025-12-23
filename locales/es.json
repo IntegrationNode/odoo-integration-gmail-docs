@@ -47,7 +47,7 @@
     "pricing": "Precios",
     "userGuide": "Guía de Usuario",
     "getExtension": "Obtener Extensión",
-    "langSwitch": "EN"
+    "currentLang": "ES"
   },
   "hero": {
     "title": "Integración de Odoo para Gmail",
