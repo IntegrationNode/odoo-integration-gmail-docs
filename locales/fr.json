@@ -132,7 +132,9 @@
         "financial": "Aperçus financiers",
         "financialDesc": "Consultez la facturation, les créances et les dettes",
         "settings": "Panneau de paramètres",
-        "settingsDesc": "Personnalisez les sections visibles"
+        "settingsDesc": "Personnalisez les sections visibles",
+        "quoteLevels": "Niveaux de Citation",
+        "quoteLevelsDesc": "Contrôlez la quantité d'historique à inclure lors de l'enregistrement"
       }
     },
     "emailLogging": {
@@ -566,6 +568,12 @@
       "dependencies": "Dépendances",
       "initialRelease": "Version initiale",
       "plusFeatures": "Fonctionnalités PLUS"
+    },
+    "v0110": {
+      "visualIndicator": "Indicateur Visuel des Emails Enregistrés",
+      "visualIndicatorDesc": "Visualisez en un coup d'œil quels emails ont déjà été enregistrés",
+      "quoteLevels": "Configuration des Niveaux de Citation",
+      "quoteLevelsDesc": "Contrôlez la quantité d'historique de conversation à inclure lors de l'enregistrement"
     },
     "v0100": {
       "multiLanguage": "Support multilingue",

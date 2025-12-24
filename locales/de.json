@@ -132,7 +132,9 @@
         "financial": "Finanzielle Einblicke",
         "financialDesc": "Rechnungsstellung, Forderungen und Verbindlichkeiten anzeigen",
         "settings": "Einstellungspanel",
-        "settingsDesc": "Sichtbare Abschnitte anpassen"
+        "settingsDesc": "Sichtbare Abschnitte anpassen",
+        "quoteLevels": "Zitatebenen",
+        "quoteLevelsDesc": "Steuern Sie den Konversationsverlauf beim Protokollieren"
       }
     },
     "emailLogging": {
@@ -566,6 +568,12 @@
       "dependencies": "Abhängigkeiten",
       "initialRelease": "Erstveröffentlichung",
       "plusFeatures": "PLUS-Funktionen"
+    },
+    "v0110": {
+      "visualIndicator": "Visuelle Anzeige für Protokollierte E-Mails",
+      "visualIndicatorDesc": "Sehen Sie auf einen Blick, welche E-Mails bereits protokolliert wurden",
+      "quoteLevels": "Konfiguration der Zitatebenen",
+      "quoteLevelsDesc": "Steuern Sie, wie viel Konversationsverlauf beim Protokollieren einbezogen wird"
     },
     "v0100": {
       "multiLanguage": "Mehrsprachige Unterstützung",

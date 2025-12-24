@@ -132,7 +132,9 @@
         "financial": "Financial Insights",
         "financialDesc": "View invoicing, receivables, and payables",
         "settings": "Settings Panel",
-        "settingsDesc": "Customize visible sections"
+        "settingsDesc": "Customize visible sections",
+        "quoteLevels": "Quote Levels",
+        "quoteLevelsDesc": "Control how much conversation history to include when logging"
       }
     },
     "emailLogging": {
@@ -566,6 +568,12 @@
       "dependencies": "Dependencies",
       "initialRelease": "Initial Release",
       "plusFeatures": "PLUS Features"
+    },
+    "v0110": {
+      "visualIndicator": "Visual Indicator for Logged Emails",
+      "visualIndicatorDesc": "See at a glance which emails have already been logged to a record",
+      "quoteLevels": "Quote Levels Configuration",
+      "quoteLevelsDesc": "Control how much conversation history to include when logging emails"
     },
     "v0100": {
       "multiLanguage": "Multi-language Support",

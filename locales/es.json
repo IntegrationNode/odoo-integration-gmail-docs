@@ -283,7 +283,9 @@
         "financial": "Información Financiera",
         "financialDesc": "Ve facturación, cuentas por cobrar y por pagar",
         "settings": "Panel de Configuración",
-        "settingsDesc": "Personaliza las secciones visibles"
+        "settingsDesc": "Personaliza las secciones visibles",
+        "quoteLevels": "Niveles de Citas",
+        "quoteLevelsDesc": "Controla cuánto historial incluir al registrar emails"
       }
     },
     "emailLogging": {
@@ -566,6 +568,12 @@
       "dependencies": "Dependencias",
       "initialRelease": "Lanzamiento Inicial",
       "plusFeatures": "Funciones PLUS"
+    },
+    "v0110": {
+      "visualIndicator": "Indicador Visual de Emails Registrados",
+      "visualIndicatorDesc": "Visualiza de un vistazo qué emails ya han sido registrados en un registro",
+      "quoteLevels": "Configuración de Niveles de Citas",
+      "quoteLevelsDesc": "Controla cuánto historial de conversación incluir al registrar emails"
     },
     "v0100": {
       "multiLanguage": "Soporte Multi-idioma",
