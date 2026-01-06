@@ -45,6 +45,24 @@
       "ogDescription": "Erfahren Sie, wie wir mit Ihren Daten umgehen, welche Berechtigungen wir anfordern und Ihre Datenschutzrechte.",
       "twitterTitle": "Datenschutzrichtlinie - Odoo Integration für Gmail",
       "twitterDescription": "Erfahren Sie, wie wir mit Ihren Daten umgehen und Ihre Datenschutzrechte."
+    },
+    "comparison": {
+      "title": "Odoo Gmail Plugin Alternative | 10-20x Schnellere Chrome-Erweiterung",
+      "description": "Suchen Sie eine Alternative zum Odoo Gmail Plugin? Unsere Chrome-Erweiterung ist 10-20x schneller, stabiler und funktioniert auf jeder Odoo-Instanz. Wechseln Sie in 2 Minuten.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/de/comparison.html",
+      "ogTitle": "Odoo Gmail Plugin Alternative | 10-20x Schneller",
+      "ogDescription": "Vergleichen Sie unsere Erweiterung mit dem offiziellen Odoo Plugin. 10-20x schnellere Ladezeiten, stabile Verbindung, funktioniert auf Self-Hosted Odoo ohne Code-Änderungen.",
+      "twitterTitle": "Odoo Gmail Plugin Alternative | 10-20x Schneller",
+      "twitterDescription": "Suchen Sie eine schnellere Odoo Gmail Integration? Unsere Erweiterung lädt in 100-300ms vs 2-6 Sekunden. Wechseln Sie in 2 Minuten."
+    },
+    "alternative": {
+      "title": "Beste Odoo Gmail Plugin Alternative | Schnelle Chrome-Erweiterung",
+      "description": "Suchen Sie eine Alternative zum Odoo Gmail Plugin? Unsere Chrome-Erweiterung ist 10-20x schneller, stabiler und funktioniert auf jeder Odoo-Instanz ohne Code-Änderungen.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/de/odoo-gmail-plugin-alternative.html",
+      "ogTitle": "Beste Odoo Gmail Plugin Alternative",
+      "ogDescription": "Müde von langsamen Ladezeiten und Verbindungsabbrüchen? Unsere Erweiterung lädt in 100-300ms und funktioniert auf jeder Odoo-Instanz.",
+      "twitterTitle": "Beste Odoo Gmail Plugin Alternative",
+      "twitterDescription": "10-20x schneller als das offizielle Plugin. Wechseln Sie in 2 Minuten."
     }
   },
   "userGuide": {
@@ -660,11 +678,154 @@
     "pricing": "Preise",
     "userGuide": "Handbuch",
     "changelog": "Verlauf",
+    "comparison": "Vergleich",
     "privacy": "Datenschutz",
     "support": "Support",
     "legal": "Rechtliches",
     "notAffiliated": "Nicht mit Odoo S.A. oder Google LLC verbunden.",
     "odooTrademark": "Odoo ist eine Marke von Odoo S.A.",
     "copyright": "2025 IntegrationNode. Alle Rechte vorbehalten."
+  },
+  "alternative": {
+    "hero": {
+      "title": "Suchen Sie eine Alternative zum Odoo Gmail Plugin?",
+      "subtitle": "Unsere Chrome-Erweiterung ist 10-20x schneller, stabiler und funktioniert auf jeder Odoo-Instanz",
+      "cta": "Kostenlos Testen"
+    },
+    "whySwitch": {
+      "title": "Warum zu Unserer Erweiterung Wechseln?",
+      "subtitle": "Mit nativen Chrome-APIs für maximale Leistung und Zuverlässigkeit entwickelt",
+      "speed": {
+        "title": "10-20x Schneller",
+        "description": "Ladezeiten von 100-300ms vs 2-6 Sekunden. Keine Wartezeit mehr bei langsamen Integrationen."
+      },
+      "stability": {
+        "title": "Maximale Stabilität",
+        "description": "Dauerhafte Verbindungen ohne zufällige Unterbrechungen. Ihre Sitzung bleibt aktiv."
+      },
+      "compatibility": {
+        "title": "Universelle Kompatibilität",
+        "description": "Funktioniert auf Odoo.sh und selbst gehosteten Instanzen ohne Code-Änderungen."
+      },
+      "features": {
+        "title": "Erweiterte Funktionen",
+        "description": "Echtzeit-Suche, Abschnitte ausblenden, verbesserte E-Mail-Protokollierung mit Anhängen."
+      }
+    },
+    "migration": {
+      "title": "Wechseln Sie in Unter 2 Minuten",
+      "subtitle": "Keine komplexe Einrichtung oder Datenmigration erforderlich",
+      "step1": {
+        "title": "Erweiterung Installieren",
+        "description": "Ein Klick im Chrome Web Store"
+      },
+      "step2": {
+        "title": "Zugangsdaten Eingeben",
+        "description": "Gleiche Odoo-URL und API-Schlüssel"
+      },
+      "step3": {
+        "title": "Loslegen",
+        "description": "Alle Ihre Daten sind bereits da"
+      },
+      "noDataMigration": {
+        "title": "Keine Datenmigration erforderlich",
+        "description": "Die Erweiterung verbindet sich direkt mit Ihrer Odoo-Instanz. Alle Ihre CRM-Daten bleiben genau dort, wo sie sind."
+      }
+    },
+    "cta": {
+      "title": "Bereit für eine Bessere Gmail-Odoo-Integration?",
+      "subtitle": "Schließen Sie sich Nutzern an, die gewechselt haben und nie zurückblickten",
+      "tryFree": "Kostenlos Testen",
+      "seeComparison": "Vollständigen Vergleich Ansehen"
+    }
+  },
+  "comparison": {
+    "hero": {
+      "title": "Extension vs Odoo Gmail Plugin",
+      "subtitle": "Sehen Sie, wie unsere Chrome-Erweiterung im Vergleich zum offiziellen Odoo Gmail Plugin abschneidet"
+    },
+    "cards": {
+      "extension": {
+        "name": "Unsere Extension",
+        "badge": "Empfohlen",
+        "description": "Chrome-Erweiterung mit nativen APIs für maximale Leistung und Stabilität.",
+        "highlights": "Hauptvorteile",
+        "feature1": "10-20x schneller (100-300ms)",
+        "feature2": "Stabile Verbindung, keine Unterbrechungen",
+        "feature3": "Echtzeit-Suche über alle Datensätze",
+        "feature4": "Funktioniert auf jeder Odoo-Instanz ohne Code-Änderungen",
+        "feature5": "Abschnitte ausblenden zur Reduzierung der Datenlast",
+        "feature6": "Verbesserte E-Mail-Protokollierung mit Anhängen",
+        "cta": "Kostenlos Testen"
+      },
+      "plugin": {
+        "name": "Odoo Gmail Plugin",
+        "description": "Offizielles Add-on auf Basis von Google Apps Script.",
+        "highlights": "Funktionen",
+        "feature1": "Kontakte und Unternehmensinformationen anzeigen",
+        "feature2": "Leads erstellen und E-Mails protokollieren",
+        "feature3": "Offizieller Odoo-Support",
+        "feature4": "Langsamere Ladezeiten (2-6 Sekunden)",
+        "feature5": "Häufige Verbindungsabbrüche",
+        "feature6": "Erfordert Code-Änderungen für Self-Hosted",
+        "cta": "Offizielles Plugin Ansehen"
+      }
+    },
+    "table": {
+      "title": "Detaillierter Vergleich",
+      "feature": "Funktion",
+      "performance": "Leistung",
+      "loadTime": "Ladezeit",
+      "technology": "Technologie",
+      "chromeAPIs": "Chrome APIs",
+      "caching": "Caching",
+      "smartCache": "Intelligenter lokaler Cache",
+      "limited": "Begrenzt",
+      "stability": "Stabilität",
+      "connection": "Verbindung",
+      "persistent": "Dauerhaft",
+      "frequentDisconnects": "Häufige Unterbrechungen",
+      "sessionHandling": "Sitzungsverwaltung",
+      "robust": "Robust",
+      "requiresReauth": "Erfordert erneute Anmeldung",
+      "userExperience": "Benutzererfahrung",
+      "realtimeSearch": "Echtzeit-Suche",
+      "pagination": "Paginierung",
+      "hideSections": "Abschnitte Ausblenden",
+      "emailLogging": "E-Mail-Protokollierung",
+      "enhanced": "Verbessert",
+      "basic": "Grundlegend",
+      "compatibility": "Kompatibilität",
+      "selfHosted": "Odoo Self-hosted",
+      "noCodeChanges": "(keine Code-Änderungen)",
+      "requiresRepoMod": "Erfordert Repository-Änderung",
+      "odooVersions": "Odoo-Versionen"
+    },
+    "migration": {
+      "title": "Wechseln Sie vom Odoo Gmail Plugin?",
+      "subtitle": "Die Migration dauert weniger als 2 Minuten",
+      "step1": {
+        "title": "Extension Installieren",
+        "description": "Mit einem Klick aus dem Chrome Web Store herunterladen"
+      },
+      "step2": {
+        "title": "Zugangsdaten Eingeben",
+        "description": "Gleiche Odoo-URL, Datenbank und API-Schlüssel"
+      },
+      "step3": {
+        "title": "Sofort Loslegen",
+        "description": "Ihre Kontakte, Opportunities und Aufgaben sind bereits da"
+      },
+      "noDataMigration": {
+        "title": "Keine Datenmigration erforderlich",
+        "description": "Die Extension verbindet sich direkt mit Ihrer Odoo-Instanz. Alle Ihre CRM-Daten, Kontakte und Historie bleiben in Odoo genau so wie sie sind."
+      }
+    },
+    "cta": {
+      "title": "Bereit, den Unterschied zu erleben?",
+      "subtitle": "Testen Sie unsere Extension kostenlos und überzeugen Sie sich selbst von der Leistungsverbesserung.",
+      "tryFree": "Kostenlos Testen",
+      "seePricing": "Preise Ansehen"
+    }
   }
 }
