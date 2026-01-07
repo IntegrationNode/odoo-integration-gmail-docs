@@ -587,6 +587,16 @@
       "initialRelease": "Erstveröffentlichung",
       "plusFeatures": "PLUS-Funktionen"
     },
+    "v0120": {
+      "versionDisplay": "Versionsanzeige",
+      "versionDisplayDesc": "Sehen Sie die Extension-Version direkt in der Oberfläche",
+      "localizedUserGuide": "Lokalisiertes Benutzerhandbuch",
+      "localizedUserGuideDesc": "Das Benutzerhandbuch öffnet sich in Ihrer bevorzugten Sprache",
+      "feedbackButton": "Feedback-Schaltfläche",
+      "feedbackButtonDesc": "Senden Sie einfach Feedback aus dem Einstellungsmenü",
+      "toRecipientFix": "TO-Empfänger-Erkennung Behoben",
+      "toRecipientFixDesc": "Kontakterkennung beim Senden von E-Mails an mehrere Empfänger (TO + CC) korrigiert"
+    },
     "v0110": {
       "visualIndicator": "Visuelle Anzeige für Protokollierte E-Mails",
       "visualIndicatorDesc": "Sehen Sie auf einen Blick, welche E-Mails bereits protokolliert wurden",

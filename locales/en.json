@@ -587,6 +587,16 @@
       "initialRelease": "Initial Release",
       "plusFeatures": "PLUS Features"
     },
+    "v0120": {
+      "versionDisplay": "Version Display",
+      "versionDisplayDesc": "See the extension version directly in the UI",
+      "localizedUserGuide": "Localized User Guide",
+      "localizedUserGuideDesc": "User guide opens in your preferred language",
+      "feedbackButton": "Feedback Button",
+      "feedbackButtonDesc": "Easily send feedback from the settings menu",
+      "toRecipientFix": "TO Recipient Detection Fix",
+      "toRecipientFixDesc": "Fixed contact detection when sending emails to multiple recipients (TO + CC)"
+    },
     "v0110": {
       "visualIndicator": "Visual Indicator for Logged Emails",
       "visualIndicatorDesc": "See at a glance which emails have already been logged to a record",

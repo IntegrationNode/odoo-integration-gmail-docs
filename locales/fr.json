@@ -587,6 +587,16 @@
       "initialRelease": "Version initiale",
       "plusFeatures": "Fonctionnalités PLUS"
     },
+    "v0120": {
+      "versionDisplay": "Affichage de la Version",
+      "versionDisplayDesc": "Voyez la version de l'extension directement dans l'interface",
+      "localizedUserGuide": "Guide Utilisateur Localisé",
+      "localizedUserGuideDesc": "Le guide utilisateur s'ouvre dans votre langue préférée",
+      "feedbackButton": "Bouton Feedback",
+      "feedbackButtonDesc": "Envoyez facilement vos commentaires depuis le menu paramètres",
+      "toRecipientFix": "Correction de Détection du Destinataire TO",
+      "toRecipientFixDesc": "Correction de la détection de contact lors de l'envoi d'emails à plusieurs destinataires (TO + CC)"
+    },
     "v0110": {
       "visualIndicator": "Indicateur Visuel des Emails Enregistrés",
       "visualIndicatorDesc": "Visualisez en un coup d'œil quels emails ont déjà été enregistrés",
