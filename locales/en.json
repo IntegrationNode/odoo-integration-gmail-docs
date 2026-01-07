@@ -591,9 +591,9 @@
       "versionDisplay": "Version Display",
       "versionDisplayDesc": "See the extension version directly in the UI",
       "localizedUserGuide": "Localized User Guide",
-      "localizedUserGuideDesc": "User guide opens in your preferred language",
+      "localizedUserGuideDesc": "User guide opens in the user language",
       "feedbackButton": "Feedback Button",
-      "feedbackButtonDesc": "Easily send feedback from the settings menu",
+      "feedbackButtonDesc": "Easily send feedback from the settings menu to help us improve",
       "toRecipientFix": "TO Recipient Detection Fix",
       "toRecipientFixDesc": "Fixed contact detection when sending emails to multiple recipients (TO + CC)"
     },

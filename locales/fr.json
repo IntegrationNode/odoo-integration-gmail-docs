@@ -591,9 +591,9 @@
       "versionDisplay": "Affichage de la Version",
       "versionDisplayDesc": "Voyez la version de l'extension directement dans l'interface",
       "localizedUserGuide": "Guide Utilisateur Localisé",
-      "localizedUserGuideDesc": "Le guide utilisateur s'ouvre dans votre langue préférée",
+      "localizedUserGuideDesc": "Le guide utilisateur s'ouvre dans la langue de l'utilisateur",
       "feedbackButton": "Bouton Feedback",
-      "feedbackButtonDesc": "Envoyez facilement vos commentaires depuis le menu paramètres",
+      "feedbackButtonDesc": "Envoyez facilement vos commentaires depuis le menu paramètres pour nous aider à améliorer",
       "toRecipientFix": "Correction de Détection du Destinataire TO",
       "toRecipientFixDesc": "Correction de la détection de contact lors de l'envoi d'emails à plusieurs destinataires (TO + CC)"
     },

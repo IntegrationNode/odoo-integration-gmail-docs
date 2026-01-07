@@ -591,9 +591,9 @@
       "versionDisplay": "Versionsanzeige",
       "versionDisplayDesc": "Sehen Sie die Extension-Version direkt in der Oberfläche",
       "localizedUserGuide": "Lokalisiertes Benutzerhandbuch",
-      "localizedUserGuideDesc": "Das Benutzerhandbuch öffnet sich in Ihrer bevorzugten Sprache",
+      "localizedUserGuideDesc": "Das Benutzerhandbuch öffnet sich in der Benutzersprache",
       "feedbackButton": "Feedback-Schaltfläche",
-      "feedbackButtonDesc": "Senden Sie einfach Feedback aus dem Einstellungsmenü",
+      "feedbackButtonDesc": "Senden Sie einfach Feedback aus dem Einstellungsmenü, um uns zu helfen zu verbessern",
       "toRecipientFix": "TO-Empfänger-Erkennung Behoben",
       "toRecipientFixDesc": "Kontakterkennung beim Senden von E-Mails an mehrere Empfänger (TO + CC) korrigiert"
     },
