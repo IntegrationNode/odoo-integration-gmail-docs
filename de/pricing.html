@@ -34,6 +34,8 @@
     <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="stylesheet" href="../fonts/outlined.css">
     <link rel="stylesheet" href="../style.css">
+    <!-- Hide prices until regional pricing JS processes them -->
+    <style id="regional-pricing-hide">.price-large .amount, .price .amount, .price-annual-option strong, .annual-price { opacity: 0; }</style>
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -403,5 +405,7 @@
         });
     })();
     </script>
+    <!-- Regional Pricing Detection -->
+    <script src="../regional-pricing.js"></script>
 </body>
 </html>

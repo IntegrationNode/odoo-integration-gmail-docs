@@ -79,7 +79,8 @@
       "opportunities": "Opportunités",
       "tasksTickets": "Tâches et tickets",
       "troubleshooting": "Dépannage",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "subscription": "Abonnement"
     },
     "installation": {
       "title": "Installation",
@@ -253,6 +254,24 @@
       "emailLabel": "Email",
       "includeVersion": "Incluez votre version d'Odoo et la version de l'extension",
       "includeScreenshots": "Décrivez le problème avec des captures d'écran si possible"
+    },
+    "subscription": {
+      "title": "Gestion de l'abonnement",
+      "howToSubscribe": "Comment s'abonner à PLUS",
+      "subscribeStep1": "Ouvrez n'importe quel email dans Gmail pour voir la barre latérale",
+      "subscribeStep2": "Cliquez sur le bouton menu (trois points) dans l'en-tête de la barre latérale",
+      "subscribeStep3": "Sélectionnez \"Passer à PLUS\" dans le menu",
+      "subscribeStep4": "Complétez le processus de paiement. Votre licence s'activera automatiquement.",
+      "regionalPricingTitle": "Tarification régionale :",
+      "regionalPricingDesc": "Nous offrons des prix adaptés à votre localisation. Les prix sont automatiquement ajustés lors du paiement.",
+      "howToCancel": "Comment annuler votre abonnement",
+      "cancelIntro": "Vous pouvez annuler votre abonnement PLUS à tout moment :",
+      "cancelStep1": "Accédez au portail client LemonSqueezy (lien dans votre email d'achat)",
+      "cancelStep2": "Connectez-vous avec l'email utilisé pour votre abonnement",
+      "cancelStep3": "Cliquez sur \"Annuler l'abonnement\" dans les détails de votre abonnement",
+      "cancelNote": "Vos fonctionnalités PLUS resteront actives jusqu'à la fin de votre période de facturation en cours.",
+      "refundPolicy": "Politique de remboursement",
+      "refundDesc": "Nous offrons une garantie satisfait ou remboursé de 14 jours. Si vous n'êtes pas satisfait de PLUS, contactez-nous à odoointegrations.team@gmail.com dans les 14 jours suivant votre achat pour un remboursement complet."
     }
   },
   "nav": {
@@ -465,13 +484,13 @@
     "thirdParty": {
       "title": "Services tiers",
       "paymentProcessing": "Traitement des paiements",
-      "extpayIntro": "L'Extension utilise ExtensionPay (https://extensionpay.com/) pour la gestion des abonnements et le traitement des paiements. Lorsque vous souscrivez au plan PLUS, ExtensionPay collecte :",
-      "extpay1": "Votre adresse email pour la gestion du compte et les reçus",
-      "extpay2": "Informations de paiement (traitées de manière sécurisée par Stripe, non stockées par l'Extension)",
-      "extpay3": "Statut d'abonnement et informations de facturation",
-      "extpayPolicy": "Politique de confidentialité ExtensionPay :",
+      "lemonIntro": "L'Extension utilise LemonSqueezy (https://www.lemonsqueezy.com/) pour la gestion des abonnements et le traitement des paiements. Lorsque vous souscrivez au plan PLUS, LemonSqueezy collecte :",
+      "lemon1": "Votre adresse email pour la gestion du compte et les reçus",
+      "lemon2": "Informations de paiement (traitées de manière sécurisée, non stockées par l'Extension)",
+      "lemon3": "Statut d'abonnement et informations de facturation",
+      "lemonPolicy": "Politique de confidentialité LemonSqueezy :",
       "important": "Important :",
-      "importantDesc": "Les données de paiement sont entièrement gérées par ExtensionPay et Stripe. L'Extension ne reçoit ni ne stocke jamais vos informations de carte bancaire.",
+      "importantDesc": "Les données de paiement sont entièrement gérées par LemonSqueezy. L'Extension ne reçoit ni ne stocke jamais vos informations de carte bancaire.",
       "gmailIntegration": "Intégration Gmail",
       "inboxsdkDesc": "L'Extension utilise InboxSDK (https://www.inboxsdk.com/) pour s'intégrer à l'interface Gmail. InboxSDK est une bibliothèque qui aide l'Extension à interagir avec l'interface Gmail pour afficher la barre latérale et détecter les contacts email. InboxSDK ne collecte, transmet ni stocke vos données email."
     },
@@ -481,7 +500,7 @@
       "onlyWith": "L'Extension communique uniquement avec :",
       "yourOdoo": "Votre instance Odoo :",
       "yourOdooDesc": "L'Extension envoie des requêtes API à l'URL Odoo que vous configurez pour récupérer et créer des enregistrements",
-      "extpayDesc": "Uniquement pour la gestion des abonnements (email, statut d'abonnement, traitement des paiements)",
+      "lemonDesc": "Uniquement pour la gestion des abonnements (email, statut d'abonnement, traitement des paiements)",
       "doesNot": "L'Extension NE fait PAS :",
       "notSell": "Vendre vos données à des courtiers de données",
       "notAdvertising": "Partager des données à des fins publicitaires",
@@ -507,7 +526,7 @@
       "storage": "Nécessaire pour sauvegarder votre configuration Odoo et mettre en cache les réponses API localement",
       "hostGmail": "Nécessaire pour accéder à l'interface Gmail et afficher la barre latérale",
       "hostOdoo": "Nécessaire pour communiquer avec les instances cloud Odoo Online (ex: votreentreprise.odoo.com)",
-      "hostExtpay": "Nécessaire pour la gestion des abonnements et le traitement des paiements",
+      "hostLemon": "Nécessaire pour la gestion des abonnements et le traitement des paiements",
       "optional": "Autorisations optionnelles (Demandées si nécessaire)",
       "optionalIntro": "L'Extension demande des autorisations optionnelles pour les instances Odoo personnalisées :",
       "optionalDesc": "Utilisé UNIQUEMENT si vous vous connectez à une instance Odoo auto-hébergée sur un domaine personnalisé (ex: odoo.votreentreprise.com ou erp.exemple.com). Cette autorisation n'est demandée que lorsque vous configurez explicitement une URL Odoo personnalisée.",

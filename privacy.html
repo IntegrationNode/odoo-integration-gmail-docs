@@ -121,15 +121,15 @@
 
             <section class="policy-section">
                 <h2>Third-Party Services</h2>
-                <h3>ExtensionPay (<span>Payment Processing</span>)</h3>
-                <p>The Extension uses ExtensionPay (https://extensionpay.com/) for subscription management and payment processing. When you subscribe to the PLUS plan, ExtensionPay collects:</p>
+                <h3>LemonSqueezy (<span>Payment Processing</span>)</h3>
+                <p>The Extension uses LemonSqueezy (https://www.lemonsqueezy.com/) for subscription management and payment processing. When you subscribe to the PLUS plan, LemonSqueezy collects:</p>
                 <ul>
                     <li>Your email address for account management and receipts</li>
-                    <li>Payment information (processed securely by Stripe, not stored by the Extension)</li>
+                    <li>Payment information (processed securely, not stored by the Extension)</li>
                     <li>Subscription status and billing information</li>
                 </ul>
-                <p><strong>ExtensionPay Privacy Policy:</strong> <a href="https://extensionpay.com/privacy" target="_blank">https://extensionpay.com/privacy</a></p>
-                <p><strong>Important:</strong> <span>Payment data is handled entirely by ExtensionPay and Stripe. The Extension never receives or stores your credit card information.</span></p>
+                <p><strong>LemonSqueezy Privacy Policy:</strong> <a href="https://www.lemonsqueezy.com/privacy" target="_blank">https://www.lemonsqueezy.com/privacy</a></p>
+                <p><strong>Important:</strong> <span>Payment data is handled entirely by LemonSqueezy. The Extension never receives or stores your credit card information.</span></p>
 
                 <h3>InboxSDK (<span>Gmail Integration</span>)</h3>
                 <p>The Extension uses InboxSDK (https://www.inboxsdk.com/) to integrate with Gmail's interface. InboxSDK is a library that helps the Extension interact with Gmail's UI to display the sidebar and detect email contacts. InboxSDK does not collect, transmit, or store your email data.</p>
@@ -141,7 +141,7 @@
                 <p>The Extension only communicates with:</p>
                 <ul>
                     <li><strong>Your Odoo Instance:</strong> <span>The Extension sends API requests to the Odoo instance URL you configure to retrieve and create records</span></li>
-                    <li><strong>ExtensionPay:</strong> <span>Only for subscription management (email, subscription status, payment processing)</span></li>
+                    <li><strong>LemonSqueezy:</strong> <span>Only for subscription management (email, subscription status, payment processing)</span></li>
                 </ul>
                 <p>The Extension does NOT:</p>
                 <ul>
@@ -175,7 +175,7 @@
                     <li><strong>storage:</strong> <span>Required to save your Odoo configuration and cache API responses locally</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Required to access Gmail's interface and display the sidebar</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Required to communicate with Odoo Online cloud instances (e.g., yourcompany.odoo.com)</span></li>
-                    <li><strong>host_permissions (extensionpay.com):</strong> <span>Required for subscription management and payment processing</span></li>
+                    <li><strong>host_permissions (lemonsqueezy.com):</strong> <span>Required for subscription management and payment processing</span></li>
                 </ul>
 
                 <h3>Optional Permissions (Requested When Needed)</h3>
