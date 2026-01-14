@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia completo do usuário para Integração Odoo para Gmail - Aprenda como instalar, configurar e usar todos os recursos incluindo registro de e-mail, oportunidades CRM, tarefas e tickets.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/user-guide.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/user-guide.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/user-guide.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html">
+    <meta property="og:title" content="Guia do Usuário - Integração Odoo para Gmail">
+    <meta property="og:description" content="Guia completo para instalar, configurar e usar Integração Odoo para Gmail. Aprenda sobre registro de e-mail, CRM, tarefas e mais.">
+    <meta property="og:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Guia do Usuário - Integração Odoo para Gmail">
+    <meta name="twitter:description" content="Guia completo para instalar, configurar e usar Integração Odoo para Gmail.">
+    <meta name="twitter:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+
+    <title>Guia do Usuário - Integração Odoo para Gmail</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../fonts/outlined.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .guide-page { padding: var(--spacing-xl) 0; background: var(--color-bg); min-height: 70vh; }
+        .guide-header { text-align: center; margin-bottom: var(--spacing-lg); }
+        .guide-header h1 { margin-bottom: var(--spacing-xs); }
+        .guide-header p { color: var(--color-text-light); font-size: 1.125rem; }
+        .guide-content { max-width: 900px; margin: 0 auto; }
+        .guide-nav { background: white; border-radius: var(--radius-lg); padding: var(--spacing-md); margin-bottom: var(--spacing-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); }
+        .guide-nav h2 { font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary); }
+        .guide-nav ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-xs); list-style: none; padding: 0; margin: 0; }
+        .guide-nav a { color: var(--color-text); text-decoration: none; padding: 0.5rem; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 0.5rem; transition: all var(--transition-base); }
+        .guide-nav a:hover { background: var(--color-bg-highlight); color: var(--color-primary); }
+        .guide-nav .material-symbols-outlined { font-size: 18px; color: var(--color-primary); }
+        .guide-section { background: white; border-radius: var(--radius-lg); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); }
+        .guide-section h2 { color: var(--color-primary); font-size: 1.5rem; margin-bottom: var(--spacing-md); padding-bottom: var(--spacing-sm); border-bottom: 2px solid var(--color-border); display: flex; align-items: center; gap: 0.5rem; }
+        .guide-section h3 { color: var(--color-text); font-size: 1.25rem; margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+        .guide-section h4 { color: var(--color-text); font-size: 1rem; margin-top: var(--spacing-sm); margin-bottom: var(--spacing-xs); }
+        .guide-section p { margin-bottom: var(--spacing-sm); line-height: 1.7; }
+        .guide-section ul, .guide-section ol { margin-left: 1.5rem; margin-bottom: var(--spacing-sm); }
+        .guide-section li { margin-bottom: 0.5rem; line-height: 1.6; }
+        .guide-section code { background: var(--color-bg-highlight); padding: 0.125rem 0.375rem; border-radius: var(--radius-sm); font-family: monospace; font-size: 0.875rem; }
+        .feature-badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        .badge-free { background: #DCFCE7; color: #166534; }
+        .badge-plus { background: var(--color-badge); color: var(--color-badge-text); }
+        .info-box { background: var(--color-bg-highlight); border-left: 4px solid var(--color-primary); padding: var(--spacing-sm); border-radius: var(--radius-sm); margin: var(--spacing-sm) 0; }
+        .info-box.warning { border-left-color: #F59E0B; background: #FEF3C7; }
+        .info-box strong { color: var(--color-primary); }
+        .info-box.warning strong { color: #92400E; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: var(--spacing-sm) 0; }
+        .comparison-table th, .comparison-table td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--color-border); }
+        .comparison-table th { background: var(--color-bg-highlight); font-weight: 600; }
+        .steps-list { counter-reset: step-counter; list-style: none; padding: 0; }
+        .steps-list li { counter-increment: step-counter; padding-left: 2.5rem; position: relative; margin-bottom: var(--spacing-sm); }
+        .steps-list li::before { content: counter(step-counter); position: absolute; left: 0; top: 0; width: 1.75rem; height: 1.75rem; background: var(--color-primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 600; }
+        .faq-item { margin-bottom: var(--spacing-sm); }
+        .faq-item h4 { color: var(--color-primary); margin-bottom: 0.25rem; }
+        @media (max-width: 768px) { .guide-header h1 { font-size: 2rem; } .guide-section { padding: var(--spacing-md); } .guide-nav ul { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Integração Odoo para Gmail</a>
+                <div class="nav-links">
+                    <a href="index.html#features">Recursos</a>
+                    <a href="pricing.html">Preços</a>
+                    <a href="user-guide.html" class="active">Guia do Usuário</a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary">Obter Extensão</a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">PT</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Guide Content -->
+    <section class="guide-page">
+        <div class="container">
+            <div class="guide-header">
+                <h1>Guia do Usuário</h1>
+                <p>Tudo o que você precisa saber para aproveitar ao máximo a Integração Odoo para Gmail</p>
+            </div>
+
+            <div class="guide-content">
+                <!-- Table of Contents -->
+                <nav class="guide-nav">
+                    <h2>Navegação Rápida</h2>
+                    <ul>
+                        <li><a href="#installation"><span class="material-symbols-outlined">download</span> <span>Instalação</span></a></li>
+                        <li><a href="#configuration"><span class="material-symbols-outlined">settings</span> <span>Configuração</span></a></li>
+                        <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Visão Geral dos Recursos</span></a></li>
+                        <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Assinatura</span></a></li>
+                        <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Registro de E-mail</span></a></li>
+                        <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Oportunidades</span></a></li>
+                        <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tarefas e Tickets</span></a></li>
+                        <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Solução de Problemas</span></a></li>
+                        <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>FAQ</span></a></li>
+                    </ul>
+                </nav>
+
+                <!-- Installation Section -->
+                <section id="installation" class="guide-section">
+                    <h2><span class="material-symbols-outlined">download</span> <span>Instalação</span></h2>
+                    <h3>Pré-requisitos</h3>
+                    <ul>
+                        <li><strong>Navegador Chrome</strong>: <span>Versão 88 ou superior</span></li>
+                        <li><strong>Instância Odoo</strong>: <span>Versão 14.0 ou superior (Community, Enterprise ou Odoo Online)</span></li>
+                    </ul>
+                    <h3>Instalação Passo a Passo</h3>
+                    <ol class="steps-list">
+                        <li><strong>Visite a Chrome Web Store</strong><br><span>Vá para Integração Odoo para Gmail ou pesquise "Odoo Integration for Gmail" na Chrome Web Store.</span></li>
+                        <li><strong>Adicionar ao Chrome</strong><br><span>Clique no botão "Adicionar ao Chrome" e revise as permissões solicitadas.</span></li>
+                        <li><strong>Verificar Instalação</strong><br><span>Você verá uma mensagem de confirmação e o ícone da extensão aparecerá na barra de ferramentas do Chrome.</span></li>
+                        <li><strong>Fixar a Extensão (Recomendado)</strong><br><span>Clique no ícone do quebra-cabeça na barra de ferramentas do Chrome, encontre "Odoo Integration for Gmail" e clique no ícone do alfinete.</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Nota sobre "Navegação segura aprimorada":</strong> <span>Se você vir uma mensagem dizendo "Esta extensão não é confiável pela Navegação segura aprimorada", isso é normal para extensões recém-publicadas. A extensão foi revisada e aprovada pela Chrome Web Store.</span>
+                    </div>
+                </section>
+
+                <!-- Configuration Section -->
+                <section id="configuration" class="guide-section">
+                    <h2><span class="material-symbols-outlined">settings</span> <span>Configuração</span></h2>
+                    <h3>Configuração Inicial</h3>
+                    <ol class="steps-list">
+                        <li><strong>Abra o Gmail</strong><br><span>Navegue até mail.google.com e abra qualquer e-mail para ver a barra lateral.</span></li>
+                        <li><strong>Insira a URL do Odoo</strong><br><span>Insira a URL da sua instância Odoo (ex: https://suaempresa.odoo.com). Use HTTPS e não inclua barra no final.</span></li>
+                        <li><strong>Insira a Chave API</strong><br><span>Faça login no Odoo, vá em Preferências, clique na aba Segurança da Conta, em Chaves API clique em Nova Chave API, dê um nome, selecione Chave Persistente e copie a chave.</span></li>
+                        <li><strong>Conectar</strong><br><span>Clique em Conectar e a extensão verificará suas credenciais.</span></li>
+                    </ol>
+                    <h3>Atualizando Configuração</h3>
+                    <p>Para alterar sua URL do Odoo ou chave API:</p>
+                    <ol>
+                        <li>Clique no botão de menu (três pontos verticais ⋮) na barra lateral</li>
+                        <li>Selecione Sair</li>
+                        <li>Insira suas novas credenciais</li>
+                    </ol>
+                </section>
+
+                <!-- Features Overview Section -->
+                <section id="features" class="guide-section">
+                    <h2><span class="material-symbols-outlined">star</span> <span>Visão Geral dos Recursos</span></h2>
+                    <h3><span>Plano FREE</span> <span class="feature-badge badge-free">Grátis</span></h3>
+                    <ul>
+                        <li><strong>Visualização de Contatos</strong>: <span>Visualize informações de parceiros Odoo diretamente no Gmail</span></li>
+                        <li><strong>Detecção Inteligente de Contatos</strong>: <span>Identifica automaticamente remetente ou destinatário</span></li>
+                        <li><strong>Registro de E-mail</strong>: <span>Registre e-mails no Odoo com anexos</span></li>
+                        <li><strong>Criação de Registros</strong>: <span>Crie leads, parceiros, tarefas e tickets</span></li>
+                        <li><strong>Visualização Limitada de Registros</strong>: <span>Visualize as primeiras 5 oportunidades, tarefas e tickets</span></li>
+                        <li><strong>Atualizar</strong>: <span>Atualize manualmente os dados do contato</span></li>
+                        <li><strong>Indicador de Tempo de Carregamento</strong>: <span>Veja quão rápido a barra lateral carregou</span></li>
+                    </ul>
+                    <h3><span>Plano PLUS</span> <span class="feature-badge badge-plus">Plus</span></h3>
+                    <p>Tudo do FREE, mais:</p>
+                    <ul>
+                        <li><strong>Pesquisa Avançada</strong>: <span>Pesquise em todas as oportunidades, tarefas e tickets (até 50 resultados)</span></li>
+                        <li><strong>Abas Contato/Empresa</strong>: <span>Alterne entre informações de contato e empresa</span></li>
+                        <li><strong>Contatos Relacionados</strong>: <span>Encontre colegas da mesma empresa</span></li>
+                        <li><strong>Insights Financeiros</strong>: <span>Visualize faturamento, a receber e a pagar</span></li>
+                        <li><strong>Painel de Configurações</strong>: <span>Personalize as seções visíveis</span></li>
+                        <li><strong>Níveis de Citação</strong>: <span>Controle quanto histórico de conversa incluir no registro</span></li>
+                    </ul>
+                </section>
+
+                <!-- Subscription Management Section -->
+                <section id="subscription" class="guide-section">
+                    <h2><span class="material-symbols-outlined">credit_card</span> <span>Gerenciamento de Assinatura</span></h2>
+
+                    <h3>Como Assinar o PLUS</h3>
+                    <ol class="steps-list">
+                        <li>Clique em "Atualizar para PLUS" no menu da barra lateral (três pontos no cabeçalho)</li>
+                        <li>Complete o processo de checkout no LemonSqueezy</li>
+                        <li>Receba sua chave de licença por e-mail</li>
+                    </ol>
+
+                    <h4>Ativando Sua Licença</h4>
+                    <p>Insira sua chave de licença de uma dessas formas:</p>
+                    <ul>
+                        <li>Um modal aparecerá logo após o checkout - insira sua licença lá</li>
+                        <li>Vá para Configurações > Conta > Ativar Licença</li>
+                        <li>Clique em "Atualizar para PLUS" novamente e selecione "Já tenho uma licença"</li>
+                    </ul>
+
+                    <div class="info-box">
+                        <strong>Informações da Licença:</strong> <span>Sua licença funciona em até 3 instâncias (diferentes computadores ou navegadores). Deve ser usada com a mesma conta Gmail usada na compra.</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Período de Teste:</strong> <span>PLUS inclui um período de teste gratuito de 14 dias. Você não será cobrado até o período de teste terminar. Cancele a qualquer momento antes para evitar cobranças.</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Preços Regionais:</strong> <span>Oferecemos preços justos. Os preços são automaticamente ajustados no checkout através de um desconto.</span>
+                    </div>
+
+                    <h3>Como Cancelar Sua Assinatura</h3>
+                    <p>Você pode cancelar sua assinatura PLUS a qualquer momento:</p>
+                    <ol class="steps-list">
+                        <li>Vá ao portal do cliente LemonSqueezy (link no seu e-mail de compra)</li>
+                        <li>Faça login com o e-mail usado na sua assinatura</li>
+                        <li>Clique em "Cancelar Assinatura" nos detalhes da sua assinatura</li>
+                    </ol>
+                    <p>Seus recursos PLUS permanecerão ativos até o final do seu período de faturamento atual.</p>
+                </section>
+
+                <!-- Email Logging Section -->
+                <section id="email-logging" class="guide-section">
+                    <h2><span class="material-symbols-outlined">mail</span> <span>Registro de E-mail</span></h2>
+                    <h3>Como Registrar um E-mail</h3>
+                    <ol class="steps-list">
+                        <li>Abra o e-mail que deseja registrar</li>
+                        <li>Visualize o contato na barra lateral</li>
+                        <li>Encontre o registro onde deseja registrar (oportunidade, tarefa ou ticket)</li>
+                        <li>Clique no ícone do envelope ao lado do registro</li>
+                        <li>O botão muda para um check verde quando registrado</li>
+                    </ol>
+                    <h3>O Que é Registrado</h3>
+                    <ul>
+                        <li>Assunto do e-mail (no cabeçalho)</li>
+                        <li>Corpo do e-mail (formatado em HTML)</li>
+                        <li>Informações de remetente/destinatário</li>
+                        <li>Data e hora</li>
+                        <li>Todos os anexos (arquivos, imagens, PDFs)</li>
+                        <li>Rodapé "Registrado da Caixa de Entrada do Gmail"</li>
+                    </ul>
+                    <h3>Detecção de Duplicados</h3>
+                    <p>A extensão tem duas camadas de detecção de duplicados:</p>
+                    <ol>
+                        <li><strong>Indicador visual (0-6 horas)</strong>: <span>Ajuda você a identificar rapidamente quais registros já têm este e-mail</span></li>
+                        <li><strong>Validação do lado do servidor (sempre)</strong>: <span>O Odoo impede duplicados mesmo se o indicador visual tiver expirado</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Importante:</strong> <span>Mesmo sem o indicador visual, você não pode criar duplicados acidentalmente. O servidor do Odoo valida cada solicitação de registro e rejeita duplicados.</span>
+                    </div>
+                </section>
+
+                <!-- Opportunities Section -->
+                <section id="opportunities" class="guide-section">
+                    <h2><span class="material-symbols-outlined">handshake</span> <span>Gerenciando Oportunidades</span></h2>
+                    <h3>Criando Leads a partir de E-mails</h3>
+                    <p>Converta uma conversa de e-mail em uma oportunidade Odoo com um clique:</p>
+                    <ol class="steps-list">
+                        <li>Abra o e-mail que deseja converter em lead</li>
+                        <li>Visualize o contato na barra lateral</li>
+                        <li>Role até a seção Oportunidades</li>
+                        <li>Clique no botão "Criar"</li>
+                    </ol>
+                    <h4>O que acontece automaticamente:</h4>
+                    <ul>
+                        <li>O lead é criado com o assunto do e-mail como nome</li>
+                        <li>O conteúdo do corpo do e-mail é adicionado como descrição</li>
+                        <li>O contato da barra lateral é vinculado</li>
+                        <li>O lead abre no Odoo em uma nova aba para edições adicionais</li>
+                    </ul>
+                    <div class="info-box warning">
+                        <strong>Importante:</strong> <span>O e-mail NÃO é registrado automaticamente. Para associar o e-mail ao novo lead, volte ao Gmail e clique no ícone do envelope ao lado da oportunidade.</span>
+                    </div>
+                </section>
+
+                <!-- Tasks & Tickets Section -->
+                <section id="tasks-tickets" class="guide-section">
+                    <h2><span class="material-symbols-outlined">task</span> <span>Tarefas e Tickets</span></h2>
+                    <h3>Gerenciando Tarefas</h3>
+                    <p><strong>Requisitos:</strong> <span>Módulo Odoo Project instalado</span></p>
+                    <h4>Quais registros são mostrados:</h4>
+                    <ul>
+                        <li>Tarefas vinculadas ao contato (por partner_id)</li>
+                        <li>Exclui tarefas concluídas ou canceladas</li>
+                        <li>Ordenadas por atividade mais recente</li>
+                    </ul>
+                    <h3>Gerenciando Tickets do Helpdesk</h3>
+                    <p><strong>Requisitos:</strong> <span>Módulo Odoo Helpdesk (apenas Enterprise)</span></p>
+                </section>
+
+                <!-- Troubleshooting Section -->
+                <section id="troubleshooting" class="guide-section">
+                    <h2><span class="material-symbols-outlined">help</span> <span>Solução de Problemas</span></h2>
+                    <h3>A Extensão Não Aparece no Gmail</h3>
+                    <ol>
+                        <li><strong>Verifique se a extensão está habilitada</strong>: <span>Vá para chrome://extensions/ e certifique-se de que o interruptor está ON</span></li>
+                        <li><strong>Atualize o Gmail</strong>: <span>Pressione Ctrl+Shift+R (Windows/Linux) ou Cmd+Shift+R (Mac)</span></li>
+                        <li><strong>Recarregue a extensão</strong>: <span>Clique em "Recarregar" no cartão da extensão</span></li>
+                    </ol>
+                    <h3>Mensagem "Contato Não Encontrado"</h3>
+                    <ul>
+                        <li><strong>E-mail não está no Odoo</strong>: <span>Clique em "Criar Contato" para adicioná-lo</span></li>
+                        <li><strong>Incompatibilidade de ortografia do e-mail</strong>: <span>Atualize o e-mail no Odoo ou crie um novo contato</span></li>
+                    </ul>
+                    <h3>Erro "Autenticação Falhou"</h3>
+                    <ol>
+                        <li>Verifique se sua chave API está correta em Odoo → Preferências → Segurança da Conta</li>
+                        <li>Regenere a chave API se necessário</li>
+                        <li>Verifique se sua URL do Odoo está correta (incluindo HTTPS)</li>
+                    </ol>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="guide-section">
+                    <h2><span class="material-symbols-outlined">quiz</span> <span>Perguntas Frequentes</span></h2>
+                    <h3>Geral</h3>
+                    <div class="faq-item">
+                        <h4>P: Quais versões do Odoo são suportadas?</h4>
+                        <p>Odoo 14.0 e superiores são suportados, incluindo Community, Enterprise e Odoo Online (odoo.com).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>P: Funciona com outros navegadores?</h4>
+                        <p>Atualmente, a extensão suporta apenas Google Chrome. O suporte para outros navegadores pode ser adicionado no futuro.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>P: Meus dados estão seguros?</h4>
+                        <p>Sim. A extensão só acessa e-mails que você visualiza ativamente e se comunica de forma segura com sua instância Odoo via HTTPS. Sua chave API é armazenada no armazenamento seguro do Chrome.</p>
+                    </div>
+                    <h3>Assinatura</h3>
+                    <div class="faq-item">
+                        <h4>P: Qual é a diferença entre FREE e PLUS?</h4>
+                        <p>FREE inclui recursos básicos (visualização de contatos, registro de e-mail, registros limitados). PLUS adiciona pesquisa avançada, insights financeiros, contatos relacionados e opções de personalização.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>P: Posso cancelar minha assinatura PLUS a qualquer momento?</h4>
+                        <p>Sim, você pode cancelar a qualquer momento sem penalidade. Sua assinatura permanecerá ativa até o final do seu período de faturamento atual.</p>
+                    </div>
+                    <h3>Privacidade</h3>
+                    <div class="faq-item">
+                        <h4>P: A extensão lê todos os meus e-mails?</h4>
+                        <p>Não, a extensão só acessa e-mails que você visualiza ativamente. Ela não escaneia toda a sua caixa de correio nem lê e-mails em segundo plano.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>P: Minha chave API é armazenada de forma segura?</h4>
+                        <p>Sim, sua chave API é armazenada no armazenamento seguro do Chrome (chrome.storage.sync), que o Chrome criptografa usando as credenciais da sua conta de usuário do sistema operacional.</p>
+                    </div>
+                </section>
+
+                <!-- Getting Help Section -->
+                <section class="guide-section">
+                    <h2><span class="material-symbols-outlined">support</span> <span>Obtendo Ajuda</span></h2>
+                    <h3>Entre em Contato com o Suporte</h3>
+                    <p>Se você tiver dúvidas ou problemas não cobertos neste guia:</p>
+                    <ul>
+                        <li><strong>E-mail</strong>: <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a></li>
+                        <li>Inclua sua versão do Odoo e versão da extensão</li>
+                        <li>Descreva o problema com capturas de tela, se possível</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Integração Odoo para Gmail</h4>
+                    <p><span>Criado por</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pricing.html">Preços</a></li>
+                        <li><a href="user-guide.html">Guia do Usuário</a></li>
+                        <li><a href="changelog.html">Changelog</a></li>
+                        <li><a href="comparison.html">Comparação</a></li>
+                        <li><a href="privacy.html">Política de Privacidade</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Suporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <p class="small-text">Não afiliado à Odoo S.A. ou Google LLC.</p>
+                    <p class="small-text">Odoo é uma marca registrada da Odoo S.A.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 IntegrationNode. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        // Configuration: Add new languages here
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+
+        // Detect current language
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        // Build menu
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            link.href = currentLang.path ? '../' + lang.path + page : lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        // Toggle dropdown
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        // Close on click outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

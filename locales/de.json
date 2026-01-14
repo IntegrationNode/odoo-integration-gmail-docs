@@ -612,6 +612,14 @@
       "initialRelease": "Erstveröffentlichung",
       "plusFeatures": "PLUS-Funktionen"
     },
+    "v0200": {
+      "freeTrial": "14 Tage Kostenlose Testversion",
+      "freeTrialDesc": "Testen Sie PLUS 14 Tage kostenlos, bevor Sie belastet werden. Jederzeit während der Testphase kündbar.",
+      "regionalPricing": "Regionale Preise",
+      "regionalPricingDesc": "Automatische Preisanpassung basierend auf Ihrem Standort durch Parity Deals",
+      "newLanguages": "Italienisch & Portugiesisch",
+      "newLanguagesDesc": "Benutzeroberfläche jetzt auf Italienisch und Portugiesisch verfügbar"
+    },
     "v0120": {
       "versionDisplay": "Versionsanzeige",
       "versionDisplayDesc": "Sehen Sie die Extension-Version direkt in der Oberfläche",

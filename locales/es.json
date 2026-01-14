@@ -612,6 +612,14 @@
       "initialRelease": "Lanzamiento Inicial",
       "plusFeatures": "Funciones PLUS"
     },
+    "v0200": {
+      "freeTrial": "14 Días de Prueba Gratis",
+      "freeTrialDesc": "Prueba PLUS gratis durante 14 días antes de que se te cobre. Cancela en cualquier momento durante el período de prueba.",
+      "regionalPricing": "Precios Regionales",
+      "regionalPricingDesc": "Ajuste automático de precios según tu ubicación mediante Parity Deals",
+      "newLanguages": "Italiano y Portugués",
+      "newLanguagesDesc": "Interfaz ahora disponible en italiano y portugués"
+    },
     "v0120": {
       "versionDisplay": "Mostrar Versión",
       "versionDisplayDesc": "Ve la versión de la extensión directamente en la interfaz",

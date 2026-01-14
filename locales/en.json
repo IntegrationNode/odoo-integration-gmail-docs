@@ -612,6 +612,14 @@
       "initialRelease": "Initial Release",
       "plusFeatures": "PLUS Features"
     },
+    "v0200": {
+      "freeTrial": "14-Day Free Trial",
+      "freeTrialDesc": "Try PLUS free for 14 days before being charged. Cancel anytime during the trial.",
+      "regionalPricing": "Regional Pricing",
+      "regionalPricingDesc": "Automatic price adjustment based on your location through Parity Deals",
+      "newLanguages": "Italian & Portuguese",
+      "newLanguagesDesc": "Interface now available in Italian and Portuguese"
+    },
     "v0120": {
       "versionDisplay": "Version Display",
       "versionDisplayDesc": "See the extension version directly in the UI",

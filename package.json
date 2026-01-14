@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Documentation website for Odoo Integration for Gmail",
   "scripts": {
-    "build:i18n": "static-i18n -l en -i en -i es -i fr -i de -o dist --localesPath locales src",
+    "build:i18n": "static-i18n -l en -i en -i es -i fr -i de -i it -i pt -o dist --localesPath locales src",
     "build": "npm run build:i18n && cp -r dist/* .",
-    "watch": "static-i18n -l en -i en -i es -i fr -i de -o dist src --watch"
+    "watch": "static-i18n -l en -i en -i es -i fr -i de -i it -i pt -o dist src --watch"
   },
   "devDependencies": {
     "static-i18n": "^0.2.10"
