@@ -361,6 +361,21 @@
         </div>
     </div>
 
+    <!-- Fix asset paths for multi-language site (must run before carousel.js) -->
+    <script>
+    (function() {
+      var path = window.location.pathname;
+      var isSubLang = /\/(es|fr|de|it|pt)\//.test(path);
+      var prefix = isSubLang ? '../' : '';
+      document.querySelectorAll('[data-gif]').forEach(function(el) {
+        var gif = el.getAttribute('data-gif');
+        if (gif && !gif.startsWith('/') && !gif.startsWith('http') && !gif.startsWith('../')) {
+          el.setAttribute('data-gif', prefix + gif);
+        }
+      });
+    })();
+    </script>
+
     <!-- Demo Carousel Script -->
     <script src="../carousel.js"></script>
 
