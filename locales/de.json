@@ -507,10 +507,10 @@
       "yourOdoo": "Ihrer Odoo-Instanz:",
       "yourOdooDesc": "Die Erweiterung sendet API-Anfragen an die von Ihnen konfigurierte Odoo-URL, um Datensätze abzurufen und zu erstellen",
       "lemonDesc": "Nur für die Abonnementverwaltung (E-Mail, Abonnementstatus, Zahlungsabwicklung)",
+      "googleAnalyticsDesc": "Anonyme Nutzungsstatistiken (Funktionsnutzung, Fehler). Keine personenbezogenen Daten oder E-Mail/Odoo-Inhalte.",
       "doesNot": "Die Erweiterung tut NICHT:",
       "notSell": "Ihre Daten an Datenhändler verkaufen",
       "notAdvertising": "Daten für Werbezwecke teilen",
-      "notAnalytics": "Daten an Analyse- oder Tracking-Dienste übermitteln",
       "notDeveloper": "Gmail- oder Odoo-Daten an die Server des Erweiterungsentwicklers senden"
     },
     "googleApi": {

@@ -507,10 +507,10 @@
       "yourOdoo": "La Tua Istanza Odoo:",
       "yourOdooDesc": "L'Estensione invia richieste API all'URL dell'istanza Odoo che configuri per recuperare e creare record",
       "lemonDesc": "Solo per la gestione degli abbonamenti (email, stato abbonamento, elaborazione pagamenti)",
+      "googleAnalyticsDesc": "Statistiche di utilizzo anonime (utilizzo funzionalità, errori). Nessun dato personale o contenuto email/Odoo.",
       "doesNot": "L'Estensione NON:",
       "notSell": "Vende i tuoi dati a broker di dati",
       "notAdvertising": "Condivide dati per scopi pubblicitari",
-      "notAnalytics": "Trasmette dati a servizi di analisi o tracciamento",
       "notDeveloper": "Invia dati Gmail o Odoo ai server dello sviluppatore dell'estensione"
     },
     "googleApi": {

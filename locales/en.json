@@ -507,10 +507,10 @@
       "yourOdoo": "Your Odoo Instance:",
       "yourOdooDesc": "The Extension sends API requests to the Odoo instance URL you configure to retrieve and create records",
       "lemonDesc": "Only for subscription management (email, subscription status, payment processing)",
+      "googleAnalyticsDesc": "Anonymous usage statistics (feature usage, errors). No PII or email/Odoo content.",
       "doesNot": "The Extension does NOT:",
       "notSell": "Sell your data to data brokers",
       "notAdvertising": "Share data for advertising purposes",
-      "notAnalytics": "Transmit data to analytics or tracking services",
       "notDeveloper": "Send Gmail or Odoo data to the extension developer's servers"
     },
     "googleApi": {

@@ -507,10 +507,10 @@
       "yourOdoo": "Tu Instancia de Odoo:",
       "yourOdooDesc": "La Extensión envía peticiones API a la URL de instancia de Odoo que configuras para recuperar y crear registros",
       "lemonDesc": "Solo para gestión de suscripciones (email, estado de suscripción, procesamiento de pagos)",
+      "googleAnalyticsDesc": "Estadísticas de uso anónimas (uso de funciones, errores). Sin PII ni contenido de email/Odoo.",
       "doesNot": "La Extensión NO:",
       "notSell": "Vende tus datos a intermediarios de datos",
       "notAdvertising": "Comparte datos con fines publicitarios",
-      "notAnalytics": "Transmite datos a servicios de análisis o seguimiento",
       "notDeveloper": "Envía datos de Gmail u Odoo a los servidores del desarrollador de la extensión"
     },
     "googleApi": {
