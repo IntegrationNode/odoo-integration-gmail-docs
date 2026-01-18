@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0YPS5MV3D6');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to configure OAuth for sending emails from Odoo with your domain, and why you shouldn't sync your entire Gmail with Odoo.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html">
+    <meta property="og:title" content="Odoo Gmail Integration: Personal Domain Setup Guide">
+    <meta property="og:description" content="Configure OAuth for Odoo email sending with your domain. Learn the hybrid strategy for personal vs team inboxes.">
+    <meta property="og:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+    <meta property="article:published_time" content="2025-01-18">
+    <meta property="article:author" content="OdooIntegrations Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Odoo Gmail: Personal Domain Configuration">
+    <meta name="twitter:description" content="How to send emails from Odoo with your domain without creating inbox chaos.">
+    <meta name="twitter:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+
+    <title>Odoo Gmail Integration: Using Your Personal Domain Without Inbox Chaos</title>
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="stylesheet" href="../../fonts/outlined.css">
+    <link rel="stylesheet" href="../../style.css">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Odoo Gmail Integration: How to Use Your Personal Domain Without Creating Inbox Chaos",
+        "description": "Learn how to configure OAuth for sending emails from Odoo with your domain, and why you shouldn't sync your entire Gmail with Odoo.",
+        "image": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/favicon.png"
+            }
+        },
+        "datePublished": "2025-01-18",
+        "dateModified": "2025-01-18",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">Odoo Integration for Gmail</a>
+                <div class="nav-links">
+                    <a href="../index.html#features">Features</a>
+                    <a href="../pricing.html">Pricing</a>
+                    <a href="../user-guide.html">User Guide</a>
+                    <a href="../blog.html" class="active">Blog</a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary">Get Extension</a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">EN</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <a href="../blog.html" class="article-back">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Back to Blog</span>
+            </a>
+            <h1>Odoo Gmail Integration: Using Your Personal Domain Without Inbox Chaos</h1>
+            <div class="article-meta">
+                <span class="article-date">January 18, 2025</span>
+                <span class="article-author">OdooIntegrations Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-section">
+        <div class="container">
+            <div class="article-content">
+                <!-- Intro -->
+                <p class="article-intro">If you're an Odoo user, you've probably asked yourself: "How can I send emails from Odoo and have the customer see it's from me (name@mycompany.com) and not a generic bot?" The technical answer is straightforward, but the strategy behind it is where many companies fail. A configuration mistake can lead to privacy issues, lost emails, or an inbox where messages mysteriously appear as "read".</p>
+
+                <!-- Section 1: Sending -->
+                <h2>
+                    <span class="section-number">1</span>
+                    <span>Sending: Your Identity Comes First</span>
+                </h2>
+                <p>For your quotes and invoices to go out with your signature and personal email, Odoo offers a robust solution: Google OAuth authentication.</p>
+                <p>Unlike old SMTP password configurations, OAuth lets you connect your Google Workspace account securely without sharing your actual password.</p>
+
+                <h3>How does it work technically?</h3>
+                <p>When configuring an Outgoing Mail Server with OAuth, Odoo uses a "FROM Filter". When you send an email, the system looks for a server matching your sender address.</p>
+                <ul>
+                    <li>The result: Your customer receives the email directly from you@yourcompany.com, leveraging your domain's reputation and avoiding the Spam folder.</li>
+                </ul>
+                <p>So far, so good. The problem arises when we want to manage replies.</p>
+
+                <!-- Section 2: The Trap -->
+                <h2>
+                    <span class="section-number">2</span>
+                    <span>The Trap of Personal "Incoming Servers"</span>
+                </h2>
+                <p>It's tempting to think: "If I connected my outgoing, I'll connect my incoming too to have all my emails in Odoo". Be careful! This is the most common mistake.</p>
+
+                <div class="warning-box">
+                    <span class="material-symbols-outlined">warning</span>
+                    <span>Odoo's official documentation explicitly warns that the Incoming Mail Servers feature is designed for shared inboxes (like sales@ or support@), not for personal accounts.</span>
+                </div>
+
+                <h3>Why shouldn't you connect your personal inbox directly?</h3>
+                <ol>
+                    <li>
+                        <strong>The "Read" Problem: </strong>
+                        <span>Odoo isn't a traditional email client. If you configure your personal account for Odoo to "pull" emails (via IMAP or POP), the system might download messages and mark them as read in your Gmail or even archive them. Imagine the frustration of opening your Gmail and not knowing what's new and what isn't.</span>
+                    </li>
+                    <li>
+                        <strong>Exposed Privacy: </strong>
+                        <span>In Odoo, emails attach to the Chatter (the document wall). If you sync your entire inbox, a private HR email or confidential complaint could end up visible to any colleague with system access.</span>
+                    </li>
+                    <li>
+                        <strong>Loss of Power: </strong>
+                        <span>Gmail (especially with integrated Gemini) is a superior management tool to Odoo's messaging view. By forcing work inside Odoo, you lose labels, smart filters, and Google's AI.</span>
+                    </li>
+                </ol>
+
+                <!-- Section 3: Hybrid Strategy -->
+                <h2>
+                    <span class="section-number">3</span>
+                    <span>The Hybrid Strategy: Centralized vs. Individual</span>
+                </h2>
+                <p>The correct way to work is to divide the strategy into two flows:</p>
+                <ul>
+                    <li>
+                        <strong>For teams (sales@mycompany.com): </strong>
+                        <span>Here we DO use full native integration. We want any email arriving at "Sales" to automatically create a CRM opportunity. It doesn't matter if it's marked as read in the original inbox, because the goal is for the team to manage it from Odoo.</span>
+                    </li>
+                    <li>
+                        <strong>For individuals (yourname@mycompany.com): </strong>
+                        <span>Here we need selectivity. You want to work in your Gmail and only send to Odoo those emails relevant to the business (a negotiation, a signed invoice, etc.).</span>
+                    </li>
+                </ul>
+
+                <!-- Section 4: The Solution -->
+                <h2>
+                    <span class="section-number">4</span>
+                    <span>The Solution: Connect Gmail Without Leaving Gmail</span>
+                </h2>
+                <p>For personal accounts, Odoo recommends not using incoming servers, but using add-ons or extensions instead. The goal is for YOU to have control: you decide what gets saved in the CRM and what stays in your private domain.</p>
+                <p>Although Odoo offers a basic add-on, many users find that the workflow can be improved for those who live inside their Chrome browser and need agility.</p>
+
+                <h3>Supercharge Your Workflow with Odoo Integration for Gmail</h3>
+                <p>This is where our Chrome extension comes in, designed as a powerful alternative for demanding users. Unlike blind server synchronization, our extension allows you to:</p>
+                <ul>
+                    <li>
+                        <strong>Keep Your Gmail Clean: </strong>
+                        <span>Your emails remain yours. We don't alter your inbox's "unread" status.</span>
+                    </li>
+                    <li>
+                        <strong>Selective Connection: </strong>
+                        <span>Got an important email from a client? With a single click from your browser, send it to the corresponding record in Odoo.</span>
+                    </li>
+                    <li>
+                        <strong>Instant Context: </strong>
+                        <span>View Odoo data directly in your Gmail without constantly switching tabs.</span>
+                    </li>
+                </ul>
+                <p>Let Odoo manage company data and Gmail manage your personal communication, using our extension as the perfect bridge between both worlds.</p>
+
+                <!-- CTA -->
+                <div class="article-cta">
+                    <h3>Ready to try it?</h3>
+                    <p>Connect your Gmail to Odoo in seconds with our Chrome extension.</p>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-primary btn-lg">Try the Extension Free</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Odoo Integration for Gmail</h4>
+                    <p><span>Built by</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pricing.html">Pricing</a></li>
+                        <li><a href="../user-guide.html">User Guide</a></li>
+                        <li><a href="../changelog.html">Changelog</a></li>
+                        <li><a href="../comparison.html">Comparison</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <p class="small-text">Not affiliated with Odoo S.A. or Google LLC.</p>
+                    <p class="small-text">Odoo is a trademark of Odoo S.A.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 IntegrationNode. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+
+        // Get page path relative to language root (e.g., "blog/article.html")
+        var pathParts = path.split('/');
+        var page = '';
+        var isSubLang = false;
+
+        for (var i = 0; i < LANGUAGES.length; i++) {
+            var langPath = LANGUAGES[i].path;
+            if (langPath && path.includes('/' + langPath)) {
+                isSubLang = true;
+                // Get everything after the language folder
+                var langIndex = path.indexOf('/' + langPath);
+                page = path.substring(langIndex + langPath.length + 1);
+                break;
+            }
+        }
+
+        if (!isSubLang) {
+            // English (root) - get path after docs folder
+            var docsIndex = path.indexOf('odoo-integration-gmail-docs/');
+            if (docsIndex !== -1) {
+                page = path.substring(docsIndex + 'odoo-integration-gmail-docs/'.length);
+            } else {
+                page = pathParts.slice(-2).join('/');
+            }
+        }
+
+        if (!page || page === '') page = 'index.html';
+
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            // For nested pages, we need to go up two levels from /blog/article.html
+            if (currentLang.path) {
+                // From /es/blog/article.html to other langs
+                link.href = '../../' + lang.path + page;
+            } else {
+                // From /blog/article.html to other langs
+                link.href = '../' + lang.path + page;
+            }
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

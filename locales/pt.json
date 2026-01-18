@@ -63,6 +63,24 @@
       "ogDescription": "Cansado de tempos de carregamento lentos e desconexões? Nossa extensão carrega em 100-300ms e funciona em qualquer instância Odoo.",
       "twitterTitle": "Melhor Alternativa ao Plugin Gmail Odoo",
       "twitterDescription": "10-20x mais rápida que o plugin oficial. Mude em 2 minutos."
+    },
+    "blog": {
+      "title": "Blog - Integração Odoo para Gmail",
+      "description": "Dicas e tutoriais para integrar Odoo com Gmail. Aprenda as melhores práticas para configuração de email, integração CRM e workflows de produtividade.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog.html",
+      "ogTitle": "Blog - Dicas de Integração Odoo e Gmail",
+      "ogDescription": "Aprenda as melhores práticas para integrar Odoo com Gmail. Dicas, tutoriais e estratégias de produtividade.",
+      "twitterTitle": "Blog - Integração Odoo e Gmail",
+      "twitterDescription": "Dicas e tutoriais para integração Odoo-Gmail. Melhores práticas e workflows."
+    },
+    "blogOdooGmailDomain": {
+      "title": "Integração Odoo Gmail: Usando seu domínio pessoal sem caos na caixa de entrada",
+      "description": "Aprenda a configurar OAuth para enviar emails do Odoo com seu domínio, e por que você não deve sincronizar todo seu Gmail com o Odoo.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-gmail-domain-configuration.html",
+      "ogTitle": "Integração Odoo Gmail: Guia de Configuração de Domínio Pessoal",
+      "ogDescription": "Configure OAuth para envio de emails do Odoo com seu domínio. Aprenda a estratégia híbrida para caixas pessoais vs equipes.",
+      "twitterTitle": "Odoo Gmail: Configuração de Domínio Pessoal",
+      "twitterDescription": "Como enviar emails do Odoo com seu domínio sem criar caos na caixa de entrada."
     }
   },
   "userGuide": {
@@ -285,6 +303,7 @@
     "features": "Recursos",
     "pricing": "Preços",
     "userGuide": "Guia do Usuário",
+    "blog": "Blog",
     "getExtension": "Obter Extensão",
     "currentLang": "PT"
   },
@@ -864,11 +883,83 @@
     "userGuide": "Guia do Usuário",
     "changelog": "Changelog",
     "comparison": "Comparação",
+    "blog": "Blog",
     "privacy": "Política de Privacidade",
     "support": "Suporte",
     "legal": "Legal",
     "notAffiliated": "Não afiliado à Odoo S.A. ou Google LLC.",
     "odooTrademark": "Odoo é uma marca registrada da Odoo S.A.",
     "copyright": "2025 IntegrationNode. Todos os direitos reservados."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Dicas e tutoriais para integrar Odoo com Gmail",
+    "readMore": "Ler artigo",
+    "article1": {
+      "title": "Integração Odoo Gmail: Usando seu domínio pessoal sem caos na caixa de entrada",
+      "date": "Janeiro 2025",
+      "excerpt": "Se você é usuário do Odoo, provavelmente já se perguntou: \"Como posso enviar emails do Odoo e o cliente ver que sou eu (nome@minhaempresa.com) e não um bot genérico?\""
+    },
+    "cta": {
+      "title": "Experimente Integração Odoo para Gmail",
+      "subtitle": "Conecte seu Gmail ao Odoo em segundos",
+      "button": "Obter Extensão"
+    }
+  },
+  "blogArticle": {
+    "backToBlog": "Voltar ao Blog"
+  },
+  "blogOdooGmailDomain": {
+    "title": "Integração Odoo Gmail: Usando seu domínio pessoal sem caos na caixa de entrada",
+    "date": "18 de Janeiro de 2025",
+    "intro": "Se você é usuário do Odoo, provavelmente já se perguntou: \"Como posso enviar emails do Odoo e o cliente ver que sou eu (nome@minhaempresa.com) e não um bot genérico?\" A resposta técnica é simples, mas a estratégia por trás é onde muitas empresas falham. Um erro de configuração pode levar a problemas de privacidade, emails perdidos ou uma caixa de entrada do Gmail onde as mensagens aparecem misteriosamente como \"lidas\".",
+    "section1": {
+      "title": "O envio: Sua identidade em primeiro lugar",
+      "p1": "Para que seus orçamentos e faturas saiam com sua assinatura e email pessoal, o Odoo oferece uma solução robusta: autenticação Google OAuth.",
+      "p2": "Diferente das configurações antigas com senhas SMTP, o OAuth permite conectar sua conta Google Workspace de forma segura sem compartilhar sua senha real.",
+      "howItWorks": "Como funciona tecnicamente?",
+      "howItWorksDesc": "Ao configurar um Servidor de Correio de Saída com OAuth, o Odoo utiliza um \"Filtro DE\". Quando você envia um email, o sistema procura um servidor que corresponda ao seu endereço de remetente.",
+      "benefit1": "O resultado: Seu cliente recebe o email diretamente de voce@suaempresa.com, aproveitando a reputação do seu domínio e evitando a pasta de Spam.",
+      "transition": "Até aqui, tudo perfeito. O problema surge quando queremos gerenciar as respostas."
+    },
+    "section2": {
+      "title": "A armadilha dos \"Servidores de Entrada\" pessoais",
+      "p1": "É muito tentador pensar: \"Se conectei minha saída, vou conectar também minha entrada para ter todos os emails no Odoo\". Cuidado! Este é o erro mais comum.",
+      "warning": "A documentação oficial do Odoo adverte explicitamente que a função de Servidores de Correio de Entrada é projetada para caixas compartilhadas (como vendas@ ou suporte@), não para contas pessoais.",
+      "whyNotTitle": "Por que você não deve conectar sua entrada pessoal diretamente?",
+      "problem1Title": "O problema dos \"Lidos\": ",
+      "problem1Desc": "O Odoo não é um cliente de email tradicional. Se você configurar sua conta pessoal para o Odoo \"puxar\" os emails (via IMAP ou POP), o sistema pode baixar as mensagens e marcá-las como lidas no seu Gmail ou até arquivá-las. Imagine a frustração de entrar no seu Gmail e não saber o que é novo e o que não é.",
+      "problem2Title": "Privacidade exposta: ",
+      "problem2Desc": "No Odoo, os emails são anexados ao Chatter (o mural do documento). Se você sincronizar toda sua caixa, um email privado do RH ou uma reclamação confidencial pode acabar visível para qualquer colega com acesso ao sistema.",
+      "problem3Title": "Perda de poder: ",
+      "problem3Desc": "O Gmail (especialmente com Gemini integrado) é uma ferramenta de gestão superior à visão de mensagens do Odoo. Ao forçar o trabalho dentro do Odoo, você perde as etiquetas, os filtros inteligentes e a IA do Google."
+    },
+    "section3": {
+      "title": "A Estratégia Híbrida: Centralizado vs. Individual",
+      "p1": "A forma correta de trabalhar é dividir a estratégia em dois fluxos:",
+      "teamsTitle": "Para equipes (vendas@minhaempresa.com): ",
+      "teamsDesc": "Aqui SIM usamos a integração nativa total. Queremos que qualquer email que chegue em \"Vendas\" crie automaticamente uma oportunidade no CRM. Não importa se é marcado como lido na caixa original, porque o objetivo é que a equipe gerencie pelo Odoo.",
+      "individualsTitle": "Para indivíduos (seunome@minhaempresa.com): ",
+      "individualsDesc": "Aqui precisamos de seletividade. Você quer trabalhar no seu Gmail e enviar ao Odoo apenas os emails relevantes para o negócio (uma negociação, uma fatura assinada, etc.)."
+    },
+    "section4": {
+      "title": "A Solução: Conecte o Gmail sem sair do Gmail",
+      "p1": "Para contas pessoais, o Odoo recomenda não usar servidores de entrada, mas utilizar complementos ou extensões. O objetivo é que VOCÊ tenha o controle: você decide o que é salvo no CRM e o que fica no seu âmbito privado.",
+      "p2": "Embora o Odoo ofereça um complemento básico, muitos usuários encontram que o workflow pode ser melhorado para quem vive dentro do navegador Chrome e precisa de agilidade.",
+      "extensionTitle": "Potencialize seu fluxo com Integração Odoo para Gmail",
+      "extensionIntro": "Aqui entra em jogo nossa extensão para Chrome, projetada como uma alternativa poderosa para usuários exigentes. Diferente da sincronização cega de servidores, nossa extensão permite:",
+      "benefit1Title": "Manter seu Gmail limpo: ",
+      "benefit1Desc": "Seus emails continuam sendo seus. Não alteramos o status de \"não lido\" da sua caixa de entrada.",
+      "benefit2Title": "Conexão Seletiva: ",
+      "benefit2Desc": "Recebeu um email importante de um cliente? Com um único clique do seu navegador, envie-o para a ficha correspondente no Odoo.",
+      "benefit3Title": "Contexto Instantâneo: ",
+      "benefit3Desc": "Visualize dados do Odoo diretamente no seu Gmail sem ter que trocar de aba constantemente.",
+      "conclusion": "Deixe o Odoo gerenciar os dados da empresa e o Gmail gerenciar sua comunicação pessoal, usando nossa extensão como a ponte perfeita entre os dois mundos."
+    },
+    "cta": {
+      "title": "Pronto para experimentar?",
+      "subtitle": "Conecte seu Gmail ao Odoo em segundos com nossa extensão Chrome.",
+      "button": "Experimente a extensão grátis"
+    }
   }
 }

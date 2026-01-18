@@ -63,6 +63,24 @@
       "ogDescription": "Tired of slow load times and disconnections? Our extension loads in 100-300ms and works on any Odoo instance.",
       "twitterTitle": "Best Odoo Gmail Plugin Alternative",
       "twitterDescription": "10-20x faster than the official plugin. Switch in 2 minutes."
+    },
+    "blog": {
+      "title": "Blog - Odoo Integration for Gmail",
+      "description": "Tips and tutorials for integrating Odoo with Gmail. Learn best practices for email configuration, CRM integration, and productivity workflows.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html",
+      "ogTitle": "Blog - Odoo & Gmail Integration Tips",
+      "ogDescription": "Learn best practices for integrating Odoo with Gmail. Tips, tutorials, and productivity strategies.",
+      "twitterTitle": "Blog - Odoo & Gmail Integration",
+      "twitterDescription": "Tips and tutorials for Odoo-Gmail integration. Best practices and workflows."
+    },
+    "blogOdooGmailDomain": {
+      "title": "Odoo Gmail Integration: Using Your Personal Domain Without Inbox Chaos",
+      "description": "Learn how to configure OAuth for sending emails from Odoo with your domain, and why you shouldn't sync your entire Gmail with Odoo.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html",
+      "ogTitle": "Odoo Gmail Integration: Personal Domain Setup Guide",
+      "ogDescription": "Configure OAuth for Odoo email sending with your domain. Learn the hybrid strategy for personal vs team inboxes.",
+      "twitterTitle": "Odoo Gmail: Personal Domain Configuration",
+      "twitterDescription": "How to send emails from Odoo with your domain without creating inbox chaos."
     }
   },
   "userGuide": {
@@ -285,6 +303,7 @@
     "features": "Features",
     "pricing": "Pricing",
     "userGuide": "User Guide",
+    "blog": "Blog",
     "getExtension": "Get Extension",
     "currentLang": "EN"
   },
@@ -864,11 +883,83 @@
     "userGuide": "User Guide",
     "changelog": "Changelog",
     "comparison": "Comparison",
+    "blog": "Blog",
     "privacy": "Privacy Policy",
     "support": "Support",
     "legal": "Legal",
     "notAffiliated": "Not affiliated with Odoo S.A. or Google LLC.",
     "odooTrademark": "Odoo is a trademark of Odoo S.A.",
     "copyright": "2025 IntegrationNode. All rights reserved."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Tips and tutorials for integrating Odoo with Gmail",
+    "readMore": "Read article",
+    "article1": {
+      "title": "Odoo Gmail Integration: Using Your Personal Domain Without Inbox Chaos",
+      "date": "January 2025",
+      "excerpt": "If you're an Odoo user, you've probably asked yourself: \"How can I send emails from Odoo and have the customer see it's from me (name@mycompany.com) and not a generic bot?\""
+    },
+    "cta": {
+      "title": "Try Odoo Integration for Gmail",
+      "subtitle": "Connect your Gmail to Odoo in seconds",
+      "button": "Get Extension"
+    }
+  },
+  "blogArticle": {
+    "backToBlog": "Back to Blog"
+  },
+  "blogOdooGmailDomain": {
+    "title": "Odoo Gmail Integration: Using Your Personal Domain Without Inbox Chaos",
+    "date": "January 18, 2025",
+    "intro": "If you're an Odoo user, you've probably asked yourself: \"How can I send emails from Odoo and have the customer see it's from me (name@mycompany.com) and not a generic bot?\" The technical answer is straightforward, but the strategy behind it is where many companies fail. A configuration mistake can lead to privacy issues, lost emails, or an inbox where messages mysteriously appear as \"read\".",
+    "section1": {
+      "title": "Sending: Your Identity Comes First",
+      "p1": "For your quotes and invoices to go out with your signature and personal email, Odoo offers a robust solution: Google OAuth authentication.",
+      "p2": "Unlike old SMTP password configurations, OAuth lets you connect your Google Workspace account securely without sharing your actual password.",
+      "howItWorks": "How does it work technically?",
+      "howItWorksDesc": "When configuring an Outgoing Mail Server with OAuth, Odoo uses a \"FROM Filter\". When you send an email, the system looks for a server matching your sender address.",
+      "benefit1": "The result: Your customer receives the email directly from you@yourcompany.com, leveraging your domain's reputation and avoiding the Spam folder.",
+      "transition": "So far, so good. The problem arises when we want to manage replies."
+    },
+    "section2": {
+      "title": "The Trap of Personal \"Incoming Servers\"",
+      "p1": "It's tempting to think: \"If I connected my outgoing, I'll connect my incoming too to have all my emails in Odoo\". Be careful! This is the most common mistake.",
+      "warning": "Odoo's official documentation explicitly warns that the Incoming Mail Servers feature is designed for shared inboxes (like sales@ or support@), not for personal accounts.",
+      "whyNotTitle": "Why shouldn't you connect your personal inbox directly?",
+      "problem1Title": "The \"Read\" Problem: ",
+      "problem1Desc": "Odoo isn't a traditional email client. If you configure your personal account for Odoo to \"pull\" emails (via IMAP or POP), the system might download messages and mark them as read in your Gmail or even archive them. Imagine the frustration of opening your Gmail and not knowing what's new and what isn't.",
+      "problem2Title": "Exposed Privacy: ",
+      "problem2Desc": "In Odoo, emails attach to the Chatter (the document wall). If you sync your entire inbox, a private HR email or confidential complaint could end up visible to any colleague with system access.",
+      "problem3Title": "Loss of Power: ",
+      "problem3Desc": "Gmail (especially with integrated Gemini) is a superior management tool to Odoo's messaging view. By forcing work inside Odoo, you lose labels, smart filters, and Google's AI."
+    },
+    "section3": {
+      "title": "The Hybrid Strategy: Centralized vs. Individual",
+      "p1": "The correct way to work is to divide the strategy into two flows:",
+      "teamsTitle": "For teams (sales@mycompany.com): ",
+      "teamsDesc": "Here we DO use full native integration. We want any email arriving at \"Sales\" to automatically create a CRM opportunity. It doesn't matter if it's marked as read in the original inbox, because the goal is for the team to manage it from Odoo.",
+      "individualsTitle": "For individuals (yourname@mycompany.com): ",
+      "individualsDesc": "Here we need selectivity. You want to work in your Gmail and only send to Odoo those emails relevant to the business (a negotiation, a signed invoice, etc.)."
+    },
+    "section4": {
+      "title": "The Solution: Connect Gmail Without Leaving Gmail",
+      "p1": "For personal accounts, Odoo recommends not using incoming servers, but using add-ons or extensions instead. The goal is for YOU to have control: you decide what gets saved in the CRM and what stays in your private domain.",
+      "p2": "Although Odoo offers a basic add-on, many users find that the workflow can be improved for those who live inside their Chrome browser and need agility.",
+      "extensionTitle": "Supercharge Your Workflow with Odoo Integration for Gmail",
+      "extensionIntro": "This is where our Chrome extension comes in, designed as a powerful alternative for demanding users. Unlike blind server synchronization, our extension allows you to:",
+      "benefit1Title": "Keep Your Gmail Clean: ",
+      "benefit1Desc": "Your emails remain yours. We don't alter your inbox's \"unread\" status.",
+      "benefit2Title": "Selective Connection: ",
+      "benefit2Desc": "Got an important email from a client? With a single click from your browser, send it to the corresponding record in Odoo.",
+      "benefit3Title": "Instant Context: ",
+      "benefit3Desc": "View Odoo data directly in your Gmail without constantly switching tabs.",
+      "conclusion": "Let Odoo manage company data and Gmail manage your personal communication, using our extension as the perfect bridge between both worlds."
+    },
+    "cta": {
+      "title": "Ready to try it?",
+      "subtitle": "Connect your Gmail to Odoo in seconds with our Chrome extension.",
+      "button": "Try the Extension Free"
+    }
   }
 }

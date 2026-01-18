@@ -79,6 +79,28 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html" />
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html" />
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Spanish pages -->
   <url>
@@ -157,6 +179,28 @@
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html" />
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-gmail-domain-configuration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html" />
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- French pages -->
@@ -237,6 +281,28 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html" />
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-gmail-domain-configuration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html" />
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- German pages -->
   <url>
@@ -315,5 +381,27 @@
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html" />
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-gmail-domain-configuration.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html" />
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

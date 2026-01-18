@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0YPS5MV3D6');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Impara a configurare OAuth per inviare email da Odoo con il tuo dominio, e perché non dovresti sincronizzare tutto il tuo Gmail con Odoo.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-gmail-domain-configuration.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-gmail-domain-configuration.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-gmail-domain-configuration.html">
+    <meta property="og:title" content="Integrazione Odoo Gmail: Guida alla Configurazione del Dominio Personale">
+    <meta property="og:description" content="Configura OAuth per l'invio di email da Odoo con il tuo dominio. Impara la strategia ibrida per caselle personali vs team.">
+    <meta property="og:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+    <meta property="article:published_time" content="2025-01-18">
+    <meta property="article:author" content="OdooIntegrations Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Odoo Gmail: Configurazione Dominio Personale">
+    <meta name="twitter:description" content="Come inviare email da Odoo con il tuo dominio senza creare caos nella posta in arrivo.">
+    <meta name="twitter:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+
+    <title>Integrazione Odoo Gmail: Usare il tuo dominio personale senza caos nella posta in arrivo</title>
+    <link rel="icon" type="image/png" href="../../../favicon.png">
+    <link rel="stylesheet" href="../../../fonts/outlined.css">
+    <link rel="stylesheet" href="../../../style.css">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Odoo Gmail Integration: How to Use Your Personal Domain Without Creating Inbox Chaos",
+        "description": "Learn how to configure OAuth for sending emails from Odoo with your domain, and why you shouldn't sync your entire Gmail with Odoo.",
+        "image": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/favicon.png"
+            }
+        },
+        "datePublished": "2025-01-18",
+        "dateModified": "2025-01-18",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">Integrazione Odoo per Gmail</a>
+                <div class="nav-links">
+                    <a href="../index.html#features">Funzionalità</a>
+                    <a href="../pricing.html">Prezzi</a>
+                    <a href="../user-guide.html">Guida Utente</a>
+                    <a href="../blog.html" class="active">Blog</a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary">Ottieni Estensione</a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">IT</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <a href="../blog.html" class="article-back">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Torna al Blog</span>
+            </a>
+            <h1>Integrazione Odoo Gmail: Usare il tuo dominio personale senza caos nella posta in arrivo</h1>
+            <div class="article-meta">
+                <span class="article-date">18 Gennaio 2025</span>
+                <span class="article-author">OdooIntegrations Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-section">
+        <div class="container">
+            <div class="article-content">
+                <!-- Intro -->
+                <p class="article-intro">Se sei un utente Odoo, probabilmente ti sei chiesto: "Come posso inviare email da Odoo e far vedere al cliente che sono io (nome@miaazienda.com) e non un bot generico?" La risposta tecnica è semplice, ma la strategia dietro è dove molte aziende falliscono. Un errore di configurazione può portare a problemi di privacy, email perse o una casella Gmail dove i messaggi appaiono misteriosamente come "letti".</p>
+
+                <!-- Section 1: Sending -->
+                <h2>
+                    <span class="section-number">1</span>
+                    <span>L'invio: La tua identità prima di tutto</span>
+                </h2>
+                <p>Affinché i tuoi preventivi e fatture partano con la tua firma ed email personale, Odoo offre una soluzione robusta: l'autenticazione Google OAuth.</p>
+                <p>A differenza delle vecchie configurazioni con password SMTP, OAuth permette di collegare il tuo account Google Workspace in modo sicuro senza condividere la tua vera password.</p>
+
+                <h3>Come funziona tecnicamente?</h3>
+                <p>Configurando un Server di Posta in Uscita con OAuth, Odoo utilizza un "Filtro DA". Quando invii un'email, il sistema cerca un server che corrisponda al tuo indirizzo mittente.</p>
+                <ul>
+                    <li>Il risultato: Il tuo cliente riceve l'email direttamente da te@tuaazienda.com, sfruttando la reputazione del tuo dominio ed evitando la cartella Spam.</li>
+                </ul>
+                <p>Fin qui tutto perfetto. Il problema sorge quando vogliamo gestire le risposte.</p>
+
+                <!-- Section 2: The Trap -->
+                <h2>
+                    <span class="section-number">2</span>
+                    <span>La trappola dei "Server in Entrata" personali</span>
+                </h2>
+                <p>È molto tentante pensare: "Se ho collegato la mia uscita, collegherò anche la mia entrata per avere tutte le email in Odoo". Attenzione! Questo è l'errore più comune.</p>
+
+                <div class="warning-box">
+                    <span class="material-symbols-outlined">warning</span>
+                    <span>La documentazione ufficiale di Odoo avverte esplicitamente che la funzione Server di Posta in Entrata è progettata per caselle condivise (come vendite@ o supporto@), non per account personali.</span>
+                </div>
+
+                <h3>Perché non dovresti collegare la tua entrata personale direttamente?</h3>
+                <ol>
+                    <li>
+                        <strong>Il problema dei "Letti": </strong>
+                        <span>Odoo non è un client di posta tradizionale. Se configuri il tuo account personale affinché Odoo "aspiri" le email (via IMAP o POP), il sistema potrebbe scaricare i messaggi e segnarli come letti nel tuo Gmail o addirittura archiviarli. Immagina la frustrazione di entrare nel tuo Gmail e non sapere cosa è nuovo e cosa no.</span>
+                    </li>
+                    <li>
+                        <strong>Privacy esposta: </strong>
+                        <span>In Odoo, le email si allegano al Chatter (la bacheca del documento). Se sincronizzi tutta la tua casella, un'email privata delle HR o un reclamo confidenziale potrebbe diventare visibile a qualsiasi collega con accesso al sistema.</span>
+                    </li>
+                    <li>
+                        <strong>Perdita di potenza: </strong>
+                        <span>Gmail (specialmente con Gemini integrato) è uno strumento di gestione superiore alla vista messaggi di Odoo. Forzando il lavoro in Odoo, perdi le etichette, i filtri intelligenti e l'IA di Google.</span>
+                    </li>
+                </ol>
+
+                <!-- Section 3: Hybrid Strategy -->
+                <h2>
+                    <span class="section-number">3</span>
+                    <span>La Strategia Ibrida: Centralizzato vs. Individuale</span>
+                </h2>
+                <p>Il modo corretto di lavorare è dividere la strategia in due flussi:</p>
+                <ul>
+                    <li>
+                        <strong>Per i team (vendite@miaazienda.com): </strong>
+                        <span>Qui usiamo l'integrazione nativa totale. Vogliamo che qualsiasi email che arrivi a "Vendite" crei automaticamente un'opportunità CRM. Non importa se viene segnata come letta nella casella originale, perché l'obiettivo è che il team la gestisca da Odoo.</span>
+                    </li>
+                    <li>
+                        <strong>Per gli individui (tuonome@miaazienda.com): </strong>
+                        <span>Qui abbiamo bisogno di selettività. Tu vuoi lavorare nel tuo Gmail e inviare a Odoo solo le email rilevanti per il business (una trattativa, una fattura firmata, ecc.).</span>
+                    </li>
+                </ul>
+
+                <!-- Section 4: The Solution -->
+                <h2>
+                    <span class="section-number">4</span>
+                    <span>La Soluzione: Collega Gmail senza lasciare Gmail</span>
+                </h2>
+                <p>Per gli account personali, Odoo raccomanda di non usare server in entrata, ma di utilizzare add-on o estensioni. L'obiettivo è che TU abbia il controllo: tu decidi cosa viene salvato nel CRM e cosa resta nel tuo ambito privato.</p>
+                <p>Sebbene Odoo offra un add-on base, molti utenti trovano che il workflow possa essere migliorato per chi vive nel proprio browser Chrome e ha bisogno di agilità.</p>
+
+                <h3>Potenzia il tuo workflow con Integrazione Odoo per Gmail</h3>
+                <p>Qui entra in gioco la nostra estensione Chrome, progettata come alternativa potente per utenti esigenti. A differenza della sincronizzazione cieca dei server, la nostra estensione ti permette di:</p>
+                <ul>
+                    <li>
+                        <strong>Mantenere il tuo Gmail pulito: </strong>
+                        <span>Le tue email restano tue. Non alteriamo lo stato "non letto" della tua posta in arrivo.</span>
+                    </li>
+                    <li>
+                        <strong>Connessione Selettiva: </strong>
+                        <span>Hai ricevuto un'email importante da un cliente? Con un solo clic dal tuo browser, inviala alla scheda corrispondente in Odoo.</span>
+                    </li>
+                    <li>
+                        <strong>Contesto Istantaneo: </strong>
+                        <span>Visualizza i dati Odoo direttamente nel tuo Gmail senza cambiare costantemente scheda.</span>
+                    </li>
+                </ul>
+                <p>Lascia che Odoo gestisca i dati aziendali e Gmail gestisca la tua comunicazione personale, usando la nostra estensione come ponte perfetto tra i due mondi.</p>
+
+                <!-- CTA -->
+                <div class="article-cta">
+                    <h3>Pronto a provarlo?</h3>
+                    <p>Collega il tuo Gmail a Odoo in pochi secondi con la nostra estensione Chrome.</p>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-primary btn-lg">Prova l'estensione gratis</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Integrazione Odoo per Gmail</h4>
+                    <p><span>Creato da</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Risorse</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pricing.html">Prezzi</a></li>
+                        <li><a href="../user-guide.html">Guida Utente</a></li>
+                        <li><a href="../changelog.html">Changelog</a></li>
+                        <li><a href="../comparison.html">Confronto</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../privacy.html">Informativa sulla Privacy</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Supporto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legale</h4>
+                    <p class="small-text">Non affiliato con Odoo S.A. o Google LLC.</p>
+                    <p class="small-text">Odoo è un marchio di Odoo S.A.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 IntegrationNode. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+
+        // Get page path relative to language root (e.g., "blog/article.html")
+        var pathParts = path.split('/');
+        var page = '';
+        var isSubLang = false;
+
+        for (var i = 0; i < LANGUAGES.length; i++) {
+            var langPath = LANGUAGES[i].path;
+            if (langPath && path.includes('/' + langPath)) {
+                isSubLang = true;
+                // Get everything after the language folder
+                var langIndex = path.indexOf('/' + langPath);
+                page = path.substring(langIndex + langPath.length + 1);
+                break;
+            }
+        }
+
+        if (!isSubLang) {
+            // English (root) - get path after docs folder
+            var docsIndex = path.indexOf('odoo-integration-gmail-docs/');
+            if (docsIndex !== -1) {
+                page = path.substring(docsIndex + 'odoo-integration-gmail-docs/'.length);
+            } else {
+                page = pathParts.slice(-2).join('/');
+            }
+        }
+
+        if (!page || page === '') page = 'index.html';
+
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            // For nested pages, we need to go up two levels from /blog/article.html
+            if (currentLang.path) {
+                // From /es/blog/article.html to other langs
+                link.href = '../../' + lang.path + page;
+            } else {
+                // From /blog/article.html to other langs
+                link.href = '../' + lang.path + page;
+            }
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
