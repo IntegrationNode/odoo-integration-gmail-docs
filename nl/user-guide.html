@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0YPS5MV3D6');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volledige gebruikershandleiding voor Odoo Integratie voor Gmail - Leer hoe u alle functies installeert, configureert en gebruikt, inclusief e-mail loggen, CRM-kansen, taken en tickets.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/user-guide.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/user-guide.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/user-guide.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/user-guide.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/user-guide.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/user-guide.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/user-guide.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/user-guide.html">
+    <meta property="og:title" content="Gebruikershandleiding - Odoo Integratie voor Gmail">
+    <meta property="og:description" content="Volledige handleiding om Odoo Integratie voor Gmail te installeren, configureren en gebruiken. Leer over e-mail loggen, CRM, taken en meer.">
+    <meta property="og:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gebruikershandleiding - Odoo Integratie voor Gmail">
+    <meta name="twitter:description" content="Volledige handleiding om Odoo Integratie voor Gmail te installeren, configureren en gebruiken.">
+    <meta name="twitter:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+
+    <title>Gebruikershandleiding - Odoo Integratie voor Gmail</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../fonts/outlined.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .guide-page { padding: var(--spacing-xl) 0; background: var(--color-bg); min-height: 70vh; }
+        .guide-header { text-align: center; margin-bottom: var(--spacing-lg); }
+        .guide-header h1 { margin-bottom: var(--spacing-xs); }
+        .guide-header p { color: var(--color-text-light); font-size: 1.125rem; }
+        .guide-content { max-width: 900px; margin: 0 auto; }
+        .guide-nav { background: white; border-radius: var(--radius-lg); padding: var(--spacing-md); margin-bottom: var(--spacing-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); }
+        .guide-nav h2 { font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary); }
+        .guide-nav ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-xs); list-style: none; padding: 0; margin: 0; }
+        .guide-nav a { color: var(--color-text); text-decoration: none; padding: 0.5rem; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 0.5rem; transition: all var(--transition-base); }
+        .guide-nav a:hover { background: var(--color-bg-highlight); color: var(--color-primary); }
+        .guide-nav .material-symbols-outlined { font-size: 18px; color: var(--color-primary); }
+        .guide-section { background: white; border-radius: var(--radius-lg); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); }
+        .guide-section h2 { color: var(--color-primary); font-size: 1.5rem; margin-bottom: var(--spacing-md); padding-bottom: var(--spacing-sm); border-bottom: 2px solid var(--color-border); display: flex; align-items: center; gap: 0.5rem; }
+        .guide-section h3 { color: var(--color-text); font-size: 1.25rem; margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+        .guide-section h4 { color: var(--color-text); font-size: 1rem; margin-top: var(--spacing-sm); margin-bottom: var(--spacing-xs); }
+        .guide-section p { margin-bottom: var(--spacing-sm); line-height: 1.7; }
+        .guide-section ul, .guide-section ol { margin-left: 1.5rem; margin-bottom: var(--spacing-sm); }
+        .guide-section li { margin-bottom: 0.5rem; line-height: 1.6; }
+        .guide-section code { background: var(--color-bg-highlight); padding: 0.125rem 0.375rem; border-radius: var(--radius-sm); font-family: monospace; font-size: 0.875rem; }
+        .feature-badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        .badge-free { background: #DCFCE7; color: #166534; }
+        .badge-plus { background: var(--color-badge); color: var(--color-badge-text); }
+        .info-box { background: var(--color-bg-highlight); border-left: 4px solid var(--color-primary); padding: var(--spacing-sm); border-radius: var(--radius-sm); margin: var(--spacing-sm) 0; }
+        .info-box.warning { border-left-color: #F59E0B; background: #FEF3C7; }
+        .info-box strong { color: var(--color-primary); }
+        .info-box.warning strong { color: #92400E; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: var(--spacing-sm) 0; }
+        .comparison-table th, .comparison-table td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--color-border); }
+        .comparison-table th { background: var(--color-bg-highlight); font-weight: 600; }
+        .steps-list { counter-reset: step-counter; list-style: none; padding: 0; }
+        .steps-list li { counter-increment: step-counter; padding-left: 2.5rem; position: relative; margin-bottom: var(--spacing-sm); }
+        .steps-list li::before { content: counter(step-counter); position: absolute; left: 0; top: 0; width: 1.75rem; height: 1.75rem; background: var(--color-primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 600; }
+        .faq-item { margin-bottom: var(--spacing-sm); }
+        .faq-item h4 { color: var(--color-primary); margin-bottom: 0.25rem; }
+        @media (max-width: 768px) { .guide-header h1 { font-size: 2rem; } .guide-section { padding: var(--spacing-md); } .guide-nav ul { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Odoo Integratie voor Gmail</a>
+                <div class="nav-links">
+                    <a href="index.html#features">Functies</a>
+                    <a href="pricing.html">Prijzen</a>
+                    <a href="user-guide.html" class="active">Handleiding</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary">Extensie Downloaden</a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">NL</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Guide Content -->
+    <section class="guide-page">
+        <div class="container">
+            <div class="guide-header">
+                <h1>Gebruikershandleiding</h1>
+                <p>Alles wat u moet weten om het maximale uit Odoo Integratie voor Gmail te halen</p>
+            </div>
+
+            <div class="guide-content">
+                <!-- Table of Contents -->
+                <nav class="guide-nav">
+                    <h2>Snelle Navigatie</h2>
+                    <ul>
+                        <li><a href="#installation"><span class="material-symbols-outlined">download</span> <span>Installatie</span></a></li>
+                        <li><a href="#configuration"><span class="material-symbols-outlined">settings</span> <span>Configuratie</span></a></li>
+                        <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Functieoverzicht</span></a></li>
+                        <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Abonnement</span></a></li>
+                        <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>E-mail Loggen</span></a></li>
+                        <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Kansen</span></a></li>
+                        <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Taken & Tickets</span></a></li>
+                        <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Probleemoplossing</span></a></li>
+                        <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>Veelgestelde Vragen</span></a></li>
+                    </ul>
+                </nav>
+
+                <!-- Installation Section -->
+                <section id="installation" class="guide-section">
+                    <h2><span class="material-symbols-outlined">download</span> <span>Installatie</span></h2>
+                    <h3>Vereisten</h3>
+                    <ul>
+                        <li><strong>Chrome Browser</strong>: <span>Versie 88 of hoger</span></li>
+                        <li><strong>Odoo Instantie</strong>: <span>Versie 14.0 of hoger (Community, Enterprise of Odoo Online)</span></li>
+                    </ul>
+                    <h3>Stapsgewijze Installatie</h3>
+                    <ol class="steps-list">
+                        <li><strong>Bezoek de Chrome Web Store</strong><br><span>Ga naar Odoo Integratie voor Gmail of zoek naar "Odoo Integration for Gmail" in de Chrome Web Store.</span></li>
+                        <li><strong>Toevoegen aan Chrome</strong><br><span>Klik op de knop "Toevoegen aan Chrome" en bekijk de gevraagde machtigingen.</span></li>
+                        <li><strong>Installatie Verifiëren</strong><br><span>U ziet een bevestigingsbericht en het extensie-icoon verschijnt in uw Chrome-werkbalk.</span></li>
+                        <li><strong>De Extensie Vastpinnen (Aanbevolen)</strong><br><span>Klik op het puzzelicoon in de Chrome-werkbalk, zoek "Odoo Integration for Gmail" en klik op het pincoon.</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Opmerking over "Verbeterde Veilig Browsen":</strong> <span>Als u een bericht ziet dat zegt "Deze extensie wordt niet vertrouwd door Verbeterde Veilig Browsen", is dit normaal voor nieuw gepubliceerde extensies. De extensie is beoordeeld en goedgekeurd door de Chrome Web Store.</span>
+                    </div>
+                </section>
+
+                <!-- Configuration Section -->
+                <section id="configuration" class="guide-section">
+                    <h2><span class="material-symbols-outlined">settings</span> <span>Configuratie</span></h2>
+                    <h3>Eerste Configuratie</h3>
+                    <ol class="steps-list">
+                        <li><strong>Open Gmail</strong><br><span>Navigeer naar mail.google.com en open een e-mail om de zijbalk te bekijken.</span></li>
+                        <li><strong>Voer Odoo URL in</strong><br><span>Voer de URL van uw Odoo-instantie in (bijv. https://uwbedrijf.odoo.com). Gebruik HTTPS en voeg geen afsluitende schuine streep toe.</span></li>
+                        <li><strong>Voer API-sleutel in</strong><br><span>Log in bij Odoo, ga naar Voorkeuren, klik op het tabblad Accountbeveiliging, klik onder API-sleutels op Nieuwe API-sleutel, geef deze een naam, selecteer Permanente Sleutel en kopieer de sleutel.</span></li>
+                        <li><strong>Verbinden</strong><br><span>Klik op Verbinden en de extensie verifieert uw inloggegevens.</span></li>
+                    </ol>
+                    <h3>Configuratie Bijwerken</h3>
+                    <p>Om uw Odoo URL of API-sleutel te wijzigen:</p>
+                    <ol>
+                        <li>Klik op de menuknop (drie verticale puntjes ⋮) in de zijbalk</li>
+                        <li>Selecteer Uitloggen</li>
+                        <li>Voer uw nieuwe inloggegevens in</li>
+                    </ol>
+                </section>
+
+                <!-- Features Overview Section -->
+                <section id="features" class="guide-section">
+                    <h2><span class="material-symbols-outlined">star</span> <span>Functieoverzicht</span></h2>
+                    <h3><span>GRATIS Abonnement</span> <span class="feature-badge badge-free">Gratis</span></h3>
+                    <ul>
+                        <li><strong>Contacten Bekijken</strong>: <span>Bekijk Odoo partnerinformatie direct in Gmail</span></li>
+                        <li><strong>Slimme Contactdetectie</strong>: <span>Herkent automatisch afzender of ontvanger</span></li>
+                        <li><strong>E-mail Loggen</strong>: <span>Log e-mails naar Odoo met bijlagen</span></li>
+                        <li><strong>Records Aanmaken</strong>: <span>Maak leads, partners, taken en tickets aan</span></li>
+                        <li><strong>Beperkt Records Bekijken</strong>: <span>Bekijk de eerste 5 kansen, taken en tickets</span></li>
+                        <li><strong>Vernieuwen</strong>: <span>Handmatig contactgegevens vernieuwen</span></li>
+                        <li><strong>Laadtijd Indicator</strong>: <span>Zie hoe snel de zijbalk is geladen</span></li>
+                    </ul>
+                    <h3><span>PLUS Abonnement</span> <span class="feature-badge badge-plus">Plus</span></h3>
+                    <p>Alles in GRATIS, plus:</p>
+                    <ul>
+                        <li><strong>Geavanceerd Zoeken</strong>: <span>Zoek door alle kansen, taken en tickets (tot 50 resultaten)</span></li>
+                        <li><strong>Contact/Bedrijf Tabbladen</strong>: <span>Schakel tussen contact- en bedrijfsinformatie</span></li>
+                        <li><strong>Gerelateerde Contacten</strong>: <span>Vind collega's van hetzelfde bedrijf</span></li>
+                        <li><strong>Financiële Inzichten</strong>: <span>Bekijk facturatie, vorderingen en schulden</span></li>
+                        <li><strong>Instellingenpaneel</strong>: <span>Pas zichtbare secties aan</span></li>
+                        <li><strong>Citaatniveaus</strong>: <span>Bepaal hoeveel gespreksgeschiedenis wordt opgenomen bij het loggen</span></li>
+                    </ul>
+                </section>
+
+                <!-- Subscription Management Section -->
+                <section id="subscription" class="guide-section">
+                    <h2><span class="material-symbols-outlined">credit_card</span> <span>Abonnementsbeheer</span></h2>
+
+                    <h3>Hoe u zich Abonneert op PLUS</h3>
+                    <ol class="steps-list">
+                        <li>Klik op "Upgraden naar PLUS" in het zijbalkmenu (drie puntjes in de koptekst)</li>
+                        <li>Voltooi het afrekenproces bij LemonSqueezy</li>
+                        <li>Ontvang uw licentiesleutel via e-mail</li>
+                    </ol>
+
+                    <h4>Uw Licentie Activeren</h4>
+                    <p>Voer uw licentiesleutel in op een van deze manieren:</p>
+                    <ul>
+                        <li>Een modaal verschijnt direct na het afrekenen - voer uw licentie daar in</li>
+                        <li>Ga naar Instellingen > Account > Licentie Activeren</li>
+                        <li>Klik opnieuw op "Upgraden naar PLUS" en selecteer "Ik heb al een licentie"</li>
+                    </ul>
+
+                    <div class="info-box">
+                        <strong>Licentie Informatie:</strong> <span>Uw licentie werkt op maximaal 3 instanties (verschillende computers of browsers). Deze moet worden gebruikt met hetzelfde Gmail-account dat is gebruikt voor de aankoop.</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Gratis Proefperiode:</strong> <span>PLUS bevat een gratis proefperiode van 14 dagen. Er worden geen kosten in rekening gebracht tot de proefperiode eindigt. Zeg op elk moment op om kosten te vermijden.</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Regionale Prijzen:</strong> <span>Wij bieden eerlijke prijzen. Prijzen worden automatisch aangepast bij het afrekenen via een korting.</span>
+                    </div>
+
+                    <h3>Hoe u Uw Abonnement Opzegt</h3>
+                    <p>U kunt uw PLUS abonnement op elk moment opzeggen:</p>
+                    <ol class="steps-list">
+                        <li>Ga naar het LemonSqueezy klantenportaal (link in uw aankoop-e-mail)</li>
+                        <li>Log in met het e-mailadres dat is gebruikt voor uw abonnement</li>
+                        <li>Klik op "Abonnement Opzeggen" in uw abonnementsgegevens</li>
+                    </ol>
+                    <p>Uw PLUS functies blijven actief tot het einde van uw huidige factureringsperiode.</p>
+                </section>
+
+                <!-- Email Logging Section -->
+                <section id="email-logging" class="guide-section">
+                    <h2><span class="material-symbols-outlined">mail</span> <span>E-mail Loggen</span></h2>
+                    <h3>Hoe een E-mail te Loggen</h3>
+                    <ol class="steps-list">
+                        <li>Open de e-mail die u wilt loggen</li>
+                        <li>Bekijk het contact in de zijbalk</li>
+                        <li>Zoek het record waaraan u wilt loggen (kans, taak of ticket)</li>
+                        <li>Klik op het envelopicoontje naast het record</li>
+                        <li>De knop verandert in een groen vinkje wanneer gelogd</li>
+                    </ol>
+                    <h3>Wat Wordt Gelogd</h3>
+                    <ul>
+                        <li>E-mailonderwerp (in de koptekst)</li>
+                        <li>E-mailinhoud (HTML-geformatteerd)</li>
+                        <li>Afzender/ontvanger informatie</li>
+                        <li>Datum en tijd</li>
+                        <li>Alle bijlagen (bestanden, afbeeldingen, PDF's)</li>
+                        <li>"Gelogd vanuit Gmail Inbox" voettekst</li>
+                    </ul>
+                    <h3>Dubbele Detectie</h3>
+                    <p>De extensie heeft twee lagen van dubbele detectie:</p>
+                    <ol>
+                        <li><strong>Visuele indicator (0-6 uur)</strong>: <span>Helpt u in één oogopslag te zien welke records deze e-mail al hebben</span></li>
+                        <li><strong>Server-side validatie (altijd)</strong>: <span>Odoo voorkomt duplicaten zelfs als de visuele indicator is verlopen</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Belangrijk:</strong> <span>Zelfs zonder de visuele indicator kunt u niet per ongeluk duplicaten maken. De server van Odoo valideert elk logverzoek en weigert duplicaten.</span>
+                    </div>
+                </section>
+
+                <!-- Opportunities Section -->
+                <section id="opportunities" class="guide-section">
+                    <h2><span class="material-symbols-outlined">handshake</span> <span>Kansen Beheren</span></h2>
+                    <h3>Leads Maken van E-mails</h3>
+                    <p>Converteer een e-mailgesprek naar een Odoo-kans met één klik:</p>
+                    <ol class="steps-list">
+                        <li>Open de e-mail die u wilt omzetten naar een lead</li>
+                        <li>Bekijk het contact in de zijbalk</li>
+                        <li>Scrol naar de sectie Kansen</li>
+                        <li>Klik op de knop "Aanmaken"</li>
+                    </ol>
+                    <h4>Wat er automatisch gebeurt:</h4>
+                    <ul>
+                        <li>De lead wordt aangemaakt met het e-mailonderwerp als naam</li>
+                        <li>E-mailinhoud wordt toegevoegd als beschrijving</li>
+                        <li>Het contact uit de zijbalk wordt gekoppeld</li>
+                        <li>De lead opent in Odoo in een nieuw tabblad voor verdere bewerking</li>
+                    </ul>
+                    <div class="info-box warning">
+                        <strong>Belangrijk:</strong> <span>De e-mail wordt NIET automatisch gelogd. Om de e-mail te koppelen aan de nieuwe lead, gaat u terug naar Gmail en klikt u op het envelopicoontje naast de kans.</span>
+                    </div>
+                </section>
+
+                <!-- Tasks & Tickets Section -->
+                <section id="tasks-tickets" class="guide-section">
+                    <h2><span class="material-symbols-outlined">task</span> <span>Taken & Tickets</span></h2>
+                    <h3>Taken Beheren</h3>
+                    <p><strong>Vereisten:</strong> <span>Odoo Project module geïnstalleerd</span></p>
+                    <h4>Welke records worden getoond:</h4>
+                    <ul>
+                        <li>Taken gekoppeld aan het contact (via partner_id)</li>
+                        <li>Exclusief voltooide of geannuleerde taken</li>
+                        <li>Gesorteerd op meest recente activiteit</li>
+                    </ul>
+                    <h3>Helpdesk Tickets Beheren</h3>
+                    <p><strong>Vereisten:</strong> <span>Odoo Helpdesk module (alleen Enterprise)</span></p>
+                </section>
+
+                <!-- Troubleshooting Section -->
+                <section id="troubleshooting" class="guide-section">
+                    <h2><span class="material-symbols-outlined">help</span> <span>Probleemoplossing</span></h2>
+                    <h3>Extensie Verschijnt Niet in Gmail</h3>
+                    <ol>
+                        <li><strong>Controleer of extensie is ingeschakeld</strong>: <span>Ga naar chrome://extensions/ en zorg dat de schakelaar AAN staat</span></li>
+                        <li><strong>Gmail Vernieuwen</strong>: <span>Druk op Ctrl+Shift+R (Windows/Linux) of Cmd+Shift+R (Mac)</span></li>
+                        <li><strong>Extensie Herladen</strong>: <span>Klik op "Herladen" op de extensiekaart</span></li>
+                    </ol>
+                    <h3>"Contact Niet Gevonden" Bericht</h3>
+                    <ul>
+                        <li><strong>E-mail niet in Odoo</strong>: <span>Klik op "Contact Aanmaken" om deze toe te voegen</span></li>
+                        <li><strong>E-mail spelling komt niet overeen</strong>: <span>Werk de e-mail bij in Odoo of maak een nieuw contact aan</span></li>
+                    </ul>
+                    <h3>"Authenticatie Mislukt" Fout</h3>
+                    <ol>
+                        <li>Controleer of uw API-sleutel correct is in Odoo → Voorkeuren → Accountbeveiliging</li>
+                        <li>Genereer de API-sleutel opnieuw indien nodig</li>
+                        <li>Controleer of uw Odoo URL correct is (inclusief HTTPS)</li>
+                    </ol>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="guide-section">
+                    <h2><span class="material-symbols-outlined">quiz</span> <span>Veelgestelde Vragen</span></h2>
+                    <h3>Algemeen</h3>
+                    <div class="faq-item">
+                        <h4>V: Welke Odoo versies worden ondersteund?</h4>
+                        <p>Odoo 14.0 en hoger worden ondersteund, inclusief Community, Enterprise en Odoo Online (odoo.com).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>V: Werkt het met andere browsers?</h4>
+                        <p>Momenteel ondersteunt de extensie alleen Google Chrome. Ondersteuning voor andere browsers kan in de toekomst worden toegevoegd.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>V: Zijn mijn gegevens veilig?</h4>
+                        <p>Ja. De extensie heeft alleen toegang tot e-mails die u actief bekijkt en communiceert veilig met uw Odoo-instantie via HTTPS. Uw API-sleutel wordt opgeslagen in Chrome's beveiligde opslag.</p>
+                    </div>
+                    <h3>Abonnement</h3>
+                    <div class="faq-item">
+                        <h4>V: Wat is het verschil tussen GRATIS en PLUS?</h4>
+                        <p>GRATIS bevat basisfuncties (contacten bekijken, e-mail loggen, beperkte records). PLUS voegt geavanceerd zoeken, financiële inzichten, gerelateerde contacten en aanpassingsopties toe.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>V: Kan ik mijn PLUS abonnement op elk moment opzeggen?</h4>
+                        <p>Ja, u kunt op elk moment zonder boete opzeggen. Uw abonnement blijft actief tot het einde van uw factureringsperiode.</p>
+                    </div>
+                    <h3>Privacy</h3>
+                    <div class="faq-item">
+                        <h4>V: Leest de extensie al mijn e-mails?</h4>
+                        <p>Nee, de extensie heeft alleen toegang tot e-mails die u actief bekijkt. Het scant niet uw hele mailbox en leest geen e-mails op de achtergrond.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>V: Wordt mijn API-sleutel veilig opgeslagen?</h4>
+                        <p>Ja, uw API-sleutel wordt opgeslagen in Chrome's beveiligde opslag (chrome.storage.sync), die Chrome versleutelt met de inloggegevens van uw OS-gebruikersaccount.</p>
+                    </div>
+                </section>
+
+                <!-- Getting Help Section -->
+                <section class="guide-section">
+                    <h2><span class="material-symbols-outlined">support</span> <span>Hulp Krijgen</span></h2>
+                    <h3>Contact Ondersteuning</h3>
+                    <p>Als u vragen of problemen heeft die niet in deze handleiding worden behandeld:</p>
+                    <ul>
+                        <li><strong>E-mail</strong>: <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a></li>
+                        <li>Vermeld uw Odoo versie en extensieversie</li>
+                        <li>Beschrijf het probleem met screenshots indien mogelijk</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Odoo Integratie voor Gmail</h4>
+                    <p><span>Gebouwd door</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Bronnen</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pricing.html">Prijzen</a></li>
+                        <li><a href="user-guide.html">Handleiding</a></li>
+                        <li><a href="changelog.html">Wijzigingslogboek</a></li>
+                        <li><a href="comparison.html">Vergelijking</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="privacy.html">Privacybeleid</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Ondersteuning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Juridisch</h4>
+                    <p class="small-text">Niet gelieerd aan Odoo S.A. of Google LLC.</p>
+                    <p class="small-text">Odoo is een handelsmerk van Odoo S.A.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 IntegrationNode. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        // Configuration: Add new languages here
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+
+        // Detect current language
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        // Build menu
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            link.href = currentLang.path ? '../' + lang.path + page : lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        // Toggle dropdown
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        // Close on click outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,965 @@
+{
+  "meta": {
+    "lang": "nl",
+    "index": {
+      "title": "Odoo Integratie voor Gmail",
+      "description": "Odoo Integratie voor Gmail - Bekijk contacten, maak kansen, taken en tickets direct in uw Gmail-inbox. Chrome-extensie voor naadloze CRM-integratie.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/",
+      "ogTitle": "Odoo Integratie voor Gmail",
+      "ogDescription": "Transformeer uw Gmail in een krachtige CRM-interface met naadloze Odoo-integratie. Bekijk contacten, maak kansen, taken en tickets.",
+      "twitterTitle": "Odoo Integratie voor Gmail",
+      "twitterDescription": "Transformeer uw Gmail in een krachtige CRM-interface met naadloze Odoo-integratie."
+    },
+    "pricing": {
+      "title": "Prijzen - Odoo Integratie voor Gmail",
+      "description": "Odoo Integratie voor Gmail prijzen - Gratis en PLUS abonnementen. Begin gratis, upgrade wanneer u geavanceerd zoeken, financiële inzichten en meer nodig heeft.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/pricing.html",
+      "ogTitle": "Prijzen - Odoo Integratie voor Gmail",
+      "ogDescription": "Gratis en PLUS abonnementen beschikbaar. Begin gratis, upgrade wanneer u geavanceerde functies nodig heeft.",
+      "twitterTitle": "Prijzen - Odoo Integratie voor Gmail",
+      "twitterDescription": "Gratis en PLUS abonnementen beschikbaar. Begin gratis, upgrade wanneer u geavanceerde functies nodig heeft."
+    },
+    "userGuide": {
+      "title": "Gebruikershandleiding - Odoo Integratie voor Gmail",
+      "description": "Volledige gebruikershandleiding voor Odoo Integratie voor Gmail - Leer hoe u alle functies installeert, configureert en gebruikt, inclusief e-mail loggen, CRM-kansen, taken en tickets.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/user-guide.html",
+      "ogTitle": "Gebruikershandleiding - Odoo Integratie voor Gmail",
+      "ogDescription": "Volledige handleiding om Odoo Integratie voor Gmail te installeren, configureren en gebruiken. Leer over e-mail loggen, CRM, taken en meer.",
+      "twitterTitle": "Gebruikershandleiding - Odoo Integratie voor Gmail",
+      "twitterDescription": "Volledige handleiding om Odoo Integratie voor Gmail te installeren, configureren en gebruiken."
+    },
+    "changelog": {
+      "title": "Wijzigingslogboek - Odoo Integratie voor Gmail",
+      "description": "Releasegeschiedenis en updates voor Odoo Integratie voor Gmail extensie. Volg nieuwe functies, verbeteringen en bugfixes.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/changelog.html",
+      "ogTitle": "Wijzigingslogboek - Odoo Integratie voor Gmail",
+      "ogDescription": "Releasegeschiedenis en updates. Volg nieuwe functies, verbeteringen en bugfixes.",
+      "twitterTitle": "Wijzigingslogboek - Odoo Integratie voor Gmail",
+      "twitterDescription": "Releasegeschiedenis en updates. Volg nieuwe functies, verbeteringen en bugfixes."
+    },
+    "privacy": {
+      "title": "Privacybeleid - Odoo Integratie voor Gmail",
+      "description": "Privacybeleid voor Odoo Integratie voor Gmail. Leer hoe wij met uw gegevens omgaan, welke machtigingen wij vragen en wat uw privacyrechten zijn.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/privacy.html",
+      "ogTitle": "Privacybeleid - Odoo Integratie voor Gmail",
+      "ogDescription": "Leer hoe wij met uw gegevens omgaan, welke machtigingen wij vragen en wat uw privacyrechten zijn.",
+      "twitterTitle": "Privacybeleid - Odoo Integratie voor Gmail",
+      "twitterDescription": "Leer hoe wij met uw gegevens omgaan en wat uw privacyrechten zijn."
+    },
+    "comparison": {
+      "title": "Odoo Gmail Plugin Alternatief | 10-20x Snellere Chrome-extensie",
+      "description": "Op zoek naar een Odoo Gmail Plugin alternatief? Onze Chrome-extensie is 10-20x sneller, stabieler en werkt op elke Odoo-instantie. Overstappen in 2 minuten.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/comparison.html",
+      "ogTitle": "Odoo Gmail Plugin Alternatief | 10-20x Sneller",
+      "ogDescription": "Vergelijk onze Gmail-extensie met de officiële Odoo-plugin. 10-20x snellere laadtijden, stabiele verbinding, werkt op zelf-gehoste Odoo zonder codewijzigingen.",
+      "twitterTitle": "Odoo Gmail Plugin Alternatief | 10-20x Sneller",
+      "twitterDescription": "Op zoek naar een snellere Odoo Gmail-integratie? Onze extensie laadt in 100-300ms vs 2-6 seconden. Overstappen in 2 minuten."
+    },
+    "alternative": {
+      "title": "Beste Odoo Gmail Plugin Alternatief | Snelle Chrome-extensie",
+      "description": "Op zoek naar een alternatief voor de Odoo Gmail Plugin? Onze Chrome-extensie is 10-20x sneller, stabieler en werkt op elke Odoo-instantie zonder codewijzigingen.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/odoo-gmail-plugin-alternative.html",
+      "ogTitle": "Beste Odoo Gmail Plugin Alternatief",
+      "ogDescription": "Moe van trage laadtijden en verbroken verbindingen? Onze extensie laadt in 100-300ms en werkt op elke Odoo-instantie.",
+      "twitterTitle": "Beste Odoo Gmail Plugin Alternatief",
+      "twitterDescription": "10-20x sneller dan de officiële plugin. Overstappen in 2 minuten."
+    },
+    "blog": {
+      "title": "Blog - Odoo Integratie voor Gmail",
+      "description": "Tips en tutorials voor het integreren van Odoo met Gmail. Leer best practices voor e-mailconfiguratie, CRM-integratie en productiviteitsworkflows.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog.html",
+      "ogTitle": "Blog - Odoo & Gmail Integratietips",
+      "ogDescription": "Leer best practices voor het integreren van Odoo met Gmail. Tips, tutorials en productiviteitsstrategieën.",
+      "twitterTitle": "Blog - Odoo & Gmail Integratie",
+      "twitterDescription": "Tips en tutorials voor Odoo-Gmail integratie. Best practices en workflows."
+    },
+    "blogOdooGmailDomain": {
+      "title": "Odoo Gmail Integratie: Uw Persoonlijke Domein Gebruiken Zonder Inbox-chaos",
+      "description": "Leer hoe u OAuth configureert voor het verzenden van e-mails vanuit Odoo met uw domein, en waarom u niet uw hele Gmail met Odoo moet synchroniseren.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-gmail-domain-configuration.html",
+      "ogTitle": "Odoo Gmail Integratie: Handleiding voor Persoonlijk Domein",
+      "ogDescription": "Configureer OAuth voor Odoo e-mailverzending met uw domein. Leer de hybride strategie voor persoonlijke versus team-inboxen.",
+      "twitterTitle": "Odoo Gmail: Persoonlijke Domeinconfiguratie",
+      "twitterDescription": "Hoe u e-mails verzendt vanuit Odoo met uw domein zonder inbox-chaos te creëren."
+    }
+  },
+  "userGuide": {
+    "header": {
+      "title": "Gebruikershandleiding",
+      "subtitle": "Alles wat u moet weten om het maximale uit Odoo Integratie voor Gmail te halen"
+    },
+    "quickNav": "Snelle Navigatie",
+    "nav": {
+      "installation": "Installatie",
+      "configuration": "Configuratie",
+      "features": "Functieoverzicht",
+      "emailLogging": "E-mail Loggen",
+      "opportunities": "Kansen",
+      "tasksTickets": "Taken & Tickets",
+      "troubleshooting": "Probleemoplossing",
+      "faq": "Veelgestelde Vragen",
+      "subscription": "Abonnement"
+    },
+    "installation": {
+      "title": "Installatie",
+      "prerequisites": "Vereisten",
+      "chromeLabel": "Chrome Browser",
+      "chromeVersion": "Versie 88 of hoger",
+      "odooLabel": "Odoo Instantie",
+      "odooVersion": "Versie 14.0 of hoger (Community, Enterprise of Odoo Online)",
+      "stepsTitle": "Stapsgewijze Installatie",
+      "step1Title": "Bezoek de Chrome Web Store",
+      "step1Desc": "Ga naar Odoo Integratie voor Gmail of zoek naar \"Odoo Integration for Gmail\" in de Chrome Web Store.",
+      "step2Title": "Toevoegen aan Chrome",
+      "step2Desc": "Klik op de knop \"Toevoegen aan Chrome\" en bekijk de gevraagde machtigingen.",
+      "step3Title": "Installatie Verifiëren",
+      "step3Desc": "U ziet een bevestigingsbericht en het extensie-icoon verschijnt in uw Chrome-werkbalk.",
+      "step4Title": "De Extensie Vastpinnen (Aanbevolen)",
+      "step4Desc": "Klik op het puzzelicoon in de Chrome-werkbalk, zoek \"Odoo Integration for Gmail\" en klik op het pincoon.",
+      "noteTitle": "Opmerking over \"Verbeterde Veilig Browsen\":",
+      "noteDesc": "Als u een bericht ziet dat zegt \"Deze extensie wordt niet vertrouwd door Verbeterde Veilig Browsen\", is dit normaal voor nieuw gepubliceerde extensies. De extensie is beoordeeld en goedgekeurd door de Chrome Web Store."
+    },
+    "configuration": {
+      "title": "Configuratie",
+      "firstTimeSetup": "Eerste Configuratie",
+      "step1Title": "Open Gmail",
+      "step1Desc": "Navigeer naar mail.google.com en open een e-mail om de zijbalk te bekijken.",
+      "step2Title": "Voer Odoo URL in",
+      "step2Desc": "Voer de URL van uw Odoo-instantie in (bijv. https://uwbedrijf.odoo.com). Gebruik HTTPS en voeg geen afsluitende schuine streep toe.",
+      "step3Title": "Voer API-sleutel in",
+      "step3Desc": "Log in bij Odoo, ga naar Voorkeuren, klik op het tabblad Accountbeveiliging, klik onder API-sleutels op Nieuwe API-sleutel, geef deze een naam, selecteer Permanente Sleutel en kopieer de sleutel.",
+      "step4Title": "Verbinden",
+      "step4Desc": "Klik op Verbinden en de extensie verifieert uw inloggegevens.",
+      "updateTitle": "Configuratie Bijwerken",
+      "updateDesc": "Om uw Odoo URL of API-sleutel te wijzigen:",
+      "updateStep1": "Klik op de menuknop (drie verticale puntjes ⋮) in de zijbalk",
+      "updateStep2": "Selecteer Uitloggen",
+      "updateStep3": "Voer uw nieuwe inloggegevens in"
+    },
+    "features": {
+      "title": "Functieoverzicht",
+      "freePlanTitle": "GRATIS Abonnement",
+      "freeBadge": "Gratis",
+      "plusPlanTitle": "PLUS Abonnement",
+      "plusBadge": "Plus",
+      "plusIntro": "Alles in GRATIS, plus:",
+      "free": {
+        "contactViewing": "Contacten Bekijken",
+        "contactViewingDesc": "Bekijk Odoo partnerinformatie direct in Gmail",
+        "smartDetection": "Slimme Contactdetectie",
+        "smartDetectionDesc": "Herkent automatisch afzender of ontvanger",
+        "emailLogging": "E-mail Loggen",
+        "emailLoggingDesc": "Log e-mails naar Odoo met bijlagen",
+        "recordCreation": "Records Aanmaken",
+        "recordCreationDesc": "Maak leads, partners, taken en tickets aan",
+        "limitedRecords": "Beperkt Records Bekijken",
+        "limitedRecordsDesc": "Bekijk de eerste 5 kansen, taken en tickets",
+        "refresh": "Vernieuwen",
+        "refreshDesc": "Handmatig contactgegevens vernieuwen",
+        "loadTime": "Laadtijd Indicator",
+        "loadTimeDesc": "Zie hoe snel de zijbalk is geladen"
+      },
+      "plus": {
+        "advancedSearch": "Geavanceerd Zoeken",
+        "advancedSearchDesc": "Zoek door alle kansen, taken en tickets (tot 50 resultaten)",
+        "tabs": "Contact/Bedrijf Tabbladen",
+        "tabsDesc": "Schakel tussen contact- en bedrijfsinformatie",
+        "relatedContacts": "Gerelateerde Contacten",
+        "relatedContactsDesc": "Vind collega's van hetzelfde bedrijf",
+        "financial": "Financiële Inzichten",
+        "financialDesc": "Bekijk facturatie, vorderingen en schulden",
+        "settings": "Instellingenpaneel",
+        "settingsDesc": "Pas zichtbare secties aan",
+        "quoteLevels": "Citaatniveaus",
+        "quoteLevelsDesc": "Bepaal hoeveel gespreksgeschiedenis wordt opgenomen bij het loggen"
+      }
+    },
+    "emailLogging": {
+      "title": "E-mail Loggen",
+      "howToLog": "Hoe een E-mail te Loggen",
+      "step1": "Open de e-mail die u wilt loggen",
+      "step2": "Bekijk het contact in de zijbalk",
+      "step3": "Zoek het record waaraan u wilt loggen (kans, taak of ticket)",
+      "step4": "Klik op het envelopicoontje naast het record",
+      "step5": "De knop verandert in een groen vinkje wanneer gelogd",
+      "whatGetsLogged": "Wat Wordt Gelogd",
+      "logged1": "E-mailonderwerp (in de koptekst)",
+      "logged2": "E-mailinhoud (HTML-geformatteerd)",
+      "logged3": "Afzender/ontvanger informatie",
+      "logged4": "Datum en tijd",
+      "logged5": "Alle bijlagen (bestanden, afbeeldingen, PDF's)",
+      "logged6": "\"Gelogd vanuit Gmail Inbox\" voettekst",
+      "duplicateTitle": "Dubbele Detectie",
+      "duplicateIntro": "De extensie heeft twee lagen van dubbele detectie:",
+      "visualIndicator": "Visuele indicator (0-6 uur)",
+      "visualIndicatorDesc": "Helpt u in één oogopslag te zien welke records deze e-mail al hebben",
+      "serverSide": "Server-side validatie (altijd)",
+      "serverSideDesc": "Odoo voorkomt duplicaten zelfs als de visuele indicator is verlopen",
+      "importantTitle": "Belangrijk:",
+      "importantDesc": "Zelfs zonder de visuele indicator kunt u niet per ongeluk duplicaten maken. De server van Odoo valideert elk logverzoek en weigert duplicaten."
+    },
+    "opportunities": {
+      "title": "Kansen Beheren",
+      "creatingLeads": "Leads Maken van E-mails",
+      "creatingLeadsIntro": "Converteer een e-mailgesprek naar een Odoo-kans met één klik:",
+      "step1": "Open de e-mail die u wilt omzetten naar een lead",
+      "step2": "Bekijk het contact in de zijbalk",
+      "step3": "Scrol naar de sectie Kansen",
+      "step4": "Klik op de knop \"Aanmaken\"",
+      "whatHappens": "Wat er automatisch gebeurt:",
+      "happens1": "De lead wordt aangemaakt met het e-mailonderwerp als naam",
+      "happens2": "E-mailinhoud wordt toegevoegd als beschrijving",
+      "happens3": "Het contact uit de zijbalk wordt gekoppeld",
+      "happens4": "De lead opent in Odoo in een nieuw tabblad voor verdere bewerking",
+      "importantTitle": "Belangrijk:",
+      "importantDesc": "De e-mail wordt NIET automatisch gelogd. Om de e-mail te koppelen aan de nieuwe lead, gaat u terug naar Gmail en klikt u op het envelopicoontje naast de kans."
+    },
+    "tasksTickets": {
+      "title": "Taken & Tickets",
+      "managingTasks": "Taken Beheren",
+      "requirementsLabel": "Vereisten:",
+      "taskRequirements": "Odoo Project module geïnstalleerd",
+      "whatRecordsShown": "Welke records worden getoond:",
+      "taskRecords1": "Taken gekoppeld aan het contact (via partner_id)",
+      "taskRecords2": "Exclusief voltooide of geannuleerde taken",
+      "taskRecords3": "Gesorteerd op meest recente activiteit",
+      "managingTickets": "Helpdesk Tickets Beheren",
+      "ticketRequirements": "Odoo Helpdesk module (alleen Enterprise)"
+    },
+    "troubleshooting": {
+      "title": "Probleemoplossing",
+      "notAppearing": "Extensie Verschijnt Niet in Gmail",
+      "checkEnabled": "Controleer of extensie is ingeschakeld",
+      "checkEnabledDesc": "Ga naar chrome://extensions/ en zorg dat de schakelaar AAN staat",
+      "refreshGmail": "Gmail Vernieuwen",
+      "refreshGmailDesc": "Druk op Ctrl+Shift+R (Windows/Linux) of Cmd+Shift+R (Mac)",
+      "reloadExtension": "Extensie Herladen",
+      "reloadExtensionDesc": "Klik op \"Herladen\" op de extensiekaart",
+      "contactNotFound": "\"Contact Niet Gevonden\" Bericht",
+      "emailNotInOdoo": "E-mail niet in Odoo",
+      "emailNotInOdooDesc": "Klik op \"Contact Aanmaken\" om deze toe te voegen",
+      "emailMismatch": "E-mail spelling komt niet overeen",
+      "emailMismatchDesc": "Werk de e-mail bij in Odoo of maak een nieuw contact aan",
+      "authFailed": "\"Authenticatie Mislukt\" Fout",
+      "authStep1": "Controleer of uw API-sleutel correct is in Odoo → Voorkeuren → Accountbeveiliging",
+      "authStep2": "Genereer de API-sleutel opnieuw indien nodig",
+      "authStep3": "Controleer of uw Odoo URL correct is (inclusief HTTPS)"
+    },
+    "faq": {
+      "title": "Veelgestelde Vragen",
+      "generalTitle": "Algemeen",
+      "q1": "V: Welke Odoo versies worden ondersteund?",
+      "a1": "Odoo 14.0 en hoger worden ondersteund, inclusief Community, Enterprise en Odoo Online (odoo.com).",
+      "q2": "V: Werkt het met andere browsers?",
+      "a2": "Momenteel ondersteunt de extensie alleen Google Chrome. Ondersteuning voor andere browsers kan in de toekomst worden toegevoegd.",
+      "q3": "V: Zijn mijn gegevens veilig?",
+      "a3": "Ja. De extensie heeft alleen toegang tot e-mails die u actief bekijkt en communiceert veilig met uw Odoo-instantie via HTTPS. Uw API-sleutel wordt opgeslagen in Chrome's beveiligde opslag.",
+      "subscriptionTitle": "Abonnement",
+      "q4": "V: Wat is het verschil tussen GRATIS en PLUS?",
+      "a4": "GRATIS bevat basisfuncties (contacten bekijken, e-mail loggen, beperkte records). PLUS voegt geavanceerd zoeken, financiële inzichten, gerelateerde contacten en aanpassingsopties toe.",
+      "q5": "V: Kan ik mijn PLUS abonnement op elk moment opzeggen?",
+      "a5": "Ja, u kunt op elk moment zonder boete opzeggen. Uw abonnement blijft actief tot het einde van uw factureringsperiode.",
+      "privacyTitle": "Privacy",
+      "q6": "V: Leest de extensie al mijn e-mails?",
+      "a6": "Nee, de extensie heeft alleen toegang tot e-mails die u actief bekijkt. Het scant niet uw hele mailbox en leest geen e-mails op de achtergrond.",
+      "q7": "V: Wordt mijn API-sleutel veilig opgeslagen?",
+      "a7": "Ja, uw API-sleutel wordt opgeslagen in Chrome's beveiligde opslag (chrome.storage.sync), die Chrome versleutelt met de inloggegevens van uw OS-gebruikersaccount."
+    },
+    "help": {
+      "title": "Hulp Krijgen",
+      "contactSupport": "Contact Ondersteuning",
+      "contactDesc": "Als u vragen of problemen heeft die niet in deze handleiding worden behandeld:",
+      "emailLabel": "E-mail",
+      "includeVersion": "Vermeld uw Odoo versie en extensieversie",
+      "includeScreenshots": "Beschrijf het probleem met screenshots indien mogelijk"
+    },
+    "subscription": {
+      "title": "Abonnementsbeheer",
+      "howToSubscribe": "Hoe u zich Abonneert op PLUS",
+      "subscribeStep1": "Klik op \"Upgraden naar PLUS\" in het zijbalkmenu (drie puntjes in de koptekst)",
+      "subscribeStep2": "Voltooi het afrekenproces bij LemonSqueezy",
+      "subscribeStep3": "Ontvang uw licentiesleutel via e-mail",
+      "activatingLicense": "Uw Licentie Activeren",
+      "activatingIntro": "Voer uw licentiesleutel in op een van deze manieren:",
+      "activateOption1": "Een modaal verschijnt direct na het afrekenen - voer uw licentie daar in",
+      "activateOption2": "Ga naar Instellingen > Account > Licentie Activeren",
+      "activateOption3": "Klik opnieuw op \"Upgraden naar PLUS\" en selecteer \"Ik heb al een licentie\"",
+      "licenseInfoTitle": "Licentie Informatie:",
+      "licenseInfoDesc": "Uw licentie werkt op maximaal 3 instanties (verschillende computers of browsers). Deze moet worden gebruikt met hetzelfde Gmail-account dat is gebruikt voor de aankoop.",
+      "freeTrialTitle": "Gratis Proefperiode:",
+      "freeTrialDesc": "PLUS bevat een gratis proefperiode van 14 dagen. Er worden geen kosten in rekening gebracht tot de proefperiode eindigt. Zeg op elk moment op om kosten te vermijden.",
+      "regionalPricingTitle": "Regionale Prijzen:",
+      "regionalPricingDesc": "Wij bieden eerlijke prijzen. Prijzen worden automatisch aangepast bij het afrekenen via een korting.",
+      "howToCancel": "Hoe u Uw Abonnement Opzegt",
+      "cancelIntro": "U kunt uw PLUS abonnement op elk moment opzeggen:",
+      "cancelStep1": "Ga naar het LemonSqueezy klantenportaal (link in uw aankoop-e-mail)",
+      "cancelStep2": "Log in met het e-mailadres dat is gebruikt voor uw abonnement",
+      "cancelStep3": "Klik op \"Abonnement Opzeggen\" in uw abonnementsgegevens",
+      "cancelNote": "Uw PLUS functies blijven actief tot het einde van uw huidige factureringsperiode."
+    }
+  },
+  "nav": {
+    "logo": "Odoo Integratie voor Gmail",
+    "features": "Functies",
+    "pricing": "Prijzen",
+    "userGuide": "Handleiding",
+    "blog": "Blog",
+    "getExtension": "Extensie Downloaden",
+    "currentLang": "NL"
+  },
+  "hero": {
+    "title": "Odoo Integratie voor Gmail",
+    "subtitle": "Transformeer uw Gmail in een krachtige CRM-interface met naadloze Odoo-integratie",
+    "getExtension": "Extensie Downloaden",
+    "learnMore": "Meer Informatie"
+  },
+  "features": {
+    "title": "Belangrijkste Functies",
+    "instant": {
+      "title": "Directe Contactinfo",
+      "description": "Bekijk Odoo contactgegevens direct in de zijbalk van Gmail wanneer u een e-mail opent. 22x sneller dan Google Apps Script."
+    },
+    "crm": {
+      "title": "CRM Kansen",
+      "description": "Bekijk bestaande kansen en maak nieuwe aan zonder uw inbox te verlaten. Inclusief zoeken en filteren."
+    },
+    "tasks": {
+      "title": "Takenbeheer",
+      "description": "Bekijk en maak projecttaken gekoppeld aan contacten. Houd alles op één plek bij."
+    },
+    "helpdesk": {
+      "title": "Helpdesk Tickets",
+      "description": "Toegang tot supporttickets en maak nieuwe direct vanuit e-mailgesprekken."
+    },
+    "emailLogging": {
+      "title": "E-mail Loggen",
+      "description": "Log e-mails naar Odoo records met één klik. Formatteert automatisch en behoudt gespreksgeschiedenis."
+    },
+    "fast": {
+      "title": "Bliksemsnel",
+      "description": "100-300ms responstijd met slimme caching. Geen wachten meer op trage integraties."
+    }
+  },
+  "demos": {
+    "title": "Bekijk Het In Actie",
+    "subtitle": "Beweeg over elke demo om de extensie in actie te zien",
+    "search": {
+      "title": "Realtime Zoeken",
+      "description": "Filter kansen, taken en tickets direct terwijl u typt. Vind wat u nodig heeft in milliseconden.",
+      "badge": "PLUS Functie"
+    },
+    "createContact": {
+      "title": "Contact Aanmaken",
+      "description": "Voeg nieuwe contacten toe aan Odoo direct vanuit Gmail. Context wordt automatisch vastgelegd uit e-mails.",
+      "badge": "Kernfunctie"
+    },
+    "setup": {
+      "title": "Snelle Configuratie",
+      "description": "Verbind met uw Odoo-instantie in seconden. Eenvoudige configuratie, krachtige resultaten.",
+      "badge": "Snel Starten"
+    }
+  },
+  "pricing": {
+    "title": "Kies Uw Abonnement",
+    "subtitle": "Begin gratis, upgrade wanneer u geavanceerde functies nodig heeft",
+    "perMonth": "/maand",
+    "free": {
+      "name": "Gratis",
+      "feature1": "Bekijk contacten & bedrijfsinfo",
+      "feature2": "Maak kansen, taken & tickets aan",
+      "feature3": "Log e-mails naar Odoo",
+      "feature4": "Bekijk 5 records per sectie",
+      "feature5": "Slimme contactdetectie",
+      "cta": "Aan de Slag"
+    },
+    "plus": {
+      "name": "PLUS",
+      "badge": "Meest Populair",
+      "annual": "of €182/jaar",
+      "save": "Bespaar 20%",
+      "feature1": "Alles in Gratis",
+      "feature2": "<strong>Realtime zoeken</strong> door alle lijsten",
+      "feature3": "Bekijk tot <strong>50 records</strong> (vs 5 in Gratis)",
+      "feature4": "Contact/Bedrijf tabbladen",
+      "feature5": "Gerelateerde contacten per domein",
+      "feature6": "Pas zichtbare secties aan",
+      "feature7": "Prestatie-inzichten",
+      "cta": "Upgraden naar PLUS"
+    },
+    "teamQuestion": "Teamprijzen nodig?",
+    "viewPlans": "Bekijk alle abonnementen",
+    "or": "of",
+    "contactUs": "neem contact op"
+  },
+  "pricingPage": {
+    "hero": {
+      "title": "Eenvoudige, Transparante Prijzen",
+      "subtitle": "Begin gratis, upgrade wanneer u krachtige functies nodig heeft. Geen creditcard vereist."
+    },
+    "perMonth": "/maand",
+    "featuresIncluded": "Inbegrepen Functies:",
+    "free": {
+      "name": "Gratis",
+      "description": "Perfect voor individuele gebruikers die beginnen",
+      "feature1": "Bekijk contacten & bedrijfsinfo",
+      "feature2": "Maak kansen, taken & tickets aan",
+      "feature3": "Log e-mails naar Odoo",
+      "feature4": "Bekijk 5 records per sectie",
+      "feature5": "Slimme contactdetectie",
+      "feature6": "E-mail ondersteuning",
+      "cta": "Gratis Beginnen"
+    },
+    "plus": {
+      "name": "PLUS",
+      "badge": "Meest Populair",
+      "description": "Voor powergebruikers die geavanceerd zoeken en functies nodig hebben",
+      "everythingInFree": "Alles in Gratis, plus:",
+      "or": "of",
+      "perYear": "/jaar",
+      "save": "Bespaar 20%",
+      "feature1": "<strong>Realtime zoeken</strong> door kansen, taken & tickets",
+      "feature2": "Bekijk tot <strong>50 records</strong> per sectie (vs 5 in Gratis)",
+      "feature3": "Contact/Bedrijf tabbladen voor betere context",
+      "feature4": "Gerelateerde contacten per domein",
+      "feature5": "Pas zichtbare secties aan",
+      "feature6": "Prestatie-inzichten & statistieken",
+      "feature7": "Prioriteits e-mail ondersteuning",
+      "cta": "Upgraden naar PLUS"
+    },
+    "comparison": {
+      "title": "Gedetailleerde Functievergelijking",
+      "feature": "Functie",
+      "coreFeatures": "Kernfuncties",
+      "viewContacts": "Bekijk contacten & bedrijfsinfo",
+      "createRecords": "Maak kansen, taken & tickets aan",
+      "logEmails": "Log e-mails naar Odoo",
+      "smartDetection": "Slimme contactdetectie",
+      "dataSearch": "Gegevens & Zoeken",
+      "recordsPerSection": "Records per sectie",
+      "realtimeSearch": "Realtime zoeken",
+      "contactCompanyTabs": "Contact/Bedrijf tabbladen",
+      "relatedContacts": "Gerelateerde contacten met functietitels",
+      "customization": "Aanpassing & Inzichten",
+      "financialInsights": "Financiële Inzichten",
+      "customizeSections": "Pas zichtbare secties aan"
+    },
+    "cta": {
+      "title": "Klaar om uw Gmail-Odoo workflow te versnellen?",
+      "subtitle": "Begin met ons Gratis abonnement en upgrade wanneer u geavanceerde functies nodig heeft.",
+      "getStarted": "Gratis Beginnen",
+      "upgrade": "Upgraden naar PLUS"
+    }
+  },
+  "privacyPage": {
+    "title": "Privacybeleid",
+    "lastUpdated": "Laatst bijgewerkt",
+    "backToHome": "Terug naar Home",
+    "overview": {
+      "title": "Overzicht",
+      "intro": "Odoo Integratie voor Gmail (\"de Extensie\") zet zich in voor de bescherming van uw privacy. Dit privacybeleid legt uit hoe de Extensie uw informatie verzamelt, gebruikt en beschermt.",
+      "developer": "Ontwikkelaar:"
+    },
+    "infoCollect": {
+      "title": "Informatie Die Wij Verzamelen",
+      "gmailData": "Gegevens Afkomstig uit Gmail",
+      "gmailDataDesc": "De Extensie heeft toegang tot de volgende informatie uit Gmail wanneer u expliciet een e-mail opent:",
+      "senderRecipient": "E-mailadressen van afzender en ontvanger:",
+      "senderRecipientDesc": "Gebruikt om overeenkomende contacten in uw Odoo-instantie te zoeken",
+      "emailSubject": "E-mailonderwerp en inhoud:",
+      "emailSubjectDesc": "Gebruikt wanneer u ervoor kiest om kansen, taken of tickets aan te maken in Odoo",
+      "emailDate": "E-maildatum en metadata:",
+      "emailDateDesc": "Gebruikt voor het loggen van e-mails naar Odoo records",
+      "odooData": "Gegevens Afkomstig uit Odoo",
+      "odooDataDesc": "De Extensie haalt de volgende informatie op uit uw Odoo-instantie:",
+      "odooData1": "Contactinformatie (namen, e-mails, telefoonnummers, bedrijven)",
+      "odooData2": "CRM-kansen gekoppeld aan contacten",
+      "odooData3": "Projecttaken gekoppeld aan contacten",
+      "odooData4": "Helpdesk tickets gekoppeld aan contacten",
+      "odooData5": "Bedrijfsinformatie en gerelateerde contacten",
+      "configData": "Configuratiegegevens",
+      "configDataDesc": "De Extensie slaat de configuratie van uw Odoo-instantie lokaal op:",
+      "configData1": "URL van Odoo-instantie",
+      "configData2": "Databasenaam",
+      "configData3": "Authenticatiegegevens",
+      "configData4": "Gebruikersvoorkeuren (instellingen zichtbare secties)"
+    },
+    "howWeUse": {
+      "title": "Hoe Wij Uw Informatie Gebruiken",
+      "intro": "De Extensie gebruikt uw informatie uitsluitend voor de volgende doeleinden:",
+      "displayContact": "Contactinformatie Weergeven:",
+      "displayContactDesc": "Relevante Odoo contactgegevens tonen in de zijbalk van Gmail",
+      "createRecords": "Odoo Records Aanmaken:",
+      "createRecordsDesc": "Wanneer u op \"Aanmaken\" knoppen klikt, wordt de e-mailinhoud naar uw Odoo-instantie gestuurd om kansen, taken of tickets aan te maken",
+      "logEmails": "E-mails Loggen:",
+      "logEmailsDesc": "Wanneer u op \"E-mail Loggen\" knoppen klikt, wordt de e-mailinhoud opgeslagen in de chatter van uw Odoo-instantie",
+      "searchFilter": "Zoeken en Filteren:",
+      "searchFilterDesc": "Zoeken door kansen, taken en tickets gekoppeld aan contacten",
+      "caching": "Caching:",
+      "cachingDesc": "Tijdelijk lokaal opslaan van Odoo API-antwoorden om prestaties te verbeteren"
+    },
+    "storage": {
+      "title": "Gegevensopslag en Beveiliging",
+      "localOnly": "Alleen Lokale Opslag:",
+      "localOnlyDesc": "Alle gegevens worden lokaal op uw apparaat opgeslagen met behulp van Chrome's opslag-API's. Er worden geen gegevens verzonden naar servers van derden, behalve naar uw eigen Odoo-instantie.",
+      "transmission": "Gegevensoverdracht:",
+      "transmissionDesc": "De Extensie communiceert rechtstreeks met UW Odoo-instantie via HTTPS. Uw Odoo-inloggegevens en data worden nooit naar de extensie-ontwikkelaar of derden gestuurd.",
+      "cache": "Cachebeheer:",
+      "cacheDesc": "Gecachte gegevens worden automatisch na 5 minuten gewist of wanneer u op de vernieuwknop klikt. U kunt ook alle gecachte gegevens wissen door de extensie te verwijderen."
+    },
+    "thirdParty": {
+      "title": "Diensten van Derden",
+      "paymentProcessing": "Betalingsverwerking",
+      "lemonIntro": "De Extensie gebruikt LemonSqueezy (https://www.lemonsqueezy.com/) voor abonnementsbeheer en betalingsverwerking. Wanneer u zich abonneert op het PLUS abonnement, verzamelt LemonSqueezy:",
+      "lemon1": "Uw e-mailadres voor accountbeheer en ontvangstbewijzen",
+      "lemon2": "Betalingsinformatie (veilig verwerkt, niet opgeslagen door de Extensie)",
+      "lemon3": "Abonnementsstatus en factureringsinformatie",
+      "lemonPolicy": "LemonSqueezy Privacybeleid:",
+      "important": "Belangrijk:",
+      "importantDesc": "Betalingsgegevens worden volledig door LemonSqueezy verwerkt. De Extensie ontvangt of bewaart nooit uw creditcardinformatie.",
+      "gmailIntegration": "Gmail Integratie",
+      "inboxsdkDesc": "De Extensie gebruikt InboxSDK (https://www.inboxsdk.com/) om te integreren met de Gmail-interface. InboxSDK is een bibliotheek die de Extensie helpt om met de Gmail UI te communiceren om de zijbalk weer te geven en e-mailcontacten te detecteren. InboxSDK verzamelt, verzendt of bewaart geen e-mailgegevens."
+    },
+    "dataSharing": {
+      "title": "Gegevens Delen met Derden",
+      "noShare": "Wij delen uw gegevens NIET met derden voor reclame, analyse of gegevensmakelaardij.",
+      "onlyWith": "De Extensie communiceert alleen met:",
+      "yourOdoo": "Uw Odoo Instantie:",
+      "yourOdooDesc": "De Extensie stuurt API-verzoeken naar de Odoo-instantie URL die u configureert om records op te halen en aan te maken",
+      "lemonDesc": "Alleen voor abonnementsbeheer (e-mail, abonnementsstatus, betalingsverwerking)",
+      "googleAnalyticsDesc": "Anonieme gebruiksstatistieken (functiegebruik, fouten). Geen PII of e-mail/Odoo-inhoud.",
+      "doesNot": "De Extensie doet NIET:",
+      "notSell": "Uw gegevens verkopen aan gegevensmakelaars",
+      "notAdvertising": "Gegevens delen voor reclamedoeleinden",
+      "notDeveloper": "Gmail of Odoo gegevens versturen naar de servers van de extensie-ontwikkelaar"
+    },
+    "googleApi": {
+      "title": "Google API Services Gebruikersgegevensbeleid",
+      "intro": "Het gebruik en de overdracht van informatie ontvangen van Google API's door Odoo Integratie voor Gmail voldoet aan",
+      "limitedUse": "inclusief de vereisten voor Beperkt Gebruik.",
+      "compliance": "Naleving Beperkt Gebruik:",
+      "compliance1": "De Extensie heeft alleen toegang tot Gmail-gegevens wanneer u expliciet een e-mail opent",
+      "compliance2": "E-mailgegevens worden uitsluitend gebruikt voor het bekendgemaakte doel: integratie met uw Odoo CRM",
+      "compliance3": "Gmail-gegevens worden niet gebruikt voor het tonen van advertenties",
+      "compliance4": "Gmail-gegevens worden niet overgedragen aan derden (behalve uw eigen Odoo-instantie)",
+      "compliance5": "Gmail-gegevens worden niet gebruikt voor het bepalen van kredietwaardigheid of leningdoeleinden"
+    },
+    "permissions": {
+      "title": "Machtigingen Uitgelegd",
+      "intro": "De Extensie vraagt de volgende Chrome-machtigingen aan:",
+      "required": "Vereiste Machtigingen (Verleend bij Installatie)",
+      "scripting": "Vereist om de zijbalkinterface in Gmail te injecteren",
+      "storage": "Vereist om uw Odoo-configuratie op te slaan en API-antwoorden lokaal te cachen",
+      "hostGmail": "Vereist om toegang te krijgen tot de Gmail-interface en de zijbalk weer te geven",
+      "hostOdoo": "Vereist om te communiceren met Odoo Online cloud-instanties (bijv. uwbedrijf.odoo.com)",
+      "hostLemon": "Vereist voor abonnementsbeheer en betalingsverwerking",
+      "optional": "Optionele Machtigingen (Aangevraagd Wanneer Nodig)",
+      "optionalIntro": "De Extensie vraagt optionele machtigingen aan voor aangepaste Odoo-instanties:",
+      "optionalDesc": "Alleen gebruikt als u verbinding maakt met een zelf-gehoste Odoo-instantie op een aangepast domein (bijv. odoo.uwbedrijf.com of erp.voorbeeld.com). Deze machtiging wordt alleen aangevraagd wanneer u expliciet een aangepaste Odoo URL configureert.",
+      "note": "Opmerking:",
+      "noteDesc": "De Extensie ondersteunt alleen HTTPS-verbindingen voor beveiliging. HTTP-verbindingen zijn niet toegestaan.",
+      "whenRequested": "Wanneer Optionele Machtigingen Worden Aangevraagd",
+      "whenRequestedIntro": "Chrome vraagt u om optionele machtigingen te verlenen wanneer:",
+      "whenRequested1": "U een aangepaste Odoo URL configureert die geen *.odoo.com domein is",
+      "whenRequested2": "U expliciet kiest om verbinding te maken met een zelf-gehoste Odoo-instantie",
+      "canDeny": "U kunt deze machtigingen weigeren",
+      "canDenyDesc": "als u alleen Odoo Online (*.odoo.com) gebruikt. De Extensie werkt normaal met Odoo Online zonder optionele machtigingen te verlenen.",
+      "why": "Waarom Deze Optionele Machtigingen?",
+      "whyIntro": "Veel organisaties hosten Odoo op hun eigen servers met aangepaste domeinen (bijv. erp.acme.com, odoo.mijnbedrijf.nl). Om deze gebruikers te ondersteunen, vraagt de Extensie optionele brede machtigingen aan. Echter:",
+      "why1": "Deze machtigingen worden ALLEEN gebruikt om te communiceren met UW geconfigureerde Odoo-instantie",
+      "why2": "Ze worden NOOIT gebruikt om toegang te krijgen tot andere websites",
+      "why3": "U kunt ze op elk moment intrekken in Chrome-instellingen",
+      "why4": "De Extensie vraagt ze alleen aan als u een aangepaste Odoo URL invoert"
+    },
+    "rights": {
+      "title": "Uw Gegevensrechten",
+      "intro": "U heeft de volgende rechten met betrekking tot uw gegevens:",
+      "access": "Toegang:",
+      "accessDesc": "Al uw gegevens worden lokaal opgeslagen en in uw Odoo-instantie, die u beheert",
+      "deletion": "Verwijdering:",
+      "deletionDesc": "U kunt alle Extensiegegevens wissen door:",
+      "deletion1": "Op de vernieuwknop te klikken (wist cache)",
+      "deletion2": "De Extensie uit Chrome te verwijderen (wist alle lokale gegevens)",
+      "portability": "Overdraagbaarheid:",
+      "portabilityDesc": "Uw gegevens blijven in uw Odoo-instantie en zijn toegankelijk via Odoo's exportfuncties",
+      "control": "Controle:",
+      "controlDesc": "U kunt de toegang van de Extensie op elk moment intrekken door deze te verwijderen"
+    },
+    "retention": {
+      "title": "Gegevensbewaring",
+      "intro": "De Extensie bewaart gegevens als volgt:",
+      "configData": "Configuratiegegevens:",
+      "configDataDesc": "Opgeslagen totdat u de Extensie verwijdert",
+      "cachedData": "Gecachte API-antwoorden:",
+      "cachedDataDesc": "Automatisch verwijderd na 5 minuten",
+      "preferences": "Gebruikersvoorkeuren:",
+      "preferencesDesc": "Opgeslagen totdat u de Extensie verwijdert",
+      "uninstall": "Wanneer u de Extensie verwijdert, worden alle lokaal opgeslagen gegevens automatisch door Chrome verwijderd."
+    },
+    "children": {
+      "title": "Privacy van Kinderen",
+      "desc": "De Extensie is niet bedoeld voor gebruik door kinderen jonger dan 13 jaar. Wij verzamelen niet bewust persoonlijke informatie van kinderen jonger dan 13 jaar."
+    },
+    "changes": {
+      "title": "Wijzigingen in Dit Privacybeleid",
+      "desc1": "Wij kunnen dit privacybeleid van tijd tot tijd bijwerken. Wij informeren gebruikers over materiële wijzigingen door de \"Laatst bijgewerkt\" datum bovenaan dit beleid bij te werken en, indien vereist, via de updatemeldingen van de Extensie.",
+      "desc2": "Voortgezet gebruik van de Extensie na wijzigingen betekent acceptatie van het bijgewerkte privacybeleid."
+    },
+    "contact": {
+      "title": "Contactinformatie",
+      "desc": "Als u vragen of zorgen heeft over dit privacybeleid of de gegevenspraktijken van de Extensie, neem dan contact op met:"
+    },
+    "legal": {
+      "title": "Juridische Disclaimer",
+      "desc1": "Odoo Integratie voor Gmail is een onafhankelijke extensie en is niet gelieerd aan, goedgekeurd door of gesponsord door Odoo S.A. of Google LLC.",
+      "desc2": "Odoo is een handelsmerk van Odoo S.A.",
+      "desc3": "Gmail en Chrome zijn handelsmerken van Google LLC."
+    }
+  },
+  "changelogPage": {
+    "navChangelog": "Wijzigingslogboek",
+    "header": {
+      "title": "Releasegeschiedenis",
+      "subtitle": "Volg nieuwe functies, verbeteringen en fixes in elke versie"
+    },
+    "version": "Versie",
+    "sections": {
+      "newFeatures": "Nieuwe Functies",
+      "improvements": "Verbeteringen",
+      "technical": "Technisch",
+      "bugFixes": "Bugfixes",
+      "dependencies": "Afhankelijkheden",
+      "initialRelease": "Eerste Release",
+      "plusFeatures": "PLUS Functies"
+    },
+    "v0200": {
+      "freeTrial": "14 Dagen Gratis Proefperiode",
+      "freeTrialDesc": "Probeer PLUS 14 dagen gratis voordat er kosten in rekening worden gebracht. Op elk moment opzeggen tijdens de proefperiode.",
+      "regionalPricing": "Regionale Prijzen",
+      "regionalPricingDesc": "Automatische prijsaanpassing op basis van uw locatie via Parity Deals",
+      "newLanguages": "Italiaans & Portugees",
+      "newLanguagesDesc": "Interface nu beschikbaar in het Italiaans en Portugees"
+    },
+    "v0120": {
+      "versionDisplay": "Versieweergave",
+      "versionDisplayDesc": "Zie de extensieversie direct in de UI",
+      "localizedUserGuide": "Gelokaliseerde Gebruikershandleiding",
+      "localizedUserGuideDesc": "Gebruikershandleiding opent in de taal van de gebruiker",
+      "feedbackButton": "Feedbackknop",
+      "feedbackButtonDesc": "Verstuur eenvoudig feedback vanuit het instellingenmenu om ons te helpen verbeteren",
+      "toRecipientFix": "AAN Ontvanger Detectie Fix",
+      "toRecipientFixDesc": "Opgeloste contactdetectie bij het verzenden van e-mails naar meerdere ontvangers (AAN + CC)"
+    },
+    "v0110": {
+      "visualIndicator": "Visuele Indicator voor Gelogde E-mails",
+      "visualIndicatorDesc": "Zie in één oogopslag welke e-mails al zijn gelogd naar een record",
+      "quoteLevels": "Citaatniveaus Configuratie",
+      "quoteLevelsDesc": "Bepaal hoeveel gespreksgeschiedenis wordt opgenomen bij het loggen van e-mails"
+    },
+    "v0100": {
+      "multiLanguage": "Meertalige Ondersteuning",
+      "multiLanguageDesc": "Volledige interfacevertaling (Engels, Spaans, Frans, Duits)",
+      "accessibility": "Toegankelijkheid",
+      "accessibilityDesc": "WCAG AA-conforme kleuren en toetsenbordnavigatie",
+      "toastNotifications": "Toastmeldingen",
+      "toastNotificationsDesc": "Moderne niet-blokkerende feedback voor acties",
+      "rateLimiting": "Snelheidsbeperking",
+      "rateLimitingDesc": "Voorkomt HTTP 429-fouten met verzoekbeperking",
+      "typescript": "Architectuur gerefactord naar TypeScript met servicelaag",
+      "jest": "Jest testinfrastructuur"
+    },
+    "v0006": {
+      "gmailFix": "Gmail Compatibiliteit Fix",
+      "gmailFixDesc": "Opgeloste \"threadID element niet gevonden\" fout veroorzaakt door Gmail UI-wijzigingen",
+      "inboxsdk": "InboxSDK bijgewerkt van 2.2.8 naar 2.2.11"
+    },
+    "v0005": {
+      "emailHeaders": "Gmail-stijl E-mail Log Headers",
+      "emailHeadersDesc": "E-mail logs tonen nu gestructureerde headers (van/aan/datum/onderwerp) voor betere leesbaarheid",
+      "duplicateDetection": "Dubbele E-mail Detectie",
+      "duplicateDetectionDesc": "Voorkomt per ongeluk dezelfde e-mail meerdere keren naar een record te loggen",
+      "relatedContacts": "Verbeterde Gerelateerde Contacten",
+      "relatedContactsDesc": "Toont nu functietitels en verbeterde lay-out met iconen voor e-mail en telefoon",
+      "conditionalTooltips": "Voorwaardelijke Tooltips",
+      "conditionalTooltipsDesc": "Tooltips verschijnen alleen wanneer tekst is afgekapt, wat UI-rommel vermindert",
+      "headerFix": "Opgeloste Header Toegankelijkheid",
+      "headerFixDesc": "Instellingen en uitlogmenu nu altijd toegankelijk tijdens foutstaten, voorkomt dat gebruikers vastzitten"
+    },
+    "v0004": {
+      "odoo19": "Odoo v19 Ondersteuning",
+      "odoo19Desc": "Volledige compatibiliteit met de nieuwste Odoo versie",
+      "settingsExp": "Betere Instellingen Ervaring",
+      "settingsExpDesc": "Herontworpen instellingen met eenvoudigere navigatie",
+      "searchBehavior": "Verbeterd Zoekgedrag",
+      "searchBehaviorDesc": "Zoekopdracht wissen zet nu correct terug naar initiële weergave",
+      "setupInstructions": "Duidelijkere Configuratie-instructies",
+      "setupInstructionsDesc": "Verbeterde begeleiding voor API-sleutelconfiguratie"
+    },
+    "v0003": {
+      "minorFixes": "Kleine fixes en verbeteringen aan de configuratie-instelling"
+    },
+    "v0002": {
+      "financialInsights": "Financiële Inzichten",
+      "financialInsightsDesc": "Bekijk financiële statistieken voor uw klanten en leveranciers direct in Gmail",
+      "visualEnhancements": "Visuele & Ontwerpverbeteringen",
+      "visualEnhancementsDesc": "Verbeterd interfaceontwerp en gebruikerservaring"
+    },
+    "v0001": {
+      "contactCompany": "Contact & Bedrijfsinformatie",
+      "contactCompanyDesc": "Bekijk Odoo contact- en bedrijfsgegevens direct in Gmail",
+      "crmOpportunities": "CRM Kansen",
+      "crmOpportunitiesDesc": "Bekijk en maak verkoopkansen vanuit uw inbox",
+      "projectTasks": "Projecttaken",
+      "projectTasksDesc": "Bekijk en maak taken gekoppeld aan contacten",
+      "helpdeskTickets": "Helpdesk Tickets",
+      "helpdeskTicketsDesc": "Bekijk en maak supporttickets vanuit e-mails",
+      "emailLogging": "E-mail Loggen",
+      "emailLoggingDesc": "Sla e-mails op naar Odoo records met één klik, inclusief bijlagen",
+      "advancedSearch": "Geavanceerd Zoeken",
+      "advancedSearchDesc": "Zoek door al uw kansen, taken en tickets",
+      "extendedViews": "Uitgebreide Weergaven",
+      "extendedViewsDesc": "Bekijk tot 50 records per sectie (vs 5 in Gratis abonnement)",
+      "relatedContacts": "Gerelateerde Contacten",
+      "relatedContactsDesc": "Zie andere contacten van hetzelfde bedrijf",
+      "customization": "Aanpassing",
+      "customizationDesc": "Kies welke secties worden weergegeven"
+    },
+    "subscriptionRequired": "PLUS abonnement vereist:",
+    "subscriptionRequiredDesc": "Geavanceerde functies zijn beschikbaar met een PLUS abonnement ($19/maand of $182/jaar).",
+    "cta": {
+      "title": "Klaar om de nieuwste versie te proberen?",
+      "subtitle": "Begin met ons Gratis abonnement of upgrade naar PLUS voor geavanceerde functies.",
+      "install": "Extensie Installeren",
+      "viewPricing": "Prijzen Bekijken"
+    }
+  },
+  "alternative": {
+    "hero": {
+      "title": "Op Zoek naar een Odoo Gmail Plugin Alternatief?",
+      "subtitle": "Onze Chrome-extensie is 10-20x sneller, stabieler en werkt op elke Odoo-instantie",
+      "cta": "Gratis Proberen"
+    },
+    "whySwitch": {
+      "title": "Waarom Overstappen naar Onze Extensie?",
+      "subtitle": "Gebouwd met Chrome native API's voor maximale prestaties en betrouwbaarheid",
+      "speed": {
+        "title": "10-20x Sneller",
+        "description": "Laadtijden van 100-300ms vs 2-6 seconden. Geen wachten meer op trage integraties."
+      },
+      "stability": {
+        "title": "Rotsvaste Stabiliteit",
+        "description": "Persistente verbindingen zonder willekeurige onderbrekingen. Uw sessie blijft actief."
+      },
+      "compatibility": {
+        "title": "Universele Compatibiliteit",
+        "description": "Werkt op Odoo.sh en zelf-gehoste instanties zonder codewijzigingen."
+      },
+      "features": {
+        "title": "Geavanceerde Functies",
+        "description": "Realtime zoeken, secties verbergen, verbeterd e-mail loggen met bijlagen."
+      }
+    },
+    "migration": {
+      "title": "Overstappen in Minder dan 2 Minuten",
+      "subtitle": "Geen complexe configuratie of gegevensmigratie vereist",
+      "step1": {
+        "title": "Extensie Installeren",
+        "description": "Eén klik vanuit Chrome Web Store"
+      },
+      "step2": {
+        "title": "Inloggegevens Invoeren",
+        "description": "Dezelfde Odoo URL en API-sleutel"
+      },
+      "step3": {
+        "title": "Begin met Werken",
+        "description": "Al uw gegevens zijn er al"
+      },
+      "noDataMigration": {
+        "title": "Geen gegevensmigratie nodig",
+        "description": "De extensie verbindt rechtstreeks met uw Odoo-instantie. Al uw CRM-gegevens blijven precies waar ze zijn."
+      }
+    },
+    "cta": {
+      "title": "Klaar voor een Betere Gmail-Odoo Integratie?",
+      "subtitle": "Sluit u aan bij gebruikers die zijn overgestapt en nooit meer terug willen",
+      "tryFree": "Gratis Proberen",
+      "seeComparison": "Volledige Vergelijking Bekijken"
+    }
+  },
+  "comparison": {
+    "hero": {
+      "title": "Extensie vs Odoo Gmail Plugin",
+      "subtitle": "Bekijk hoe onze Chrome-extensie zich verhoudt tot de officiële Odoo Gmail Plugin"
+    },
+    "cards": {
+      "extension": {
+        "name": "Onze Extensie",
+        "badge": "Aanbevolen",
+        "description": "Chrome-extensie gebouwd met native API's voor maximale prestaties en stabiliteit.",
+        "highlights": "Belangrijkste Voordelen",
+        "feature1": "10-20x snellere laadtijden (100-300ms)",
+        "feature2": "Stabiele verbinding, geen onderbrekingen",
+        "feature3": "Realtime zoeken door alle records",
+        "feature4": "Werkt op elke Odoo-instantie zonder codewijzigingen",
+        "feature5": "Secties verbergen om gegevenslading te verminderen",
+        "feature6": "Verbeterd e-mail loggen met bijlagen",
+        "cta": "Gratis Proberen"
+      },
+      "plugin": {
+        "name": "Odoo Gmail Plugin",
+        "description": "Officiële add-on gebouwd op Google Apps Script.",
+        "highlights": "Functies",
+        "feature1": "Bekijk contacten en bedrijfsinfo",
+        "feature2": "Maak leads en log e-mails",
+        "feature3": "Officiële Odoo ondersteuning",
+        "feature4": "Tragere laadtijden (2-6 seconden)",
+        "feature5": "Frequente onderbrekingen",
+        "feature6": "Vereist codewijzigingen voor zelf-gehost",
+        "cta": "Officiële Plugin Bekijken"
+      }
+    },
+    "table": {
+      "title": "Gedetailleerde Vergelijking",
+      "feature": "Functie",
+      "performance": "Prestaties",
+      "loadTime": "Laadtijd",
+      "technology": "Technologie",
+      "chromeAPIs": "Chrome API's",
+      "caching": "Caching",
+      "smartCache": "Slimme lokale cache",
+      "limited": "Beperkt",
+      "stability": "Stabiliteit",
+      "connection": "Verbinding",
+      "persistent": "Persistent",
+      "frequentDisconnects": "Frequente onderbrekingen",
+      "sessionHandling": "Sessiebeheer",
+      "robust": "Robuust",
+      "requiresReauth": "Vereist herauthenticatie",
+      "userExperience": "Gebruikerservaring",
+      "realtimeSearch": "Realtime Zoeken",
+      "pagination": "Paginering",
+      "hideSections": "Secties Verbergen",
+      "emailLogging": "E-mail Loggen",
+      "enhanced": "Verbeterd",
+      "basic": "Basis",
+      "compatibility": "Compatibiliteit",
+      "selfHosted": "Zelf-gehoste Odoo",
+      "noCodeChanges": "(geen codewijzigingen)",
+      "requiresRepoMod": "Vereist repository-aanpassing",
+      "odooVersions": "Odoo Versies"
+    },
+    "migration": {
+      "title": "Overstappen van de Odoo Gmail Plugin?",
+      "subtitle": "Migratie duurt minder dan 2 minuten",
+      "step1": {
+        "title": "Installeer de Extensie",
+        "description": "Download het met één klik vanuit de Chrome Web Store"
+      },
+      "step2": {
+        "title": "Voer Uw Inloggegevens In",
+        "description": "Dezelfde Odoo URL, database en API-sleutel"
+      },
+      "step3": {
+        "title": "Begin met Gebruiken",
+        "description": "Uw contacten, kansen en taken zijn er al"
+      },
+      "noDataMigration": {
+        "title": "Geen gegevensmigratie nodig",
+        "description": "De extensie verbindt rechtstreeks met uw Odoo-instantie. Al uw CRM-gegevens, contacten en geschiedenis blijven in Odoo precies zoals ze zijn."
+      }
+    },
+    "cta": {
+      "title": "Klaar om het verschil te ervaren?",
+      "subtitle": "Probeer onze extensie gratis en zie zelf de prestatieverbetering.",
+      "tryFree": "Gratis Proberen",
+      "seePricing": "Prijzen Bekijken"
+    }
+  },
+  "footer": {
+    "title": "Odoo Integratie voor Gmail",
+    "builtBy": "Gebouwd door",
+    "resources": "Bronnen",
+    "home": "Home",
+    "pricing": "Prijzen",
+    "userGuide": "Handleiding",
+    "changelog": "Wijzigingslogboek",
+    "comparison": "Vergelijking",
+    "blog": "Blog",
+    "privacy": "Privacybeleid",
+    "support": "Ondersteuning",
+    "legal": "Juridisch",
+    "notAffiliated": "Niet gelieerd aan Odoo S.A. of Google LLC.",
+    "odooTrademark": "Odoo is een handelsmerk van Odoo S.A.",
+    "copyright": "2025 IntegrationNode. Alle rechten voorbehouden."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Tips en tutorials voor het integreren van Odoo met Gmail",
+    "readMore": "Artikel lezen",
+    "article1": {
+      "title": "Odoo Gmail Integratie: Uw Persoonlijke Domein Gebruiken Zonder Inbox-chaos",
+      "date": "Januari 2025",
+      "excerpt": "Als u een Odoo-gebruiker bent, heeft u zich waarschijnlijk afgevraagd: \"Hoe kan ik e-mails versturen vanuit Odoo zodat de klant ziet dat het van mij komt (naam@mijnbedrijf.nl) en niet van een generieke bot?\""
+    },
+    "cta": {
+      "title": "Probeer Odoo Integratie voor Gmail",
+      "subtitle": "Verbind uw Gmail met Odoo in seconden",
+      "button": "Extensie Downloaden"
+    }
+  },
+  "blogArticle": {
+    "backToBlog": "Terug naar Blog"
+  },
+  "blogOdooGmailDomain": {
+    "title": "Odoo Gmail Integratie: Uw Persoonlijke Domein Gebruiken Zonder Inbox-chaos",
+    "date": "18 januari 2025",
+    "intro": "Als u een Odoo-gebruiker bent, heeft u zich waarschijnlijk afgevraagd: \"Hoe kan ik e-mails versturen vanuit Odoo zodat de klant ziet dat het van mij komt (naam@mijnbedrijf.nl) en niet van een generieke bot?\" Het technische antwoord is eenvoudig, maar de strategie erachter is waar veel bedrijven falen. Een configuratiefout kan leiden tot privacyproblemen, verloren e-mails of een inbox waar berichten mysterieus als \"gelezen\" verschijnen.",
+    "section1": {
+      "title": "Verzenden: Uw Identiteit Komt Eerst",
+      "p1": "Om uw offertes en facturen te laten versturen met uw handtekening en persoonlijke e-mail, biedt Odoo een robuuste oplossing: Google OAuth-authenticatie.",
+      "p2": "In tegenstelling tot oude SMTP-wachtwoordconfiguraties, laat OAuth u uw Google Workspace-account veilig verbinden zonder uw echte wachtwoord te delen.",
+      "howItWorks": "Hoe werkt het technisch?",
+      "howItWorksDesc": "Bij het configureren van een Uitgaande Mailserver met OAuth gebruikt Odoo een \"FROM Filter\". Wanneer u een e-mail verstuurt, zoekt het systeem naar een server die overeenkomt met uw afzenderadres.",
+      "benefit1": "Het resultaat: Uw klant ontvangt de e-mail rechtstreeks van u@uwbedrijf.nl, gebruikmakend van de reputatie van uw domein en het vermijden van de Spam-map.",
+      "transition": "Tot zover gaat alles goed. Het probleem ontstaat wanneer we antwoorden willen beheren."
+    },
+    "section2": {
+      "title": "De Val van Persoonlijke \"Inkomende Servers\"",
+      "p1": "Het is verleidelijk om te denken: \"Als ik mijn uitgaande heb verbonden, verbind ik ook mijn inkomende om al mijn e-mails in Odoo te hebben\". Pas op! Dit is de meest voorkomende fout.",
+      "warning": "De officiële documentatie van Odoo waarschuwt expliciet dat de functie Inkomende Mailservers is ontworpen voor gedeelde inboxen (zoals sales@ of support@), niet voor persoonlijke accounts.",
+      "whyNotTitle": "Waarom zou u uw persoonlijke inbox niet rechtstreeks verbinden?",
+      "problem1Title": "Het \"Gelezen\" Probleem: ",
+      "problem1Desc": "Odoo is geen traditionele e-mailclient. Als u uw persoonlijke account configureert zodat Odoo e-mails \"ophaalt\" (via IMAP of POP), kan het systeem berichten downloaden en als gelezen markeren in uw Gmail of ze zelfs archiveren. Stel u de frustratie voor om uw Gmail te openen en niet te weten wat nieuw is en wat niet.",
+      "problem2Title": "Blootgestelde Privacy: ",
+      "problem2Desc": "In Odoo worden e-mails aan de Chatter (de documentmuur) gekoppeld. Als u uw hele inbox synchroniseert, kan een privé HR-e-mail of vertrouwelijke klacht zichtbaar worden voor elke collega met systeemtoegang.",
+      "problem3Title": "Verlies van Kracht: ",
+      "problem3Desc": "Gmail (vooral met geïntegreerde Gemini) is een superieure beheertool ten opzichte van Odoo's berichtenweergave. Door werk in Odoo te forceren, verliest u labels, slimme filters en Google's AI."
+    },
+    "section3": {
+      "title": "De Hybride Strategie: Gecentraliseerd vs. Individueel",
+      "p1": "De juiste manier van werken is om de strategie in twee stromen te verdelen:",
+      "teamsTitle": "Voor teams (sales@mijnbedrijf.nl): ",
+      "teamsDesc": "Hier gebruiken we WEL volledige native integratie. We willen dat elke e-mail die binnenkomt bij \"Sales\" automatisch een CRM-kans aanmaakt. Het maakt niet uit of het als gelezen wordt gemarkeerd in de originele inbox, omdat het doel is dat het team het vanuit Odoo beheert.",
+      "individualsTitle": "Voor individuen (uwnaam@mijnbedrijf.nl): ",
+      "individualsDesc": "Hier hebben we selectiviteit nodig. U wilt in uw Gmail werken en alleen die e-mails naar Odoo sturen die relevant zijn voor het bedrijf (een onderhandeling, een getekende factuur, etc.)."
+    },
+    "section4": {
+      "title": "De Oplossing: Gmail Verbinden Zonder Gmail te Verlaten",
+      "p1": "Voor persoonlijke accounts raadt Odoo aan om geen inkomende servers te gebruiken, maar in plaats daarvan add-ons of extensies te gebruiken. Het doel is dat U controle heeft: u beslist wat wordt opgeslagen in het CRM en wat in uw privédomein blijft.",
+      "p2": "Hoewel Odoo een basis add-on biedt, vinden veel gebruikers dat de workflow kan worden verbeterd voor degenen die in hun Chrome-browser leven en wendbaarheid nodig hebben.",
+      "extensionTitle": "Versterk Uw Workflow met Odoo Integratie voor Gmail",
+      "extensionIntro": "Dit is waar onze Chrome-extensie om de hoek komt kijken, ontworpen als een krachtig alternatief voor veeleisende gebruikers. In tegenstelling tot blinde serversynchronisatie, stelt onze extensie u in staat om:",
+      "benefit1Title": "Uw Gmail Schoon te Houden: ",
+      "benefit1Desc": "Uw e-mails blijven van u. We wijzigen de \"ongelezen\" status van uw inbox niet.",
+      "benefit2Title": "Selectieve Verbinding: ",
+      "benefit2Desc": "Heeft u een belangrijke e-mail van een klant? Met één klik vanuit uw browser stuurt u het naar het bijbehorende record in Odoo.",
+      "benefit3Title": "Directe Context: ",
+      "benefit3Desc": "Bekijk Odoo-gegevens direct in uw Gmail zonder constant van tabblad te wisselen.",
+      "conclusion": "Laat Odoo bedrijfsgegevens beheren en Gmail uw persoonlijke communicatie, met onze extensie als de perfecte brug tussen beide werelden."
+    },
+    "cta": {
+      "title": "Klaar om het te proberen?",
+      "subtitle": "Verbind uw Gmail met Odoo in seconden met onze Chrome-extensie.",
+      "button": "Extensie Gratis Proberen"
+    }
+  }
+}
