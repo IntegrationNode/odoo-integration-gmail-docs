@@ -200,6 +200,10 @@
     },
     "opportunities": {
       "title": "Kansen Beheren",
+      "viewingOpportunities": "Kansen Bekijken",
+      "whatRecordsShown": "Welke records worden getoond:",
+      "leadRecords1": "Kansen gekoppeld aan het contact (via partner_id)",
+      "leadRecords2": "Gesorteerd op aanmaakdatum (nieuwste eerst)",
       "creatingLeads": "Leads Maken van E-mails",
       "creatingLeadsIntro": "Converteer een e-mailgesprek naar een Odoo-kans met één klik:",
       "step1": "Open de e-mail die u wilt omzetten naar een lead",
@@ -222,7 +226,7 @@
       "whatRecordsShown": "Welke records worden getoond:",
       "taskRecords1": "Taken gekoppeld aan het contact (via partner_id)",
       "taskRecords2": "Exclusief voltooide of geannuleerde taken",
-      "taskRecords3": "Gesorteerd op meest recente activiteit",
+      "taskRecords3": "Gesorteerd op aanmaakdatum (nieuwste eerst)",
       "managingTickets": "Helpdesk Tickets Beheren",
       "ticketRequirements": "Odoo Helpdesk module (alleen Enterprise)"
     },
@@ -267,6 +271,8 @@
     },
     "help": {
       "title": "Hulp Krijgen",
+      "feedbackTitle": "Stuur ons Feedback",
+      "feedbackDesc": "Help ons verbeteren! Klik op de feedbackknop in het instellingenmenu (⋮) om uw suggesties anoniem te delen via een Google Formulier.",
       "contactSupport": "Contact Ondersteuning",
       "contactDesc": "Als u vragen of problemen heeft die niet in deze handleiding worden behandeld:",
       "emailLabel": "E-mail",

@@ -200,6 +200,10 @@
     },
     "opportunities": {
       "title": "Gerenciando Oportunidades",
+      "viewingOpportunities": "Visualizando Oportunidades",
+      "whatRecordsShown": "Quais registros são exibidos:",
+      "leadRecords1": "Oportunidades vinculadas ao contato (por partner_id)",
+      "leadRecords2": "Ordenadas por data de criação (mais recentes primeiro)",
       "creatingLeads": "Criando Leads a partir de E-mails",
       "creatingLeadsIntro": "Converta uma conversa de e-mail em uma oportunidade Odoo com um clique:",
       "step1": "Abra o e-mail que deseja converter em lead",
@@ -222,7 +226,7 @@
       "whatRecordsShown": "Quais registros são mostrados:",
       "taskRecords1": "Tarefas vinculadas ao contato (por partner_id)",
       "taskRecords2": "Exclui tarefas concluídas ou canceladas",
-      "taskRecords3": "Ordenadas por atividade mais recente",
+      "taskRecords3": "Ordenadas por data de criação (mais recentes primeiro)",
       "managingTickets": "Gerenciando Tickets do Helpdesk",
       "ticketRequirements": "Módulo Odoo Helpdesk (apenas Enterprise)"
     },
@@ -267,6 +271,8 @@
     },
     "help": {
       "title": "Obtendo Ajuda",
+      "feedbackTitle": "Envie-nos seu Feedback",
+      "feedbackDesc": "Ajude-nos a melhorar! Clique no botão de feedback no menu de configurações (⋮) para compartilhar suas sugestões anonimamente através de um formulário do Google.",
       "contactSupport": "Entre em Contato com o Suporte",
       "contactDesc": "Se você tiver dúvidas ou problemas não cobertos neste guia:",
       "emailLabel": "E-mail",
