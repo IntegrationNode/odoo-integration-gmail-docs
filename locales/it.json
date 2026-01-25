@@ -637,6 +637,14 @@
       "initialRelease": "Rilascio Iniziale",
       "plusFeatures": "Funzionalità PLUS"
     },
+    "v0210": {
+      "odoo191": "Compatibilità Odoo 19.1",
+      "odoo191Desc": "Funziona perfettamente con l'ultima versione di Odoo",
+      "dutch": "Lingua Olandese",
+      "dutchDesc": "Interfaccia ora disponibile in olandese (Nederlands)",
+      "analytics": "Analisi Anonime",
+      "analyticsDesc": "Ora raccogliamo dati di utilizzo anonimi per migliorare l'estensione. Non vengono raccolte informazioni personali. Puoi disattivare in qualsiasi momento nelle Impostazioni."
+    },
     "v0200": {
       "freeTrial": "14 Giorni di Prova Gratuita",
       "freeTrialDesc": "Prova PLUS gratis per 14 giorni prima di essere addebitato. Annulla in qualsiasi momento durante la prova.",
