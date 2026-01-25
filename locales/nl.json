@@ -523,7 +523,15 @@
       "important": "Belangrijk:",
       "importantDesc": "Betalingsgegevens worden volledig door LemonSqueezy verwerkt. De Extensie ontvangt of bewaart nooit uw creditcardinformatie.",
       "gmailIntegration": "Gmail Integratie",
-      "inboxsdkDesc": "De Extensie gebruikt InboxSDK (https://www.inboxsdk.com/) om te integreren met de Gmail-interface. InboxSDK is een bibliotheek die de Extensie helpt om met de Gmail UI te communiceren om de zijbalk weer te geven en e-mailcontacten te detecteren. InboxSDK verzamelt, verzendt of bewaart geen e-mailgegevens."
+      "inboxsdkDesc": "De Extensie gebruikt InboxSDK (https://www.inboxsdk.com/) om te integreren met de Gmail-interface. InboxSDK is een bibliotheek die de Extensie helpt om met de Gmail UI te communiceren om de zijbalk weer te geven en e-mailcontacten te detecteren. InboxSDK verzamelt, verzendt of bewaart geen e-mailgegevens.",
+      "analytics": "Analytics",
+      "posthogIntro": "De Extensie gebruikt PostHog (https://posthog.com/) voor anonieme gebruiksanalyses. PostHog helpt ons te begrijpen hoe de extensie wordt gebruikt en problemen te identificeren. Verzamelde gegevens omvatten:",
+      "posthog1": "Anonieme gebruikers-ID (willekeurige UUID, niet gekoppeld aan uw identiteit)",
+      "posthog2": "Functiegebruiksgebeurtenissen (bijv. \"e-mail gelogd\", \"record aangemaakt\")",
+      "posthog3": "Foutrapporten voor debugging (geen persoonlijke gegevens of e-mailinhoud)",
+      "posthogPolicy": "PostHog Privacybeleid:",
+      "optOut": "Uitschakelen:",
+      "optOutDesc": "U kunt analytics op elk moment uitschakelen in Instellingen > Account > Privacy."
     },
     "dataSharing": {
       "title": "Gegevens Delen met Derden",
@@ -532,7 +540,7 @@
       "yourOdoo": "Uw Odoo Instantie:",
       "yourOdooDesc": "De Extensie stuurt API-verzoeken naar de Odoo-instantie URL die u configureert om records op te halen en aan te maken",
       "lemonDesc": "Alleen voor abonnementsbeheer (e-mail, abonnementsstatus, betalingsverwerking)",
-      "googleAnalyticsDesc": "Anonieme gebruiksstatistieken (functiegebruik, fouten). Geen PII of e-mail/Odoo-inhoud.",
+      "posthogDesc": "Anonieme gebruiksstatistieken (functiegebruik, fouten). Geen PII of e-mail/Odoo-inhoud. U kunt uitschakelen in Instellingen > Account > Privacy.",
       "doesNot": "De Extensie doet NIET:",
       "notSell": "Uw gegevens verkopen aan gegevensmakelaars",
       "notAdvertising": "Gegevens delen voor reclamedoeleinden",

@@ -76,7 +76,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Política de Privacidad</h1>
-            <p class="last-updated"><span>Última actualización</span>: January 16, 2026</p>
+            <p class="last-updated"><span>Última actualización</span>: January 25, 2026</p>
 
             <section class="policy-section">
                 <h2>Resumen</h2>
@@ -147,6 +147,16 @@
 
                 <h3>InboxSDK (<span>Integración con Gmail</span>)</h3>
                 <p>La Extensión usa InboxSDK (https://www.inboxsdk.com/) para integrarse con la interfaz de Gmail. InboxSDK es una librería que ayuda a la Extensión a interactuar con la UI de Gmail para mostrar la barra lateral y detectar contactos de email. InboxSDK no recopila, transmite ni almacena tus datos de email.</p>
+
+                <h3>PostHog (<span>Analíticas</span>)</h3>
+                <p>La Extensión usa PostHog (https://posthog.com/) para analíticas de uso anónimas. PostHog nos ayuda a entender cómo se usa la extensión e identificar problemas. Los datos recopilados incluyen:</p>
+                <ul>
+                    <li>ID de usuario anónimo (UUID aleatorio, no vinculado a tu identidad)</li>
+                    <li>Eventos de uso de funciones (ej: "email registrado", "registro creado")</li>
+                    <li>Reportes de errores para depuración (sin datos personales ni contenido de emails)</li>
+                </ul>
+                <p><strong>Política de Privacidad de PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
+                <p><strong>Desactivar:</strong> <span>Puedes desactivar las analíticas en cualquier momento en Configuración > Cuenta > Privacidad.</span></p>
             </section>
 
             <section class="policy-section">
@@ -156,7 +166,7 @@
                 <ul>
                     <li><strong>Tu Instancia de Odoo:</strong> <span>La Extensión envía peticiones API a la URL de instancia de Odoo que configuras para recuperar y crear registros</span></li>
                     <li><strong>LemonSqueezy:</strong> <span>Solo para gestión de suscripciones (email, estado de suscripción, procesamiento de pagos)</span></li>
-                    <li><strong>Google Analytics:</strong> <span>Estadísticas de uso anónimas (uso de funciones, errores). Sin PII ni contenido de email/Odoo.</span></li>
+                    <li><strong>PostHog:</strong> <span>Estadísticas de uso anónimas (uso de funciones, errores). Sin PII ni contenido de email/Odoo. Puedes desactivarlo en Configuración > Cuenta > Privacidad.</span></li>
                 </ul>
                 <p>La Extensión NO:</p>
                 <ul>

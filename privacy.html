@@ -76,7 +76,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Privacy Policy</h1>
-            <p class="last-updated"><span>Last updated</span>: January 16, 2026</p>
+            <p class="last-updated"><span>Last updated</span>: January 25, 2026</p>
 
             <section class="policy-section">
                 <h2>Overview</h2>
@@ -147,6 +147,16 @@
 
                 <h3>InboxSDK (<span>Gmail Integration</span>)</h3>
                 <p>The Extension uses InboxSDK (https://www.inboxsdk.com/) to integrate with Gmail's interface. InboxSDK is a library that helps the Extension interact with Gmail's UI to display the sidebar and detect email contacts. InboxSDK does not collect, transmit, or store your email data.</p>
+
+                <h3>PostHog (<span>Analytics</span>)</h3>
+                <p>The Extension uses PostHog (https://posthog.com/) for anonymous usage analytics. PostHog helps us understand how the extension is used and identify issues. Data collected includes:</p>
+                <ul>
+                    <li>Anonymous user ID (random UUID, not linked to your identity)</li>
+                    <li>Feature usage events (e.g., "email logged", "record created")</li>
+                    <li>Error reports for debugging (no personal data or email content)</li>
+                </ul>
+                <p><strong>PostHog Privacy Policy:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
+                <p><strong>Opt-out:</strong> <span>You can disable analytics at any time in Settings > Account > Privacy.</span></p>
             </section>
 
             <section class="policy-section">
@@ -156,7 +166,7 @@
                 <ul>
                     <li><strong>Your Odoo Instance:</strong> <span>The Extension sends API requests to the Odoo instance URL you configure to retrieve and create records</span></li>
                     <li><strong>LemonSqueezy:</strong> <span>Only for subscription management (email, subscription status, payment processing)</span></li>
-                    <li><strong>Google Analytics:</strong> <span>Anonymous usage statistics (feature usage, errors). No PII or email/Odoo content.</span></li>
+                    <li><strong>PostHog:</strong> <span>Anonymous usage statistics (feature usage, errors). No PII or email/Odoo content. You can opt-out in Settings > Account > Privacy.</span></li>
                 </ul>
                 <p>The Extension does NOT:</p>
                 <ul>

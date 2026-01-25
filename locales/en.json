@@ -523,7 +523,15 @@
       "important": "Important:",
       "importantDesc": "Payment data is handled entirely by LemonSqueezy. The Extension never receives or stores your credit card information.",
       "gmailIntegration": "Gmail Integration",
-      "inboxsdkDesc": "The Extension uses InboxSDK (https://www.inboxsdk.com/) to integrate with Gmail's interface. InboxSDK is a library that helps the Extension interact with Gmail's UI to display the sidebar and detect email contacts. InboxSDK does not collect, transmit, or store your email data."
+      "inboxsdkDesc": "The Extension uses InboxSDK (https://www.inboxsdk.com/) to integrate with Gmail's interface. InboxSDK is a library that helps the Extension interact with Gmail's UI to display the sidebar and detect email contacts. InboxSDK does not collect, transmit, or store your email data.",
+      "analytics": "Analytics",
+      "posthogIntro": "The Extension uses PostHog (https://posthog.com/) for anonymous usage analytics. PostHog helps us understand how the extension is used and identify issues. Data collected includes:",
+      "posthog1": "Anonymous user ID (random UUID, not linked to your identity)",
+      "posthog2": "Feature usage events (e.g., \"email logged\", \"record created\")",
+      "posthog3": "Error reports for debugging (no personal data or email content)",
+      "posthogPolicy": "PostHog Privacy Policy:",
+      "optOut": "Opt-out:",
+      "optOutDesc": "You can disable analytics at any time in Settings > Account > Privacy."
     },
     "dataSharing": {
       "title": "Third-Party Data Sharing",
@@ -532,7 +540,7 @@
       "yourOdoo": "Your Odoo Instance:",
       "yourOdooDesc": "The Extension sends API requests to the Odoo instance URL you configure to retrieve and create records",
       "lemonDesc": "Only for subscription management (email, subscription status, payment processing)",
-      "googleAnalyticsDesc": "Anonymous usage statistics (feature usage, errors). No PII or email/Odoo content.",
+      "posthogDesc": "Anonymous usage statistics (feature usage, errors). No PII or email/Odoo content. You can opt-out in Settings > Account > Privacy.",
       "doesNot": "The Extension does NOT:",
       "notSell": "Sell your data to data brokers",
       "notAdvertising": "Share data for advertising purposes",

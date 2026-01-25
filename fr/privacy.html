@@ -76,7 +76,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Politique de confidentialité</h1>
-            <p class="last-updated"><span>Dernière mise à jour</span>: January 16, 2026</p>
+            <p class="last-updated"><span>Dernière mise à jour</span>: January 25, 2026</p>
 
             <section class="policy-section">
                 <h2>Aperçu</h2>
@@ -147,6 +147,16 @@
 
                 <h3>InboxSDK (<span>Intégration Gmail</span>)</h3>
                 <p>L'Extension utilise InboxSDK (https://www.inboxsdk.com/) pour s'intégrer à l'interface Gmail. InboxSDK est une bibliothèque qui aide l'Extension à interagir avec l'interface Gmail pour afficher la barre latérale et détecter les contacts email. InboxSDK ne collecte, transmet ni stocke vos données email.</p>
+
+                <h3>PostHog (<span>Analytiques</span>)</h3>
+                <p>L'Extension utilise PostHog (https://posthog.com/) pour des analyses d'utilisation anonymes. PostHog nous aide à comprendre comment l'extension est utilisée et à identifier les problèmes. Les données collectées incluent:</p>
+                <ul>
+                    <li>ID utilisateur anonyme (UUID aléatoire, non lié à votre identité)</li>
+                    <li>Événements d'utilisation des fonctionnalités (ex: "email enregistré", "enregistrement créé")</li>
+                    <li>Rapports d'erreurs pour le débogage (aucune donnée personnelle ni contenu d'email)</li>
+                </ul>
+                <p><strong>Politique de Confidentialité de PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
+                <p><strong>Désactiver:</strong> <span>Vous pouvez désactiver les analytiques à tout moment dans Paramètres > Compte > Confidentialité.</span></p>
             </section>
 
             <section class="policy-section">
@@ -156,7 +166,7 @@
                 <ul>
                     <li><strong>Votre instance Odoo :</strong> <span>L'Extension envoie des requêtes API à l'URL Odoo que vous configurez pour récupérer et créer des enregistrements</span></li>
                     <li><strong>LemonSqueezy:</strong> <span>Uniquement pour la gestion des abonnements (email, statut d'abonnement, traitement des paiements)</span></li>
-                    <li><strong>Google Analytics:</strong> <span>Statistiques d'utilisation anonymes (utilisation des fonctionnalités, erreurs). Aucune PII ni contenu email/Odoo.</span></li>
+                    <li><strong>PostHog:</strong> <span>Statistiques d'utilisation anonymes (utilisation des fonctionnalités, erreurs). Aucune PII ni contenu email/Odoo. Vous pouvez désactiver dans Paramètres > Compte > Confidentialité.</span></li>
                 </ul>
                 <p>L'Extension NE fait PAS :</p>
                 <ul>

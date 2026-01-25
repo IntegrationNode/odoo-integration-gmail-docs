@@ -76,7 +76,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Privacybeleid</h1>
-            <p class="last-updated"><span>Laatst bijgewerkt</span>: January 16, 2026</p>
+            <p class="last-updated"><span>Laatst bijgewerkt</span>: January 25, 2026</p>
 
             <section class="policy-section">
                 <h2>Overzicht</h2>
@@ -147,6 +147,16 @@
 
                 <h3>InboxSDK (<span>Gmail Integratie</span>)</h3>
                 <p>De Extensie gebruikt InboxSDK (https://www.inboxsdk.com/) om te integreren met de Gmail-interface. InboxSDK is een bibliotheek die de Extensie helpt om met de Gmail UI te communiceren om de zijbalk weer te geven en e-mailcontacten te detecteren. InboxSDK verzamelt, verzendt of bewaart geen e-mailgegevens.</p>
+
+                <h3>PostHog (<span>Analytics</span>)</h3>
+                <p>De Extensie gebruikt PostHog (https://posthog.com/) voor anonieme gebruiksanalyses. PostHog helpt ons te begrijpen hoe de extensie wordt gebruikt en problemen te identificeren. Verzamelde gegevens omvatten:</p>
+                <ul>
+                    <li>Anonieme gebruikers-ID (willekeurige UUID, niet gekoppeld aan uw identiteit)</li>
+                    <li>Functiegebruiksgebeurtenissen (bijv. "e-mail gelogd", "record aangemaakt")</li>
+                    <li>Foutrapporten voor debugging (geen persoonlijke gegevens of e-mailinhoud)</li>
+                </ul>
+                <p><strong>PostHog Privacybeleid:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
+                <p><strong>Uitschakelen:</strong> <span>U kunt analytics op elk moment uitschakelen in Instellingen > Account > Privacy.</span></p>
             </section>
 
             <section class="policy-section">
@@ -156,7 +166,7 @@
                 <ul>
                     <li><strong>Uw Odoo Instantie:</strong> <span>De Extensie stuurt API-verzoeken naar de Odoo-instantie URL die u configureert om records op te halen en aan te maken</span></li>
                     <li><strong>LemonSqueezy:</strong> <span>Alleen voor abonnementsbeheer (e-mail, abonnementsstatus, betalingsverwerking)</span></li>
-                    <li><strong>Google Analytics:</strong> <span>Anonieme gebruiksstatistieken (functiegebruik, fouten). Geen PII of e-mail/Odoo-inhoud.</span></li>
+                    <li><strong>PostHog:</strong> <span>Anonieme gebruiksstatistieken (functiegebruik, fouten). Geen PII of e-mail/Odoo-inhoud. U kunt uitschakelen in Instellingen > Account > Privacy.</span></li>
                 </ul>
                 <p>De Extensie doet NIET:</p>
                 <ul>

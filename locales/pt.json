@@ -523,7 +523,15 @@
       "important": "Importante:",
       "importantDesc": "Os dados de pagamento são tratados inteiramente pelo LemonSqueezy. A Extensão nunca recebe ou armazena as informações do seu cartão de crédito.",
       "gmailIntegration": "Integração Gmail",
-      "inboxsdkDesc": "A Extensão usa InboxSDK (https://www.inboxsdk.com/) para integrar com a interface do Gmail. O InboxSDK é uma biblioteca que ajuda a Extensão a interagir com a interface do Gmail para exibir a barra lateral e detectar contatos de e-mail. O InboxSDK não coleta, transmite ou armazena seus dados de e-mail."
+      "inboxsdkDesc": "A Extensão usa InboxSDK (https://www.inboxsdk.com/) para integrar com a interface do Gmail. O InboxSDK é uma biblioteca que ajuda a Extensão a interagir com a interface do Gmail para exibir a barra lateral e detectar contatos de e-mail. O InboxSDK não coleta, transmite ou armazena seus dados de e-mail.",
+      "analytics": "Análises",
+      "posthogIntro": "A Extensão usa PostHog (https://posthog.com/) para análises de uso anônimas. O PostHog nos ajuda a entender como a extensão é usada e identificar problemas. Os dados coletados incluem:",
+      "posthog1": "ID de usuário anônimo (UUID aleatório, não vinculado à sua identidade)",
+      "posthog2": "Eventos de uso de funcionalidades (ex: \"e-mail registrado\", \"registro criado\")",
+      "posthog3": "Relatórios de erros para depuração (sem dados pessoais ou conteúdo de e-mail)",
+      "posthogPolicy": "Política de Privacidade do PostHog:",
+      "optOut": "Desativar:",
+      "optOutDesc": "Você pode desativar as análises a qualquer momento em Configurações > Conta > Privacidade."
     },
     "dataSharing": {
       "title": "Compartilhamento de Dados com Terceiros",
@@ -532,7 +540,7 @@
       "yourOdoo": "Sua Instância Odoo:",
       "yourOdooDesc": "A Extensão envia solicitações de API para a URL da instância Odoo que você configura para recuperar e criar registros",
       "lemonDesc": "Apenas para gerenciamento de assinaturas (e-mail, status da assinatura, processamento de pagamentos)",
-      "googleAnalyticsDesc": "Estatísticas de uso anônimas (uso de recursos, erros). Sem PII ou conteúdo de e-mail/Odoo.",
+      "posthogDesc": "Estatísticas de uso anônimas (uso de recursos, erros). Sem PII ou conteúdo de e-mail/Odoo. Você pode desativar em Configurações > Conta > Privacidade.",
       "doesNot": "A Extensão NÃO:",
       "notSell": "Vende seus dados para corretores de dados",
       "notAdvertising": "Compartilha dados para fins publicitários",
