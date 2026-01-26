@@ -645,6 +645,10 @@
       "initialRelease": "Rilascio Iniziale",
       "plusFeatures": "Funzionalità PLUS"
     },
+    "v0211": {
+      "attachments": "Logging Email con Allegati",
+      "attachmentsDesc": "Risolto un problema in cui il logging delle email con allegati falliva su Odoo 19+"
+    },
     "v0210": {
       "odoo191": "Compatibilità Odoo 19.1",
       "odoo191Desc": "Funziona perfettamente con l'ultima versione di Odoo",

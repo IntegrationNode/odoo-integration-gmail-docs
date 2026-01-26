@@ -645,6 +645,10 @@
       "initialRelease": "Eerste Release",
       "plusFeatures": "PLUS Functies"
     },
+    "v0211": {
+      "attachments": "E-mail Logging met Bijlagen",
+      "attachmentsDesc": "Probleem opgelost waarbij het loggen van e-mails met bijlagen mislukte op Odoo 19+"
+    },
     "v0210": {
       "odoo191": "Odoo 19.1 Compatibiliteit",
       "odoo191Desc": "Werkt naadloos met de nieuwste Odoo-versie",

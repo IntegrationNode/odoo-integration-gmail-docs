@@ -645,6 +645,10 @@
       "initialRelease": "Lanzamiento Inicial",
       "plusFeatures": "Funciones PLUS"
     },
+    "v0211": {
+      "attachments": "Registro de Emails con Adjuntos",
+      "attachmentsDesc": "Corregido un problema donde el registro de emails con adjuntos fallaba en Odoo 19+"
+    },
     "v0210": {
       "odoo191": "Compatibilidad Odoo 19.1",
       "odoo191Desc": "Funciona perfectamente con la última versión de Odoo",

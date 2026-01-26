@@ -645,6 +645,10 @@
       "initialRelease": "Erstveröffentlichung",
       "plusFeatures": "PLUS-Funktionen"
     },
+    "v0211": {
+      "attachments": "E-Mail-Protokollierung mit Anhängen",
+      "attachmentsDesc": "Ein Problem wurde behoben, bei dem die Protokollierung von E-Mails mit Anhängen bei Odoo 19+ fehlschlug"
+    },
     "v0210": {
       "odoo191": "Odoo 19.1 Kompatibilität",
       "odoo191Desc": "Funktioniert nahtlos mit der neuesten Odoo-Version",

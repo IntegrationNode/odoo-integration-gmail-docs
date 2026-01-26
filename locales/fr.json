@@ -645,6 +645,10 @@
       "initialRelease": "Version initiale",
       "plusFeatures": "Fonctionnalités PLUS"
     },
+    "v0211": {
+      "attachments": "Enregistrement d'Emails avec Pièces Jointes",
+      "attachmentsDesc": "Correction d'un problème où l'enregistrement d'emails avec pièces jointes échouait sur Odoo 19+"
+    },
     "v0210": {
       "odoo191": "Compatibilité Odoo 19.1",
       "odoo191Desc": "Fonctionne parfaitement avec la dernière version d'Odoo",
