@@ -189,6 +189,8 @@
       "logged4": "Data e hora",
       "logged5": "Todos os anexos (arquivos, imagens, PDFs)",
       "logged6": "Rodapé \"Registrado da Caixa de Entrada do Gmail\"",
+      "internalNoteTitle": "Registrado como Nota Interna:",
+      "internalNoteDesc": "Os e-mails são registrados como notas internas no chatter do Odoo. Isso significa que apenas usuários internos (funcionários) podem vê-los. Usuários do portal (clientes) NÃO verão os e-mails registrados. As notificações são enviadas apenas para seguidores internos do registro.",
       "duplicateTitle": "Detecção de Duplicados",
       "duplicateIntro": "A extensão tem duas camadas de detecção de duplicados:",
       "visualIndicator": "Indicador visual (0-6 horas)",

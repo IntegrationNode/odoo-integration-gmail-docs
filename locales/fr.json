@@ -189,6 +189,8 @@
       "logged4": "Date et heure",
       "logged5": "Toutes les pièces jointes (fichiers, images, PDFs)",
       "logged6": "Pied de page \"Enregistré depuis Gmail Inbox\"",
+      "internalNoteTitle": "Enregistré comme Note Interne :",
+      "internalNoteDesc": "Les emails sont enregistrés comme notes internes dans le chatter d'Odoo. Cela signifie que seuls les utilisateurs internes (employés) peuvent les voir. Les utilisateurs du portail (clients) NE verront PAS les emails enregistrés. Les notifications ne sont envoyées qu'aux abonnés internes de l'enregistrement.",
       "duplicateTitle": "Détection des doublons",
       "duplicateIntro": "L'extension dispose de deux niveaux de détection des doublons :",
       "visualIndicator": "Indicateur visuel (0-6 heures)",

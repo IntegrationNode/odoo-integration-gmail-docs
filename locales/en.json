@@ -189,6 +189,8 @@
       "logged4": "Date and time",
       "logged5": "All attachments (files, images, PDFs)",
       "logged6": "\"Logged from Gmail Inbox\" footer",
+      "internalNoteTitle": "Logged as Internal Note:",
+      "internalNoteDesc": "Emails are logged as internal notes in Odoo's chatter. This means only internal users (employees) can see them. Portal users (customers) will NOT see logged emails. Notifications are only sent to internal followers of the record.",
       "duplicateTitle": "Duplicate Detection",
       "duplicateIntro": "The extension has two layers of duplicate detection:",
       "visualIndicator": "Visual indicator (0-6 hours)",

@@ -189,6 +189,8 @@
       "logged4": "Data e ora",
       "logged5": "Tutti gli allegati (file, immagini, PDF)",
       "logged6": "Footer \"Registrato da Gmail Inbox\"",
+      "internalNoteTitle": "Registrato come Nota Interna:",
+      "internalNoteDesc": "Le email vengono registrate come note interne nel chatter di Odoo. Questo significa che solo gli utenti interni (dipendenti) possono vederle. Gli utenti del portale (clienti) NON vedranno le email registrate. Le notifiche vengono inviate solo ai follower interni del record.",
       "duplicateTitle": "Rilevamento Duplicati",
       "duplicateIntro": "L'estensione ha due livelli di rilevamento duplicati:",
       "visualIndicator": "Indicatore visivo (0-6 ore)",

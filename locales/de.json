@@ -189,6 +189,8 @@
       "logged4": "Datum und Uhrzeit",
       "logged5": "Alle Anhänge (Dateien, Bilder, PDFs)",
       "logged6": "\"Aus Gmail Inbox protokolliert\"-Fußzeile",
+      "internalNoteTitle": "Als interne Notiz protokolliert:",
+      "internalNoteDesc": "E-Mails werden als interne Notizen im Odoo-Chatter protokolliert. Das bedeutet, nur interne Benutzer (Mitarbeiter) können sie sehen. Portal-Benutzer (Kunden) sehen die protokollierten E-Mails NICHT. Benachrichtigungen werden nur an interne Follower des Datensatzes gesendet.",
       "duplicateTitle": "Duplikaterkennung",
       "duplicateIntro": "Die Erweiterung hat zwei Ebenen der Duplikaterkennung:",
       "visualIndicator": "Visueller Indikator (0-6 Stunden)",

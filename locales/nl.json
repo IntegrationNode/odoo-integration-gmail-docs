@@ -189,6 +189,8 @@
       "logged4": "Datum en tijd",
       "logged5": "Alle bijlagen (bestanden, afbeeldingen, PDF's)",
       "logged6": "\"Gelogd vanuit Gmail Inbox\" voettekst",
+      "internalNoteTitle": "Gelogd als Interne Notitie:",
+      "internalNoteDesc": "E-mails worden gelogd als interne notities in Odoo's chatter. Dit betekent dat alleen interne gebruikers (medewerkers) ze kunnen zien. Portal-gebruikers (klanten) zullen de gelogde e-mails NIET zien. Meldingen worden alleen verzonden naar interne volgers van het record.",
       "duplicateTitle": "Dubbele Detectie",
       "duplicateIntro": "De extensie heeft twee lagen van dubbele detectie:",
       "visualIndicator": "Visuele indicator (0-6 uur)",
