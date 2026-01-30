@@ -343,6 +343,16 @@
                         <li>Genereer de API-sleutel opnieuw indien nodig</li>
                         <li>Controleer of uw Odoo URL correct is (inclusief HTTPS)</li>
                     </ol>
+                    <h3>Machtigingspopup verschijnt niet (Self-Hosted Odoo)</h3>
+                    <p>Bij het verbinden met een zelf-gehoste Odoo-instantie (aangepaste URL) heeft Chrome extra machtigingen nodig. Als de machtigingspopup niet verschijnt:</p>
+                    <ol>
+                        <li><strong>Machtiging vereist</strong>: <span>Aangepaste Odoo-URLs (niet *.odoo.com) vereisen een extra Chrome-machtiging om te communiceren met uw server</span></li>
+                        <li><strong>Andere extensies kunnen popups blokkeren</strong>: <span>Adblockers, privacy-extensies of popup-blockers kunnen voorkomen dat het Chrome-machtigingsdialoog verschijnt</span></li>
+                        <li><strong>Oplossing</strong>: <span>Schakel tijdelijk andere extensies uit (vooral adblockers) en probeer opnieuw te verbinden. Schakel ze weer in nadat u de machtiging hebt verleend</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Opmerking:</strong> <span>Deze machtiging is slechts eenmalig vereist per Odoo-URL. Na het verlenen ervan werkt de extensie normaal met uw zelf-gehoste instantie.</span>
+                    </div>
                 </section>
 
                 <!-- FAQ Section -->

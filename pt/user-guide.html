@@ -343,6 +343,16 @@
                         <li>Regenere a chave API se necessário</li>
                         <li>Verifique se sua URL do Odoo está correta (incluindo HTTPS)</li>
                     </ol>
+                    <h3>O popup de permissões não aparece (Odoo Self-Hosted)</h3>
+                    <p>Ao conectar a uma instância Odoo self-hosted (URL personalizada), o Chrome requer permissões adicionais. Se o popup de permissões não aparecer:</p>
+                    <ol>
+                        <li><strong>Permissão necessária</strong>: <span>URLs Odoo personalizadas (não *.odoo.com) requerem uma permissão adicional do Chrome para comunicar com o seu servidor</span></li>
+                        <li><strong>Outras extensões podem bloquear popups</strong>: <span>Bloqueadores de anúncios, extensões de privacidade ou bloqueadores de popups podem impedir que o diálogo de permissões do Chrome apareça</span></li>
+                        <li><strong>Solução</strong>: <span>Desative temporariamente outras extensões (especialmente bloqueadores de anúncios) e tente conectar novamente. Reative-as após conceder a permissão</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Nota:</strong> <span>Esta permissão é necessária apenas uma vez por URL Odoo. Após concedê-la, a extensão funcionará normalmente com sua instância self-hosted.</span>
+                    </div>
                 </section>
 
                 <!-- FAQ Section -->

@@ -249,7 +249,17 @@
       "authFailed": "Erreur \"Échec de l'authentification\"",
       "authStep1": "Vérifiez que votre clé API est correcte dans Odoo → Préférences → Sécurité du compte",
       "authStep2": "Régénérez la clé API si nécessaire",
-      "authStep3": "Vérifiez que votre URL Odoo est correcte (incluant HTTPS)"
+      "authStep3": "Vérifiez que votre URL Odoo est correcte (incluant HTTPS)",
+      "selfHostedPermissions": "Le popup de permissions n'apparaît pas (Odoo auto-hébergé)",
+      "selfHostedIntro": "Lors de la connexion à une instance Odoo auto-hébergée (URL personnalisée), Chrome nécessite des permissions supplémentaires. Si le popup de permissions n'apparaît pas :",
+      "permissionPopup": "Permission requise",
+      "permissionPopupDesc": "Les URLs Odoo personnalisées (autres que *.odoo.com) nécessitent une permission Chrome supplémentaire pour communiquer avec votre serveur",
+      "extensionConflict": "D'autres extensions peuvent bloquer les popups",
+      "extensionConflictDesc": "Les bloqueurs de publicités, extensions de confidentialité ou bloqueurs de popups peuvent empêcher l'affichage du dialogue de permissions Chrome",
+      "temporaryDisable": "Solution",
+      "temporaryDisableDesc": "Désactivez temporairement les autres extensions (notamment les bloqueurs de publicités) et réessayez de vous connecter. Réactivez-les après avoir accordé la permission",
+      "selfHostedNoteTitle": "Note :",
+      "selfHostedNoteDesc": "Cette permission n'est requise qu'une seule fois par URL Odoo. Après l'avoir accordée, l'extension fonctionnera normalement avec votre instance auto-hébergée."
     },
     "faq": {
       "title": "Questions fréquentes",

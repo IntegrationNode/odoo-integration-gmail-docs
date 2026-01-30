@@ -343,6 +343,16 @@
                         <li>Regenerate the API key if needed</li>
                         <li>Check that your Odoo URL is correct (including HTTPS)</li>
                     </ol>
+                    <h3>Permission Popup Not Appearing (Self-Hosted Odoo)</h3>
+                    <p>When connecting to a self-hosted Odoo instance (custom URL), Chrome requires additional permissions. If the permission popup doesn't appear:</p>
+                    <ol>
+                        <li><strong>Permission required</strong>: <span>Custom Odoo URLs (not *.odoo.com) require an additional Chrome permission to communicate with your server</span></li>
+                        <li><strong>Other extensions may block popups</strong>: <span>Ad blockers, privacy extensions, or popup blockers can prevent Chrome's permission dialog from appearing</span></li>
+                        <li><strong>Solution</strong>: <span>Temporarily disable other extensions (especially ad blockers) and try connecting again. Re-enable them after granting permission</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Note:</strong> <span>This permission is only required once per Odoo URL. After granting it, the extension will work normally with your self-hosted instance.</span>
+                    </div>
                 </section>
 
                 <!-- FAQ Section -->

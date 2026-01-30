@@ -249,7 +249,17 @@
       "authFailed": "\"Authenticatie Mislukt\" Fout",
       "authStep1": "Controleer of uw API-sleutel correct is in Odoo → Voorkeuren → Accountbeveiliging",
       "authStep2": "Genereer de API-sleutel opnieuw indien nodig",
-      "authStep3": "Controleer of uw Odoo URL correct is (inclusief HTTPS)"
+      "authStep3": "Controleer of uw Odoo URL correct is (inclusief HTTPS)",
+      "selfHostedPermissions": "Machtigingspopup verschijnt niet (Self-Hosted Odoo)",
+      "selfHostedIntro": "Bij het verbinden met een zelf-gehoste Odoo-instantie (aangepaste URL) heeft Chrome extra machtigingen nodig. Als de machtigingspopup niet verschijnt:",
+      "permissionPopup": "Machtiging vereist",
+      "permissionPopupDesc": "Aangepaste Odoo-URLs (niet *.odoo.com) vereisen een extra Chrome-machtiging om te communiceren met uw server",
+      "extensionConflict": "Andere extensies kunnen popups blokkeren",
+      "extensionConflictDesc": "Adblockers, privacy-extensies of popup-blockers kunnen voorkomen dat het Chrome-machtigingsdialoog verschijnt",
+      "temporaryDisable": "Oplossing",
+      "temporaryDisableDesc": "Schakel tijdelijk andere extensies uit (vooral adblockers) en probeer opnieuw te verbinden. Schakel ze weer in nadat u de machtiging hebt verleend",
+      "selfHostedNoteTitle": "Opmerking:",
+      "selfHostedNoteDesc": "Deze machtiging is slechts eenmalig vereist per Odoo-URL. Na het verlenen ervan werkt de extensie normaal met uw zelf-gehoste instantie."
     },
     "faq": {
       "title": "Veelgestelde Vragen",

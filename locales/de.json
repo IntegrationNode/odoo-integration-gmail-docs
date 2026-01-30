@@ -249,7 +249,17 @@
       "authFailed": "\"Authentifizierung fehlgeschlagen\"-Fehler",
       "authStep1": "Überprüfen Sie, ob Ihr API-Schlüssel in Odoo → Einstellungen → Kontosicherheit korrekt ist",
       "authStep2": "Generieren Sie den API-Schlüssel bei Bedarf neu",
-      "authStep3": "Überprüfen Sie, ob Ihre Odoo-URL korrekt ist (einschließlich HTTPS)"
+      "authStep3": "Überprüfen Sie, ob Ihre Odoo-URL korrekt ist (einschließlich HTTPS)",
+      "selfHostedPermissions": "Berechtigungs-Popup erscheint nicht (Self-Hosted Odoo)",
+      "selfHostedIntro": "Bei der Verbindung mit einer selbst gehosteten Odoo-Instanz (benutzerdefinierte URL) benötigt Chrome zusätzliche Berechtigungen. Wenn das Berechtigungs-Popup nicht erscheint:",
+      "permissionPopup": "Berechtigung erforderlich",
+      "permissionPopupDesc": "Benutzerdefinierte Odoo-URLs (nicht *.odoo.com) erfordern eine zusätzliche Chrome-Berechtigung zur Kommunikation mit Ihrem Server",
+      "extensionConflict": "Andere Erweiterungen können Popups blockieren",
+      "extensionConflictDesc": "Werbeblocker, Datenschutz-Erweiterungen oder Popup-Blocker können verhindern, dass der Chrome-Berechtigungsdialog angezeigt wird",
+      "temporaryDisable": "Lösung",
+      "temporaryDisableDesc": "Deaktivieren Sie vorübergehend andere Erweiterungen (insbesondere Werbeblocker) und versuchen Sie erneut, sich zu verbinden. Aktivieren Sie sie wieder, nachdem Sie die Berechtigung erteilt haben",
+      "selfHostedNoteTitle": "Hinweis:",
+      "selfHostedNoteDesc": "Diese Berechtigung ist nur einmal pro Odoo-URL erforderlich. Nach der Erteilung funktioniert die Erweiterung normal mit Ihrer selbst gehosteten Instanz."
     },
     "faq": {
       "title": "Häufig gestellte Fragen",

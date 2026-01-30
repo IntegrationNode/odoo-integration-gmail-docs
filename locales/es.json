@@ -401,7 +401,17 @@
       "authFailed": "Error \"Autenticación Fallida\"",
       "authStep1": "Verifica que tu API key es correcta en Odoo → Preferencias → Seguridad de la Cuenta",
       "authStep2": "Regenera la API key si es necesario",
-      "authStep3": "Comprueba que tu URL de Odoo es correcta (incluyendo HTTPS)"
+      "authStep3": "Comprueba que tu URL de Odoo es correcta (incluyendo HTTPS)",
+      "selfHostedPermissions": "El Popup de Permisos No Aparece (Odoo Self-Hosted)",
+      "selfHostedIntro": "Al conectar a una instancia de Odoo self-hosted (URL personalizada), Chrome requiere permisos adicionales. Si el popup de permisos no aparece:",
+      "permissionPopup": "Permiso requerido",
+      "permissionPopupDesc": "Las URLs de Odoo personalizadas (no *.odoo.com) requieren un permiso adicional de Chrome para comunicarse con tu servidor",
+      "extensionConflict": "Otras extensiones pueden bloquear popups",
+      "extensionConflictDesc": "Los bloqueadores de anuncios, extensiones de privacidad o bloqueadores de popups pueden impedir que aparezca el diálogo de permisos de Chrome",
+      "temporaryDisable": "Solución",
+      "temporaryDisableDesc": "Desactiva temporalmente otras extensiones (especialmente bloqueadores de anuncios) e intenta conectar de nuevo. Reactívalas después de conceder el permiso",
+      "selfHostedNoteTitle": "Nota:",
+      "selfHostedNoteDesc": "Este permiso solo se requiere una vez por URL de Odoo. Después de concederlo, la extensión funcionará normalmente con tu instancia self-hosted."
     },
     "faq": {
       "title": "Preguntas Frecuentes",

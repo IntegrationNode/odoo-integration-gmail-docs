@@ -343,6 +343,16 @@
                         <li>Generieren Sie den API-Schlüssel bei Bedarf neu</li>
                         <li>Überprüfen Sie, ob Ihre Odoo-URL korrekt ist (einschließlich HTTPS)</li>
                     </ol>
+                    <h3>Berechtigungs-Popup erscheint nicht (Self-Hosted Odoo)</h3>
+                    <p>Bei der Verbindung mit einer selbst gehosteten Odoo-Instanz (benutzerdefinierte URL) benötigt Chrome zusätzliche Berechtigungen. Wenn das Berechtigungs-Popup nicht erscheint:</p>
+                    <ol>
+                        <li><strong>Berechtigung erforderlich</strong>: <span>Benutzerdefinierte Odoo-URLs (nicht *.odoo.com) erfordern eine zusätzliche Chrome-Berechtigung zur Kommunikation mit Ihrem Server</span></li>
+                        <li><strong>Andere Erweiterungen können Popups blockieren</strong>: <span>Werbeblocker, Datenschutz-Erweiterungen oder Popup-Blocker können verhindern, dass der Chrome-Berechtigungsdialog angezeigt wird</span></li>
+                        <li><strong>Lösung</strong>: <span>Deaktivieren Sie vorübergehend andere Erweiterungen (insbesondere Werbeblocker) und versuchen Sie erneut, sich zu verbinden. Aktivieren Sie sie wieder, nachdem Sie die Berechtigung erteilt haben</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Hinweis:</strong> <span>Diese Berechtigung ist nur einmal pro Odoo-URL erforderlich. Nach der Erteilung funktioniert die Erweiterung normal mit Ihrer selbst gehosteten Instanz.</span>
+                    </div>
                 </section>
 
                 <!-- FAQ Section -->
