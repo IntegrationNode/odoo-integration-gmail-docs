@@ -657,6 +657,12 @@
       "initialRelease": "Erstveröffentlichung",
       "plusFeatures": "PLUS-Funktionen"
     },
+    "v0220": {
+      "selfHosted": "Self-hosted Verbindungen",
+      "selfHostedDesc": "Klarere Hinweise, wenn zusätzliche Berechtigungen für benutzerdefinierte Odoo-Instanzen erforderlich sind",
+      "security": "Sicherheitsverbesserungen",
+      "securityDesc": "Verbesserte URL-Validierung in der gesamten Seitenleiste"
+    },
     "v0211": {
       "attachments": "E-Mail-Protokollierung mit Anhängen",
       "attachmentsDesc": "Ein Problem wurde behoben, bei dem die Protokollierung von E-Mails mit Anhängen bei Odoo 19+ fehlschlug"

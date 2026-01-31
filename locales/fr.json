@@ -657,6 +657,12 @@
       "initialRelease": "Version initiale",
       "plusFeatures": "Fonctionnalités PLUS"
     },
+    "v0220": {
+      "selfHosted": "Connexions Self-hosted",
+      "selfHostedDesc": "Messages plus clairs lorsque des autorisations supplémentaires sont nécessaires pour les instances Odoo personnalisées",
+      "security": "Renforcement de la Sécurité",
+      "securityDesc": "Validation des URLs améliorée dans toute la barre latérale"
+    },
     "v0211": {
       "attachments": "Enregistrement d'Emails avec Pièces Jointes",
       "attachmentsDesc": "Correction d'un problème où l'enregistrement d'emails avec pièces jointes échouait sur Odoo 19+"

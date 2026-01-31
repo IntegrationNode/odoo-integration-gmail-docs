@@ -657,6 +657,12 @@
       "initialRelease": "Eerste Release",
       "plusFeatures": "PLUS Functies"
     },
+    "v0220": {
+      "selfHosted": "Self-hosted Verbindingen",
+      "selfHostedDesc": "Duidelijkere begeleiding wanneer extra machtigingen nodig zijn voor aangepaste Odoo-instanties",
+      "security": "Beveiligingsverbeteringen",
+      "securityDesc": "Verbeterde URL-validatie in de gehele zijbalk"
+    },
     "v0211": {
       "attachments": "E-mail Logging met Bijlagen",
       "attachmentsDesc": "Probleem opgelost waarbij het loggen van e-mails met bijlagen mislukte op Odoo 19+"

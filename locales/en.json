@@ -657,6 +657,12 @@
       "initialRelease": "Initial Release",
       "plusFeatures": "PLUS Features"
     },
+    "v0220": {
+      "selfHosted": "Self-hosted Connections",
+      "selfHostedDesc": "Clearer guidance when additional permissions are needed for custom Odoo instances",
+      "security": "Security Hardening",
+      "securityDesc": "Enhanced URL validation across the sidebar"
+    },
     "v0211": {
       "attachments": "Email Logging with Attachments",
       "attachmentsDesc": "Fixed an issue where logging emails with attachments failed on Odoo 19+"

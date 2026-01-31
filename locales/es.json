@@ -657,6 +657,12 @@
       "initialRelease": "Lanzamiento Inicial",
       "plusFeatures": "Funciones PLUS"
     },
+    "v0220": {
+      "selfHosted": "Conexiones Self-hosted",
+      "selfHostedDesc": "Mensajes más claros cuando se necesitan permisos adicionales para instancias Odoo personalizadas",
+      "security": "Mejoras de Seguridad",
+      "securityDesc": "Validación de URLs mejorada en todo el sidebar"
+    },
     "v0211": {
       "attachments": "Registro de Emails con Adjuntos",
       "attachmentsDesc": "Corregido un problema donde el registro de emails con adjuntos fallaba en Odoo 19+"
