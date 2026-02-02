@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pl">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6"></script>
@@ -13,11 +13,11 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aprenda a configurar OAuth para enviar emails do Odoo com seu domínio, e por que você não deve sincronizar todo seu Gmail com o Odoo.">
+    <meta name="description" content="Dowiedz się jak skonfigurować OAuth do wysyłania e-maili z Odoo z Twojej domeny i dlaczego nie powinieneś synchronizować całego Gmail z Odoo.">
     <meta name="robots" content="index, follow">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-gmail-domain-configuration.html">
+    <link rel="canonical" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-gmail-domain-configuration.html">
 
     <!-- Hreflang -->
     <link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html">
@@ -32,9 +32,9 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-gmail-domain-configuration.html">
-    <meta property="og:title" content="Integração Odoo Gmail: Guia de Configuração de Domínio Pessoal">
-    <meta property="og:description" content="Configure OAuth para envio de emails do Odoo com seu domínio. Aprenda a estratégia híbrida para caixas pessoais vs equipes.">
+    <meta property="og:url" content="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-gmail-domain-configuration.html">
+    <meta property="og:title" content="Integracja Odoo Gmail: Przewodnik konfiguracji własnej domeny">
+    <meta property="og:description" content="Skonfiguruj OAuth do wysyłania e-maili z Odoo z Twojej domeny. Poznaj strategię hybrydową dla osobistych i zespołowych skrzynek.">
     <meta property="og:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
     <meta property="og:site_name" content="Odoo Integration for Gmail">
     <meta property="article:published_time" content="2025-01-18">
@@ -42,11 +42,11 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Odoo Gmail: Configuração de Domínio Pessoal">
-    <meta name="twitter:description" content="Como enviar emails do Odoo com seu domínio sem criar caos na caixa de entrada.">
+    <meta name="twitter:title" content="Odoo Gmail: Konfiguracja własnej domeny">
+    <meta name="twitter:description" content="Jak wysyłać e-maile z Odoo z Twojej domeny bez tworzenia chaosu w skrzynce.">
     <meta name="twitter:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
 
-    <title>Integração Odoo Gmail: Usando seu domínio pessoal sem caos na caixa de entrada</title>
+    <title>Integracja Odoo Gmail: Używanie własnej domeny bez chaosu w skrzynce</title>
     <link rel="icon" type="image/png" href="https://integrationnode.github.io/odoo-integration-gmail-docs/favicon.png">
     <link rel="stylesheet" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fonts/outlined.css">
     <link rel="stylesheet" href="https://integrationnode.github.io/odoo-integration-gmail-docs/style.css">
@@ -85,17 +85,17 @@
     <header class="pricing-header">
         <div class="container">
             <nav class="nav">
-                <a href="../index.html" class="logo">Integração Odoo para Gmail</a>
+                <a href="../index.html" class="logo">Integracja Odoo dla Gmail</a>
                 <div class="nav-links">
-                    <a href="../index.html#features">Recursos</a>
-                    <a href="../pricing.html">Preços</a>
-                    <a href="../user-guide.html">Guia do Usuário</a>
+                    <a href="../index.html#features">Funkcje</a>
+                    <a href="../pricing.html">Cennik</a>
+                    <a href="../user-guide.html">Przewodnik</a>
                     <a href="../blog.html" class="active">Blog</a>
-                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary">Obter Extensão</a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary">Pobierz rozszerzenie</a>
                     <div class="lang-dropdown" id="lang-dropdown">
                         <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
                             <span class="material-symbols-outlined">language</span>
-                            <span class="lang-current">PT</span>
+                            <span class="lang-current">PL</span>
                             <span class="material-symbols-outlined arrow">expand_more</span>
                         </button>
                         <div class="lang-menu" role="menu"></div>
@@ -110,11 +110,11 @@
         <div class="container">
             <a href="../blog.html" class="article-back">
                 <span class="material-symbols-outlined">arrow_back</span>
-                <span>Voltar ao Blog</span>
+                <span>Powrót do bloga</span>
             </a>
-            <h1>Integração Odoo Gmail: Usando seu domínio pessoal sem caos na caixa de entrada</h1>
+            <h1>Integracja Odoo Gmail: Używanie własnej domeny bez chaosu w skrzynce</h1>
             <div class="article-meta">
-                <span class="article-date">18 de Janeiro de 2025</span>
+                <span class="article-date">18 stycznia 2025</span>
                 <span class="article-author">OdooIntegrations Team</span>
             </div>
         </div>
@@ -125,99 +125,99 @@
         <div class="container">
             <div class="article-content">
                 <!-- Intro -->
-                <p class="article-intro">Se você é usuário do Odoo, provavelmente já se perguntou: "Como posso enviar emails do Odoo e o cliente ver que sou eu (nome@minhaempresa.com) e não um bot genérico?" A resposta técnica é simples, mas a estratégia por trás é onde muitas empresas falham. Um erro de configuração pode levar a problemas de privacidade, emails perdidos ou uma caixa de entrada do Gmail onde as mensagens aparecem misteriosamente como "lidas".</p>
+                <p class="article-intro">Jeśli jesteś użytkownikiem Odoo, prawdopodobnie zadawałeś sobie pytanie: "Jak mogę wysyłać e-maile z Odoo, żeby klient widział, że to ode mnie (imie@mojafirma.com), a nie od jakiegoś generycznego bota?" Odpowiedź techniczna jest prosta, ale strategia za nią to miejsce, gdzie wiele firm popełnia błędy. Błąd konfiguracji może prowadzić do problemów z prywatnością, zgubionych e-maili lub skrzynki, gdzie wiadomości tajemniczo pojawiają się jako "przeczytane".</p>
 
                 <!-- Section 1: Sending -->
                 <h2>
                     <span class="section-number">1</span>
-                    <span>O envio: Sua identidade em primeiro lugar</span>
+                    <span>Wysyłanie: Twoja tożsamość na pierwszym miejscu</span>
                 </h2>
-                <p>Para que seus orçamentos e faturas saiam com sua assinatura e email pessoal, o Odoo oferece uma solução robusta: autenticação Google OAuth.</p>
-                <p>Diferente das configurações antigas com senhas SMTP, o OAuth permite conectar sua conta Google Workspace de forma segura sem compartilhar sua senha real.</p>
+                <p>Aby Twoje oferty i faktury wychodziły z Twoim podpisem i osobistym e-mailem, Odoo oferuje solidne rozwiązanie: uwierzytelnianie Google OAuth.</p>
+                <p>W przeciwieństwie do starych konfiguracji haseł SMTP, OAuth pozwala bezpiecznie połączyć konto Google Workspace bez udostępniania rzeczywistego hasła.</p>
 
-                <h3>Como funciona tecnicamente?</h3>
-                <p>Ao configurar um Servidor de Correio de Saída com OAuth, o Odoo utiliza um "Filtro DE". Quando você envia um email, o sistema procura um servidor que corresponda ao seu endereço de remetente.</p>
+                <h3>Jak to działa technicznie?</h3>
+                <p>Podczas konfiguracji serwera poczty wychodzącej z OAuth, Odoo używa "Filtra FROM". Gdy wysyłasz e-mail, system szuka serwera pasującego do Twojego adresu nadawcy.</p>
                 <ul>
-                    <li>O resultado: Seu cliente recebe o email diretamente de voce@suaempresa.com, aproveitando a reputação do seu domínio e evitando a pasta de Spam.</li>
+                    <li>Rezultat: Twój klient otrzymuje e-mail bezpośrednio od ty@twojafirma.com, wykorzystując reputację Twojej domeny i unikając folderu Spam.</li>
                 </ul>
-                <p>Até aqui, tudo perfeito. O problema surge quando queremos gerenciar as respostas.</p>
+                <p>Jak na razie dobrze. Problem pojawia się, gdy chcemy zarządzać odpowiedziami.</p>
 
                 <!-- Section 2: The Trap -->
                 <h2>
                     <span class="section-number">2</span>
-                    <span>A armadilha dos "Servidores de Entrada" pessoais</span>
+                    <span>Pułapka osobistych "serwerów przychodzących"</span>
                 </h2>
-                <p>É muito tentador pensar: "Se conectei minha saída, vou conectar também minha entrada para ter todos os emails no Odoo". Cuidado! Este é o erro mais comum.</p>
+                <p>Kuszące jest myślenie: "Skoro połączyłem wychodzące, połączę też przychodzące, żeby mieć wszystkie e-maile w Odoo". Uwaga! To najczęstszy błąd.</p>
 
                 <div class="warning-box">
                     <span class="material-symbols-outlined">warning</span>
-                    <span>A documentação oficial do Odoo adverte explicitamente que a função de Servidores de Correio de Entrada é projetada para caixas compartilhadas (como vendas@ ou suporte@), não para contas pessoais.</span>
+                    <span>Oficjalna dokumentacja Odoo wyraźnie ostrzega, że funkcja serwerów poczty przychodzącej jest zaprojektowana dla skrzynek współdzielonych (jak sprzedaz@ lub wsparcie@), nie dla osobistych kont.</span>
                 </div>
 
-                <h3>Por que você não deve conectar sua entrada pessoal diretamente?</h3>
+                <h3>Dlaczego nie powinieneś łączyć osobistej skrzynki bezpośrednio?</h3>
                 <ol>
                     <li>
-                        <strong>O problema dos "Lidos": </strong>
-                        <span>O Odoo não é um cliente de email tradicional. Se você configurar sua conta pessoal para o Odoo "puxar" os emails (via IMAP ou POP), o sistema pode baixar as mensagens e marcá-las como lidas no seu Gmail ou até arquivá-las. Imagine a frustração de entrar no seu Gmail e não saber o que é novo e o que não é.</span>
+                        <strong>Problem "Przeczytane": </strong>
+                        <span>Odoo nie jest tradycyjnym klientem pocztowym. Jeśli skonfigurujesz osobiste konto, żeby Odoo "pobierało" e-maile (przez IMAP lub POP), system może pobierać wiadomości i oznaczać je jako przeczytane w Twoim Gmail lub nawet archiwizować. Wyobraź sobie frustrację otwierania Gmail i nie wiedzieć, co jest nowe, a co nie.</span>
                     </li>
                     <li>
-                        <strong>Privacidade exposta: </strong>
-                        <span>No Odoo, os emails são anexados ao Chatter (o mural do documento). Se você sincronizar toda sua caixa, um email privado do RH ou uma reclamação confidencial pode acabar visível para qualquer colega com acesso ao sistema.</span>
+                        <strong>Wystawiona prywatność: </strong>
+                        <span>W Odoo e-maile dołączają do Chattera (ściany dokumentu). Jeśli zsynchronizujesz całą skrzynkę, prywatny e-mail HR lub poufna skarga może trafić do widoku każdego kolegi z dostępem do systemu.</span>
                     </li>
                     <li>
-                        <strong>Perda de poder: </strong>
-                        <span>O Gmail (especialmente com Gemini integrado) é uma ferramenta de gestão superior à visão de mensagens do Odoo. Ao forçar o trabalho dentro do Odoo, você perde as etiquetas, os filtros inteligentes e a IA do Google.</span>
+                        <strong>Utrata możliwości: </strong>
+                        <span>Gmail (szczególnie z zintegrowanym Gemini) jest lepszym narzędziem zarządzania niż widok wiadomości Odoo. Wymuszając pracę wewnątrz Odoo, tracisz etykiety, inteligentne filtry i AI Google.</span>
                     </li>
                 </ol>
 
                 <!-- Section 3: Hybrid Strategy -->
                 <h2>
                     <span class="section-number">3</span>
-                    <span>A Estratégia Híbrida: Centralizado vs. Individual</span>
+                    <span>Strategia hybrydowa: Scentralizowane vs indywidualne</span>
                 </h2>
-                <p>A forma correta de trabalhar é dividir a estratégia em dois fluxos:</p>
+                <p>Prawidłowy sposób pracy to podzielenie strategii na dwa przepływy:</p>
                 <ul>
                     <li>
-                        <strong>Para equipes (vendas@minhaempresa.com): </strong>
-                        <span>Aqui SIM usamos a integração nativa total. Queremos que qualquer email que chegue em "Vendas" crie automaticamente uma oportunidade no CRM. Não importa se é marcado como lido na caixa original, porque o objetivo é que a equipe gerencie pelo Odoo.</span>
+                        <strong>Dla zespołów (sprzedaz@mojafirma.com): </strong>
+                        <span>Tutaj UŻYWAMY pełnej natywnej integracji. Chcemy, żeby każdy e-mail przychodzący do "Sprzedaży" automatycznie tworzył szansę CRM. Nie ma znaczenia, czy zostanie oznaczony jako przeczytany w oryginalnej skrzynce, ponieważ celem jest zarządzanie zespołem z Odoo.</span>
                     </li>
                     <li>
-                        <strong>Para indivíduos (seunome@minhaempresa.com): </strong>
-                        <span>Aqui precisamos de seletividade. Você quer trabalhar no seu Gmail e enviar ao Odoo apenas os emails relevantes para o negócio (uma negociação, uma fatura assinada, etc.).</span>
+                        <strong>Dla osób indywidualnych (twojeimie@mojafirma.com): </strong>
+                        <span>Tutaj potrzebujemy selektywności. Chcesz pracować w swoim Gmail i wysyłać do Odoo tylko te e-maile istotne dla biznesu (negocjacja, podpisana faktura, itp.).</span>
                     </li>
                 </ul>
 
                 <!-- Section 4: The Solution -->
                 <h2>
                     <span class="section-number">4</span>
-                    <span>A Solução: Conecte o Gmail sem sair do Gmail</span>
+                    <span>Rozwiązanie: Połącz Gmail bez opuszczania Gmail</span>
                 </h2>
-                <p>Para contas pessoais, o Odoo recomenda não usar servidores de entrada, mas utilizar complementos ou extensões. O objetivo é que VOCÊ tenha o controle: você decide o que é salvo no CRM e o que fica no seu âmbito privado.</p>
-                <p>Embora o Odoo ofereça um complemento básico, muitos usuários encontram que o workflow pode ser melhorado para quem vive dentro do navegador Chrome e precisa de agilidade.</p>
+                <p>Dla osobistych kont Odoo zaleca nieużywanie serwerów przychodzących, ale używanie zamiast tego dodatków lub rozszerzeń. Celem jest, żebyś TY miał kontrolę: decydujesz co zostaje zapisane w CRM, a co pozostaje w Twojej prywatnej domenie.</p>
+                <p>Chociaż Odoo oferuje podstawowy dodatek, wielu użytkowników uważa, że przepływ pracy można ulepszyć dla tych, którzy żyją wewnątrz przeglądarki Chrome i potrzebują sprawności.</p>
 
-                <h3>Potencialize seu fluxo com Integração Odoo para Gmail</h3>
-                <p>Aqui entra em jogo nossa extensão para Chrome, projetada como uma alternativa poderosa para usuários exigentes. Diferente da sincronização cega de servidores, nossa extensão permite:</p>
+                <h3>Turbodoładuj swój przepływ pracy z Integracją Odoo dla Gmail</h3>
+                <p>Tu wchodzi nasze rozszerzenie Chrome, zaprojektowane jako potężna alternatywa dla wymagających użytkowników. W przeciwieństwie do ślepej synchronizacji serwerów, nasze rozszerzenie pozwala:</p>
                 <ul>
                     <li>
-                        <strong>Manter seu Gmail limpo: </strong>
-                        <span>Seus emails continuam sendo seus. Não alteramos o status de "não lido" da sua caixa de entrada.</span>
+                        <strong>Zachowaj czysty Gmail: </strong>
+                        <span>Twoje e-maile pozostają Twoje. Nie zmieniamy statusu "nieprzeczytane" Twojej skrzynki.</span>
                     </li>
                     <li>
-                        <strong>Conexão Seletiva: </strong>
-                        <span>Recebeu um email importante de um cliente? Com um único clique do seu navegador, envie-o para a ficha correspondente no Odoo.</span>
+                        <strong>Selektywne połączenie: </strong>
+                        <span>Masz ważny e-mail od klienta? Jednym kliknięciem z przeglądarki wyślij go do odpowiedniego rekordu w Odoo.</span>
                     </li>
                     <li>
-                        <strong>Contexto Instantâneo: </strong>
-                        <span>Visualize dados do Odoo diretamente no seu Gmail sem ter que trocar de aba constantemente.</span>
+                        <strong>Natychmiastowy kontekst: </strong>
+                        <span>Przeglądaj dane Odoo bezpośrednio w Gmail bez ciągłego przełączania kart.</span>
                     </li>
                 </ul>
-                <p>Deixe o Odoo gerenciar os dados da empresa e o Gmail gerenciar sua comunicação pessoal, usando nossa extensão como a ponte perfeita entre os dois mundos.</p>
+                <p>Niech Odoo zarządza danymi firmowymi, a Gmail zarządza Twoją osobistą komunikacją, używając naszego rozszerzenia jako idealnego mostu między oboma światami.</p>
 
                 <!-- CTA -->
                 <div class="article-cta">
-                    <h3>Pronto para experimentar?</h3>
-                    <p>Conecte seu Gmail ao Odoo em segundos com nossa extensão Chrome.</p>
-                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-primary btn-lg">Experimente a extensão grátis</a>
+                    <h3>Gotowy to wypróbować?</h3>
+                    <p>Połącz swój Gmail z Odoo w kilka sekund naszym rozszerzeniem Chrome.</p>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-primary btn-lg">Wypróbuj rozszerzenie za darmo</a>
                 </div>
             </div>
         </div>
@@ -228,30 +228,30 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Integração Odoo para Gmail</h4>
-                    <p><span>Criado por</span> <strong>OdooIntegrations Team</strong></p>
+                    <h4>Integracja Odoo dla Gmail</h4>
+                    <p><span>Stworzone przez</span> <strong>OdooIntegrations Team</strong></p>
                 </div>
                 <div class="footer-section">
-                    <h4>Recursos</h4>
+                    <h4>Zasoby</h4>
                     <ul>
-                        <li><a href="../index.html">Início</a></li>
-                        <li><a href="../pricing.html">Preços</a></li>
-                        <li><a href="../user-guide.html">Guia do Usuário</a></li>
-                        <li><a href="../changelog.html">Changelog</a></li>
-                        <li><a href="../comparison.html">Comparação</a></li>
+                        <li><a href="../index.html">Strona główna</a></li>
+                        <li><a href="../pricing.html">Cennik</a></li>
+                        <li><a href="../user-guide.html">Przewodnik użytkownika</a></li>
+                        <li><a href="../changelog.html">Historia zmian</a></li>
+                        <li><a href="../comparison.html">Porównanie</a></li>
                         <li><a href="../blog.html">Blog</a></li>
-                        <li><a href="../privacy.html">Política de Privacidade</a></li>
-                        <li><a href="mailto:odoointegrations.team@gmail.com">Suporte</a></li>
+                        <li><a href="../privacy.html">Polityka prywatności</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Wsparcie</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Legal</h4>
-                    <p class="small-text">Não afiliado à Odoo S.A. ou Google LLC.</p>
-                    <p class="small-text">Odoo é uma marca registrada da Odoo S.A.</p>
+                    <h4>Informacje prawne</h4>
+                    <p class="small-text">Niezwiązane z Odoo S.A. ani Google LLC.</p>
+                    <p class="small-text">Odoo jest znakiem towarowym Odoo S.A.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>2025 IntegrationNode. Todos os direitos reservados.</p>
+                <p>2025 IntegrationNode. Wszelkie prawa zastrzeżone.</p>
             </div>
         </div>
     </footer>
