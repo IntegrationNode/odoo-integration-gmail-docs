@@ -171,7 +171,13 @@
         "settings": "Instellingenpaneel",
         "settingsDesc": "Pas zichtbare secties aan",
         "quoteLevels": "Citaatniveaus",
-        "quoteLevelsDesc": "Bepaal hoeveel gespreksgeschiedenis wordt opgenomen bij het loggen"
+        "quoteLevelsDesc": "Bepaal hoeveel gespreksgeschiedenis wordt opgenomen bij het loggen",
+        "grouping": "Record Groepering",
+        "groupingDesc": "Groepeer opportunities, taken en tickets op fase of status",
+        "emailParticipants": "E-maildeelnemers",
+        "emailParticipantsDesc": "Bekijk Odoo-contactinformatie van alle e-maildeelnemers",
+        "recentActivities": "Recente Activiteiten",
+        "recentActivitiesDesc": "Bekijk recente berichten uit Odoo-gesprekken voor elk contact"
       }
     },
     "emailLogging": {
@@ -402,6 +408,9 @@
       "feature5": "Gerelateerde contacten per domein",
       "feature6": "Pas zichtbare secties aan",
       "feature7": "Prestatie-inzichten",
+      "feature8": "Records groeperen op fase",
+      "feature9": "E-maildeelnemersinfo",
+      "feature10": "Recente activiteiten",
       "cta": "Upgraden naar PLUS"
     },
     "teamQuestion": "Teamprijzen nodig?",
@@ -442,6 +451,9 @@
       "feature5": "Pas zichtbare secties aan",
       "feature6": "Prestatie-inzichten & statistieken",
       "feature7": "Prioriteits e-mail ondersteuning",
+      "feature8": "<strong>Records groeperen op fase</strong>/status",
+      "feature9": "E-maildeelnemersinformatie vanuit Odoo",
+      "feature10": "Recente activiteiten uit Odoo-gesprekken",
       "cta": "Upgraden naar PLUS"
     },
     "comparison": {
@@ -459,7 +471,10 @@
       "relatedContacts": "Gerelateerde contacten met functietitels",
       "customization": "Aanpassing & Inzichten",
       "financialInsights": "Financiële Inzichten",
-      "customizeSections": "Pas zichtbare secties aan"
+      "customizeSections": "Pas zichtbare secties aan",
+      "groupByStage": "Records groeperen op fase/status",
+      "emailParticipants": "E-maildeelnemersinfo",
+      "recentActivities": "Recente activiteiten"
     },
     "cta": {
       "title": "Klaar om uw Gmail-Odoo workflow te versnellen?",
@@ -858,6 +873,7 @@
         "feature4": "Werkt op elke Odoo-instantie zonder codewijzigingen",
         "feature5": "Secties verbergen om gegevenslading te verminderen",
         "feature6": "Verbeterd e-mail loggen met bijlagen",
+        "feature7": "Records groeperen op fase en recente activiteiten bekijken",
         "cta": "Gratis Proberen"
       },
       "plugin": {

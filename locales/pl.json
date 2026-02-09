@@ -171,7 +171,13 @@
         "settings": "Panel ustawień",
         "settingsDesc": "Dostosuj widoczne sekcje",
         "quoteLevels": "Poziomy cytowania",
-        "quoteLevelsDesc": "Kontroluj ile historii rozmowy zawrzeć podczas logowania"
+        "quoteLevelsDesc": "Kontroluj ile historii rozmowy zawrzeć podczas logowania",
+        "grouping": "Grupowanie Rekordów",
+        "groupingDesc": "Grupuj szanse, zadania i zgłoszenia według etapu lub statusu",
+        "emailParticipants": "Uczestnicy E-maila",
+        "emailParticipantsDesc": "Zobacz informacje kontaktowe Odoo wszystkich uczestników e-maila",
+        "recentActivities": "Ostatnie Aktywności",
+        "recentActivitiesDesc": "Zobacz ostatnie wiadomości z konwersacji Odoo dla każdego kontaktu"
       }
     },
     "emailLogging": {
@@ -402,6 +408,9 @@
       "feature5": "Powiązane kontakty według domeny",
       "feature6": "Dostosuj widoczne sekcje",
       "feature7": "Informacje o wydajności",
+      "feature8": "Grupowanie rekordów według etapu",
+      "feature9": "Info o uczestnikach e-maila",
+      "feature10": "Ostatnie aktywności",
       "cta": "Ulepsz do PLUS"
     },
     "teamQuestion": "Potrzebujesz cen zespołowych?",
@@ -442,6 +451,9 @@
       "feature5": "Dostosuj widoczne sekcje",
       "feature6": "Informacje o wydajności i metryki",
       "feature7": "Priorytetowe wsparcie e-mailowe",
+      "feature8": "<strong>Grupowanie rekordów według etapu</strong>/statusu",
+      "feature9": "Informacje o uczestnikach e-maila z Odoo",
+      "feature10": "Ostatnie aktywności z konwersacji Odoo",
       "cta": "Ulepsz do PLUS"
     },
     "comparison": {
@@ -459,7 +471,10 @@
       "relatedContacts": "Powiązane kontakty ze stanowiskami",
       "customization": "Personalizacja i informacje",
       "financialInsights": "Informacje finansowe",
-      "customizeSections": "Dostosuj widoczne sekcje"
+      "customizeSections": "Dostosuj widoczne sekcje",
+      "groupByStage": "Grupowanie rekordów według etapu/statusu",
+      "emailParticipants": "Info o uczestnikach e-maila",
+      "recentActivities": "Ostatnie aktywności"
     },
     "cta": {
       "title": "Gotowy na turbodoładowanie przepływu pracy Gmail-Odoo?",
@@ -858,6 +873,7 @@
         "feature4": "Działa na każdej instancji Odoo bez zmian w kodzie",
         "feature5": "Ukryj sekcje, aby zmniejszyć obciążenie danych",
         "feature6": "Ulepszone logowanie e-maili z załącznikami",
+        "feature7": "Grupowanie rekordów według etapu i przeglądanie ostatnich aktywności",
         "cta": "Wypróbuj za darmo"
       },
       "plugin": {

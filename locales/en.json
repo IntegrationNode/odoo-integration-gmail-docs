@@ -171,7 +171,13 @@
         "settings": "Settings Panel",
         "settingsDesc": "Customize visible sections",
         "quoteLevels": "Quote Levels",
-        "quoteLevelsDesc": "Control how much conversation history to include when logging"
+        "quoteLevelsDesc": "Control how much conversation history to include when logging",
+        "grouping": "Record Grouping",
+        "groupingDesc": "Group opportunities, tasks, and tickets by stage or status",
+        "emailParticipants": "Email Participants",
+        "emailParticipantsDesc": "View Odoo contact information for all email participants",
+        "recentActivities": "Recent Activities",
+        "recentActivitiesDesc": "See recent messages from Odoo's conversations for each contact"
       }
     },
     "emailLogging": {
@@ -402,6 +408,9 @@
       "feature5": "Related contacts by domain",
       "feature6": "Customize visible sections",
       "feature7": "Performance insights",
+      "feature8": "Group records by stage",
+      "feature9": "Email participants info",
+      "feature10": "Recent activities",
       "cta": "Upgrade to PLUS"
     },
     "teamQuestion": "Need team pricing?",
@@ -442,6 +451,9 @@
       "feature5": "Customize visible sections",
       "feature6": "Performance insights & metrics",
       "feature7": "Priority email support",
+      "feature8": "<strong>Group records by stage</strong>/status",
+      "feature9": "Email participants info from Odoo",
+      "feature10": "Recent activities from Odoo's conversations",
       "cta": "Upgrade to PLUS"
     },
     "comparison": {
@@ -459,7 +471,10 @@
       "relatedContacts": "Related contacts with job titles",
       "customization": "Customization & Insights",
       "financialInsights": "Financial Insights",
-      "customizeSections": "Customize visible sections"
+      "customizeSections": "Customize visible sections",
+      "groupByStage": "Group records by stage/status",
+      "emailParticipants": "Email participants info",
+      "recentActivities": "Recent activities"
     },
     "cta": {
       "title": "Ready to supercharge your Gmail-Odoo workflow?",
@@ -858,6 +873,7 @@
         "feature4": "Works on any Odoo instance without code changes",
         "feature5": "Hide sections to reduce data load",
         "feature6": "Enhanced email logging with attachments",
+        "feature7": "Group records by stage and view recent activities",
         "cta": "Try It Free"
       },
       "plugin": {

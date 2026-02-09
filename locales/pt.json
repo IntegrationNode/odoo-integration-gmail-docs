@@ -171,7 +171,13 @@
         "settings": "Painel de Configurações",
         "settingsDesc": "Personalize as seções visíveis",
         "quoteLevels": "Níveis de Citação",
-        "quoteLevelsDesc": "Controle quanto histórico de conversa incluir no registro"
+        "quoteLevelsDesc": "Controle quanto histórico de conversa incluir no registro",
+        "grouping": "Agrupamento de Registros",
+        "groupingDesc": "Agrupe oportunidades, tarefas e tickets por etapa ou estado",
+        "emailParticipants": "Participantes do Email",
+        "emailParticipantsDesc": "Ver informações de contacto Odoo de todos os participantes do email",
+        "recentActivities": "Atividades Recentes",
+        "recentActivitiesDesc": "Ver mensagens recentes das conversas do Odoo para cada contacto"
       }
     },
     "emailLogging": {
@@ -402,6 +408,9 @@
       "feature5": "Contatos relacionados por domínio",
       "feature6": "Personalizar seções visíveis",
       "feature7": "Insights de desempenho",
+      "feature8": "Agrupar registros por etapa",
+      "feature9": "Info dos participantes do email",
+      "feature10": "Atividades recentes",
       "cta": "Atualizar para PLUS"
     },
     "teamQuestion": "Precisa de preços para equipe?",
@@ -442,6 +451,9 @@
       "feature5": "Personalizar seções visíveis",
       "feature6": "Insights e métricas de desempenho",
       "feature7": "Suporte por e-mail prioritário",
+      "feature8": "<strong>Agrupar registros por etapa</strong>/estado",
+      "feature9": "Informações dos participantes do email a partir do Odoo",
+      "feature10": "Atividades recentes das conversas do Odoo",
       "cta": "Atualizar para PLUS"
     },
     "comparison": {
@@ -459,7 +471,10 @@
       "relatedContacts": "Contatos relacionados com cargos",
       "customization": "Personalização e Insights",
       "financialInsights": "Insights Financeiros",
-      "customizeSections": "Personalizar seções visíveis"
+      "customizeSections": "Personalizar seções visíveis",
+      "groupByStage": "Agrupar registros por etapa/estado",
+      "emailParticipants": "Info dos participantes do email",
+      "recentActivities": "Atividades recentes"
     },
     "cta": {
       "title": "Pronto para turbinar seu workflow Gmail-Odoo?",
@@ -858,6 +873,7 @@
         "feature4": "Funciona em qualquer instância Odoo sem alterações no código",
         "feature5": "Ocultar seções para reduzir carregamento de dados",
         "feature6": "Registro de e-mail aprimorado com anexos",
+        "feature7": "Agrupar registros por etapa e ver atividades recentes",
         "cta": "Experimente Grátis"
       },
       "plugin": {

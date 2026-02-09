@@ -171,7 +171,13 @@
         "settings": "Pannello Impostazioni",
         "settingsDesc": "Personalizza le sezioni visibili",
         "quoteLevels": "Livelli di Citazione",
-        "quoteLevelsDesc": "Controlla quanta cronologia della conversazione includere nel logging"
+        "quoteLevelsDesc": "Controlla quanta cronologia della conversazione includere nel logging",
+        "grouping": "Raggruppamento dei Record",
+        "groupingDesc": "Raggruppa opportunità, attività e ticket per fase o stato",
+        "emailParticipants": "Partecipanti Email",
+        "emailParticipantsDesc": "Visualizza le informazioni di contatto Odoo di tutti i partecipanti email",
+        "recentActivities": "Attività Recenti",
+        "recentActivitiesDesc": "Visualizza i messaggi recenti dalle conversazioni Odoo per ogni contatto"
       }
     },
     "emailLogging": {
@@ -402,6 +408,9 @@
       "feature5": "Contatti correlati per dominio",
       "feature6": "Personalizza sezioni visibili",
       "feature7": "Approfondimenti prestazioni",
+      "feature8": "Raggruppare i record per fase",
+      "feature9": "Info partecipanti email",
+      "feature10": "Attività recenti",
       "cta": "Passa a PLUS"
     },
     "teamQuestion": "Hai bisogno di prezzi per team?",
@@ -442,6 +451,9 @@
       "feature5": "Personalizza sezioni visibili",
       "feature6": "Approfondimenti e metriche prestazioni",
       "feature7": "Supporto email prioritario",
+      "feature8": "<strong>Raggruppare i record per fase</strong>/stato",
+      "feature9": "Informazioni dei partecipanti email da Odoo",
+      "feature10": "Attività recenti dalle conversazioni di Odoo",
       "cta": "Passa a PLUS"
     },
     "comparison": {
@@ -459,7 +471,10 @@
       "relatedContacts": "Contatti correlati con titoli di lavoro",
       "customization": "Personalizzazione e Approfondimenti",
       "financialInsights": "Approfondimenti Finanziari",
-      "customizeSections": "Personalizza sezioni visibili"
+      "customizeSections": "Personalizza sezioni visibili",
+      "groupByStage": "Raggruppare i record per fase/stato",
+      "emailParticipants": "Info partecipanti email",
+      "recentActivities": "Attività recenti"
     },
     "cta": {
       "title": "Pronto a potenziare il tuo workflow Gmail-Odoo?",
@@ -858,6 +873,7 @@
         "feature4": "Funziona su qualsiasi istanza Odoo senza modifiche al codice",
         "feature5": "Nascondi sezioni per ridurre il carico dati",
         "feature6": "Logging email migliorato con allegati",
+        "feature7": "Raggruppare per fase e visualizzare attività recenti",
         "cta": "Provalo Gratis"
       },
       "plugin": {

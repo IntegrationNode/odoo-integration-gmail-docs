@@ -171,7 +171,13 @@
         "settings": "Einstellungspanel",
         "settingsDesc": "Sichtbare Abschnitte anpassen",
         "quoteLevels": "Zitatebenen",
-        "quoteLevelsDesc": "Steuern Sie den Konversationsverlauf beim Protokollieren"
+        "quoteLevelsDesc": "Steuern Sie den Konversationsverlauf beim Protokollieren",
+        "grouping": "Datensatz-Gruppierung",
+        "groupingDesc": "Gruppieren Sie Opportunities, Aufgaben und Tickets nach Phase oder Status",
+        "emailParticipants": "E-Mail-Teilnehmer",
+        "emailParticipantsDesc": "Odoo-Kontaktinformationen aller E-Mail-Teilnehmer anzeigen",
+        "recentActivities": "Letzte Aktivitäten",
+        "recentActivitiesDesc": "Aktuelle Nachrichten aus Odoo-Konversationen für jeden Kontakt anzeigen"
       }
     },
     "emailLogging": {
@@ -402,6 +408,9 @@
       "feature5": "Zugehörige Kontakte nach Domain",
       "feature6": "Sichtbare Abschnitte anpassen",
       "feature7": "Leistungseinblicke",
+      "feature8": "Datensätze nach Phase gruppieren",
+      "feature9": "E-Mail-Teilnehmer-Infos",
+      "feature10": "Letzte Aktivitäten",
       "cta": "Auf PLUS upgraden"
     },
     "teamQuestion": "Team-Preise benötigt?",
@@ -442,6 +451,9 @@
       "feature5": "Sichtbare Abschnitte anpassen",
       "feature6": "Leistungseinblicke und Metriken",
       "feature7": "Prioritäts-E-Mail-Support",
+      "feature8": "<strong>Datensätze nach Phase</strong>/Status gruppieren",
+      "feature9": "E-Mail-Teilnehmer-Informationen aus Odoo",
+      "feature10": "Letzte Aktivitäten aus Odoo-Konversationen",
       "cta": "Auf PLUS upgraden"
     },
     "comparison": {
@@ -459,7 +471,10 @@
       "relatedContacts": "Zugehörige Kontakte mit Berufsbezeichnung",
       "customization": "Anpassung und Einblicke",
       "financialInsights": "Finanzielle Einblicke",
-      "customizeSections": "Sichtbare Abschnitte anpassen"
+      "customizeSections": "Sichtbare Abschnitte anpassen",
+      "groupByStage": "Datensätze nach Phase/Status gruppieren",
+      "emailParticipants": "E-Mail-Teilnehmer-Infos",
+      "recentActivities": "Letzte Aktivitäten"
     },
     "cta": {
       "title": "Bereit, Ihren Gmail-Odoo-Workflow zu verbessern?",
@@ -875,6 +890,7 @@
         "feature4": "Funktioniert auf jeder Odoo-Instanz ohne Code-Änderungen",
         "feature5": "Abschnitte ausblenden zur Reduzierung der Datenlast",
         "feature6": "Verbesserte E-Mail-Protokollierung mit Anhängen",
+        "feature7": "Datensätze nach Phase gruppieren und letzte Aktivitäten anzeigen",
         "cta": "Kostenlos Testen"
       },
       "plugin": {

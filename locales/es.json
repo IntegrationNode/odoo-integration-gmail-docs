@@ -169,6 +169,9 @@
       "feature5": "Contactos relacionados por dominio",
       "feature6": "Personalizar secciones visibles",
       "feature7": "Métricas de rendimiento",
+      "feature8": "Agrupar registros por etapa",
+      "feature9": "Info de participantes del email",
+      "feature10": "Actividades recientes",
       "cta": "Actualizar a PLUS"
     },
     "teamQuestion": "¿Necesitas precios para equipos?",
@@ -209,6 +212,9 @@
       "feature5": "Personalizar secciones visibles",
       "feature6": "Métricas e información de rendimiento",
       "feature7": "Soporte por email prioritario",
+      "feature8": "<strong>Agrupar registros por etapa</strong>/estado",
+      "feature9": "Información de participantes del email desde Odoo",
+      "feature10": "Actividades recientes de las conversaciones de Odoo",
       "cta": "Actualizar a PLUS"
     },
     "comparison": {
@@ -226,7 +232,10 @@
       "relatedContacts": "Contactos relacionados con cargos",
       "customization": "Personalización e Información",
       "financialInsights": "Información Financiera",
-      "customizeSections": "Personalizar secciones visibles"
+      "customizeSections": "Personalizar secciones visibles",
+      "groupByStage": "Agrupar registros por etapa/estado",
+      "emailParticipants": "Info de participantes del email",
+      "recentActivities": "Actividades recientes"
     },
     "cta": {
       "title": "¿Listo para potenciar tu flujo Gmail-Odoo?",
@@ -323,7 +332,13 @@
         "settings": "Panel de Configuración",
         "settingsDesc": "Personaliza las secciones visibles",
         "quoteLevels": "Niveles de Citas",
-        "quoteLevelsDesc": "Controla cuánto historial incluir al registrar emails"
+        "quoteLevelsDesc": "Controla cuánto historial incluir al registrar emails",
+        "grouping": "Agrupación de Registros",
+        "groupingDesc": "Agrupa oportunidades, tareas y tickets por etapa o estado",
+        "emailParticipants": "Participantes del Email",
+        "emailParticipantsDesc": "Ver información de contacto en Odoo de todos los participantes del email",
+        "recentActivities": "Actividades Recientes",
+        "recentActivitiesDesc": "Ver mensajes recientes de las conversaciones de Odoo para cada contacto"
       }
     },
     "emailLogging": {
@@ -858,6 +873,7 @@
         "feature4": "Funciona en cualquier instancia Odoo sin cambios de código",
         "feature5": "Oculta secciones para reducir carga de datos",
         "feature6": "Registro de emails mejorado con adjuntos",
+        "feature7": "Agrupar registros por etapa y ver actividades recientes",
         "cta": "Probar Gratis"
       },
       "plugin": {
