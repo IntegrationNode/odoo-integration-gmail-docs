@@ -657,6 +657,18 @@
       "initialRelease": "Lançamento Inicial",
       "plusFeatures": "Recursos PLUS"
     },
+    "v0300": {
+      "globalSidebar": "Sidebar Global",
+      "globalSidebarDesc": "Ícone persistente que permanece visível no Gmail, atualizando-se automaticamente ao trocar de email",
+      "grouping": "Agrupamento",
+      "groupingDesc": "Agrupe oportunidades, tarefas e tickets por projeto, etapa ou equipe (PLUS)",
+      "emailParticipants": "Participantes do Email",
+      "emailParticipantsDesc": "Veja e alterne entre todos os contatos de uma conversa (PLUS)",
+      "recentActivities": "Atividades Recentes",
+      "recentActivitiesDesc": "Veja o histórico completo de interações com um contato nas conversas do Odoo (PLUS)",
+      "uiRefresh": "Atualização da Interface",
+      "uiRefreshDesc": "Botões e tooltips redesenhados para uma interface mais limpa e consistente"
+    },
     "v0220": {
       "selfHosted": "Conexões Self-hosted",
       "selfHostedDesc": "Orientações mais claras quando são necessárias permissões adicionais para instâncias Odoo personalizadas",

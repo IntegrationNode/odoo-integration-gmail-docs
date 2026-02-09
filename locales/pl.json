@@ -657,6 +657,18 @@
       "initialRelease": "Pierwsze wydanie",
       "plusFeatures": "Funkcje PLUS"
     },
+    "v0300": {
+      "globalSidebar": "Globalny Panel Boczny",
+      "globalSidebarDesc": "Trwała ikona panelu bocznego, która pozostaje widoczna w Gmailu i automatycznie aktualizuje się przy zmianie e-maila",
+      "grouping": "Grupowanie",
+      "groupingDesc": "Grupuj szanse, zadania i zgłoszenia według projektu, etapu lub zespołu (PLUS)",
+      "emailParticipants": "Uczestnicy E-maila",
+      "emailParticipantsDesc": "Przeglądaj i przełączaj się między wszystkimi kontaktami w konwersacji (PLUS)",
+      "recentActivities": "Ostatnie Aktywności",
+      "recentActivitiesDesc": "Przeglądaj pełną historię interakcji z kontaktem z konwersacji Odoo (PLUS)",
+      "uiRefresh": "Odświeżenie Interfejsu",
+      "uiRefreshDesc": "Przeprojektowane przyciski i podpowiedzi dla czystszego, bardziej spójnego interfejsu"
+    },
     "v0220": {
       "selfHosted": "Połączenia samodzielnie hostowane",
       "selfHostedDesc": "Jaśniejsze wskazówki gdy wymagane są dodatkowe uprawnienia dla niestandardowych instancji Odoo",

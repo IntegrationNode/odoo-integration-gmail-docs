@@ -657,6 +657,18 @@
       "initialRelease": "Eerste Release",
       "plusFeatures": "PLUS Functies"
     },
+    "v0300": {
+      "globalSidebar": "Globale Zijbalk",
+      "globalSidebarDesc": "Persistent pictogram dat zichtbaar blijft in Gmail en automatisch wordt bijgewerkt wanneer u van e-mail wisselt",
+      "grouping": "Groepering",
+      "groupingDesc": "Groepeer kansen, taken en tickets op project, fase of team (PLUS)",
+      "emailParticipants": "E-maildeelnemers",
+      "emailParticipantsDesc": "Bekijk en schakel tussen alle contacten in een gesprek (PLUS)",
+      "recentActivities": "Recente Activiteiten",
+      "recentActivitiesDesc": "Bekijk de volledige interactiegeschiedenis met een contact vanuit Odoo's gesprekken (PLUS)",
+      "uiRefresh": "UI-vernieuwing",
+      "uiRefreshDesc": "Opnieuw ontworpen knoppen en tooltips voor een schonere, consistentere interface"
+    },
     "v0220": {
       "selfHosted": "Self-hosted Verbindingen",
       "selfHostedDesc": "Duidelijkere begeleiding wanneer extra machtigingen nodig zijn voor aangepaste Odoo-instanties",
