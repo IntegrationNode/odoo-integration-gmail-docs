@@ -672,6 +672,16 @@
       "initialRelease": "Version initiale",
       "plusFeatures": "Fonctionnalités PLUS"
     },
+    "v0310": {
+      "duplicateDetection": "Détection des doublons",
+      "duplicateDetectionDesc": "Détection intelligente des doublons lors de l'enregistrement des emails, indiquant qui l'a déjà enregistré",
+      "emailLogging": "Enregistrement d'emails",
+      "emailLoggingDesc": "Les emails enregistrés apparaissent désormais correctement dans les Activités Récentes",
+      "currencySymbol": "Symbole de devise",
+      "currencySymbolDesc": "Correction de l'affichage de la devise lors du regroupement des opportunités par étape",
+      "odoo19Api": "API Odoo 19.1",
+      "odoo19ApiDesc": "Correction des problèmes de compatibilité avec l'API JSON d'Odoo 19.1"
+    },
     "v0300": {
       "globalSidebar": "Sidebar Global",
       "globalSidebarDesc": "Icône persistante qui reste visible dans Gmail, se mettant à jour automatiquement lorsque vous changez d'email",

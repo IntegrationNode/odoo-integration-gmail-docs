@@ -672,6 +672,16 @@
       "initialRelease": "Erstveröffentlichung",
       "plusFeatures": "PLUS-Funktionen"
     },
+    "v0310": {
+      "duplicateDetection": "Duplikaterkennung",
+      "duplicateDetectionDesc": "Intelligente Duplikaterkennung beim E-Mail-Logging, zeigt an wer es bereits protokolliert hat",
+      "emailLogging": "E-Mail-Protokollierung",
+      "emailLoggingDesc": "Protokollierte E-Mails erscheinen jetzt korrekt in den letzten Aktivitäten",
+      "currencySymbol": "Währungssymbol",
+      "currencySymbolDesc": "Währungsanzeige beim Gruppieren von Opportunities nach Phase korrigiert",
+      "odoo19Api": "Odoo 19.1 API",
+      "odoo19ApiDesc": "Kompatibilitätsprobleme mit der JSON-API von Odoo 19.1 behoben"
+    },
     "v0300": {
       "globalSidebar": "Globale Seitenleiste",
       "globalSidebarDesc": "Persistentes Symbol, das in Gmail sichtbar bleibt und sich beim Wechseln von E-Mails automatisch aktualisiert",

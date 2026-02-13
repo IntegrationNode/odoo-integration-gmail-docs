@@ -672,6 +672,16 @@
       "initialRelease": "Eerste Release",
       "plusFeatures": "PLUS Functies"
     },
+    "v0310": {
+      "duplicateDetection": "Duplicaatdetectie",
+      "duplicateDetectionDesc": "Slimme duplicaatdetectie bij het loggen van e-mails, toont wie het al heeft gelogd",
+      "emailLogging": "E-mail logging",
+      "emailLoggingDesc": "Gelogde e-mails verschijnen nu correct in Recente Activiteiten",
+      "currencySymbol": "Valutasymbool",
+      "currencySymbolDesc": "Valutaweergave bij het groeperen van kansen op fase gecorrigeerd",
+      "odoo19Api": "Odoo 19.1 API",
+      "odoo19ApiDesc": "Compatibiliteitsproblemen met de JSON API van Odoo 19.1 opgelost"
+    },
     "v0300": {
       "globalSidebar": "Globale Zijbalk",
       "globalSidebarDesc": "Persistent pictogram dat zichtbaar blijft in Gmail en automatisch wordt bijgewerkt wanneer u van e-mail wisselt",

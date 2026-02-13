@@ -672,6 +672,16 @@
       "initialRelease": "Rilascio Iniziale",
       "plusFeatures": "Funzionalità PLUS"
     },
+    "v0310": {
+      "duplicateDetection": "Rilevamento duplicati",
+      "duplicateDetectionDesc": "Rilevamento intelligente dei duplicati durante la registrazione delle email, mostrando chi l'ha già registrata",
+      "emailLogging": "Registrazione email",
+      "emailLoggingDesc": "Le email registrate ora appaiono correttamente nelle Attività Recenti",
+      "currencySymbol": "Simbolo valuta",
+      "currencySymbolDesc": "Corretta la visualizzazione della valuta nel raggruppamento delle opportunità per fase",
+      "odoo19Api": "API Odoo 19.1",
+      "odoo19ApiDesc": "Corretti problemi di compatibilità con l'API JSON di Odoo 19.1"
+    },
     "v0300": {
       "globalSidebar": "Sidebar Globale",
       "globalSidebarDesc": "Icona persistente che rimane visibile in Gmail, aggiornandosi automaticamente quando cambi email",

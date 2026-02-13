@@ -672,6 +672,16 @@
       "initialRelease": "Pierwsze wydanie",
       "plusFeatures": "Funkcje PLUS"
     },
+    "v0310": {
+      "duplicateDetection": "Wykrywanie duplikatów",
+      "duplicateDetectionDesc": "Inteligentne wykrywanie duplikatów podczas rejestrowania e-maili, pokazuje kto już je zarejestrował",
+      "emailLogging": "Rejestrowanie e-maili",
+      "emailLoggingDesc": "Zarejestrowane e-maile pojawiają się teraz poprawnie w Ostatnich Aktywnościach",
+      "currencySymbol": "Symbol waluty",
+      "currencySymbolDesc": "Poprawiono wyświetlanie waluty przy grupowaniu szans według etapu",
+      "odoo19Api": "Odoo 19.1 API",
+      "odoo19ApiDesc": "Naprawiono problemy z kompatybilnością z API JSON Odoo 19.1"
+    },
     "v0300": {
       "globalSidebar": "Globalny Panel Boczny",
       "globalSidebarDesc": "Trwała ikona panelu bocznego, która pozostaje widoczna w Gmailu i automatycznie aktualizuje się przy zmianie e-maila",

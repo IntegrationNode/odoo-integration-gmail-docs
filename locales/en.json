@@ -672,6 +672,16 @@
       "initialRelease": "Initial Release",
       "plusFeatures": "PLUS Features"
     },
+    "v0310": {
+      "duplicateDetection": "Duplicate Detection",
+      "duplicateDetectionDesc": "Smart duplicate detection when logging emails, showing who already logged it",
+      "emailLogging": "Email Logging",
+      "emailLoggingDesc": "Logged emails now appear correctly in Recent Activities",
+      "currencySymbol": "Currency Symbol",
+      "currencySymbolDesc": "Fixed currency display when grouping opportunities by stage",
+      "odoo19Api": "Odoo 19.1 API",
+      "odoo19ApiDesc": "Fixed compatibility issues with Odoo 19.1's JSON API"
+    },
     "v0300": {
       "globalSidebar": "Global Sidebar",
       "globalSidebarDesc": "Persistent sidebar icon that stays visible across Gmail, updating automatically when you switch emails",
