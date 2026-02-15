@@ -377,6 +377,21 @@
       "description": "Voeg nieuwe contacten toe aan Odoo direct vanuit Gmail. Context wordt automatisch vastgelegd uit e-mails.",
       "badge": "Kernfunctie"
     },
+    "companyTabs": {
+      "title": "Contact- & Bedrijfstabbladen",
+      "description": "Bekijk kansen, taken en tickets van het contact en hun bedrijf — alles op één plek.",
+      "badge": "PLUS Functie"
+    },
+    "recentActivities": {
+      "title": "Recente Activiteiten",
+      "description": "Bekijk de volledige gespreksgeschiedenis uit Odoo's chatter — e-mails en interne notities — direct in Gmail.",
+      "badge": "PLUS Functie"
+    },
+    "switchContacts": {
+      "title": "Wisselen tussen Contacten",
+      "description": "Klik op een deelnemer in de e-mail om de sidebar direct te wisselen en zijn Odoo-informatie te zien.",
+      "badge": "PLUS Functie"
+    },
     "setup": {
       "title": "Snelle Configuratie",
       "description": "Verbind met uw Odoo-instantie in seconden. Eenvoudige configuratie, krachtige resultaten.",

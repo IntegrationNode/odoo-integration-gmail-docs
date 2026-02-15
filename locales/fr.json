@@ -377,6 +377,21 @@
       "description": "Ajoutez de nouveaux contacts à Odoo directement depuis Gmail. Le contexte est automatiquement capturé des emails.",
       "badge": "Fonction de base"
     },
+    "companyTabs": {
+      "title": "Onglets Contact & Entreprise",
+      "description": "Consultez les opportunités, tâches et tickets du contact et de son entreprise — le tout au même endroit.",
+      "badge": "Fonction PLUS"
+    },
+    "recentActivities": {
+      "title": "Activités Récentes",
+      "description": "Consultez l'historique complet du chatter Odoo — emails et notes internes — directement dans Gmail.",
+      "badge": "Fonction PLUS"
+    },
+    "switchContacts": {
+      "title": "Basculer entre les contacts",
+      "description": "Cliquez sur un participant de l'email pour basculer le sidebar et voir ses informations Odoo instantanément.",
+      "badge": "Fonction PLUS"
+    },
     "setup": {
       "title": "Configuration rapide",
       "description": "Connectez-vous à votre instance Odoo en quelques secondes. Configuration simple, résultats puissants.",

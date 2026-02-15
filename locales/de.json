@@ -377,6 +377,21 @@
       "description": "Neue Kontakte direkt von Gmail zu Odoo hinzufügen. Kontext wird automatisch aus E-Mails erfasst.",
       "badge": "Kernfunktion"
     },
+    "companyTabs": {
+      "title": "Kontakt- & Firmen-Tabs",
+      "description": "Sehen Sie Chancen, Aufgaben und Tickets des Kontakts und seines Unternehmens — alles an einem Ort.",
+      "badge": "PLUS-Funktion"
+    },
+    "recentActivities": {
+      "title": "Letzte Aktivitäten",
+      "description": "Sehen Sie den vollständigen Gesprächsverlauf aus Odoos Chatter — E-Mails und interne Notizen — direkt in Gmail.",
+      "badge": "PLUS-Funktion"
+    },
+    "switchContacts": {
+      "title": "Zwischen Kontakten wechseln",
+      "description": "Klicken Sie auf einen Teilnehmer der E-Mail, um die Sidebar sofort umzuschalten und seine Odoo-Informationen zu sehen.",
+      "badge": "PLUS-Funktion"
+    },
     "setup": {
       "title": "Schnelle Einrichtung",
       "description": "In Sekunden mit Ihrer Odoo-Instanz verbinden. Einfache Konfiguration, leistungsstarke Ergebnisse.",
