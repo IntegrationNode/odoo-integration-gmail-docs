@@ -1,0 +1,47 @@
+name: Update CWS Stats
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch user count from shields.io
+        run: |
+          RESPONSE=$(curl -sf "https://img.shields.io/chrome-web-store/users/hfnfieecjinfkhbhpoigfnnddpfoeomm.json")
+          USERS=$(echo "$RESPONSE" | jq -r '.value')
+
+          if [ -z "$USERS" ] || [ "$USERS" = "null" ]; then
+            echo "Failed to fetch user count"
+            exit 1
+          fi
+
+          echo "USERS=$USERS" >> $GITHUB_ENV
+          echo "Fetched user count: $USERS"
+
+      - name: Update stats file
+        run: |
+          COUNTRIES=$(jq -r '.countries // 0' assets/data/cws-stats.json)
+          jq -n \
+            --arg users "$USERS" \
+            --argjson countries "$COUNTRIES" \
+            --arg updatedAt "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            '{ users: $users, countries: $countries, updatedAt: $updatedAt }' \
+            > assets/data/cws-stats.json
+
+      - name: Commit if changed
+        run: |
+          git diff --quiet assets/data/cws-stats.json && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/data/cws-stats.json
+          git commit -m "chore: update CWS stats ($USERS users)"
+          git push

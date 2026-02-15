@@ -372,6 +372,23 @@
         </div>
     </section>
 
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="social-proof-headline" data-t="socialProof.headline"></p>
+            <div class="social-proof-stats">
+                <div class="social-proof-stat">
+                    <span class="social-proof-number" id="cws-user-count">&mdash;</span>
+                    <span class="social-proof-label" data-t="socialProof.usersLabel"></span>
+                </div>
+                <div class="social-proof-stat" id="cws-countries-stat" style="display:none">
+                    <span class="social-proof-number" id="cws-country-count">&mdash;</span>
+                    <span class="social-proof-label" data-t="socialProof.countriesLabel"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Pricing Section -->
     <section class="pricing">
         <div class="container">
@@ -536,6 +553,8 @@
         });
     })();
     </script>
+    <!-- Social Proof -->
+    <script src="social-proof.js"></script>
     <!-- Regional Pricing Detection -->
     <script src="regional-pricing.js"></script>
 </body>

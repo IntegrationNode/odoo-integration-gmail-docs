@@ -971,6 +971,11 @@
       "seePricing": "Ver Precios"
     }
   },
+  "socialProof": {
+    "headline": "Empresas de todos los tamaños confían en nosotros para integrar Gmail con Odoo",
+    "usersLabel": "usuarios",
+    "countriesLabel": "países"
+  },
   "footer": {
     "title": "Integración de Odoo para Gmail",
     "builtBy": "Desarrollado por",
