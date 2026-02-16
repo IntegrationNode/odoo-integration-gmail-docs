@@ -2,13 +2,13 @@
   "meta": {
     "lang": "fr",
     "index": {
-      "title": "Intégration Odoo pour Gmail",
-      "description": "Intégration Odoo pour Gmail - Consultez vos contacts, créez des opportunités, tâches et tickets directement dans votre boîte Gmail. Extension Chrome pour une intégration CRM transparente.",
+      "title": "Gmail et Odoo : Extension Chrome d'Intégration Rapide",
+      "description": "Connectez Gmail et Odoo en quelques secondes. Extension Chrome 10-20x plus rapide que le plugin officiel. Consultez contacts, opportunités, tâches et tickets directement dans Gmail. Compatible Google Workspace.",
       "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/",
-      "ogTitle": "Intégration Odoo pour Gmail",
-      "ogDescription": "Transformez votre Gmail en une interface CRM puissante avec l'intégration Odoo. Consultez les contacts, créez des opportunités, tâches et tickets.",
-      "twitterTitle": "Intégration Odoo pour Gmail",
-      "twitterDescription": "Transformez votre Gmail en une interface CRM puissante avec l'intégration Odoo."
+      "ogTitle": "Gmail et Odoo : Extension Chrome d'Intégration Rapide",
+      "ogDescription": "Connectez Gmail et Odoo en quelques secondes. Consultez les contacts, créez des opportunités, tâches et tickets directement dans votre boîte Gmail.",
+      "twitterTitle": "Gmail et Odoo : Extension Chrome d'Intégration Rapide",
+      "twitterDescription": "Connectez Gmail et Odoo en quelques secondes. 10-20x plus rapide que le plugin officiel."
     },
     "pricing": {
       "title": "Tarifs - Intégration Odoo pour Gmail",
@@ -47,22 +47,22 @@
       "twitterDescription": "Découvrez comment nous traitons vos données et vos droits en matière de confidentialité."
     },
     "comparison": {
-      "title": "Alternative Odoo Gmail Plugin | Extension Chrome 10-20x Plus Rapide",
-      "description": "Vous cherchez une alternative au plugin Odoo Gmail ? Notre extension Chrome est 10-20x plus rapide, plus stable et fonctionne sur toute instance Odoo. Migrez en 2 minutes.",
+      "title": "Comparer les Solutions Gmail et Odoo - Guide 2026",
+      "description": "Comparatif des solutions pour connecter Gmail et Odoo. Extension Chrome vs plugin officiel : performance, stabilité, compatibilité Google Workspace. Migrez en 2 minutes.",
       "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/comparison.html",
-      "ogTitle": "Alternative Odoo Gmail Plugin | 10-20x Plus Rapide",
-      "ogDescription": "Comparez notre extension avec le plugin officiel Odoo. 10-20x plus rapide, connexion stable, fonctionne sur Odoo auto-hébergé sans modification de code.",
-      "twitterTitle": "Alternative Odoo Gmail Plugin | 10-20x Plus Rapide",
-      "twitterDescription": "Vous cherchez une intégration Odoo Gmail plus rapide ? Notre extension charge en 100-300ms vs 2-6 secondes. Migrez en 2 minutes."
+      "ogTitle": "Comparer les Solutions Gmail et Odoo - Guide 2026",
+      "ogDescription": "Comparatif complet : notre extension Chrome vs le plugin officiel Odoo Gmail. 10-20x plus rapide, connexion stable, compatible Google Workspace.",
+      "twitterTitle": "Comparer les Solutions Gmail et Odoo - Guide 2026",
+      "twitterDescription": "Extension Chrome vs plugin officiel Odoo Gmail. 10-20x plus rapide, compatible Google Workspace. Migrez en 2 minutes."
     },
     "alternative": {
-      "title": "Meilleure Alternative Odoo Gmail Plugin | Extension Chrome Rapide",
-      "description": "Vous cherchez une alternative au plugin Odoo Gmail ? Notre extension Chrome est 10-20x plus rapide, plus stable et fonctionne sur toute instance Odoo sans modification de code.",
+      "title": "Alternative au Plugin Gmail Odoo - 10x Plus Rapide",
+      "description": "Alternative au plugin officiel Gmail Odoo : extension Chrome 10-20x plus rapide, connexion stable, compatible Google Workspace et Odoo auto-hébergé. Migrez en 2 minutes.",
       "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/odoo-gmail-plugin-alternative.html",
-      "ogTitle": "Meilleure Alternative Odoo Gmail Plugin",
-      "ogDescription": "Fatigué des temps de chargement lents et des déconnexions ? Notre extension charge en 100-300ms et fonctionne sur toute instance Odoo.",
-      "twitterTitle": "Meilleure Alternative Odoo Gmail Plugin",
-      "twitterDescription": "10-20x plus rapide que le plugin officiel. Migrez en 2 minutes."
+      "ogTitle": "Alternative au Plugin Gmail Odoo - 10x Plus Rapide",
+      "ogDescription": "Fatigué des temps de chargement lents et des déconnexions ? Notre extension charge en 100-300ms et fonctionne avec Google Workspace et toute instance Odoo.",
+      "twitterTitle": "Alternative au Plugin Gmail Odoo - 10x Plus Rapide",
+      "twitterDescription": "10-20x plus rapide que le plugin officiel Gmail Odoo. Compatible Google Workspace. Migrez en 2 minutes."
     },
     "blog": {
       "title": "Blog - Intégration Odoo pour Gmail",

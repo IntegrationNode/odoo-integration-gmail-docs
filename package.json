@@ -4,7 +4,7 @@
   "description": "Documentation website for Odoo Integration for Gmail",
   "scripts": {
     "build:i18n": "static-i18n -l en -i en -i es -i fr -i de -i it -i pt -i nl -i pl -o dist --localesPath locales src",
-    "build": "npm run build:i18n && cp -r dist/* .",
+    "build": "npm run build:i18n && node scripts/patch-schemas.js && cp -r dist/* .",
     "watch": "static-i18n -l en -i en -i es -i fr -i de -i it -i pt -i nl -i pl -o dist src --watch"
   },
   "devDependencies": {
