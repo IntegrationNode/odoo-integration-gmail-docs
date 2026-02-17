@@ -327,6 +327,70 @@ a:hover {
     font-style: italic;
 }
 
+/* Compatibility Bar */
+.compatibility {
+    padding: var(--spacing-md) 0;
+    background: var(--color-bg-light);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.compatibility-title {
+    text-align: center;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-lighter);
+    margin-bottom: var(--spacing-sm);
+}
+
+.compatibility-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.compat-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.875rem;
+    background: var(--gray-50);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-3xl);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+    white-space: nowrap;
+}
+
+.compat-badge .material-symbols-outlined {
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+
+.compat-note {
+    font-size: 0.6875rem;
+    color: var(--color-text-lighter);
+    font-weight: 400;
+}
+.compat-divider {
+    width: 1px;
+    height: 1.25rem;
+    background: var(--color-border);
+}
+
+@media (max-width: 768px) {
+    .compatibility-badges {
+        gap: 0.5rem;
+    }
+
+    .compat-divider {
+        display: none;
+    }
+}
+
 /* Social Proof */
 .social-proof {
     padding: var(--spacing-lg) 0;

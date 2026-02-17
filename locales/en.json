@@ -337,6 +337,16 @@
     "getExtension": "Get Extension",
     "learnMore": "Learn More"
   },
+  "compatibility": {
+    "title": "Works with",
+    "odooVersions": "Odoo 14 – 19+",
+    "community": "Community",
+    "enterprise": "Enterprise",
+    "online": "Online",
+    "onlineNote": "(Custom plan)",
+    "odooSh": "Odoo.sh",
+    "selfHosted": "Self-Hosted"
+  },
   "features": {
     "title": "Key Features",
     "instant": {
