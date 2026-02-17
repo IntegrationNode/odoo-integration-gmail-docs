@@ -687,6 +687,12 @@
       "initialRelease": "Lanzamiento Inicial",
       "plusFeatures": "Funciones PLUS"
     },
+    "v0311": {
+      "emailDate": "Fecha del email",
+      "emailDateDesc": "La fecha original del email se preserva al registrarlo en el chatter de Odoo",
+      "contactDetection": "Detección de contacto",
+      "contactDetectionDesc": "Corregida la detección de contacto tras cambios en el DOM de Gmail (ej. al eliminar un mensaje de una conversación)"
+    },
     "v0310": {
       "duplicateDetection": "Detección de duplicados",
       "duplicateDetectionDesc": "Detección inteligente de duplicados al registrar emails, mostrando quién lo registró",

@@ -687,6 +687,12 @@
       "initialRelease": "Erstveröffentlichung",
       "plusFeatures": "PLUS-Funktionen"
     },
+    "v0311": {
+      "emailDate": "E-Mail-Datum",
+      "emailDateDesc": "Das ursprüngliche E-Mail-Datum wird jetzt beim Protokollieren im Odoo-Chatter beibehalten",
+      "contactDetection": "Kontakterkennung",
+      "contactDetectionDesc": "Kontakterkennung nach Gmail-DOM-Änderungen korrigiert (z.B. beim Löschen einer Nachricht aus einer Konversation)"
+    },
     "v0310": {
       "duplicateDetection": "Duplikaterkennung",
       "duplicateDetectionDesc": "Intelligente Duplikaterkennung beim E-Mail-Logging, zeigt an wer es bereits protokolliert hat",

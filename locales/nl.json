@@ -687,6 +687,12 @@
       "initialRelease": "Eerste Release",
       "plusFeatures": "PLUS Functies"
     },
+    "v0311": {
+      "emailDate": "E-maildatum",
+      "emailDateDesc": "De oorspronkelijke e-maildatum wordt nu behouden bij het loggen in Odoo chatter",
+      "contactDetection": "Contactdetectie",
+      "contactDetectionDesc": "Contactdetectie gecorrigeerd na Gmail DOM-wijzigingen (bijv. bij het verwijderen van een bericht uit een conversatie)"
+    },
     "v0310": {
       "duplicateDetection": "Duplicaatdetectie",
       "duplicateDetectionDesc": "Slimme duplicaatdetectie bij het loggen van e-mails, toont wie het al heeft gelogd",
