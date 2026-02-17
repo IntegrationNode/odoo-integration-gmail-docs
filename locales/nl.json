@@ -687,6 +687,10 @@
       "initialRelease": "Eerste Release",
       "plusFeatures": "PLUS Functies"
     },
+    "v0312": {
+      "attachments": "Bijlagen bij aanmaken records",
+      "attachmentsDesc": "E-mailbijlagen worden automatisch geüpload bij het aanmaken van taken, kansen en tickets"
+    },
     "v0311": {
       "emailDate": "E-maildatum",
       "emailDateDesc": "De oorspronkelijke e-maildatum wordt nu behouden bij het loggen in Odoo chatter",

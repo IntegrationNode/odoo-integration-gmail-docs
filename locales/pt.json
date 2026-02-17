@@ -687,6 +687,10 @@
       "initialRelease": "Lançamento Inicial",
       "plusFeatures": "Recursos PLUS"
     },
+    "v0312": {
+      "attachments": "Anexos na criação de registos",
+      "attachmentsDesc": "Os anexos do email são automaticamente carregados ao criar tarefas, oportunidades e tickets"
+    },
     "v0311": {
       "emailDate": "Data do email",
       "emailDateDesc": "A data original do email é agora preservada ao registar no chatter do Odoo",

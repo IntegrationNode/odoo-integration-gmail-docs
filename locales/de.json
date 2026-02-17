@@ -687,6 +687,10 @@
       "initialRelease": "Erstveröffentlichung",
       "plusFeatures": "PLUS-Funktionen"
     },
+    "v0312": {
+      "attachments": "Anhänge bei Datensatzerstellung",
+      "attachmentsDesc": "E-Mail-Anhänge werden beim Erstellen von Aufgaben, Opportunities und Tickets automatisch hochgeladen"
+    },
     "v0311": {
       "emailDate": "E-Mail-Datum",
       "emailDateDesc": "Das ursprüngliche E-Mail-Datum wird jetzt beim Protokollieren im Odoo-Chatter beibehalten",

@@ -687,6 +687,10 @@
       "initialRelease": "Version initiale",
       "plusFeatures": "Fonctionnalités PLUS"
     },
+    "v0312": {
+      "attachments": "Pièces jointes à la création",
+      "attachmentsDesc": "Les pièces jointes de l'email sont automatiquement téléversées lors de la création de tâches, opportunités et tickets"
+    },
     "v0311": {
       "emailDate": "Date de l'email",
       "emailDateDesc": "La date originale de l'email est désormais préservée lors de l'enregistrement dans le chatter Odoo",

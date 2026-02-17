@@ -687,6 +687,10 @@
       "initialRelease": "Initial Release",
       "plusFeatures": "PLUS Features"
     },
+    "v0312": {
+      "attachments": "Attachments on Record Creation",
+      "attachmentsDesc": "Email attachments are now automatically uploaded when creating tasks, opportunities, and tickets"
+    },
     "v0311": {
       "emailDate": "Email Date",
       "emailDateDesc": "Original email date is now preserved when logging to Odoo chatter",

@@ -687,6 +687,10 @@
       "initialRelease": "Pierwsze wydanie",
       "plusFeatures": "Funkcje PLUS"
     },
+    "v0312": {
+      "attachments": "Załączniki przy tworzeniu rekordów",
+      "attachmentsDesc": "Załączniki e-mail są automatycznie przesyłane podczas tworzenia zadań, szans i zgłoszeń"
+    },
     "v0311": {
       "emailDate": "Data e-maila",
       "emailDateDesc": "Oryginalna data e-maila jest teraz zachowywana podczas rejestrowania w chatterze Odoo",
