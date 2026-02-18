@@ -136,16 +136,6 @@
       "updateStep2": "Wybierz Wyloguj",
       "updateStep3": "Wprowadź nowe dane uwierzytelniające"
     },
-    "compatibility": {
-      "title": "Kompatybilny z",
-      "odooVersions": "Odoo 14 – 19+",
-      "community": "Community",
-      "enterprise": "Enterprise",
-      "online": "Online",
-      "onlineNote": "(Plan Custom)",
-      "odooSh": "Odoo.sh",
-      "selfHosted": "Self-Hosted"
-    },
     "features": {
       "title": "Przegląd funkcji",
       "freePlanTitle": "Plan FREE",
@@ -346,6 +336,16 @@
     "subtitle": "Przekształć swój Gmail w potężny interfejs CRM z bezproblemową integracją Odoo",
     "getExtension": "Pobierz rozszerzenie",
     "learnMore": "Dowiedz się więcej"
+  },
+  "compatibility": {
+    "title": "Kompatybilny z",
+    "odooVersions": "Odoo 14 – 19+",
+    "community": "Community",
+    "enterprise": "Enterprise",
+    "online": "Online",
+    "onlineNote": "(Plan Custom)",
+    "odooSh": "Odoo.sh",
+    "selfHosted": "Self-Hosted"
   },
   "features": {
     "title": "Kluczowe funkcje",

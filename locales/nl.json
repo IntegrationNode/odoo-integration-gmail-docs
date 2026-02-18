@@ -136,16 +136,6 @@
       "updateStep2": "Selecteer Uitloggen",
       "updateStep3": "Voer uw nieuwe inloggegevens in"
     },
-    "compatibility": {
-      "title": "Compatibel met",
-      "odooVersions": "Odoo 14 – 19+",
-      "community": "Community",
-      "enterprise": "Enterprise",
-      "online": "Online",
-      "onlineNote": "(Custom-plan)",
-      "odooSh": "Odoo.sh",
-      "selfHosted": "Zelf gehost"
-    },
     "features": {
       "title": "Functieoverzicht",
       "freePlanTitle": "GRATIS Abonnement",
@@ -346,6 +336,16 @@
     "subtitle": "Transformeer uw Gmail in een krachtige CRM-interface met naadloze Odoo-integratie",
     "getExtension": "Extensie Downloaden",
     "learnMore": "Meer Informatie"
+  },
+  "compatibility": {
+    "title": "Compatibel met",
+    "odooVersions": "Odoo 14 – 19+",
+    "community": "Community",
+    "enterprise": "Enterprise",
+    "online": "Online",
+    "onlineNote": "(Custom-plan)",
+    "odooSh": "Odoo.sh",
+    "selfHosted": "Zelf gehost"
   },
   "features": {
     "title": "Belangrijkste Functies",
