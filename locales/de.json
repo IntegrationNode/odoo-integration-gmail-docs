@@ -136,6 +136,16 @@
       "updateStep2": "Wählen Sie Abmelden",
       "updateStep3": "Geben Sie Ihre neuen Anmeldedaten ein"
     },
+    "compatibility": {
+      "title": "Kompatibel mit",
+      "odooVersions": "Odoo 14 – 19+",
+      "community": "Community",
+      "enterprise": "Enterprise",
+      "online": "Online",
+      "onlineNote": "(Custom-Plan)",
+      "odooSh": "Odoo.sh",
+      "selfHosted": "Selbst gehostet"
+    },
     "features": {
       "title": "Funktionsübersicht",
       "freePlanTitle": "KOSTENLOS-Plan",

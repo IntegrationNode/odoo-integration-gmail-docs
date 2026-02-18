@@ -136,6 +136,16 @@
       "updateStep2": "Seleziona Esci",
       "updateStep3": "Inserisci le tue nuove credenziali"
     },
+    "compatibility": {
+      "title": "Compatibile con",
+      "odooVersions": "Odoo 14 – 19+",
+      "community": "Community",
+      "enterprise": "Enterprise",
+      "online": "Online",
+      "onlineNote": "(Piano Custom)",
+      "odooSh": "Odoo.sh",
+      "selfHosted": "Self-Hosted"
+    },
     "features": {
       "title": "Panoramica Funzionalità",
       "freePlanTitle": "Piano FREE",

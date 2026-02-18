@@ -136,6 +136,16 @@
       "updateStep2": "Selecione Sair",
       "updateStep3": "Insira suas novas credenciais"
     },
+    "compatibility": {
+      "title": "Compatível com",
+      "odooVersions": "Odoo 14 – 19+",
+      "community": "Community",
+      "enterprise": "Enterprise",
+      "online": "Online",
+      "onlineNote": "(Plano Custom)",
+      "odooSh": "Odoo.sh",
+      "selfHosted": "Auto-hospedado"
+    },
     "features": {
       "title": "Visão Geral dos Recursos",
       "freePlanTitle": "Plano FREE",

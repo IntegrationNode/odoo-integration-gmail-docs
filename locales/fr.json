@@ -136,6 +136,16 @@
       "updateStep2": "Sélectionnez Se déconnecter",
       "updateStep3": "Entrez vos nouveaux identifiants"
     },
+    "compatibility": {
+      "title": "Compatible avec",
+      "odooVersions": "Odoo 14 – 19+",
+      "community": "Community",
+      "enterprise": "Enterprise",
+      "online": "Online",
+      "onlineNote": "(Plan Custom)",
+      "odooSh": "Odoo.sh",
+      "selfHosted": "Auto-hébergé"
+    },
     "features": {
       "title": "Aperçu des fonctionnalités",
       "freePlanTitle": "Plan GRATUIT",

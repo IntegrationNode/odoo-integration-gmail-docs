@@ -136,6 +136,16 @@
       "updateStep2": "Selecteer Uitloggen",
       "updateStep3": "Voer uw nieuwe inloggegevens in"
     },
+    "compatibility": {
+      "title": "Compatibel met",
+      "odooVersions": "Odoo 14 – 19+",
+      "community": "Community",
+      "enterprise": "Enterprise",
+      "online": "Online",
+      "onlineNote": "(Custom-plan)",
+      "odooSh": "Odoo.sh",
+      "selfHosted": "Zelf gehost"
+    },
     "features": {
       "title": "Functieoverzicht",
       "freePlanTitle": "GRATIS Abonnement",
