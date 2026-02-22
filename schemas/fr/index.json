@@ -1,71 +1,125 @@
-[
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Intégration Gmail et Odoo",
-        "description": "Extension Chrome qui connecte Gmail et Odoo. Consultez les contacts, créez des opportunités, tâches et tickets directement dans votre boîte Gmail. Compatible Google Workspace.",
-        "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/",
-        "image": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png",
-        "screenshot": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/demos/search-and-log-thumb.jpg",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Chrome",
-        "offers": {
-            "@type": "AggregateOffer",
-            "lowPrice": "0",
-            "highPrice": "19",
-            "priceCurrency": "USD",
-            "offerCount": "2"
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "SoftwareApplication",
+            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#software",
+            "name": "Intégration Gmail et Odoo",
+            "description": "Extension Chrome qui connecte Gmail et Odoo CRM. Consultez les contacts, opportunités, tâches et tickets. Enregistrez les emails avec pièces jointes. 10-20x plus rapide que le plugin officiel Odoo Gmail.",
+            "applicationCategory": "BusinessApplication",
+            "applicationSubCategory": "CRM Integration",
+            "operatingSystem": "Chrome Browser",
+            "browserRequirements": "Google Chrome 88+",
+            "datePublished": "2025-11-22",
+            "dateModified": "2026-02-22",
+            "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/",
+            "downloadUrl": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm",
+            "installUrl": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm",
+            "image": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png",
+            "screenshot": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/hero-screenshot.png",
+            "featureList": [
+                "Consulter les contacts Odoo dans Gmail",
+                "Opportunités CRM avec chiffre d'affaires et étape",
+                "Tâches projet avec statut",
+                "Tickets support avec priorité",
+                "Enregistrer les emails dans Odoo avec pièces jointes",
+                "Créer des contacts, opportunités, tâches depuis Gmail",
+                "Recherche en temps réel dans les enregistrements",
+                "Compatible Odoo.sh et auto-hébergé"
+            ],
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "name": "Plan Gratuit",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "description": "5 enregistrements par section, enregistrement d'emails basique"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Plan Plus",
+                    "price": "19",
+                    "priceCurrency": "USD",
+                    "priceValidUntil": "2026-12-31",
+                    "description": "50 enregistrements, recherche en temps réel, pièces jointes, support prioritaire"
+                }
+            ],
+            "author": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+            "publisher": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" }
         },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "ratingCount": "1"
+        {
+            "@type": "Organization",
+            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization",
+            "name": "IntegrationNode",
+            "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/",
+            "email": "odoointegrations.team@gmail.com",
+            "description": "Développeur d'outils de productivité pour les utilisateurs Odoo ERP"
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#website",
+            "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/",
+            "name": "Intégration Gmail et Odoo",
+            "description": "Site officiel de l'extension Chrome Gmail et Odoo",
+            "publisher": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+            "inLanguage": "fr"
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "L'intégration Gmail et Odoo est-elle gratuite ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Oui, l'extension propose un plan gratuit qui inclut la consultation des contacts, la création d'opportunités, tâches et tickets, et l'enregistrement d'emails. Le plan PLUS (19€/mois) ajoute la recherche en temps réel, plus d'enregistrements par section et des fonctionnalités avancées."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "L'extension fonctionne-t-elle avec Odoo auto-hébergé ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Oui, l'extension fonctionne avec Odoo.sh, Odoo Online et les instances auto-hébergées sans aucune modification de code. Entrez simplement votre URL Odoo et votre clé API pour vous connecter."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Quelle est la vitesse de l'extension Gmail et Odoo par rapport au plugin officiel ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "L'extension est 10-20x plus rapide que le plugin officiel Odoo Gmail. Les temps de chargement sont de 100-300ms contre 2-6 secondes avec le plugin officiel basé sur Apps Script."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Quelles versions d'Odoo sont compatibles ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "L'extension supporte Odoo version 14 et supérieures, y compris Odoo 15, 16, 17, 18 et 19. Elle fonctionne avec les éditions Community et Enterprise."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Que peut-on faire avec cette intégration Gmail et Odoo ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Vous pouvez consulter les informations de contact Odoo directement dans Gmail, créer et voir les opportunités CRM, gérer les tâches projet, traiter les tickets helpdesk et enregistrer les emails dans Odoo en un clic."
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Accueil",
+                    "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/"
+                }
+            ]
         }
-    },
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "L'intégration Gmail et Odoo est-elle gratuite ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oui, l'extension propose un plan gratuit qui inclut la consultation des contacts, la création d'opportunités, tâches et tickets, et l'enregistrement d'emails. Le plan PLUS (19\u20ac/mois) ajoute la recherche en temps réel, plus d'enregistrements par section et des fonctionnalités avancées."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "L'extension fonctionne-t-elle avec Odoo auto-hébergé ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oui, l'extension fonctionne avec Odoo.sh, Odoo Online et les instances auto-hébergées sans aucune modification de code. Entrez simplement votre URL Odoo et votre clé API pour vous connecter."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Quelle est la vitesse de l'extension Gmail et Odoo par rapport au plugin officiel ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "L'extension est 10-20x plus rapide que le plugin officiel Odoo Gmail. Les temps de chargement sont de 100-300ms contre 2-6 secondes avec le plugin officiel basé sur Apps Script."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Quelles versions d'Odoo sont compatibles ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "L'extension supporte Odoo version 14 et supérieures, y compris Odoo 15, 16, 17, 18 et 19. Elle fonctionne avec les éditions Community et Enterprise."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Que peut-on faire avec cette intégration Gmail et Odoo ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Vous pouvez consulter les informations de contact Odoo directement dans Gmail, créer et voir les opportunités CRM, gérer les tâches projet, traiter les tickets helpdesk et enregistrer les emails dans Odoo en un clic. Compatible avec Google Workspace."
-                }
-            }
-        ]
-    }
-]
+    ]
+}

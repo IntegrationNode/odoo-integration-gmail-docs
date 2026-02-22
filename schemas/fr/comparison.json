@@ -1,61 +1,84 @@
-[
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Comparatif des Solutions Gmail et Odoo",
-        "description": "Comparez notre extension Chrome avec le plugin officiel Odoo Gmail. Découvrez les différences en performance, fonctionnalités et compatibilité Google Workspace.",
-        "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/comparison.html",
-        "mainEntity": {
-            "@type": "SoftwareApplication",
-            "name": "Intégration Gmail et Odoo",
-            "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Chrome"
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/comparison.html#article",
+            "headline": "Comparatif Intégration Gmail Odoo : Extension Chrome vs Plugin Officiel",
+            "description": "Comparaison détaillée entre l'extension Chrome Odoo Integration for Gmail et le plugin officiel Odoo Gmail. Comparez vitesse, fonctionnalités, compatibilité et prix.",
+            "datePublished": "2025-11-22",
+            "dateModified": "2026-02-22",
+            "author": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+            "publisher": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/comparison.html"
+            },
+            "keywords": ["comparaison odoo gmail", "plugin vs extension odoo", "intégration odoo gmail avis", "meilleur outil odoo gmail"],
+            "articleSection": "Comparaison de produits",
+            "inLanguage": "fr"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Quelle est la différence entre cette extension et le plugin officiel Odoo Gmail ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Notre extension Chrome utilise les APIs natives du navigateur, ce qui la rend 10-20x plus rapide que le plugin officiel Odoo Gmail basé sur Google Apps Script. Les temps de chargement sont de 100-300ms contre 2-6 secondes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Pourquoi cette extension est-elle plus rapide que le plugin officiel Odoo ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Le plugin officiel utilise Google Apps Script qui a un surcoût significatif et des temps de démarrage à froid. Notre extension Chrome se connecte directement à Odoo via les APIs natives avec pooling de connexions, résultant en des temps de réponse 10-20x plus rapides."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "L'extension fonctionne-t-elle avec Odoo auto-hébergé sans modification de code ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Oui, contrairement au plugin officiel qui nécessite de modifier votre dépôt Odoo pour les instances auto-hébergées, notre extension fonctionne avec toute instance Odoo (Odoo.sh ou auto-hébergé) sans aucune modification de code."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Comment passer du plugin officiel Odoo Gmail à cette extension ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "La migration prend moins de 2 minutes : 1) Installez l'extension depuis le Chrome Web Store, 2) Entrez votre URL Odoo et votre clé API (mêmes identifiants), 3) Commencez à l'utiliser. Aucune migration de données nécessaire."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Cette extension a-t-elle des fonctionnalités que le plugin officiel n'a pas ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Oui, notre plan PLUS inclut la recherche en temps réel dans les opportunités, tâches et tickets, la possibilité de masquer les sections inutilisées pour améliorer les performances, l'enregistrement d'emails amélioré avec pièces jointes, et les contacts associés par domaine."
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Accueil",
+                    "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Comparaison",
+                    "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/comparison.html"
+                }
+            ]
         }
-    },
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Quelle est la différence entre cette extension et le plugin officiel Odoo Gmail ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Notre extension Chrome utilise les APIs natives du navigateur, ce qui la rend 10-20x plus rapide que le plugin officiel Odoo Gmail basé sur Google Apps Script. Les temps de chargement sont de 100-300ms contre 2-6 secondes."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Pourquoi cette extension est-elle plus rapide que le plugin officiel Odoo ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Le plugin officiel utilise Google Apps Script qui a un surcoût significatif et des temps de démarrage à froid. Notre extension Chrome se connecte directement à Odoo via les APIs natives avec pooling de connexions, résultant en des temps de réponse 10-20x plus rapides."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "L'extension fonctionne-t-elle avec Odoo auto-hébergé sans modification de code ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oui, contrairement au plugin officiel qui nécessite de modifier votre dépôt Odoo pour les instances auto-hébergées, notre extension fonctionne avec toute instance Odoo (Odoo.sh ou auto-hébergé) sans aucune modification de code."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Comment passer du plugin officiel Odoo Gmail à cette extension ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "La migration prend moins de 2 minutes : 1) Installez l'extension depuis le Chrome Web Store, 2) Entrez votre URL Odoo et votre clé API (mêmes identifiants), 3) Commencez à l'utiliser. Aucune migration de données nécessaire - vos données Odoo restent exactement où elles sont."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Cette extension a-t-elle des fonctionnalités que le plugin officiel n'a pas ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Oui, notre plan PLUS inclut la recherche en temps réel dans les opportunités, tâches et tickets, la possibilité de masquer les sections inutilisées pour améliorer les performances, l'enregistrement d'emails amélioré avec pièces jointes, et les contacts associés par domaine."
-                }
-            }
-        ]
-    }
-]
+    ]
+}

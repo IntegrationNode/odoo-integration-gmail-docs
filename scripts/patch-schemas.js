@@ -74,10 +74,15 @@ function patchFile(htmlPath, schemas) {
     var html = fs.readFileSync(htmlPath, 'utf-8');
     var blocks = extractJsonLdBlocks(html);
 
-    // Map @type -> translated schema
+    // Separate @graph schemas from @type schemas
+    var graphSchema = null;
     var schemaMap = {};
     schemas.forEach(function(schema) {
-        if (schema['@type']) schemaMap[schema['@type']] = schema;
+        if (schema['@graph']) {
+            graphSchema = schema;
+        } else if (schema['@type']) {
+            schemaMap[schema['@type']] = schema;
+        }
     });
 
     var patched = false;
@@ -85,9 +90,24 @@ function patchFile(htmlPath, schemas) {
     // Replace from end to preserve indices
     for (var i = blocks.length - 1; i >= 0; i--) {
         var block = blocks[i];
-        var type = getSchemaType(block.content);
-        if (type && schemaMap[type]) {
-            var json = JSON.stringify(schemaMap[type], null, 4);
+        var parsed;
+        try { parsed = JSON.parse(block.content); } catch (e) { continue; }
+
+        var replacement = null;
+
+        if (parsed['@graph'] && graphSchema) {
+            // Match @graph blocks
+            replacement = graphSchema;
+        } else {
+            // Match by @type
+            var type = parsed['@type'];
+            if (type && schemaMap[type]) {
+                replacement = schemaMap[type];
+            }
+        }
+
+        if (replacement) {
+            var json = JSON.stringify(replacement, null, 4);
             // Indent to match HTML context (4 spaces)
             var indented = '\n    ' + json.split('\n').join('\n    ') + '\n    ';
             var newBlock = '<script type="application/ld+json">' + indented + '</script>';

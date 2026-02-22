@@ -1,17 +1,52 @@
-[
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Intégration Gmail et Odoo - Alternative au Plugin Officiel",
-        "description": "Vous cherchez une alternative au plugin Gmail Odoo ? Notre extension Chrome est 10-20x plus rapide, plus stable et fonctionne avec Google Workspace et toute instance Odoo.",
-        "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/odoo-gmail-plugin-alternative.html",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Chrome",
-        "offers": {
-            "@type": "AggregateOffer",
-            "lowPrice": "0",
-            "highPrice": "19",
-            "priceCurrency": "USD"
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/odoo-gmail-plugin-alternative.html#article",
+            "headline": "Meilleure Alternative au Plugin Gmail Odoo - Extension Chrome 10-20x Plus Rapide",
+            "description": "Vous cherchez une alternative au plugin Gmail Odoo ? Notre extension Chrome charge en 100-300ms contre 2-6 secondes, fonctionne sur Odoo auto-hébergé et ne se déconnecte jamais.",
+            "datePublished": "2025-11-22",
+            "dateModified": "2026-02-22",
+            "author": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+            "publisher": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/odoo-gmail-plugin-alternative.html"
+            },
+            "keywords": ["plugin gmail odoo", "intégration gmail odoo", "alternative plugin odoo gmail", "extension chrome odoo", "odoo crm gmail"],
+            "articleSection": "Comparaison de produits",
+            "inLanguage": "fr"
+        },
+        {
+            "@type": "SoftwareApplication",
+            "name": "Intégration Gmail et Odoo",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Chrome Browser",
+            "offers": {
+                "@type": "AggregateOffer",
+                "lowPrice": "0",
+                "highPrice": "19",
+                "priceCurrency": "USD",
+                "offerCount": "2"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Accueil",
+                    "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Alternative au Plugin Odoo Gmail",
+                    "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/odoo-gmail-plugin-alternative.html"
+                }
+            ]
         }
-    }
-]
+    ]
+}
