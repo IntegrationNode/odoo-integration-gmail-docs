@@ -697,6 +697,14 @@
       "initialRelease": "Initial Release",
       "plusFeatures": "PLUS Features"
     },
+    "v0320": {
+      "notificationOrganization": "Notification Organization",
+      "notificationOrganizationDesc": "A new set of tools to manage Odoo notifications in Gmail:",
+      "moduleBadges": "Module badges (Task, Ticket, Opportunity...) appear on notification emails so you can identify them at a glance",
+      "mentionedBadge": "\"Mentioned\" badge highlights emails where someone tagged you — red when unread, gray when read (requires Conversation View)",
+      "sidebarShortcut": "Quick-access shortcut in the Gmail sidebar to filter all Odoo notifications",
+      "configurable": "Fully configurable — enable or disable each notification feature independently in Settings"
+    },
     "v0312": {
       "attachments": "Attachments on Record Creation",
       "attachmentsDesc": "Email attachments are now automatically uploaded when creating tasks, opportunities, and tickets"
@@ -990,6 +998,23 @@
       "tryFree": "Try It Free",
       "seePricing": "See Pricing"
     }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Set up in under 2 minutes — no code, no Odoo modules required",
+    "step1": {
+      "title": "Install",
+      "description": "Add the extension from the Chrome Web Store with one click"
+    },
+    "step2": {
+      "title": "Connect",
+      "description": "Enter your Odoo URL and API key — that's it"
+    },
+    "step3": {
+      "title": "Work",
+      "description": "Open any email in Gmail and see your Odoo data instantly"
+    },
+    "cta": "Install Now — It's Free"
   },
   "socialProof": {
     "headline": "Trusted by businesses of all sizes to integrate Gmail with Odoo",

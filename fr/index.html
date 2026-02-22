@@ -370,6 +370,49 @@
         </div>
     </section>
 
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Comment ça marche</h2>
+            <p class="section-subtitle">Installation en moins de 2 minutes — sans code, sans modules Odoo</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">download</span>
+                    </div>
+                    <h3>Installez</h3>
+                    <p>Ajoutez l'extension depuis le Chrome Web Store en un clic</p>
+                </div>
+                <div class="step-connector">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">link</span>
+                    </div>
+                    <h3>Connectez</h3>
+                    <p>Entrez l'URL de votre Odoo et votre clé API — c'est tout</p>
+                </div>
+                <div class="step-connector">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">inbox</span>
+                    </div>
+                    <h3>Travaillez</h3>
+                    <p>Ouvrez n'importe quel email dans Gmail et consultez vos données Odoo instantanément</p>
+                </div>
+            </div>
+            <div class="steps-cta">
+                <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-primary">Installer Maintenant — C'est Gratuit</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Social Proof -->
     <section class="social-proof">
         <div class="container">
@@ -555,5 +598,17 @@
     <script src="../social-proof.js"></script>
     <!-- Regional Pricing Detection -->
     <script src="../regional-pricing.js"></script>
+    <!-- Scroll Animations -->
+    <script>
+    (function() {
+        var steps = document.querySelector('.steps');
+        if (!steps) return;
+        new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('in-view'); }
+            });
+        }, { threshold: 0.3 }).observe(steps);
+    })();
+    </script>
 </body>
 </html>

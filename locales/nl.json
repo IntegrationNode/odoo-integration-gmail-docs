@@ -697,6 +697,14 @@
       "initialRelease": "Eerste Release",
       "plusFeatures": "PLUS Functies"
     },
+    "v0320": {
+      "notificationOrganization": "Notificatie-organisatie",
+      "notificationOrganizationDesc": "Een nieuwe set tools om Odoo-notificaties in Gmail te beheren:",
+      "moduleBadges": "Module-badges (Taak, Ticket, Kans...) verschijnen op notificatie-e-mails zodat je ze in één oogopslag kunt herkennen",
+      "mentionedBadge": "\"Vermeld\"-badge markeert e-mails waarin iemand je heeft getagd — rood bij ongelezen, grijs bij gelezen (vereist Gespreksweergave)",
+      "sidebarShortcut": "Snelkoppeling in de Gmail-zijbalk om alle Odoo-notificaties te filteren",
+      "configurable": "Volledig configureerbaar — schakel elke notificatiefunctie onafhankelijk in of uit in Instellingen"
+    },
     "v0312": {
       "attachments": "Bijlagen bij aanmaken records",
       "attachmentsDesc": "E-mailbijlagen worden automatisch geüpload bij het aanmaken van taken, kansen en tickets"
@@ -990,6 +998,23 @@
       "tryFree": "Gratis Proberen",
       "seePricing": "Prijzen Bekijken"
     }
+  },
+  "howItWorks": {
+    "title": "Hoe Het Werkt",
+    "subtitle": "Instellen in minder dan 2 minuten — zonder code, zonder Odoo-modules",
+    "step1": {
+      "title": "Installeer",
+      "description": "Voeg de extensie toe vanuit de Chrome Web Store met één klik"
+    },
+    "step2": {
+      "title": "Verbind",
+      "description": "Voer je Odoo-URL en API-sleutel in — dat is alles"
+    },
+    "step3": {
+      "title": "Werk",
+      "description": "Open een willekeurige e-mail in Gmail en bekijk je Odoo-gegevens direct"
+    },
+    "cta": "Nu Installeren — Gratis"
   },
   "socialProof": {
     "headline": "Bedrijven van elke omvang vertrouwen op ons om Gmail met Odoo te integreren",

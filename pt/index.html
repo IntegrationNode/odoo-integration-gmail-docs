@@ -370,6 +370,49 @@
         </div>
     </section>
 
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Como Funciona</h2>
+            <p class="section-subtitle">Configure em menos de 2 minutos — sem código, sem módulos Odoo</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">download</span>
+                    </div>
+                    <h3>Instale</h3>
+                    <p>Adicione a extensão da Chrome Web Store com um clique</p>
+                </div>
+                <div class="step-connector">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">link</span>
+                    </div>
+                    <h3>Conecte</h3>
+                    <p>Insira a URL do seu Odoo e a chave API — só isso</p>
+                </div>
+                <div class="step-connector">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">inbox</span>
+                    </div>
+                    <h3>Trabalhe</h3>
+                    <p>Abra qualquer email no Gmail e veja os seus dados do Odoo instantaneamente</p>
+                </div>
+            </div>
+            <div class="steps-cta">
+                <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-primary">Instalar Agora — É Grátis</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Social Proof -->
     <section class="social-proof">
         <div class="container">
@@ -555,5 +598,17 @@
     <script src="../social-proof.js"></script>
     <!-- Regional Pricing Detection -->
     <script src="../regional-pricing.js"></script>
+    <!-- Scroll Animations -->
+    <script>
+    (function() {
+        var steps = document.querySelector('.steps');
+        if (!steps) return;
+        new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('in-view'); }
+            });
+        }, { threshold: 0.3 }).observe(steps);
+    })();
+    </script>
 </body>
 </html>

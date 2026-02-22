@@ -370,6 +370,49 @@
         </div>
     </section>
 
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>So funktioniert's</h2>
+            <p class="section-subtitle">Einrichtung in unter 2 Minuten — kein Code, keine Odoo-Module erforderlich</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">download</span>
+                    </div>
+                    <h3>Installieren</h3>
+                    <p>Fügen Sie die Erweiterung mit einem Klick aus dem Chrome Web Store hinzu</p>
+                </div>
+                <div class="step-connector">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">link</span>
+                    </div>
+                    <h3>Verbinden</h3>
+                    <p>Geben Sie Ihre Odoo-URL und Ihren API-Schlüssel ein — das war's</p>
+                </div>
+                <div class="step-connector">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">inbox</span>
+                    </div>
+                    <h3>Arbeiten</h3>
+                    <p>Öffnen Sie eine beliebige E-Mail in Gmail und sehen Sie Ihre Odoo-Daten sofort</p>
+                </div>
+            </div>
+            <div class="steps-cta">
+                <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-primary">Jetzt Installieren — Kostenlos</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Social Proof -->
     <section class="social-proof">
         <div class="container">
@@ -555,5 +598,17 @@
     <script src="../social-proof.js"></script>
     <!-- Regional Pricing Detection -->
     <script src="../regional-pricing.js"></script>
+    <!-- Scroll Animations -->
+    <script>
+    (function() {
+        var steps = document.querySelector('.steps');
+        if (!steps) return;
+        new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('in-view'); }
+            });
+        }, { threshold: 0.3 }).observe(steps);
+    })();
+    </script>
 </body>
 </html>

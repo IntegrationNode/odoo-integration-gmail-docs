@@ -697,6 +697,14 @@
       "initialRelease": "Pierwsze wydanie",
       "plusFeatures": "Funkcje PLUS"
     },
+    "v0320": {
+      "notificationOrganization": "Organizacja Powiadomień",
+      "notificationOrganizationDesc": "Nowy zestaw narzędzi do zarządzania powiadomieniami Odoo w Gmail:",
+      "moduleBadges": "Odznaki modułów (Zadanie, Zgłoszenie, Szansa...) pojawiają się na e-mailach z powiadomieniami, aby szybko je zidentyfikować",
+      "mentionedBadge": "Odznaka \"Wspomniano\" wyróżnia e-maile, w których ktoś Cię oznaczył — czerwona gdy nieprzeczytany, szara po przeczytaniu (wymaga Widoku konwersacji)",
+      "sidebarShortcut": "Skrót szybkiego dostępu na pasku bocznym Gmail do filtrowania wszystkich powiadomień Odoo",
+      "configurable": "W pełni konfigurowalne — włączaj lub wyłączaj każdą funkcję powiadomień niezależnie w Ustawieniach"
+    },
     "v0312": {
       "attachments": "Załączniki przy tworzeniu rekordów",
       "attachmentsDesc": "Załączniki e-mail są automatycznie przesyłane podczas tworzenia zadań, szans i zgłoszeń"
@@ -990,6 +998,23 @@
       "tryFree": "Wypróbuj za darmo",
       "seePricing": "Zobacz cennik"
     }
+  },
+  "howItWorks": {
+    "title": "Jak To Działa",
+    "subtitle": "Konfiguracja w mniej niż 2 minuty — bez kodu, bez modułów Odoo",
+    "step1": {
+      "title": "Zainstaluj",
+      "description": "Dodaj rozszerzenie z Chrome Web Store jednym kliknięciem"
+    },
+    "step2": {
+      "title": "Połącz",
+      "description": "Wpisz URL swojego Odoo i klucz API — to wszystko"
+    },
+    "step3": {
+      "title": "Pracuj",
+      "description": "Otwórz dowolny e-mail w Gmail i natychmiast zobacz dane z Odoo"
+    },
+    "cta": "Zainstaluj Teraz — Za Darmo"
   },
   "socialProof": {
     "headline": "Firmy każdej wielkości ufają nam w integracji Gmail z Odoo",
