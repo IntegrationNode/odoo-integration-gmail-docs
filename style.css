@@ -245,6 +245,62 @@ a:hover {
     flex-wrap: wrap;
 }
 
+/* Hero Image */
+.hero-image {
+    margin-top: var(--spacing-lg);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.browser-frame {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-light);
+}
+
+.browser-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: #F5F5F5;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.browser-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.browser-address {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8125rem;
+    color: var(--color-text-lighter);
+    background: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    border-radius: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    margin-left: 0.5rem;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        margin-top: var(--spacing-md);
+    }
+}
+
 /* Features Section */
 .features {
     padding: var(--spacing-xl) 0;
@@ -334,9 +390,13 @@ a:hover {
     border-bottom: 1px solid var(--color-border-light);
 }
 
+.compatibility .container {
+    max-width: 1400px;
+}
+
 .compatibility-title {
     text-align: center;
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--color-text-lighter);
@@ -347,7 +407,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: var(--spacing-sm);
 }
 
@@ -355,35 +415,41 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: 0.375rem;
-    padding: 0.375rem 0.875rem;
+    padding: 0.5rem 1rem;
     background: var(--gray-50);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-3xl);
-    font-size: 0.8125rem;
+    font-size: 0.9375rem;
     font-weight: 500;
     color: var(--color-text-light);
     white-space: nowrap;
 }
 
 .compat-badge .material-symbols-outlined {
-    font-size: 1rem;
+    font-size: 1.125rem;
     color: var(--color-primary);
 }
 
 .compat-note {
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
     color: var(--color-text-lighter);
     font-weight: 400;
 }
 .compat-divider {
     width: 1px;
-    height: 1.25rem;
+    height: 1.5rem;
     background: var(--color-border);
 }
 
 @media (max-width: 768px) {
     .compatibility-badges {
+        flex-wrap: wrap;
         gap: 0.5rem;
+    }
+
+    .compat-badge {
+        font-size: 0.8125rem;
+        padding: 0.375rem 0.875rem;
     }
 
     .compat-divider {
