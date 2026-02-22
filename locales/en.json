@@ -705,6 +705,9 @@
       "sidebarShortcut": "Quick-access shortcut in the Gmail sidebar to filter all Odoo notifications",
       "configurable": "Fully configurable — enable or disable each notification feature independently in Settings"
     },
+    "v0313": {
+      "minorImprovements": "Minor improvements"
+    },
     "v0312": {
       "attachments": "Attachments on Record Creation",
       "attachmentsDesc": "Email attachments are now automatically uploaded when creating tasks, opportunities, and tickets"

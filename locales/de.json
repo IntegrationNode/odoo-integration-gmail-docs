@@ -705,6 +705,9 @@
       "sidebarShortcut": "Schnellzugriff in der Gmail-Seitenleiste zum Filtern aller Odoo-Benachrichtigungen",
       "configurable": "Vollständig konfigurierbar — jede Benachrichtigungsfunktion einzeln in den Einstellungen aktivieren oder deaktivieren"
     },
+    "v0313": {
+      "minorImprovements": "Kleinere Verbesserungen"
+    },
     "v0312": {
       "attachments": "Anhänge bei Datensatzerstellung",
       "attachmentsDesc": "E-Mail-Anhänge werden beim Erstellen von Aufgaben, Opportunities und Tickets automatisch hochgeladen"

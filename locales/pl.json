@@ -705,6 +705,9 @@
       "sidebarShortcut": "Skrót szybkiego dostępu na pasku bocznym Gmail do filtrowania wszystkich powiadomień Odoo",
       "configurable": "W pełni konfigurowalne — włączaj lub wyłączaj każdą funkcję powiadomień niezależnie w Ustawieniach"
     },
+    "v0313": {
+      "minorImprovements": "Drobne ulepszenia"
+    },
     "v0312": {
       "attachments": "Załączniki przy tworzeniu rekordów",
       "attachmentsDesc": "Załączniki e-mail są automatycznie przesyłane podczas tworzenia zadań, szans i zgłoszeń"

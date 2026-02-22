@@ -705,6 +705,9 @@
       "sidebarShortcut": "Raccourci d'accès rapide dans la barre latérale Gmail pour filtrer toutes les notifications Odoo",
       "configurable": "Entièrement configurable — activez ou désactivez chaque fonction de notification indépendamment dans les Paramètres"
     },
+    "v0313": {
+      "minorImprovements": "Améliorations mineures"
+    },
     "v0312": {
       "attachments": "Pièces jointes à la création",
       "attachmentsDesc": "Les pièces jointes de l'email sont automatiquement téléversées lors de la création de tâches, opportunités et tickets"

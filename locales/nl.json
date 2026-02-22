@@ -705,6 +705,9 @@
       "sidebarShortcut": "Snelkoppeling in de Gmail-zijbalk om alle Odoo-notificaties te filteren",
       "configurable": "Volledig configureerbaar — schakel elke notificatiefunctie onafhankelijk in of uit in Instellingen"
     },
+    "v0313": {
+      "minorImprovements": "Kleine verbeteringen"
+    },
     "v0312": {
       "attachments": "Bijlagen bij aanmaken records",
       "attachmentsDesc": "E-mailbijlagen worden automatisch geüpload bij het aanmaken van taken, kansen en tickets"

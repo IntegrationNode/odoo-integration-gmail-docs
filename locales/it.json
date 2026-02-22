@@ -705,6 +705,9 @@
       "sidebarShortcut": "Scorciatoia di accesso rapido nella barra laterale di Gmail per filtrare tutte le notifiche Odoo",
       "configurable": "Completamente configurabile — attiva o disattiva ogni funzione di notifica indipendentemente nelle Impostazioni"
     },
+    "v0313": {
+      "minorImprovements": "Miglioramenti minori"
+    },
     "v0312": {
       "attachments": "Allegati alla creazione record",
       "attachmentsDesc": "Gli allegati dell'email vengono caricati automaticamente durante la creazione di attività, opportunità e ticket"
