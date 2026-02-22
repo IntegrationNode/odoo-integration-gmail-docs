@@ -88,6 +88,88 @@
         @media (max-width: 1024px) { .guide-content { flex-direction: column; } .guide-nav { position: static; width: 100%; } .guide-nav ul { flex-direction: row; flex-wrap: wrap; gap: 0.5rem; } .guide-nav a { padding: 0.5rem 1rem; } }
         @media (max-width: 768px) { .guide-header h1 { font-size: 2rem; } .guide-section { padding: var(--spacing-md); } }
     </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "TechArticle",
+                "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html#article",
+                "headline": "Odoo Integration for Gmail - Complete User Guide",
+                "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
+                "datePublished": "2025-11-22",
+                "dateModified": "2026-02-22",
+                "author": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+                "publisher": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html"
+                },
+                "keywords": ["odoo gmail setup", "odoo gmail configuration", "odoo gmail tutorial", "odoo extension guide"],
+                "articleSection": "Documentation",
+                "inLanguage": "en",
+                "proficiencyLevel": "Beginner"
+            },
+            {
+                "@type": "HowTo",
+                "name": "How to Set Up Odoo Integration for Gmail",
+                "description": "Quick setup guide for the Odoo Gmail Chrome extension",
+                "totalTime": "PT2M",
+                "estimatedCost": {
+                    "@type": "MonetaryAmount",
+                    "currency": "USD",
+                    "value": "0"
+                },
+                "step": [
+                    {
+                        "@type": "HowToStep",
+                        "position": 1,
+                        "name": "Install Extension",
+                        "text": "Visit Chrome Web Store and click 'Add to Chrome' to install Odoo Integration for Gmail.",
+                        "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 2,
+                        "name": "Enter Odoo URL",
+                        "text": "Open Gmail, click the extension icon, and enter your Odoo instance URL (e.g., https://yourcompany.odoo.com)."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 3,
+                        "name": "Generate API Key",
+                        "text": "In Odoo, go to Preferences > Account Security > API Keys. Create a new persistent API key and copy it."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 4,
+                        "name": "Connect",
+                        "text": "Paste the API key in the extension and click Connect. You're ready to use Odoo from Gmail!"
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "User Guide",
+                        "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header with Navigation -->

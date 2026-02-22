@@ -53,63 +53,85 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Extension vs Odoo Gmail Plugin - Comparison",
-        "description": "Compare our Gmail extension with the official Odoo Gmail Plugin. See the differences in performance, features, and compatibility.",
-        "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/comparison.html",
-        "mainEntity": {
-            "@type": "SoftwareApplication",
-            "name": "Odoo Integration for Gmail",
-            "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Chrome"
-        }
-    }
-    </script>
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
             {
-                "@type": "Question",
-                "name": "What's the difference between this extension and the official Odoo Gmail Plugin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our extension is a Chrome extension that uses native browser APIs, making it 10-20x faster than the official Odoo Gmail Plugin which is based on Google Apps Script. Load times are 100-300ms vs 2-6 seconds."
-                }
+                "@type": "Article",
+                "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/comparison.html#article",
+                "headline": "Odoo Gmail Integration Comparison: Chrome Extension vs Official Plugin",
+                "description": "Detailed comparison between Odoo Integration for Gmail Chrome extension and the official Odoo Gmail plugin. Compare speed, features, compatibility, and pricing.",
+                "datePublished": "2025-11-22",
+                "dateModified": "2026-02-22",
+                "author": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+                "publisher": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/comparison.html"
+                },
+                "keywords": ["odoo gmail comparison", "odoo plugin vs extension", "odoo gmail integration review", "best odoo gmail tool"],
+                "articleSection": "Product Comparison",
+                "inLanguage": "en"
             },
             {
-                "@type": "Question",
-                "name": "Why is this extension faster than the official Odoo plugin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The official plugin uses Google Apps Script which has significant overhead and cold start times. Our Chrome extension connects directly to Odoo using native APIs with connection pooling, resulting in 10-20x faster response times."
-                }
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What's the difference between this extension and the official Odoo Gmail Plugin?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Our extension is a Chrome extension that uses native browser APIs, making it 10-20x faster than the official Odoo Gmail Plugin which is based on Google Apps Script. Load times are 100-300ms vs 2-6 seconds."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Why is this extension faster than the official Odoo plugin?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The official plugin uses Google Apps Script which has significant overhead and cold start times. Our Chrome extension connects directly to Odoo using native APIs with connection pooling, resulting in 10-20x faster response times."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does the extension work with self-hosted Odoo without code changes?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, unlike the official plugin which requires modifying your Odoo repository for self-hosted instances, our extension works with any Odoo instance (Odoo.sh or self-hosted) without any code modifications."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How do I switch from the official Odoo Gmail Plugin to this extension?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Switching takes less than 2 minutes: 1) Install the extension from Chrome Web Store, 2) Enter your Odoo URL and API key (same credentials), 3) Start using it. No data migration needed - your Odoo data stays exactly where it is."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does this extension have features the official plugin doesn't?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, our PLUS plan includes real-time search across opportunities, tasks and tickets, the ability to hide unused sections to improve performance, enhanced email logging with attachments, and related contacts by domain."
+                        }
+                    }
+                ]
             },
             {
-                "@type": "Question",
-                "name": "Does the extension work with self-hosted Odoo without code changes?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, unlike the official plugin which requires modifying your Odoo repository for self-hosted instances, our extension works with any Odoo instance (Odoo.sh or self-hosted) without any code modifications."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do I switch from the official Odoo Gmail Plugin to this extension?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Switching takes less than 2 minutes: 1) Install the extension from Chrome Web Store, 2) Enter your Odoo URL and API key (same credentials), 3) Start using it. No data migration needed - your Odoo data stays exactly where it is."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Does this extension have features the official plugin doesn't?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, our PLUS plan includes real-time search across opportunities, tasks and tickets, the ability to hide unused sections to improve performance, enhanced email logging with attachments, and related contacts by domain."
-                }
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Comparison",
+                        "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/comparison.html"
+                    }
+                ]
             }
         ]
     }

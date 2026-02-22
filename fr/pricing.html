@@ -55,91 +55,109 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Odoo Integration for Gmail",
-        "description": "Chrome extension for Gmail-Odoo CRM integration. View contacts, create opportunities, tasks, and tickets directly in Gmail.",
-        "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/",
-        "image": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Chrome",
-        "offers": [
+        "@graph": [
             {
-                "@type": "Offer",
-                "name": "Free Plan",
-                "price": "0",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "priceValidUntil": "2025-12-31"
+                "@type": "Product",
+                "name": "Odoo Integration for Gmail",
+                "description": "Chrome extension for Gmail-Odoo CRM integration. View contacts, create opportunities, tasks, and tickets directly in Gmail.",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "IntegrationNode"
+                },
+                "offers": [
+                    {
+                        "@type": "Offer",
+                        "name": "Free Plan",
+                        "price": "0",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "priceValidUntil": "2026-12-31",
+                        "itemCondition": "https://schema.org/NewCondition",
+                        "description": "5 records per section, basic email logging, unlimited contacts"
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "PLUS Monthly",
+                        "price": "19",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "priceValidUntil": "2026-12-31",
+                        "itemCondition": "https://schema.org/NewCondition",
+                        "description": "50 records, real-time search, email attachments, recent activities, priority support"
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "PLUS Yearly",
+                        "price": "182",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "priceValidUntil": "2026-12-31",
+                        "itemCondition": "https://schema.org/NewCondition",
+                        "description": "50 records, real-time search, email attachments, recent activities, priority support. Save 20% vs monthly."
+                    }
+                ]
             },
             {
-                "@type": "Offer",
-                "name": "PLUS Monthly",
-                "price": "19",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "priceValidUntil": "2025-12-31"
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What's included in the free plan?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The free plan includes viewing contacts and company info, creating opportunities, tasks and tickets, logging emails to Odoo, viewing up to 5 records per section, and smart contact detection."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What additional features does PLUS offer?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "PLUS adds real-time search across all lists, up to 50 records per section (vs 5 in Free), Contact/Company tabs, related contacts by domain, customizable sections, performance insights, group records by stage, email participants info, and recent activities from Odoo conversations."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is there a free trial for PLUS?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, you can try the PLUS features free for 14 days. No credit card required to start the trial."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can I cancel my subscription anytime?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, you can cancel your PLUS subscription at any time. You'll continue to have access until the end of your billing period, then your account will revert to the free plan."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do you offer team or enterprise pricing?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, we offer volume discounts for teams. Contact us at odoointegrations.team@gmail.com for custom pricing for 5+ users."
+                        }
+                    }
+                ]
             },
             {
-                "@type": "Offer",
-                "name": "PLUS Yearly",
-                "price": "182",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "priceValidUntil": "2025-12-31"
-            }
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "ratingCount": "1"
-        }
-    }
-    </script>
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What's included in the free plan?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The free plan includes viewing contacts and company info, creating opportunities, tasks and tickets, logging emails to Odoo, viewing up to 5 records per section, and smart contact detection."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What additional features does PLUS offer?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "PLUS adds real-time search across all lists, up to 50 records per section (vs 5 in Free), Contact/Company tabs, related contacts by domain, customizable sections, performance insights, group records by stage, email participants info, and recent activities from Odoo conversations."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is there a free trial for PLUS?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, you can try the PLUS features free for 14 days. No credit card required to start the trial."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I cancel my subscription anytime?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, you can cancel your PLUS subscription at any time. You'll continue to have access until the end of your billing period, then your account will revert to the free plan."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you offer team or enterprise pricing?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, we offer volume discounts for teams. Contact us at odoointegrations.team@gmail.com for custom pricing for 5+ users."
-                }
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Pricing",
+                        "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/pricing.html"
+                    }
+                ]
             }
         ]
     }
