@@ -4,7 +4,7 @@
     "index": {
       "title": "Integrazione Odoo per Gmail",
       "description": "Integrazione Odoo per Gmail - Visualizza contatti, crea opportunità, attività e ticket direttamente nella tua casella Gmail. Estensione Chrome per integrazione CRM senza soluzione di continuità.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/it/",
       "ogTitle": "Integrazione Odoo per Gmail",
       "ogDescription": "Trasforma Gmail in una potente interfaccia CRM con integrazione Odoo senza soluzione di continuità. Visualizza contatti, crea opportunità, attività e ticket.",
       "twitterTitle": "Integrazione Odoo per Gmail",
@@ -13,7 +13,7 @@
     "pricing": {
       "title": "Prezzi - Integrazione Odoo per Gmail",
       "description": "Prezzi Integrazione Odoo per Gmail - Piani Free e PLUS. Inizia gratis, aggiorna quando hai bisogno di ricerca avanzata, approfondimenti finanziari e altro.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/pricing.html",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/it/pricing.html",
       "ogTitle": "Prezzi - Integrazione Odoo per Gmail",
       "ogDescription": "Piani Free e PLUS disponibili. Inizia gratis, aggiorna quando hai bisogno di funzionalità avanzate.",
       "twitterTitle": "Prezzi - Integrazione Odoo per Gmail",
@@ -22,7 +22,7 @@
     "userGuide": {
       "title": "Guida Utente - Integrazione Odoo per Gmail",
       "description": "Guida utente completa per Integrazione Odoo per Gmail - Scopri come installare, configurare e utilizzare tutte le funzionalità incluso il logging email, opportunità CRM, attività e ticket.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/it/user-guide.html",
       "ogTitle": "Guida Utente - Integrazione Odoo per Gmail",
       "ogDescription": "Guida completa per installare, configurare e utilizzare Integrazione Odoo per Gmail. Scopri il logging email, CRM, attività e altro.",
       "twitterTitle": "Guida Utente - Integrazione Odoo per Gmail",
@@ -31,7 +31,7 @@
     "changelog": {
       "title": "Changelog - Integrazione Odoo per Gmail",
       "description": "Cronologia rilasci e aggiornamenti per l'estensione Integrazione Odoo per Gmail. Segui nuove funzionalità, miglioramenti e correzioni bug.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/changelog.html",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/it/changelog.html",
       "ogTitle": "Changelog - Integrazione Odoo per Gmail",
       "ogDescription": "Cronologia rilasci e aggiornamenti. Segui nuove funzionalità, miglioramenti e correzioni bug.",
       "twitterTitle": "Changelog - Integrazione Odoo per Gmail",
@@ -40,7 +40,7 @@
     "privacy": {
       "title": "Informativa sulla Privacy - Integrazione Odoo per Gmail",
       "description": "Informativa sulla Privacy per Integrazione Odoo per Gmail. Scopri come gestiamo i tuoi dati, quali permessi richiediamo e i tuoi diritti sulla privacy.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/privacy.html",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/it/privacy.html",
       "ogTitle": "Informativa sulla Privacy - Integrazione Odoo per Gmail",
       "ogDescription": "Scopri come gestiamo i tuoi dati, quali permessi richiediamo e i tuoi diritti sulla privacy.",
       "twitterTitle": "Informativa sulla Privacy - Integrazione Odoo per Gmail",
@@ -49,7 +49,7 @@
     "comparison": {
       "title": "Alternativa al Plugin Gmail Odoo | Estensione Chrome 10-20x più Veloce",
       "description": "Cerchi un'alternativa al Plugin Gmail Odoo? La nostra estensione Chrome è 10-20x più veloce, più stabile e funziona su qualsiasi istanza Odoo. Passa in 2 minuti.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/comparison.html",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/it/comparison.html",
       "ogTitle": "Alternativa al Plugin Gmail Odoo | 10-20x più Veloce",
       "ogDescription": "Confronta la nostra estensione Gmail con il plugin ufficiale Odoo. Tempi di caricamento 10-20x più veloci, connessione stabile, funziona su Odoo self-hosted senza modifiche al codice.",
       "twitterTitle": "Alternativa al Plugin Gmail Odoo | 10-20x più Veloce",
@@ -58,7 +58,7 @@
     "alternative": {
       "title": "Migliore Alternativa al Plugin Gmail Odoo | Estensione Chrome Veloce",
       "description": "Cerchi un'alternativa al Plugin Gmail Odoo? La nostra estensione Chrome è 10-20x più veloce, più stabile e funziona su qualsiasi istanza Odoo senza modifiche al codice.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/odoo-gmail-plugin-alternative.html",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/it/odoo-gmail-plugin-alternative.html",
       "ogTitle": "Migliore Alternativa al Plugin Gmail Odoo",
       "ogDescription": "Stanco dei tempi di caricamento lenti e disconnessioni? La nostra estensione carica in 100-300ms e funziona su qualsiasi istanza Odoo.",
       "twitterTitle": "Migliore Alternativa al Plugin Gmail Odoo",
