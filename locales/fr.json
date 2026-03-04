@@ -326,7 +326,7 @@
       "a3": "Oui. L'extension n'accède qu'aux emails que vous consultez activement et communique de manière sécurisée avec votre instance Odoo via HTTPS. Votre clé API est stockée dans le stockage sécurisé de Chrome.",
       "subscriptionTitle": "Abonnement",
       "q4": "Q : Quelle est la différence entre GRATUIT et PLUS ?",
-      "a4": "GRATUIT inclut les fonctionnalités de base (consultation des contacts, enregistrement d'emails, enregistrements limités). PLUS ajoute la recherche avancée, les aperçus financiers, les contacts associés et les options de personnalisation.",
+      "a4": "GRATUIT inclut les fonctionnalités de base (consultation des contacts, enregistrement d'emails, enregistrements limités). PLUS ajoute la recherche avancée, les aperçus financiers, les contacts associés, l'organisation des emails de notification et les options de personnalisation.",
       "q5": "Q : Puis-je annuler mon abonnement PLUS à tout moment ?",
       "a5": "Oui, vous pouvez annuler à tout moment sans pénalité. Votre abonnement restera actif jusqu'à la fin de votre période de facturation.",
       "privacyTitle": "Confidentialité",
@@ -475,8 +475,8 @@
       "annual": "ou 182€/an",
       "save": "Économisez 20%",
       "feature1": "Tout le plan Gratuit",
-      "feature2": "<strong>Recherche en temps réel</strong> dans toutes les listes",
-      "feature3": "Consultez jusqu'à <strong>50 enregistrements</strong> (vs 5 en Gratuit)",
+      "feature2": "Recherche en temps réel dans toutes les listes",
+      "feature3": "Consultez jusqu'à 50 enregistrements (vs 5 en Gratuit)",
       "feature4": "Onglets Contact/Entreprise",
       "feature5": "Contacts associés par domaine",
       "feature6": "Personnalisez les sections visibles",
@@ -484,6 +484,7 @@
       "feature8": "Regrouper les enregistrements par étape",
       "feature9": "Infos des participants de l'email",
       "feature10": "Activités récentes",
+      "feature11": "Organisation des emails de notification",
       "cta": "Passer à PLUS"
     },
     "teamQuestion": "Besoin de tarifs équipe ?",
@@ -517,16 +518,17 @@
       "or": "ou",
       "perYear": "/an",
       "save": "Économisez 20%",
-      "feature1": "<strong>Recherche en temps réel</strong> dans les opportunités, tâches et tickets",
-      "feature2": "Consultez jusqu'à <strong>50 enregistrements</strong> par section (vs 5 en Gratuit)",
+      "feature1": "Recherche en temps réel dans les opportunités, tâches et tickets",
+      "feature2": "Consultez jusqu'à 50 enregistrements par section (vs 5 en Gratuit)",
       "feature3": "Onglets Contact/Entreprise pour plus de contexte",
       "feature4": "Contacts associés par domaine",
       "feature5": "Personnalisez les sections visibles",
       "feature6": "Indicateurs de performance et métriques",
       "feature7": "Support email prioritaire",
-      "feature8": "<strong>Regrouper les enregistrements par étape</strong>/statut",
+      "feature8": "Regrouper les enregistrements par étape/statut",
       "feature9": "Informations des participants de l'email depuis Odoo",
       "feature10": "Activités récentes des conversations Odoo",
+      "feature11": "Organisation des emails de notification avec badges par module",
       "cta": "Passer à PLUS"
     },
     "comparison": {
@@ -547,7 +549,8 @@
       "customizeSections": "Personnalisez les sections visibles",
       "groupByStage": "Regrouper par étape/statut",
       "emailParticipants": "Infos des participants de l'email",
-      "recentActivities": "Activités récentes"
+      "recentActivities": "Activités récentes",
+      "notificationOrganization": "Organisation des emails de notification"
     },
     "cta": {
       "title": "Prêt à booster votre workflow Gmail-Odoo ?",

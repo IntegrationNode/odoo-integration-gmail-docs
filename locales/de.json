@@ -326,7 +326,7 @@
       "a3": "Ja. Die Erweiterung greift nur auf E-Mails zu, die Sie aktiv anzeigen, und kommuniziert sicher mit Ihrer Odoo-Instanz über HTTPS. Ihr API-Schlüssel wird im sicheren Chrome-Speicher gespeichert.",
       "subscriptionTitle": "Abonnement",
       "q4": "F: Was ist der Unterschied zwischen KOSTENLOS und PLUS?",
-      "a4": "KOSTENLOS enthält grundlegende Funktionen (Kontaktanzeige, E-Mail-Protokollierung, begrenzte Datensätze). PLUS fügt erweiterte Suche, Finanzeinblicke, zugehörige Kontakte und Anpassungsoptionen hinzu.",
+      "a4": "KOSTENLOS enthält grundlegende Funktionen (Kontaktanzeige, E-Mail-Protokollierung, begrenzte Datensätze). PLUS fügt erweiterte Suche, Finanzeinblicke, zugehörige Kontakte, Organisation von Benachrichtigungs-E-Mails und Anpassungsoptionen hinzu.",
       "q5": "F: Kann ich mein PLUS-Abonnement jederzeit kündigen?",
       "a5": "Ja, Sie können jederzeit ohne Strafe kündigen. Ihr Abonnement bleibt bis zum Ende Ihres Abrechnungszeitraums aktiv.",
       "privacyTitle": "Datenschutz",
@@ -475,8 +475,8 @@
       "annual": "oder 182€/Jahr",
       "save": "20% sparen",
       "feature1": "Alles im kostenlosen Plan",
-      "feature2": "<strong>Echtzeit-Suche</strong> in allen Listen",
-      "feature3": "Bis zu <strong>50 Datensätze</strong> anzeigen (vs. 5 im Kostenlos)",
+      "feature2": "Echtzeit-Suche in allen Listen",
+      "feature3": "Bis zu 50 Datensätze anzeigen (vs. 5 im Kostenlos)",
       "feature4": "Kontakt/Firma-Tabs",
       "feature5": "Zugehörige Kontakte nach Domain",
       "feature6": "Sichtbare Abschnitte anpassen",
@@ -484,6 +484,7 @@
       "feature8": "Datensätze nach Phase gruppieren",
       "feature9": "E-Mail-Teilnehmer-Infos",
       "feature10": "Letzte Aktivitäten",
+      "feature11": "Organisation von Benachrichtigungs-E-Mails",
       "cta": "Auf PLUS upgraden"
     },
     "teamQuestion": "Team-Preise benötigt?",
@@ -517,16 +518,17 @@
       "or": "oder",
       "perYear": "/Jahr",
       "save": "20% sparen",
-      "feature1": "<strong>Echtzeit-Suche</strong> in Chancen, Aufgaben und Tickets",
-      "feature2": "Bis zu <strong>50 Datensätze</strong> pro Abschnitt (vs. 5 im Kostenlos)",
+      "feature1": "Echtzeit-Suche in Chancen, Aufgaben und Tickets",
+      "feature2": "Bis zu 50 Datensätze pro Abschnitt (vs. 5 im Kostenlos)",
       "feature3": "Kontakt/Firma-Tabs für mehr Kontext",
       "feature4": "Zugehörige Kontakte nach Domain",
       "feature5": "Sichtbare Abschnitte anpassen",
       "feature6": "Leistungseinblicke und Metriken",
       "feature7": "Prioritäts-E-Mail-Support",
-      "feature8": "<strong>Datensätze nach Phase</strong>/Status gruppieren",
+      "feature8": "Datensätze nach Phase/Status gruppieren",
       "feature9": "E-Mail-Teilnehmer-Informationen aus Odoo",
       "feature10": "Letzte Aktivitäten aus Odoo-Konversationen",
+      "feature11": "Organisation von Benachrichtigungs-E-Mails mit Modul-Badges",
       "cta": "Auf PLUS upgraden"
     },
     "comparison": {
@@ -547,7 +549,8 @@
       "customizeSections": "Sichtbare Abschnitte anpassen",
       "groupByStage": "Datensätze nach Phase/Status gruppieren",
       "emailParticipants": "E-Mail-Teilnehmer-Infos",
-      "recentActivities": "Letzte Aktivitäten"
+      "recentActivities": "Letzte Aktivitäten",
+      "notificationOrganization": "Organisation von Benachrichtigungs-E-Mails"
     },
     "cta": {
       "title": "Bereit, Ihren Gmail-Odoo-Workflow zu verbessern?",

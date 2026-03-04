@@ -188,8 +188,8 @@
       "annual": "o $182/año",
       "save": "Ahorra 20%",
       "feature1": "Todo lo del plan Gratis",
-      "feature2": "<strong>Búsqueda en tiempo real</strong> en todas las listas",
-      "feature3": "Ver hasta <strong>50 registros</strong> (vs 5 en Gratis)",
+      "feature2": "Búsqueda en tiempo real en todas las listas",
+      "feature3": "Ver hasta 50 registros (vs 5 en Gratis)",
       "feature4": "Pestañas Contacto/Empresa",
       "feature5": "Contactos relacionados por dominio",
       "feature6": "Personalizar secciones visibles",
@@ -197,6 +197,7 @@
       "feature8": "Agrupar registros por etapa",
       "feature9": "Info de participantes del email",
       "feature10": "Actividades recientes",
+      "feature11": "Organización de emails de notificación",
       "cta": "Actualizar a PLUS"
     },
     "teamQuestion": "¿Necesitas precios para equipos?",
@@ -230,16 +231,17 @@
       "or": "o",
       "perYear": "/año",
       "save": "Ahorra 20%",
-      "feature1": "<strong>Búsqueda en tiempo real</strong> en oportunidades, tareas y tickets",
-      "feature2": "Ver hasta <strong>50 registros</strong> por sección (vs 5 en Gratis)",
+      "feature1": "Búsqueda en tiempo real en oportunidades, tareas y tickets",
+      "feature2": "Ver hasta 50 registros por sección (vs 5 en Gratis)",
       "feature3": "Pestañas Contacto/Empresa para mejor contexto",
       "feature4": "Contactos relacionados por dominio",
       "feature5": "Personalizar secciones visibles",
       "feature6": "Métricas e información de rendimiento",
       "feature7": "Soporte por email prioritario",
-      "feature8": "<strong>Agrupar registros por etapa</strong>/estado",
+      "feature8": "Agrupar registros por etapa/estado",
       "feature9": "Información de participantes del email desde Odoo",
       "feature10": "Actividades recientes de las conversaciones de Odoo",
+      "feature11": "Organización de emails de notificación con badges por módulo",
       "cta": "Actualizar a PLUS"
     },
     "comparison": {
@@ -260,7 +262,8 @@
       "customizeSections": "Personalizar secciones visibles",
       "groupByStage": "Agrupar registros por etapa/estado",
       "emailParticipants": "Info de participantes del email",
-      "recentActivities": "Actividades recientes"
+      "recentActivities": "Actividades recientes",
+      "notificationOrganization": "Organización de emails de notificación"
     },
     "cta": {
       "title": "¿Listo para potenciar tu flujo Gmail-Odoo?",
@@ -512,7 +515,7 @@
       "a3": "Sí. La extensión solo accede a los emails que ves activamente y se comunica de forma segura con tu instancia de Odoo vía HTTPS. Tu API key se almacena en el almacenamiento seguro de Chrome.",
       "subscriptionTitle": "Suscripción",
       "q4": "P: ¿Cuál es la diferencia entre GRATIS y PLUS?",
-      "a4": "GRATIS incluye funciones básicas (ver contactos, registrar emails, registros limitados). PLUS añade búsqueda avanzada, información financiera, contactos relacionados y opciones de personalización.",
+      "a4": "GRATIS incluye funciones básicas (ver contactos, registrar emails, registros limitados). PLUS añade búsqueda avanzada, información financiera, contactos relacionados, organización de emails de notificación y opciones de personalización.",
       "q5": "P: ¿Puedo cancelar mi suscripción PLUS en cualquier momento?",
       "a5": "Sí, puedes cancelar en cualquier momento sin penalización. Tu suscripción permanecerá activa hasta el final de tu período de facturación.",
       "privacyTitle": "Privacidad",

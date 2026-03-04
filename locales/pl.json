@@ -326,7 +326,7 @@
       "a3": "Tak. Rozszerzenie uzyskuje dostęp tylko do e-maili, które aktywnie przeglądasz i komunikuje się bezpiecznie z Twoją instancją Odoo przez HTTPS. Twój klucz API jest przechowywany w bezpiecznym magazynie Chrome.",
       "subscriptionTitle": "Subskrypcja",
       "q4": "P: Jaka jest różnica między FREE a PLUS?",
-      "a4": "FREE zawiera podstawowe funkcje (przeglądanie kontaktów, logowanie e-maili, ograniczone rekordy). PLUS dodaje zaawansowane wyszukiwanie, informacje finansowe, powiązane kontakty i opcje personalizacji.",
+      "a4": "FREE zawiera podstawowe funkcje (przeglądanie kontaktów, logowanie e-maili, ograniczone rekordy). PLUS dodaje zaawansowane wyszukiwanie, informacje finansowe, powiązane kontakty, organizację e-maili z powiadomieniami i opcje personalizacji.",
       "q5": "P: Czy mogę anulować subskrypcję PLUS w każdej chwili?",
       "a5": "Tak, możesz anulować w każdej chwili bez kar. Twoja subskrypcja pozostanie aktywna do końca okresu rozliczeniowego.",
       "privacyTitle": "Prywatność",
@@ -475,8 +475,8 @@
       "annual": "lub 182$/rok",
       "save": "Oszczędź 20%",
       "feature1": "Wszystko z Free",
-      "feature2": "<strong>Wyszukiwanie w czasie rzeczywistym</strong> we wszystkich listach",
-      "feature3": "Przeglądaj do <strong>50 rekordów</strong> (vs 5 w Free)",
+      "feature2": "Wyszukiwanie w czasie rzeczywistym we wszystkich listach",
+      "feature3": "Przeglądaj do 50 rekordów (vs 5 w Free)",
       "feature4": "Zakładki Kontakt/Firma",
       "feature5": "Powiązane kontakty według domeny",
       "feature6": "Dostosuj widoczne sekcje",
@@ -484,6 +484,7 @@
       "feature8": "Grupowanie rekordów według etapu",
       "feature9": "Info o uczestnikach e-maila",
       "feature10": "Ostatnie aktywności",
+      "feature11": "Organizacja e-maili z powiadomieniami",
       "cta": "Ulepsz do PLUS"
     },
     "teamQuestion": "Potrzebujesz cen zespołowych?",
@@ -517,16 +518,17 @@
       "or": "lub",
       "perYear": "/rok",
       "save": "Oszczędź 20%",
-      "feature1": "<strong>Wyszukiwanie w czasie rzeczywistym</strong> w szansach, zadaniach i zgłoszeniach",
-      "feature2": "Przeglądaj do <strong>50 rekordów</strong> na sekcję (vs 5 w Free)",
+      "feature1": "Wyszukiwanie w czasie rzeczywistym w szansach, zadaniach i zgłoszeniach",
+      "feature2": "Przeglądaj do 50 rekordów na sekcję (vs 5 w Free)",
       "feature3": "Zakładki Kontakt/Firma dla lepszego kontekstu",
       "feature4": "Powiązane kontakty według domeny",
       "feature5": "Dostosuj widoczne sekcje",
       "feature6": "Informacje o wydajności i metryki",
       "feature7": "Priorytetowe wsparcie e-mailowe",
-      "feature8": "<strong>Grupowanie rekordów według etapu</strong>/statusu",
+      "feature8": "Grupowanie rekordów według etapu/statusu",
       "feature9": "Informacje o uczestnikach e-maila z Odoo",
       "feature10": "Ostatnie aktywności z konwersacji Odoo",
+      "feature11": "Organizacja e-maili z powiadomieniami ze znacznikami modułów",
       "cta": "Ulepsz do PLUS"
     },
     "comparison": {
@@ -547,7 +549,8 @@
       "customizeSections": "Dostosuj widoczne sekcje",
       "groupByStage": "Grupowanie rekordów według etapu/statusu",
       "emailParticipants": "Info o uczestnikach e-maila",
-      "recentActivities": "Ostatnie aktywności"
+      "recentActivities": "Ostatnie aktywności",
+      "notificationOrganization": "Organizacja e-maili z powiadomieniami"
     },
     "cta": {
       "title": "Gotowy na turbodoładowanie przepływu pracy Gmail-Odoo?",

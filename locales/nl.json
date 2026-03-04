@@ -326,7 +326,7 @@
       "a3": "Ja. De extensie heeft alleen toegang tot e-mails die u actief bekijkt en communiceert veilig met uw Odoo-instantie via HTTPS. Uw API-sleutel wordt opgeslagen in Chrome's beveiligde opslag.",
       "subscriptionTitle": "Abonnement",
       "q4": "V: Wat is het verschil tussen GRATIS en PLUS?",
-      "a4": "GRATIS bevat basisfuncties (contacten bekijken, e-mail loggen, beperkte records). PLUS voegt geavanceerd zoeken, financiële inzichten, gerelateerde contacten en aanpassingsopties toe.",
+      "a4": "GRATIS bevat basisfuncties (contacten bekijken, e-mail loggen, beperkte records). PLUS voegt geavanceerd zoeken, financiële inzichten, gerelateerde contacten, organisatie van notificatie-e-mails en aanpassingsopties toe.",
       "q5": "V: Kan ik mijn PLUS abonnement op elk moment opzeggen?",
       "a5": "Ja, u kunt op elk moment zonder boete opzeggen. Uw abonnement blijft actief tot het einde van uw factureringsperiode.",
       "privacyTitle": "Privacy",
@@ -475,8 +475,8 @@
       "annual": "of €182/jaar",
       "save": "Bespaar 20%",
       "feature1": "Alles in Gratis",
-      "feature2": "<strong>Realtime zoeken</strong> door alle lijsten",
-      "feature3": "Bekijk tot <strong>50 records</strong> (vs 5 in Gratis)",
+      "feature2": "Realtime zoeken door alle lijsten",
+      "feature3": "Bekijk tot 50 records (vs 5 in Gratis)",
       "feature4": "Contact/Bedrijf tabbladen",
       "feature5": "Gerelateerde contacten per domein",
       "feature6": "Pas zichtbare secties aan",
@@ -484,6 +484,7 @@
       "feature8": "Records groeperen op fase",
       "feature9": "E-maildeelnemersinfo",
       "feature10": "Recente activiteiten",
+      "feature11": "Organisatie van notificatie-e-mails",
       "cta": "Upgraden naar PLUS"
     },
     "teamQuestion": "Teamprijzen nodig?",
@@ -517,16 +518,17 @@
       "or": "of",
       "perYear": "/jaar",
       "save": "Bespaar 20%",
-      "feature1": "<strong>Realtime zoeken</strong> door kansen, taken & tickets",
-      "feature2": "Bekijk tot <strong>50 records</strong> per sectie (vs 5 in Gratis)",
+      "feature1": "Realtime zoeken door kansen, taken & tickets",
+      "feature2": "Bekijk tot 50 records per sectie (vs 5 in Gratis)",
       "feature3": "Contact/Bedrijf tabbladen voor betere context",
       "feature4": "Gerelateerde contacten per domein",
       "feature5": "Pas zichtbare secties aan",
       "feature6": "Prestatie-inzichten & statistieken",
       "feature7": "Prioriteits e-mail ondersteuning",
-      "feature8": "<strong>Records groeperen op fase</strong>/status",
+      "feature8": "Records groeperen op fase/status",
       "feature9": "E-maildeelnemersinformatie vanuit Odoo",
       "feature10": "Recente activiteiten uit Odoo-gesprekken",
+      "feature11": "Organisatie van notificatie-e-mails met modulebadges",
       "cta": "Upgraden naar PLUS"
     },
     "comparison": {
@@ -547,7 +549,8 @@
       "customizeSections": "Pas zichtbare secties aan",
       "groupByStage": "Records groeperen op fase/status",
       "emailParticipants": "E-maildeelnemersinfo",
-      "recentActivities": "Recente activiteiten"
+      "recentActivities": "Recente activiteiten",
+      "notificationOrganization": "Organisatie van notificatie-e-mails"
     },
     "cta": {
       "title": "Klaar om uw Gmail-Odoo workflow te versnellen?",

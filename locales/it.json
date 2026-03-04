@@ -326,7 +326,7 @@
       "a3": "Sì. L'estensione accede solo alle email che visualizzi attivamente e comunica in modo sicuro con la tua istanza Odoo tramite HTTPS. La tua chiave API è memorizzata nello storage sicuro di Chrome.",
       "subscriptionTitle": "Abbonamento",
       "q4": "D: Qual è la differenza tra FREE e PLUS?",
-      "a4": "FREE include le funzionalità base (visualizzazione contatti, logging email, record limitati). PLUS aggiunge ricerca avanzata, approfondimenti finanziari, contatti correlati e opzioni di personalizzazione.",
+      "a4": "FREE include le funzionalità base (visualizzazione contatti, logging email, record limitati). PLUS aggiunge ricerca avanzata, approfondimenti finanziari, contatti correlati, organizzazione delle email di notifica e opzioni di personalizzazione.",
       "q5": "D: Posso annullare il mio abbonamento PLUS in qualsiasi momento?",
       "a5": "Sì, puoi annullare in qualsiasi momento senza penali. Il tuo abbonamento rimarrà attivo fino alla fine del periodo di fatturazione corrente.",
       "privacyTitle": "Privacy",
@@ -475,8 +475,8 @@
       "annual": "o €182/anno",
       "save": "Risparmia 20%",
       "feature1": "Tutto di Gratis",
-      "feature2": "<strong>Ricerca in tempo reale</strong> su tutte le liste",
-      "feature3": "Visualizza fino a <strong>50 record</strong> (vs 5 in Gratis)",
+      "feature2": "Ricerca in tempo reale su tutte le liste",
+      "feature3": "Visualizza fino a 50 record (vs 5 in Gratis)",
       "feature4": "Schede Contatto/Azienda",
       "feature5": "Contatti correlati per dominio",
       "feature6": "Personalizza sezioni visibili",
@@ -484,6 +484,7 @@
       "feature8": "Raggruppare i record per fase",
       "feature9": "Info partecipanti email",
       "feature10": "Attività recenti",
+      "feature11": "Organizzazione delle email di notifica",
       "cta": "Passa a PLUS"
     },
     "teamQuestion": "Hai bisogno di prezzi per team?",
@@ -517,16 +518,17 @@
       "or": "o",
       "perYear": "/anno",
       "save": "Risparmia 20%",
-      "feature1": "<strong>Ricerca in tempo reale</strong> su opportunità, attività e ticket",
-      "feature2": "Visualizza fino a <strong>50 record</strong> per sezione (vs 5 in Gratis)",
+      "feature1": "Ricerca in tempo reale su opportunità, attività e ticket",
+      "feature2": "Visualizza fino a 50 record per sezione (vs 5 in Gratis)",
       "feature3": "Schede Contatto/Azienda per un contesto migliore",
       "feature4": "Contatti correlati per dominio",
       "feature5": "Personalizza sezioni visibili",
       "feature6": "Approfondimenti e metriche prestazioni",
       "feature7": "Supporto email prioritario",
-      "feature8": "<strong>Raggruppare i record per fase</strong>/stato",
+      "feature8": "Raggruppare i record per fase/stato",
       "feature9": "Informazioni dei partecipanti email da Odoo",
       "feature10": "Attività recenti dalle conversazioni di Odoo",
+      "feature11": "Organizzazione delle email di notifica con badge per modulo",
       "cta": "Passa a PLUS"
     },
     "comparison": {
@@ -547,7 +549,8 @@
       "customizeSections": "Personalizza sezioni visibili",
       "groupByStage": "Raggruppare i record per fase/stato",
       "emailParticipants": "Info partecipanti email",
-      "recentActivities": "Attività recenti"
+      "recentActivities": "Attività recenti",
+      "notificationOrganization": "Organizzazione delle email di notifica"
     },
     "cta": {
       "title": "Pronto a potenziare il tuo workflow Gmail-Odoo?",

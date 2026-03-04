@@ -326,7 +326,7 @@
       "a3": "Yes. The extension only accesses emails you actively view and communicates securely with your Odoo instance via HTTPS. Your API key is stored in Chrome's secure storage.",
       "subscriptionTitle": "Subscription",
       "q4": "Q: What's the difference between FREE and PLUS?",
-      "a4": "FREE includes basic features (contact viewing, email logging, limited records). PLUS adds advanced search, financial insights, related contacts, and customization options.",
+      "a4": "FREE includes basic features (contact viewing, email logging, limited records). PLUS adds advanced search, financial insights, related contacts, notification email organization, and customization options.",
       "q5": "Q: Can I cancel my PLUS subscription anytime?",
       "a5": "Yes, you can cancel anytime without penalty. Your subscription will remain active until the end of your billing period.",
       "privacyTitle": "Privacy",
@@ -475,8 +475,8 @@
       "annual": "or $182/year",
       "save": "Save 20%",
       "feature1": "Everything in Free",
-      "feature2": "<strong>Real-time search</strong> across all lists",
-      "feature3": "View up to <strong>50 records</strong> (vs 5 in Free)",
+      "feature2": "Real-time search across all lists",
+      "feature3": "View up to 50 records (vs 5 in Free)",
       "feature4": "Contact/Company tabs",
       "feature5": "Related contacts by domain",
       "feature6": "Customize visible sections",
@@ -484,6 +484,7 @@
       "feature8": "Group records by stage",
       "feature9": "Email participants info",
       "feature10": "Recent activities",
+      "feature11": "Notification email organization",
       "cta": "Upgrade to PLUS"
     },
     "teamQuestion": "Need team pricing?",
@@ -517,16 +518,17 @@
       "or": "or",
       "perYear": "/year",
       "save": "Save 20%",
-      "feature1": "<strong>Real-time search</strong> across opportunities, tasks & tickets",
-      "feature2": "View up to <strong>50 records</strong> per section (vs 5 in Free)",
+      "feature1": "Real-time search across opportunities, tasks & tickets",
+      "feature2": "View up to 50 records per section (vs 5 in Free)",
       "feature3": "Contact/Company tabs for better context",
       "feature4": "Related contacts by domain",
       "feature5": "Customize visible sections",
       "feature6": "Performance insights & metrics",
       "feature7": "Priority email support",
-      "feature8": "<strong>Group records by stage</strong>/status",
+      "feature8": "Group records by stage/status",
       "feature9": "Email participants info from Odoo",
       "feature10": "Recent activities from Odoo's conversations",
+      "feature11": "Notification email organization with module badges",
       "cta": "Upgrade to PLUS"
     },
     "comparison": {
@@ -547,7 +549,8 @@
       "customizeSections": "Customize visible sections",
       "groupByStage": "Group records by stage/status",
       "emailParticipants": "Email participants info",
-      "recentActivities": "Recent activities"
+      "recentActivities": "Recent activities",
+      "notificationOrganization": "Notification email organization"
     },
     "cta": {
       "title": "Ready to supercharge your Gmail-Odoo workflow?",
