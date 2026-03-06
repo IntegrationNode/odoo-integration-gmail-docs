@@ -79,7 +79,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Privacy Policy</h1>
-            <p class="last-updated"><span>Last updated</span>: January 25, 2026</p>
+            <p class="last-updated"><span>Last updated</span>: March 4, 2026</p>
 
             <section class="policy-section">
                 <h2>Overview</h2>
@@ -138,15 +138,15 @@
 
             <section class="policy-section">
                 <h2>Third-Party Services</h2>
-                <h3>LemonSqueezy (<span>Payment Processing</span>)</h3>
-                <p>The Extension uses LemonSqueezy (https://www.lemonsqueezy.com/) for subscription management and payment processing. When you subscribe to the PLUS plan, LemonSqueezy collects:</p>
+                <h3>Polar (<span>Payment Processing</span>)</h3>
+                <p>The Extension uses Polar (https://polar.sh/) for subscription management and payment processing. When you subscribe to the PLUS plan, Polar collects:</p>
                 <ul>
                     <li>Your email address for account management and receipts</li>
-                    <li>Payment information (processed securely, not stored by the Extension)</li>
+                    <li>Payment information (processed securely by Stripe, not stored by the Extension)</li>
                     <li>Subscription status and billing information</li>
                 </ul>
-                <p><strong>LemonSqueezy Privacy Policy:</strong> <a href="https://www.lemonsqueezy.com/privacy" target="_blank">https://www.lemonsqueezy.com/privacy</a></p>
-                <p><strong>Important:</strong> <span>Payment data is handled entirely by LemonSqueezy. The Extension never receives or stores your credit card information.</span></p>
+                <p><strong>Polar Privacy Policy:</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
+                <p><strong>Important:</strong> <span>Payment data is handled entirely by Polar and Stripe. The Extension never receives or stores your credit card information.</span></p>
 
                 <h3>InboxSDK (<span>Gmail Integration</span>)</h3>
                 <p>The Extension uses InboxSDK (https://www.inboxsdk.com/) to integrate with Gmail's interface. InboxSDK is a library that helps the Extension interact with Gmail's UI to display the sidebar and detect email contacts. InboxSDK does not collect, transmit, or store your email data.</p>
@@ -168,7 +168,7 @@
                 <p>The Extension only communicates with:</p>
                 <ul>
                     <li><strong>Your Odoo Instance:</strong> <span>The Extension sends API requests to the Odoo instance URL you configure to retrieve and create records</span></li>
-                    <li><strong>LemonSqueezy:</strong> <span>Only for subscription management (email, subscription status, payment processing)</span></li>
+                    <li><strong>Polar:</strong> <span>Only for subscription management (email, subscription status, payment processing)</span></li>
                     <li><strong>PostHog:</strong> <span>Anonymous usage statistics (feature usage, errors). No PII or email/Odoo content. You can opt-out in Settings > Account > Privacy.</span></li>
                 </ul>
                 <p>The Extension does NOT:</p>
@@ -202,7 +202,8 @@
                     <li><strong>storage:</strong> <span>Required to save your Odoo configuration and cache API responses locally</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Required to access Gmail's interface and display the sidebar</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Required to communicate with Odoo Online cloud instances (e.g., yourcompany.odoo.com)</span></li>
-                    <li><strong>host_permissions (lemonsqueezy.com):</strong> <span>Required for subscription management and payment processing</span></li>
+                    <li><strong>host_permissions (polar.sh):</strong> <span>Required for subscription management and payment processing</span></li>
+                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Required to offer Purchasing Power Parity (PPP) discounts based on the user's country</span></li>
                 </ul>
 
                 <h3>Optional Permissions (Requested When Needed)</h3>

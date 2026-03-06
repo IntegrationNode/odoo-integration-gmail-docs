@@ -79,7 +79,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Privacybeleid</h1>
-            <p class="last-updated"><span>Laatst bijgewerkt</span>: January 25, 2026</p>
+            <p class="last-updated"><span>Laatst bijgewerkt</span>: March 4, 2026</p>
 
             <section class="policy-section">
                 <h2>Overzicht</h2>
@@ -138,15 +138,15 @@
 
             <section class="policy-section">
                 <h2>Diensten van Derden</h2>
-                <h3>LemonSqueezy (<span>Betalingsverwerking</span>)</h3>
-                <p>De Extensie gebruikt LemonSqueezy (https://www.lemonsqueezy.com/) voor abonnementsbeheer en betalingsverwerking. Wanneer u zich abonneert op het PLUS abonnement, verzamelt LemonSqueezy:</p>
+                <h3>Polar (<span>Betalingsverwerking</span>)</h3>
+                <p>De Extensie gebruikt Polar (https://polar.sh/) voor abonnementsbeheer en betalingsverwerking. Wanneer u zich abonneert op het PLUS abonnement, verzamelt Polar:</p>
                 <ul>
                     <li>Uw e-mailadres voor accountbeheer en ontvangstbewijzen</li>
-                    <li>Betalingsinformatie (veilig verwerkt, niet opgeslagen door de Extensie)</li>
+                    <li>Betalingsinformatie (veilig verwerkt door Stripe, niet opgeslagen door de Extensie)</li>
                     <li>Abonnementsstatus en factureringsinformatie</li>
                 </ul>
-                <p><strong>LemonSqueezy Privacybeleid:</strong> <a href="https://www.lemonsqueezy.com/privacy" target="_blank">https://www.lemonsqueezy.com/privacy</a></p>
-                <p><strong>Belangrijk:</strong> <span>Betalingsgegevens worden volledig door LemonSqueezy verwerkt. De Extensie ontvangt of bewaart nooit uw creditcardinformatie.</span></p>
+                <p><strong>Polar Privacybeleid:</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
+                <p><strong>Belangrijk:</strong> <span>Betalingsgegevens worden volledig door Polar en Stripe verwerkt. De Extensie ontvangt of bewaart nooit uw creditcardinformatie.</span></p>
 
                 <h3>InboxSDK (<span>Gmail Integratie</span>)</h3>
                 <p>De Extensie gebruikt InboxSDK (https://www.inboxsdk.com/) om te integreren met de Gmail-interface. InboxSDK is een bibliotheek die de Extensie helpt om met de Gmail UI te communiceren om de zijbalk weer te geven en e-mailcontacten te detecteren. InboxSDK verzamelt, verzendt of bewaart geen e-mailgegevens.</p>
@@ -168,7 +168,7 @@
                 <p>De Extensie communiceert alleen met:</p>
                 <ul>
                     <li><strong>Uw Odoo Instantie:</strong> <span>De Extensie stuurt API-verzoeken naar de Odoo-instantie URL die u configureert om records op te halen en aan te maken</span></li>
-                    <li><strong>LemonSqueezy:</strong> <span>Alleen voor abonnementsbeheer (e-mail, abonnementsstatus, betalingsverwerking)</span></li>
+                    <li><strong>Polar:</strong> <span>Alleen voor abonnementsbeheer (e-mail, abonnementsstatus, betalingsverwerking)</span></li>
                     <li><strong>PostHog:</strong> <span>Anonieme gebruiksstatistieken (functiegebruik, fouten). Geen PII of e-mail/Odoo-inhoud. U kunt uitschakelen in Instellingen > Account > Privacy.</span></li>
                 </ul>
                 <p>De Extensie doet NIET:</p>
@@ -202,7 +202,8 @@
                     <li><strong>storage:</strong> <span>Vereist om uw Odoo-configuratie op te slaan en API-antwoorden lokaal te cachen</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Vereist om toegang te krijgen tot de Gmail-interface en de zijbalk weer te geven</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Vereist om te communiceren met Odoo Online cloud-instanties (bijv. uwbedrijf.odoo.com)</span></li>
-                    <li><strong>host_permissions (lemonsqueezy.com):</strong> <span>Vereist voor abonnementsbeheer en betalingsverwerking</span></li>
+                    <li><strong>host_permissions (polar.sh):</strong> <span>Vereist voor abonnementsbeheer en betalingsverwerking</span></li>
+                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Vereist om koopkrachtpariteit (KKP) kortingen aan te bieden op basis van het land van de gebruiker</span></li>
                 </ul>
 
                 <h3>Optionele Machtigingen (Aangevraagd Wanneer Nodig)</h3>

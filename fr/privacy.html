@@ -79,7 +79,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Politique de confidentialité</h1>
-            <p class="last-updated"><span>Dernière mise à jour</span>: January 25, 2026</p>
+            <p class="last-updated"><span>Dernière mise à jour</span>: March 4, 2026</p>
 
             <section class="policy-section">
                 <h2>Aperçu</h2>
@@ -138,15 +138,15 @@
 
             <section class="policy-section">
                 <h2>Services tiers</h2>
-                <h3>LemonSqueezy (<span>Traitement des paiements</span>)</h3>
-                <p>L'Extension utilise LemonSqueezy (https://www.lemonsqueezy.com/) pour la gestion des abonnements et le traitement des paiements. Lorsque vous souscrivez au plan PLUS, LemonSqueezy collecte :</p>
+                <h3>Polar (<span>Traitement des paiements</span>)</h3>
+                <p>L'Extension utilise Polar (https://polar.sh/) pour la gestion des abonnements et le traitement des paiements. Lorsque vous souscrivez au plan PLUS, Polar collecte :</p>
                 <ul>
                     <li>Votre adresse email pour la gestion du compte et les reçus</li>
-                    <li>Informations de paiement (traitées de manière sécurisée, non stockées par l'Extension)</li>
+                    <li>Informations de paiement (traitées de manière sécurisée par Stripe, non stockées par l'Extension)</li>
                     <li>Statut d'abonnement et informations de facturation</li>
                 </ul>
-                <p><strong>Politique de confidentialité LemonSqueezy :</strong> <a href="https://www.lemonsqueezy.com/privacy" target="_blank">https://www.lemonsqueezy.com/privacy</a></p>
-                <p><strong>Important :</strong> <span>Les données de paiement sont entièrement gérées par LemonSqueezy. L'Extension ne reçoit ni ne stocke jamais vos informations de carte bancaire.</span></p>
+                <p><strong>Politique de Confidentialité de Polar :</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
+                <p><strong>Important :</strong> <span>Les données de paiement sont entièrement gérées par Polar et Stripe. L'Extension ne reçoit ni ne stocke jamais vos informations de carte bancaire.</span></p>
 
                 <h3>InboxSDK (<span>Intégration Gmail</span>)</h3>
                 <p>L'Extension utilise InboxSDK (https://www.inboxsdk.com/) pour s'intégrer à l'interface Gmail. InboxSDK est une bibliothèque qui aide l'Extension à interagir avec l'interface Gmail pour afficher la barre latérale et détecter les contacts email. InboxSDK ne collecte, transmet ni stocke vos données email.</p>
@@ -168,7 +168,7 @@
                 <p>L'Extension communique uniquement avec :</p>
                 <ul>
                     <li><strong>Votre instance Odoo :</strong> <span>L'Extension envoie des requêtes API à l'URL Odoo que vous configurez pour récupérer et créer des enregistrements</span></li>
-                    <li><strong>LemonSqueezy:</strong> <span>Uniquement pour la gestion des abonnements (email, statut d'abonnement, traitement des paiements)</span></li>
+                    <li><strong>Polar:</strong> <span>Uniquement pour la gestion des abonnements (email, statut d'abonnement, traitement des paiements)</span></li>
                     <li><strong>PostHog:</strong> <span>Statistiques d'utilisation anonymes (utilisation des fonctionnalités, erreurs). Aucune PII ni contenu email/Odoo. Vous pouvez désactiver dans Paramètres > Compte > Confidentialité.</span></li>
                 </ul>
                 <p>L'Extension NE fait PAS :</p>
@@ -202,7 +202,8 @@
                     <li><strong>storage:</strong> <span>Nécessaire pour sauvegarder votre configuration Odoo et mettre en cache les réponses API localement</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Nécessaire pour accéder à l'interface Gmail et afficher la barre latérale</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Nécessaire pour communiquer avec les instances cloud Odoo Online (ex: votreentreprise.odoo.com)</span></li>
-                    <li><strong>host_permissions (lemonsqueezy.com):</strong> <span>Nécessaire pour la gestion des abonnements et le traitement des paiements</span></li>
+                    <li><strong>host_permissions (polar.sh):</strong> <span>Nécessaire pour la gestion des abonnements et le traitement des paiements</span></li>
+                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Nécessaire pour offrir des réductions de Parité de Pouvoir d'Achat (PPA) selon le pays de l'utilisateur</span></li>
                 </ul>
 
                 <h3>Autorisations optionnelles (Demandées si nécessaire)</h3>
