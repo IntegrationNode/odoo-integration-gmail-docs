@@ -928,6 +928,9 @@
       "subtitle": "Begin met ons Gratis abonnement of upgrade naar PLUS voor geavanceerde functies.",
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
+    },
+    "v0403": {
+      "setupGuide": "Helplink in het configuratieformulier met een gedetailleerde handleiding voor het aanmaken van API-sleutels in alle Odoo-versies (14-19)"
     }
   },
   "alternative": {

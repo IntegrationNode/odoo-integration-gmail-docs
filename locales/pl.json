@@ -928,6 +928,9 @@
       "subtitle": "Zacznij od planu Free lub ulepsz do PLUS dla zaawansowanych funkcji.",
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
+    },
+    "v0403": {
+      "setupGuide": "Link pomocy w formularzu konfiguracji ze szczegółowym przewodnikiem tworzenia kluczy API we wszystkich wersjach Odoo (14-19)"
     }
   },
   "alternative": {

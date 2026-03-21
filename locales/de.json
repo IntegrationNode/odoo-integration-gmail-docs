@@ -928,6 +928,9 @@
       "subtitle": "Starten Sie mit unserem kostenlosen Plan oder upgraden Sie auf PLUS für erweiterte Funktionen.",
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
+    },
+    "v0403": {
+      "setupGuide": "Hilfe-Link im Konfigurationsformular mit einer detaillierten Anleitung zum Erstellen von API-Schlüsseln in allen Odoo-Versionen (14-19)"
     }
   },
   "howItWorks": {

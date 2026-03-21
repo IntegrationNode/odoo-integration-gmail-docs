@@ -928,6 +928,9 @@
       "subtitle": "Inizia con il nostro piano Gratis o passa a PLUS per funzionalità avanzate.",
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
+    },
+    "v0403": {
+      "setupGuide": "Link di aiuto nel modulo di configurazione con una guida dettagliata per creare chiavi API in tutte le versioni di Odoo (14-19)"
     }
   },
   "alternative": {
