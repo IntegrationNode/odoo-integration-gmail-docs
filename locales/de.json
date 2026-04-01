@@ -929,6 +929,9 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0405": {
+      "errorClassification": "Fehlermeldungen korrigiert, die nicht die richtige Ursache anzeigten (z.B. ungültiger API-Schlüssel oder Verbindungs-Timeout)"
+    },
     "v0404": {
       "errorMessages": "Verbesserte Fehlermeldungen"
     },

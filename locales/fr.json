@@ -929,6 +929,9 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0405": {
+      "errorClassification": "Correction des messages d'erreur n'affichant pas la bonne cause (ex. clé API invalide ou délai de connexion dépassé)"
+    },
     "v0404": {
       "errorMessages": "Messages d'erreur améliorés"
     },

@@ -929,6 +929,9 @@
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
     },
+    "v0405": {
+      "errorClassification": "Corrigidas mensagens de erro que não mostravam a causa correta (ex. chave API inválida ou tempo limite de conexão)"
+    },
     "v0404": {
       "errorMessages": "Mensagens de erro melhoradas"
     },

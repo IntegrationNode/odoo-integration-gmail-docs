@@ -929,6 +929,9 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0405": {
+      "errorClassification": "Fixed error messages not showing the correct cause (e.g. invalid API key or connection timeout)"
+    },
     "v0404": {
       "errorMessages": "Improved error messages"
     },
