@@ -929,6 +929,9 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0406": {
+      "financialFieldsFix": "Corregida la sección de Empresa que no cargaba para usuarios sin permisos de contabilidad"
+    },
     "v0405": {
       "errorClassification": "Corregidos mensajes de error que no mostraban la causa correcta (ej. API key inválida o tiempo de conexión agotado)"
     },

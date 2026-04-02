@@ -929,6 +929,9 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0406": {
+      "financialFieldsFix": "Bedrijfssectie wordt nu ook geladen voor gebruikers zonder boekhoudrechten"
+    },
     "v0405": {
       "errorClassification": "Foutmeldingen gecorrigeerd die niet de juiste oorzaak toonden (bijv. ongeldige API-sleutel of verbindingstime-out)"
     },

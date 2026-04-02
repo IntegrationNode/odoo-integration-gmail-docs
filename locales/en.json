@@ -929,6 +929,9 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0406": {
+      "financialFieldsFix": "Fixed Company section not loading for users without accounting permissions"
+    },
     "v0405": {
       "errorClassification": "Fixed error messages not showing the correct cause (e.g. invalid API key or connection timeout)"
     },

@@ -929,6 +929,9 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0406": {
+      "financialFieldsFix": "Correction de la section Entreprise qui ne se chargeait pas pour les utilisateurs sans droits comptables"
+    },
     "v0405": {
       "errorClassification": "Correction des messages d'erreur n'affichant pas la bonne cause (ex. clé API invalide ou délai de connexion dépassé)"
     },

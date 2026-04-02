@@ -929,6 +929,9 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0406": {
+      "financialFieldsFix": "Naprawiono sekcję Firma, która nie ładowała się dla użytkowników bez uprawnień księgowych"
+    },
     "v0405": {
       "errorClassification": "Naprawiono komunikaty o błędach, które nie pokazywały prawidłowej przyczyny (np. nieprawidłowy klucz API lub przekroczenie limitu czasu połączenia)"
     },

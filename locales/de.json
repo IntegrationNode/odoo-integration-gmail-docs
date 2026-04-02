@@ -929,6 +929,9 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0406": {
+      "financialFieldsFix": "Firmenbereich wird jetzt auch für Benutzer ohne Buchhaltungsberechtigungen geladen"
+    },
     "v0405": {
       "errorClassification": "Fehlermeldungen korrigiert, die nicht die richtige Ursache anzeigten (z.B. ungültiger API-Schlüssel oder Verbindungs-Timeout)"
     },
