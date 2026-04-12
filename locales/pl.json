@@ -483,7 +483,8 @@
     "plus": {
       "name": "PLUS",
       "badge": "Najpopularniejszy",
-      "annual": "lub 182$/rok",
+      "or": "lub",
+      "perYear": "/rok",
       "save": "Oszczędź 20%",
       "feature1": "Wszystko z Free",
       "feature2": "Wyszukiwanie w czasie rzeczywistym we wszystkich listach",
@@ -540,10 +541,23 @@
       "feature9": "Informacje o uczestnikach e-maila z Odoo",
       "feature10": "Ostatnie aktywności z konwersacji Odoo",
       "feature11": "Organizacja e-maili z powiadomieniami ze znacznikami modułów",
-      "cta": "Ulepsz do PLUS"
+      "cta": "Wypróbuj Za Darmo przez 14 Dni"
+    },
+    "team": {
+      "name": "Team",
+      "badge": "3+ użytkowników",
+      "perUserMonth": "/użytkownik/miesiąc",
+      "annualAvailable": "Rozliczenie roczne dostępne",
+      "description": "Dla zespołów potrzebujących scentralizowanego zarządzania",
+      "everythingInPlus": "Wszystko w PLUS, plus:",
+      "feature1": "Centralne rozliczanie zespołu",
+      "feature2": "Portal zarządzania miejscami",
+      "feature3": "Rabaty ilościowe od 5+ użytkowników",
+      "cta": "Wypróbuj Za Darmo przez 14 Dni"
     },
     "comparison": {
       "title": "Szczegółowe porównanie funkcji",
+      "teamNote": "Plan Team zawiera wszystkie funkcje PLUS oraz centralne rozliczanie i zarządzanie miejscami.",
       "feature": "Funkcja",
       "coreFeatures": "Podstawowe funkcje",
       "viewContacts": "Przeglądaj kontakty i informacje o firmach",
@@ -922,7 +936,7 @@
       "customizationDesc": "Wybierz które sekcje wyświetlać"
     },
     "subscriptionRequired": "Wymagana subskrypcja PLUS:",
-    "subscriptionRequiredDesc": "Zaawansowane funkcje są dostępne z subskrypcją PLUS (19$/miesiąc lub 182$/rok).",
+    "subscriptionRequiredDesc": "Zaawansowane funkcje są dostępne z subskrypcją PLUS. Zobacz cennik po szczegóły.",
     "cta": {
       "title": "Gotowy wypróbować najnowszą wersję?",
       "subtitle": "Zacznij od planu Free lub ulepsz do PLUS dla zaawansowanych funkcji.",

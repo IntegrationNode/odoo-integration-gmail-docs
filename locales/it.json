@@ -483,7 +483,8 @@
     "plus": {
       "name": "PLUS",
       "badge": "Più Popolare",
-      "annual": "o €182/anno",
+      "or": "o",
+      "perYear": "/anno",
       "save": "Risparmia 20%",
       "feature1": "Tutto di Gratis",
       "feature2": "Ricerca in tempo reale su tutte le liste",
@@ -540,10 +541,23 @@
       "feature9": "Informazioni dei partecipanti email da Odoo",
       "feature10": "Attività recenti dalle conversazioni di Odoo",
       "feature11": "Organizzazione delle email di notifica con badge per modulo",
-      "cta": "Passa a PLUS"
+      "cta": "Prova Gratis per 14 Giorni"
+    },
+    "team": {
+      "name": "Team",
+      "badge": "3+ utenti",
+      "perUserMonth": "/utente/mese",
+      "annualAvailable": "Fatturazione annuale disponibile",
+      "description": "Per i team che necessitano di gestione centralizzata",
+      "everythingInPlus": "Tutto in PLUS, più:",
+      "feature1": "Fatturazione centralizzata del team",
+      "feature2": "Portale di gestione posti",
+      "feature3": "Sconti per volume da 5+ utenti",
+      "cta": "Prova Gratis per 14 Giorni"
     },
     "comparison": {
       "title": "Confronto Dettagliato Funzionalità",
+      "teamNote": "Il piano Team include tutte le funzionalità PLUS più fatturazione centralizzata e gestione posti.",
       "feature": "Funzionalità",
       "coreFeatures": "Funzionalità Base",
       "viewContacts": "Visualizza contatti e info azienda",
@@ -922,7 +936,7 @@
       "customizationDesc": "Scegli quali sezioni visualizzare"
     },
     "subscriptionRequired": "Abbonamento PLUS richiesto:",
-    "subscriptionRequiredDesc": "Le funzionalità avanzate sono disponibili con un abbonamento PLUS ($19/mese o $182/anno).",
+    "subscriptionRequiredDesc": "Le funzionalità avanzate sono disponibili con un abbonamento PLUS. Vedi i prezzi per i dettagli.",
     "cta": {
       "title": "Pronto a provare l'ultima versione?",
       "subtitle": "Inizia con il nostro piano Gratis o passa a PLUS per funzionalità avanzate.",

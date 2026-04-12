@@ -194,7 +194,8 @@
     "plus": {
       "name": "PLUS",
       "badge": "Más Popular",
-      "annual": "o $182/año",
+      "or": "o",
+      "perYear": "/año",
       "save": "Ahorra 20%",
       "feature1": "Todo lo del plan Gratis",
       "feature2": "Búsqueda en tiempo real en todas las listas",
@@ -251,10 +252,23 @@
       "feature9": "Información de participantes del email desde Odoo",
       "feature10": "Actividades recientes de las conversaciones de Odoo",
       "feature11": "Organización de emails de notificación con badges por módulo",
-      "cta": "Actualizar a PLUS"
+      "cta": "Prueba Gratis 14 Días"
+    },
+    "team": {
+      "name": "Team",
+      "badge": "3+ usuarios",
+      "perUserMonth": "/usuario/mes",
+      "annualAvailable": "Facturación anual disponible",
+      "description": "Para equipos que necesitan gestión centralizada",
+      "everythingInPlus": "Todo en PLUS, más:",
+      "feature1": "Facturación centralizada del equipo",
+      "feature2": "Portal de gestión de asientos",
+      "feature3": "Descuentos por volumen a partir de 5 usuarios",
+      "cta": "Prueba Gratis 14 Días"
     },
     "comparison": {
       "title": "Comparación Detallada de Funciones",
+      "teamNote": "El plan Team incluye todas las funciones de PLUS más facturación centralizada y gestión de asientos.",
       "feature": "Función",
       "coreFeatures": "Funciones Principales",
       "viewContacts": "Ver contactos e info de empresa",
@@ -922,7 +936,7 @@
       "customizationDesc": "Elige qué secciones mostrar"
     },
     "subscriptionRequired": "Suscripción PLUS requerida:",
-    "subscriptionRequiredDesc": "Las funciones avanzadas están disponibles con suscripción PLUS ($19/mes o $182/año).",
+    "subscriptionRequiredDesc": "Las funciones avanzadas están disponibles con suscripción PLUS. Consulta precios para más detalles.",
     "cta": {
       "title": "¿Listo para probar la última versión?",
       "subtitle": "Empieza con nuestro plan Gratis o actualiza a PLUS para funciones avanzadas.",

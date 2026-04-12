@@ -483,7 +483,8 @@
     "plus": {
       "name": "PLUS",
       "badge": "Meest Populair",
-      "annual": "of €182/jaar",
+      "or": "of",
+      "perYear": "/jaar",
       "save": "Bespaar 20%",
       "feature1": "Alles in Gratis",
       "feature2": "Realtime zoeken door alle lijsten",
@@ -540,10 +541,23 @@
       "feature9": "E-maildeelnemersinformatie vanuit Odoo",
       "feature10": "Recente activiteiten uit Odoo-gesprekken",
       "feature11": "Organisatie van notificatie-e-mails met modulebadges",
-      "cta": "Upgraden naar PLUS"
+      "cta": "14 Dagen Gratis Proberen"
+    },
+    "team": {
+      "name": "Team",
+      "badge": "3+ gebruikers",
+      "perUserMonth": "/gebruiker/maand",
+      "annualAvailable": "Jaarlijkse facturering beschikbaar",
+      "description": "Voor teams die gecentraliseerd beheer nodig hebben",
+      "everythingInPlus": "Alles in PLUS, plus:",
+      "feature1": "Gecentraliseerde teamfacturering",
+      "feature2": "Portaal voor plaatsbeheer",
+      "feature3": "Volumekorting vanaf 5 gebruikers",
+      "cta": "14 Dagen Gratis Proberen"
     },
     "comparison": {
       "title": "Gedetailleerde Functievergelijking",
+      "teamNote": "Het Team-plan bevat alle PLUS-functies plus gecentraliseerde facturering en plaatsbeheer.",
       "feature": "Functie",
       "coreFeatures": "Kernfuncties",
       "viewContacts": "Bekijk contacten & bedrijfsinfo",
@@ -922,7 +936,7 @@
       "customizationDesc": "Kies welke secties worden weergegeven"
     },
     "subscriptionRequired": "PLUS abonnement vereist:",
-    "subscriptionRequiredDesc": "Geavanceerde functies zijn beschikbaar met een PLUS abonnement ($19/maand of $182/jaar).",
+    "subscriptionRequiredDesc": "Geavanceerde functies zijn beschikbaar met een PLUS abonnement. Zie prijzen voor details.",
     "cta": {
       "title": "Klaar om de nieuwste versie te proberen?",
       "subtitle": "Begin met ons Gratis abonnement of upgrade naar PLUS voor geavanceerde functies.",

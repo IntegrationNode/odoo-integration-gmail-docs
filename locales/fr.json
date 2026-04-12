@@ -483,7 +483,8 @@
     "plus": {
       "name": "PLUS",
       "badge": "Le plus populaire",
-      "annual": "ou 182€/an",
+      "or": "ou",
+      "perYear": "/an",
       "save": "Économisez 20%",
       "feature1": "Tout le plan Gratuit",
       "feature2": "Recherche en temps réel dans toutes les listes",
@@ -540,10 +541,23 @@
       "feature9": "Informations des participants de l'email depuis Odoo",
       "feature10": "Activités récentes des conversations Odoo",
       "feature11": "Organisation des emails de notification avec badges par module",
-      "cta": "Passer à PLUS"
+      "cta": "Essai Gratuit de 14 Jours"
+    },
+    "team": {
+      "name": "Team",
+      "badge": "3+ utilisateurs",
+      "perUserMonth": "/utilisateur/mois",
+      "annualAvailable": "Facturation annuelle disponible",
+      "description": "Pour les équipes qui ont besoin d'une gestion centralisée",
+      "everythingInPlus": "Tout dans PLUS, plus :",
+      "feature1": "Facturation centralisée de l'équipe",
+      "feature2": "Portail de gestion des sièges",
+      "feature3": "Réductions par volume à partir de 5 utilisateurs",
+      "cta": "Essai Gratuit de 14 Jours"
     },
     "comparison": {
       "title": "Comparaison détaillée des fonctionnalités",
+      "teamNote": "Le plan Team inclut toutes les fonctionnalités PLUS ainsi que la facturation centralisée et la gestion des sièges.",
       "feature": "Fonctionnalité",
       "coreFeatures": "Fonctionnalités de base",
       "viewContacts": "Consultez contacts et infos entreprise",
@@ -922,7 +936,7 @@
       "customizationDesc": "Choisissez les sections à afficher"
     },
     "subscriptionRequired": "Abonnement PLUS requis :",
-    "subscriptionRequiredDesc": "Les fonctionnalités avancées sont disponibles avec un abonnement PLUS (19€/mois ou 182€/an).",
+    "subscriptionRequiredDesc": "Les fonctionnalités avancées sont disponibles avec un abonnement PLUS. Voir les tarifs pour plus de détails.",
     "cta": {
       "title": "Prêt à essayer la dernière version ?",
       "subtitle": "Commencez avec notre plan Gratuit ou passez à PLUS pour les fonctionnalités avancées.",

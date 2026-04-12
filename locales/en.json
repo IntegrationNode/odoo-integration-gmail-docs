@@ -483,7 +483,8 @@
     "plus": {
       "name": "PLUS",
       "badge": "Most Popular",
-      "annual": "or $182/year",
+      "or": "or",
+      "perYear": "/year",
       "save": "Save 20%",
       "feature1": "Everything in Free",
       "feature2": "Real-time search across all lists",
@@ -540,10 +541,23 @@
       "feature9": "Email participants info from Odoo",
       "feature10": "Recent activities from Odoo's conversations",
       "feature11": "Notification email organization with module badges",
-      "cta": "Upgrade to PLUS"
+      "cta": "Try Free for 14 Days"
+    },
+    "team": {
+      "name": "Team",
+      "badge": "3+ users",
+      "perUserMonth": "/user/month",
+      "annualAvailable": "Annual billing available",
+      "description": "For teams that need centralized management",
+      "everythingInPlus": "Everything in PLUS, plus:",
+      "feature1": "Centralized team billing",
+      "feature2": "Seat management portal",
+      "feature3": "Volume discounts from 5+ users",
+      "cta": "Try Free for 14 Days"
     },
     "comparison": {
       "title": "Detailed Feature Comparison",
+      "teamNote": "Team plan includes all PLUS features plus centralized billing and seat management.",
       "feature": "Feature",
       "coreFeatures": "Core Features",
       "viewContacts": "View contacts & company info",
@@ -922,7 +936,7 @@
       "customizationDesc": "Choose which sections to display"
     },
     "subscriptionRequired": "PLUS subscription required:",
-    "subscriptionRequiredDesc": "Advanced features are available with a PLUS subscription ($19/month or $182/year).",
+    "subscriptionRequiredDesc": "Advanced features are available with a PLUS subscription. See pricing for details.",
     "cta": {
       "title": "Ready to try the latest version?",
       "subtitle": "Get started with our Free plan or upgrade to PLUS for advanced features.",

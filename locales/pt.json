@@ -483,7 +483,8 @@
     "plus": {
       "name": "PLUS",
       "badge": "Mais Popular",
-      "annual": "ou R$182/ano",
+      "or": "ou",
+      "perYear": "/ano",
       "save": "Economize 20%",
       "feature1": "Tudo do Grátis",
       "feature2": "Pesquisa em tempo real em todas as listas",
@@ -540,10 +541,23 @@
       "feature9": "Informações dos participantes do email a partir do Odoo",
       "feature10": "Atividades recentes das conversas do Odoo",
       "feature11": "Organização de emails de notificação com badges por módulo",
-      "cta": "Atualizar para PLUS"
+      "cta": "Teste Grátis por 14 Dias"
+    },
+    "team": {
+      "name": "Team",
+      "badge": "3+ usuários",
+      "perUserMonth": "/usuário/mês",
+      "annualAvailable": "Faturamento anual disponível",
+      "description": "Para equipes que precisam de gestão centralizada",
+      "everythingInPlus": "Tudo no PLUS, mais:",
+      "feature1": "Faturamento centralizado da equipe",
+      "feature2": "Portal de gestão de assentos",
+      "feature3": "Descontos por volume a partir de 5 usuários",
+      "cta": "Teste Grátis por 14 Dias"
     },
     "comparison": {
       "title": "Comparação Detalhada de Recursos",
+      "teamNote": "O plano Team inclui todos os recursos do PLUS mais faturamento centralizado e gestão de assentos.",
       "feature": "Recurso",
       "coreFeatures": "Recursos Base",
       "viewContacts": "Visualizar contatos e info da empresa",
@@ -922,7 +936,7 @@
       "customizationDesc": "Escolha quais seções exibir"
     },
     "subscriptionRequired": "Assinatura PLUS necessária:",
-    "subscriptionRequiredDesc": "Recursos avançados estão disponíveis com uma assinatura PLUS ($19/mês ou $182/ano).",
+    "subscriptionRequiredDesc": "Recursos avançados estão disponíveis com uma assinatura PLUS. Consulte os preços para mais detalhes.",
     "cta": {
       "title": "Pronto para experimentar a versão mais recente?",
       "subtitle": "Comece com nosso plano Grátis ou atualize para PLUS para recursos avançados.",

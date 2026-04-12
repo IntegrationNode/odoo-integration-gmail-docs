@@ -483,7 +483,8 @@
     "plus": {
       "name": "PLUS",
       "badge": "Am beliebtesten",
-      "annual": "oder 182€/Jahr",
+      "or": "oder",
+      "perYear": "/Jahr",
       "save": "20% sparen",
       "feature1": "Alles im kostenlosen Plan",
       "feature2": "Echtzeit-Suche in allen Listen",
@@ -540,10 +541,23 @@
       "feature9": "E-Mail-Teilnehmer-Informationen aus Odoo",
       "feature10": "Letzte Aktivitäten aus Odoo-Konversationen",
       "feature11": "Organisation von Benachrichtigungs-E-Mails mit Modul-Badges",
-      "cta": "Auf PLUS upgraden"
+      "cta": "14 Tage Kostenlos Testen"
+    },
+    "team": {
+      "name": "Team",
+      "badge": "3+ Benutzer",
+      "perUserMonth": "/Benutzer/Monat",
+      "annualAvailable": "Jährliche Abrechnung verfügbar",
+      "description": "Für Teams, die eine zentrale Verwaltung benötigen",
+      "everythingInPlus": "Alles in PLUS, plus:",
+      "feature1": "Zentrale Teamabrechnung",
+      "feature2": "Platzverwaltungsportal",
+      "feature3": "Mengenrabatte ab 5 Benutzern",
+      "cta": "14 Tage Kostenlos Testen"
     },
     "comparison": {
       "title": "Detaillierter Funktionsvergleich",
+      "teamNote": "Der Team-Plan enthält alle PLUS-Funktionen sowie zentrale Abrechnung und Platzverwaltung.",
       "feature": "Funktion",
       "coreFeatures": "Kernfunktionen",
       "viewContacts": "Kontakte und Firmeninfo anzeigen",
@@ -922,7 +936,7 @@
       "customizationDesc": "Anzuzeigende Abschnitte auswählen"
     },
     "subscriptionRequired": "PLUS-Abonnement erforderlich:",
-    "subscriptionRequiredDesc": "Erweiterte Funktionen sind mit einem PLUS-Abonnement verfügbar (19€/Monat oder 182€/Jahr).",
+    "subscriptionRequiredDesc": "Erweiterte Funktionen sind mit einem PLUS-Abonnement verfügbar. Siehe Preise für Details.",
     "cta": {
       "title": "Bereit, die neueste Version auszuprobieren?",
       "subtitle": "Starten Sie mit unserem kostenlosen Plan oder upgraden Sie auf PLUS für erweiterte Funktionen.",

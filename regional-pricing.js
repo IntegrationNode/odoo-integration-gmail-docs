@@ -3,17 +3,29 @@
  *
  * Uses ParityDeals API to detect visitor's location and display
  * appropriate pricing that matches the checkout price.
+ *
+ * Prices are defined in PLANS (single source of truth).
+ * HTML elements use data-plan/data-price/data-price-format attributes.
  */
 
 (function() {
     'use strict';
 
     // ===========================================
-    // CONFIGURATION
+    // CONFIGURATION — Single source of truth
     // ===========================================
 
-    const BASE_PRICE_MONTHLY = 19;
-    const ANNUAL_DISCOUNT = 0.8; // 20% off for annual
+    const PLANS = {
+        plus: {
+            monthlyPrice: 19,
+            annualDiscount: 0.8 // 20% off for annual
+        },
+        team: {
+            pricePerUser: 19,
+            annualDiscount: 0.8
+        }
+    };
+
     const CACHE_DURATION_MS = 60 * 60 * 1000; // 1 hour
     const PD_IDENTIFIER = 'ac2b5915-53b6-4f30-a157-847f446ae825';
     const PARITY_DEALS_API = 'https://api.paritydeals.com/api/v1/deals/discount/?pd_identifier=' + PD_IDENTIFIER;
@@ -45,36 +57,58 @@
         }
     }
 
-    /**
-     * Calculate prices based on discount percentage
-     * @param {number} discountPercent - Discount percentage (e.g., 50 for 50%)
-     * @returns {Object} Calculated prices with integer and cents parts
-     */
-    function calculatePrices(discountPercent) {
-        const multiplier = 1 - (discountPercent / 100);
-        const monthlyRaw = BASE_PRICE_MONTHLY * multiplier;
-        const annualRaw = monthlyRaw * 12 * ANNUAL_DISCOUNT; // Annual = monthly * 12 * 0.8
+    // ===========================================
+    // PRICE CALCULATION
+    // ===========================================
 
-        // Split into integer and cents
-        const monthlyInt = Math.floor(monthlyRaw);
-        const monthlyCents = Math.round((monthlyRaw - monthlyInt) * 100);
-        const annualInt = Math.floor(annualRaw);
-        const annualCents = Math.round((annualRaw - annualInt) * 100);
+    /**
+     * Split a raw price into integer and cents parts
+     * @param {number} raw - Raw price value
+     * @returns {{ integer: number, cents: string }}
+     */
+    function splitPrice(raw) {
+        const integer = Math.floor(raw);
+        const cents = Math.round((raw - integer) * 100).toString().padStart(2, '0');
+        return { integer, cents };
+    }
+
+    /**
+     * Calculate prices for the PLUS plan
+     * @param {number} discountPercent - Regional discount percentage
+     * @returns {Object} Price data keyed by data-price attribute values
+     */
+    function calculatePlusPrices(discountPercent) {
+        const multiplier = 1 - (discountPercent / 100);
+        const monthlyRaw = PLANS.plus.monthlyPrice * multiplier;
+        const annualRaw = monthlyRaw * 12 * PLANS.plus.annualDiscount;
 
         return {
-            monthly: monthlyInt,
-            monthlyCents: monthlyCents.toString().padStart(2, '0'),
-            annual: annualInt,
-            annualCents: annualCents.toString().padStart(2, '0'),
-            discountPercent
+            monthly: splitPrice(monthlyRaw),
+            annual: splitPrice(annualRaw)
         };
     }
 
     /**
-     * Format price with cents in superscript (for large prices)
+     * Calculate prices for the Team plan
+     * @param {number} discountPercent - Regional discount percentage
+     * @returns {Object} Price data keyed by data-price attribute values
+     */
+    function calculateTeamPrices(discountPercent) {
+        const multiplier = 1 - (discountPercent / 100);
+        return {
+            perUser: splitPrice(PLANS.team.pricePerUser * multiplier)
+        };
+    }
+
+    // ===========================================
+    // PRICE FORMATTING
+    // ===========================================
+
+    /**
+     * Format price with cents in superscript (for large price displays)
      * @param {number} integer - Integer part
      * @param {string} cents - Cents part (2 digits)
-     * @returns {string} HTML string with formatted price
+     * @returns {string} HTML string
      */
     function formatPriceWithCents(integer, cents) {
         if (cents === '00') {
@@ -84,159 +118,107 @@
     }
 
     /**
-     * Format price as plain text with decimal (for small text prices)
+     * Format price as plain number (no $ symbol — $ is in HTML)
      * @param {number} integer - Integer part
      * @param {string} cents - Cents part (2 digits)
-     * @returns {string} Plain text price like "$109.20"
+     * @returns {string} Plain text like "182" or "109.20"
      */
     function formatPriceText(integer, cents) {
         if (cents === '00') {
-            return '$' + integer;
+            return integer.toString();
         }
-        return '$' + integer + '.' + cents;
+        return integer + '.' + cents;
     }
 
+    // ===========================================
+    // DOM UPDATE — Generic by data attributes
+    // ===========================================
+
     /**
-     * Update DOM elements with regional prices
-     * @param {Object} prices - Calculated prices
-     * @param {Object} data - ParityDeals response data
+     * Update all DOM elements for a given plan using data attributes.
+     *
+     * Elements must have:
+     *   data-plan="planId"         — which plan (e.g. "plus", "team")
+     *   data-price="priceKey"      — which price (e.g. "monthly", "annual")
+     *   data-price-format="large"  — formatPriceWithCents (HTML, for .price-large .amount)
+     *   data-price-format="text"   — formatPriceText (plain number, default)
+     *
+     * @param {string} planId - Plan identifier matching data-plan attribute
+     * @param {Object} prices - Object keyed by data-price values, each { integer, cents }
      */
-    function updatePriceDisplay(prices, data) {
-        const annualPriceText = formatPriceText(prices.annual, prices.annualCents);
-        const monthlyPriceText = formatPriceText(prices.monthly, prices.monthlyCents);
+    function updatePlanPrices(planId, prices) {
+        document.querySelectorAll('[data-plan="' + planId + '"]').forEach(function(el) {
+            var priceKey = el.getAttribute('data-price');
+            var format = el.getAttribute('data-price-format') || 'text';
+            var priceData = prices[priceKey];
+            if (!priceData) return;
 
-        // Update PLUS card monthly price (pricing.html)
-        const plusCard = document.querySelector('.pricing-card-extended.featured');
-        if (plusCard) {
-            // Update main price with cents in superscript
-            const amountEl = plusCard.querySelector('.price-large .amount');
-            if (amountEl) {
-                amountEl.innerHTML = formatPriceWithCents(prices.monthly, prices.monthlyCents);
-            }
-
-            // Update annual price option (plain text format)
-            const annualStrong = plusCard.querySelector('.price-annual-option strong');
-            if (annualStrong) {
-                const perYearSpan = annualStrong.querySelector('[data-t]');
-                const perYearText = perYearSpan ? perYearSpan.textContent : '/year';
-                annualStrong.innerHTML = annualPriceText + '<span>' + perYearText + '</span>';
-            }
-        }
-
-        // Update homepage pricing section if present
-        const homePlusCard = document.querySelector('.pricing-card.featured:not(.pricing-card-extended)');
-        if (homePlusCard) {
-            // Update main price with cents in superscript
-            const amountEl = homePlusCard.querySelector('.price .amount');
-            if (amountEl) {
-                amountEl.innerHTML = formatPriceWithCents(prices.monthly, prices.monthlyCents);
-            }
-
-            // Update annual text - match pricing.html structure with <strong>
-            // Structure: <div class="price-annual"><span>or $182/year</span>...
-            const annualDiv = homePlusCard.querySelector('.price-annual');
-            if (annualDiv) {
-                const annualSpan = annualDiv.querySelector('span:first-child');
-                if (annualSpan) {
-                    // Rebuild with <strong> to match pricing.html format
-                    annualSpan.innerHTML = 'or <strong>' + annualPriceText + '/year</strong>';
-                }
-            }
-        }
-
-        // Update any comparison tables (plain text format)
-        document.querySelectorAll('.comparison-table td, .comparison-table th').forEach(cell => {
-            if (cell.textContent.includes('$19')) {
-                cell.textContent = cell.textContent.replace(/\$19/g, monthlyPriceText);
-            }
-            if (cell.textContent.includes('$182')) {
-                cell.textContent = cell.textContent.replace(/\$182/g, annualPriceText);
+            if (format === 'large') {
+                el.innerHTML = formatPriceWithCents(priceData.integer, priceData.cents);
+            } else {
+                el.textContent = formatPriceText(priceData.integer, priceData.cents);
             }
         });
-
-        // Update Schema.org JSON-LD if present
-        updateSchemaOrg(prices);
     }
 
+    // ===========================================
+    // SCHEMA.ORG UPDATE
+    // ===========================================
+
     /**
-     * Update Schema.org structured data
-     * @param {Object} prices - Calculated prices
+     * Update Schema.org structured data with calculated prices
+     * @param {Object} allPrices - Object keyed by plan name, each containing price data
      */
-    function updateSchemaOrg(prices) {
-        const schemaScripts = document.querySelectorAll('script[type="application/ld+json"]');
-        schemaScripts.forEach(script => {
+    function updateSchemaOrg(allPrices) {
+        var schemaScripts = document.querySelectorAll('script[type="application/ld+json"]');
+        schemaScripts.forEach(function(script) {
             try {
-                const schema = JSON.parse(script.textContent);
-                if (schema.offers && Array.isArray(schema.offers)) {
-                    let modified = false;
-                    schema.offers.forEach(offer => {
-                        if (offer.name && offer.name.includes('Monthly')) {
-                            offer.price = prices.monthly.toString();
+                var schema = JSON.parse(script.textContent);
+
+                // Handle @graph wrapper
+                var offers = null;
+                if (schema['@graph']) {
+                    for (var i = 0; i < schema['@graph'].length; i++) {
+                        if (schema['@graph'][i].offers) {
+                            offers = schema['@graph'][i].offers;
+                            break;
+                        }
+                    }
+                } else if (schema.offers) {
+                    offers = schema.offers;
+                }
+
+                if (!offers || !Array.isArray(offers)) return;
+
+                var modified = false;
+                offers.forEach(function(offer) {
+                    if (!offer.name) return;
+
+                    // Match PLUS offers
+                    if (allPrices.plus) {
+                        if (offer.name === 'PLUS Monthly') {
+                            offer.price = allPrices.plus.monthly.integer.toString();
                             modified = true;
-                        } else if (offer.name && offer.name.includes('Yearly')) {
-                            offer.price = prices.annual.toString();
+                        } else if (offer.name === 'PLUS Yearly') {
+                            offer.price = allPrices.plus.annual.integer.toString();
                             modified = true;
                         }
-                    });
-                    if (modified) {
-                        script.textContent = JSON.stringify(schema);
                     }
+
+                    // Match Team offers
+                    if (allPrices.team && offer.name === 'Team Monthly') {
+                        offer.price = allPrices.team.perUser.integer.toString();
+                        modified = true;
+                    }
+                });
+
+                if (modified) {
+                    script.textContent = JSON.stringify(schema);
                 }
             } catch (e) {
                 // Ignore JSON parse errors
             }
         });
-    }
-
-    /**
-     * Show regional pricing banner
-     * @param {Object} data - ParityDeals response data
-     * @param {Object} prices - Calculated prices
-     */
-    function showRegionalBanner(data, prices) {
-        // Don't show banner if no discount
-        if (!data.discountPercentage || parseFloat(data.discountPercentage) === 0) {
-            return;
-        }
-
-        const banner = document.createElement('div');
-        banner.className = 'regional-pricing-banner';
-        banner.innerHTML = '<span class="country-flag">' + (data.countryFlag || '') + '</span> ' +
-            '<span class="discount-text">' + (data.messageText || (Math.round(data.discountPercentage) + '% OFF for ' + data.country)) + '</span>';
-
-        banner.style.cssText =
-            'display: flex;' +
-            'align-items: center;' +
-            'justify-content: center;' +
-            'gap: 0.5rem;' +
-            'padding: 0.875rem 1rem;' +
-            'background: linear-gradient(135deg, #DCFCE7 0%, #BBF7D0 100%);' +
-            'color: #166534;' +
-            'border-radius: 12px;' +
-            'font-size: 0.9375rem;' +
-            'font-weight: 500;' +
-            'margin: 0 auto 1.5rem auto;' +
-            'max-width: 400px;' +
-            'box-shadow: 0 2px 8px rgba(22, 101, 52, 0.1);' +
-            'animation: slideIn 0.3s ease-out;';
-
-        // Add animation keyframes
-        if (!document.getElementById('regional-pricing-styles')) {
-            const style = document.createElement('style');
-            style.id = 'regional-pricing-styles';
-            style.textContent = '@keyframes slideIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }';
-            document.head.appendChild(style);
-        }
-
-        // Insert after pricing hero or at the start of pricing section
-        const pricingHero = document.querySelector('.pricing-hero');
-        const pricingSection = document.querySelector('.pricing-section') || document.querySelector('[class*="pricing"]');
-
-        if (pricingHero && pricingHero.parentNode) {
-            pricingHero.parentNode.insertBefore(banner, pricingHero.nextSibling);
-        } else if (pricingSection) {
-            pricingSection.insertBefore(banner, pricingSection.firstChild);
-        }
     }
 
     // ===========================================
@@ -262,11 +244,11 @@
      */
     function getCachedDiscountData() {
         try {
-            const data = sessionStorage.getItem('parity_deals_discount');
-            const timestamp = sessionStorage.getItem('parity_deals_timestamp');
+            var data = sessionStorage.getItem('parity_deals_discount');
+            var timestamp = sessionStorage.getItem('parity_deals_timestamp');
 
             if (data && timestamp) {
-                const age = Date.now() - parseInt(timestamp, 10);
+                var age = Date.now() - parseInt(timestamp, 10);
                 if (age < CACHE_DURATION_MS) {
                     return JSON.parse(data);
                 }
@@ -281,7 +263,7 @@
     // PRICE VISIBILITY CONTROL
     // ===========================================
 
-    const PRICE_SELECTORS = '.price-large .amount, .price .amount, .price-annual-option strong, .annual-price, .price-annual';
+    const PRICE_SELECTORS = '[data-plan][data-price]';
 
     /**
      * Hide price elements initially to prevent flash
@@ -289,7 +271,7 @@
      */
     function hidePrices() {
         if (document.getElementById('regional-pricing-hide')) return;
-        const style = document.createElement('style');
+        var style = document.createElement('style');
         style.id = 'regional-pricing-hide';
         style.textContent = PRICE_SELECTORS + ' { opacity: 0; }';
         document.head.appendChild(style);
@@ -299,7 +281,7 @@
      * Show price elements with fade-in
      */
     function showPrices() {
-        const style = document.getElementById('regional-pricing-hide');
+        var style = document.getElementById('regional-pricing-hide');
         if (style) {
             style.textContent = PRICE_SELECTORS + ' { opacity: 1; transition: opacity 0.2s ease-in; }';
         }
@@ -311,7 +293,7 @@
 
     async function init() {
         // Only run on pages with pricing content
-        const hasPricingContent = document.querySelector('.pricing-card, .pricing-card-extended, [class*="pricing"]');
+        var hasPricingContent = document.querySelector('[data-plan]');
         if (!hasPricingContent) {
             return;
         }
@@ -320,7 +302,7 @@
         hidePrices();
 
         // Check cache first
-        let data = getCachedDiscountData();
+        var data = getCachedDiscountData();
 
         if (!data) {
             data = await fetchParityDealsDiscount();
@@ -346,7 +328,7 @@
         });
 
         // Determine discount percentage
-        let discountPercent = 0;
+        var discountPercent = 0;
 
         // Check for VPN/proxy - use base price if detected
         if (data.isVpn || data.isProxy || data.isTor) {
@@ -360,9 +342,20 @@
             }
         }
 
-        // Always update display to ensure consistent formatting
-        const prices = calculatePrices(discountPercent);
-        updatePriceDisplay(prices, data);
+        // Calculate and update all plan prices
+        var allPrices = {};
+
+        var plusPrices = calculatePlusPrices(discountPercent);
+        allPrices.plus = plusPrices;
+        updatePlanPrices('plus', plusPrices);
+
+        var teamPrices = calculateTeamPrices(discountPercent);
+        allPrices.team = teamPrices;
+        updatePlanPrices('team', teamPrices);
+
+        // Update Schema.org structured data
+        updateSchemaOrg(allPrices);
+
         showPrices();
     }
 
