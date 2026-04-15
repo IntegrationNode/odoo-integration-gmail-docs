@@ -943,6 +943,9 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0408": {
+      "contactNameFix": "Fixed 'Unexpected error' when saving contacts from emails with a blank sender name"
+    },
     "v0406": {
       "financialFieldsFix": "Fixed Company section not loading for users without accounting permissions"
     },

@@ -943,6 +943,9 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0408": {
+      "contactNameFix": "Opgelost: 'Onverwachte fout' bij het opslaan van contacten uit e-mails met een lege afzendernaam"
+    },
     "v0406": {
       "financialFieldsFix": "Bedrijfssectie wordt nu ook geladen voor gebruikers zonder boekhoudrechten"
     },

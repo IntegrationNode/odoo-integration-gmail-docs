@@ -943,6 +943,9 @@
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
     },
+    "v0408": {
+      "contactNameFix": "Risolto l'errore \"Errore imprevisto\" durante il salvataggio di contatti da email con nome del mittente vuoto"
+    },
     "v0406": {
       "financialFieldsFix": "Corretta la sezione Azienda che non si caricava per utenti senza permessi di contabilità"
     },

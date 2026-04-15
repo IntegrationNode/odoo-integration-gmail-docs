@@ -943,6 +943,9 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0408": {
+      "contactNameFix": "Behoben: 'Unerwarteter Fehler' beim Speichern von Kontakten aus E-Mails mit leerem Absendernamen"
+    },
     "v0406": {
       "financialFieldsFix": "Firmenbereich wird jetzt auch für Benutzer ohne Buchhaltungsberechtigungen geladen"
     },

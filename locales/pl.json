@@ -943,6 +943,9 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0408": {
+      "contactNameFix": "Naprawiono błąd 'Nieoczekiwany błąd' podczas zapisywania kontaktów z e-maili z pustą nazwą nadawcy"
+    },
     "v0406": {
       "financialFieldsFix": "Naprawiono sekcję Firma, która nie ładowała się dla użytkowników bez uprawnień księgowych"
     },

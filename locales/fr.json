@@ -943,6 +943,9 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0408": {
+      "contactNameFix": "Correction de l'erreur « Erreur inattendue » lors de l'enregistrement de contacts depuis des e-mails avec un nom d'expéditeur vide"
+    },
     "v0406": {
       "financialFieldsFix": "Correction de la section Entreprise qui ne se chargeait pas pour les utilisateurs sans droits comptables"
     },

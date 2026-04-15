@@ -943,6 +943,9 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0408": {
+      "contactNameFix": "Solucionado el 'Error inesperado' al guardar contactos desde correos con nombre de remitente en blanco"
+    },
     "v0406": {
       "financialFieldsFix": "Corregida la sección de Empresa que no cargaba para usuarios sin permisos de contabilidad"
     },
